@@ -2,31 +2,23 @@ package com.scmspain.mercadio.filter.application.usecases;
 
 import com.scmspain.mercadio.filter.domain.FilterRequest;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.mockito.Mockito.when;
-
 public class FilterUseCaseTest {
 
+    private com.scmspain.mercadio.filter.application.usecases.FilterUseCase sut;
 
-    @Test
-    public void filterUseCaseExecuteTestWithMockito() throws Exception {
-        final FilterUseCase sut = Mockito.mock(FilterUseCase.class);
-        final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(new FilterRequest());
-        final FilterUseCaseResponse filterUseCaseResponse = Mockito.mock(FilterUseCaseResponse.class);
-
-        when(sut.execute(filterUseCaseRequest)).thenReturn(filterUseCaseResponse);
-
-        Assert.assertEquals(sut.execute(filterUseCaseRequest), filterUseCaseResponse);
+    @Before
+    public void setUp() throws Exception {
+        sut = new com.scmspain.mercadio.filter.application.usecases.FilterUseCase();
     }
 
     @Test
     public void filterUseCaseExecuteTest() throws Exception {
-        final FilterUseCase sut = new FilterUseCase();
         final FilterRequest filterRequest = getFilterRequestWithAllFilters();
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);
         final FilterUseCaseResponse filterUseCaseResponse;
