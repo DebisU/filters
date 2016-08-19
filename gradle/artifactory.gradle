@@ -1,0 +1,49 @@
+// For publishing see http://axion-release-plugin.readthedocs.org/en/latest/
+scmVersion {
+    ignoreUncommittedChanges = false
+}
+
+project.version = scmVersion.version
+
+tasks.whenTaskAdded { t ->
+    if( t.name == "publishMavenJavaPublicationToMavenRepository"){
+        if (!project.hasProperty('artifactory_scm_user') || !project.hasProperty('artifactory_scm_password')) {
+            throw new GradleException("Properties 'artifactory_scm_user' and 'artifactory_scm_password' are mandatory to do a publish, please add this information in your ~/.gradle/gradle.properties")
+        }
+    }
+}
+
+task javadocJar(type: Jar) {
+    classifier = 'javadoc'
+    from javadoc
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId 'com.scmspain'
+            version project.version
+
+            from components.java
+
+            artifact sourcesJar
+            artifact javadocJar
+
+        }
+    }
+    repositories {
+        maven {
+            credentials {
+                username project.hasProperty('artifactory_scm_user')? artifactory_scm_user: ''
+                password project.hasProperty('artifactory_scm_password')? artifactory_scm_password: ''
+            }
+
+            url "http://artifactory.scmspain.com/artifactory/libs-release-mercadio"
+        }
+    }
+}
