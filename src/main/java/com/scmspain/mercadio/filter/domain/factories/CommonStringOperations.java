@@ -29,10 +29,20 @@ public class CommonStringOperations {
         return result;
     }
 
-
     public static boolean checkIfStringContainsItemFromList(String inputString, List<String> items) {
         for(int i =0; i < items.size(); i++) {
             if(inputString.toLowerCase().contains(items.get(i).toLowerCase())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean checkIfStringMatchesItemFromList(String inputString, List<String> items) {
+        for(int i =0; i < items.size(); i++) {
+            final String actualItemToMatch = "((.*"+items.get(i).toLowerCase()+".*).)*" ;
+
+            if(inputString.toLowerCase().matches(actualItemToMatch)) {
                 return true;
             }
         }
@@ -45,6 +55,4 @@ public class CommonStringOperations {
         }
         return request;
     }
-
-
 }

@@ -14,16 +14,24 @@ public class FilterKeywordSpammingByCommonWordsTest {
 
     @Test
     public void shouldNotDeleteAnything() throws Exception {
-        final String result = sut.filter(getAllPrepositionsAsString());
+        final String input = getAllPrepositionsAsString();
+        final String expected = getAllPrepositionsAsString();
 
-        Assert.assertEquals(getAllPrepositionsAsString(),result);
+        testExample(input, expected);
     }
 
     @Test
     public void shouldDeleteAll() throws Exception {
-        final String result = sut.filter(getKeyWordSpamWithoutPrepositions());
+        final String input = getKeyWordSpamWithoutPrepositions();
+        final String expected = "";
 
-        Assert.assertEquals("",result);
+        testExample(input, expected);
+    }
+
+    private void testExample(String input, String expected) {
+        final String result = sut.filter(input);
+
+        Assert.assertEquals(expected,result);
     }
 
     private static String getAllPrepositionsAsString() {

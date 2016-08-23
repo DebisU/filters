@@ -10,11 +10,11 @@ import java.util.Map;
 
 public class FilterUseCaseTest {
 
-    private com.scmspain.mercadio.filter.application.usecases.FilterUseCase sut;
+    private FilterUseCase sut;
 
     @Before
     public void setUp() throws Exception {
-        sut = new com.scmspain.mercadio.filter.application.usecases.FilterUseCase();
+        sut = new FilterUseCase();
     }
 
     @Test
@@ -26,15 +26,6 @@ public class FilterUseCaseTest {
         filterUseCaseResponse = sut.execute(filterUseCaseRequest);
 
         Assert.assertEquals(filterRequest.getTextToFilter().trim(),filterUseCaseResponse.getResult().trim());
-
-    }
-
-    @Test (expected = FilterNotFoundException.class)
-    public void filterUseCaseExecuteWithThrowExceptionTest() throws Exception {
-        final FilterUseCase sut = new FilterUseCase();
-        final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(getFilterRequestWithInvalidFilter());
-
-        sut.execute(filterUseCaseRequest);
     }
 
     private FilterRequest getFilterRequestWithAllFilters() {
@@ -51,6 +42,13 @@ public class FilterUseCaseTest {
         filterRequest.setFiltersToApply(filters);
 
         return filterRequest;
+    }
+
+    @Test (expected = FilterNotFoundException.class)
+    public void filterUseCaseExecuteWithThrowExceptionTest() throws Exception {
+        final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(getFilterRequestWithInvalidFilter());
+
+        sut.execute(filterUseCaseRequest);
     }
 
     private FilterRequest getFilterRequestWithInvalidFilter() {
