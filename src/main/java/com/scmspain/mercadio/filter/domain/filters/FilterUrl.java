@@ -19,13 +19,13 @@ public class FilterUrl implements Filter {
     private String extractUrls(String part) {
         final String lowerPart = part;
         final String[] lineInParts = lowerPart.split(" ");
-        String toReturn = "";
+        final StringBuilder toReturn = new StringBuilder();
 
         for (int i = 0; i < lineInParts.length; i++) {
             final String lineInPart = lineInParts[i];
-            toReturn += lineInPart.replaceAll(URL_REGEX,"") + " ";
+            toReturn.append( lineInPart.replaceAll(URL_REGEX,"") + " " );
         }
 
-        return toReturn;
+        return toReturn.toString();
     }
 }

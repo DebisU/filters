@@ -11,24 +11,24 @@ public class FilterKeywordSpammingAtTheEnd implements Filter {
     }
 
     private String deleteSpamAtTheEnd(String text) {
-        String toReturn = "";
-
+        final StringBuilder toReturn = new StringBuilder();
         boolean foundedEndOfSpam = false;
         int index = text.length()-1;
+
         do {
             index--;
             if (!foundedEndOfSpam && index >= 1) {
                 final String toEvaluate = new StringBuilder(String.valueOf(text.charAt(index)).toString() + String.valueOf(text.charAt(index-1)).toString()).reverse().toString();
                 if (toEvaluate.matches(SPAM_END)) {
                     foundedEndOfSpam = true;
-                    toReturn += text.charAt(index);
+                    toReturn.append(text.charAt(index));
                 }
             } else {
-                    toReturn += text.charAt(index);
+                    toReturn.append(text.charAt(index));
             }
         } while (index > 0);
 
-        toReturn = new StringBuilder(toReturn).reverse().toString();
-        return toReturn != "" ? toReturn : text;
+        return toReturn.equals("") ? toReturn.reverse().toString() : text;
     }
+
 }

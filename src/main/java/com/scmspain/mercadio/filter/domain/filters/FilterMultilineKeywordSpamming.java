@@ -30,11 +30,11 @@ public class FilterMultilineKeywordSpamming implements Filter {
     }
 
     private String getResultString(List<String> paragraphsWithMoreThanOneWord) {
-        String toReturn = "";
+        final StringBuilder toReturn = new StringBuilder();
         for (String item : paragraphsWithMoreThanOneWord) {
-            toReturn += item + "\n";
+            toReturn.append (item + "\n" );
         }
-        return CommonStringOperations.removeLastNewLine(toReturn);
+        return CommonStringOperations.removeLastNewLine(toReturn.toString());
     }
 
     private List<String> getSeparatedParagraphs(List<String> paragraphs) {

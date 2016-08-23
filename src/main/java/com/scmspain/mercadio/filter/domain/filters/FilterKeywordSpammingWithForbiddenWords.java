@@ -29,17 +29,17 @@ public class FilterKeywordSpammingWithForbiddenWords implements Filter {
 
     private String checkIfKeywordSpamming(String request, Optional<String> extraArg) {
         final List<String> separatedParagraphs = CommonStringOperations.splitParagraphs(request);
-        String toReturn= "";
+        final StringBuilder toReturn = new StringBuilder();
 
         final List<String> forbiddenWords = (extraArg != null && extraArg.isPresent()) ?  getForbiddenWords(extraArg) : new ArrayList<>();
 
         for (int i = 0 ; i < separatedParagraphs.size() ; i++) {
             if (! CommonStringOperations.checkIfStringContainsItemFromList(separatedParagraphs.get(i),forbiddenWords)) {
-                toReturn += separatedParagraphs.get(i) + "\n";
+                toReturn.append( separatedParagraphs.get(i) + "\n" );
             }
         }
 
-        return CommonStringOperations.removeLastNewLine(toReturn);
+        return CommonStringOperations.removeLastNewLine(toReturn.toString());
     }
 
 

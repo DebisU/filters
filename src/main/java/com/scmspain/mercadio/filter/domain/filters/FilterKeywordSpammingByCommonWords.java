@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FilterKeywordSpammingByCommonWords implements Filter {
-    public static final int MIN_LINE_LENGTH_TO_ANALYZE = 50;
+    public static final int MIN_LINE_LENGTH_TO_ANALYZE = 55;
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override
@@ -40,7 +40,7 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
             }
         }
 
-        String paragraphsWithPrepositionsStr = getResultAsString(paragraphsWithPrepositions);
+        final String paragraphsWithPrepositionsStr = getResultAsString(paragraphsWithPrepositions);
 
         return paragraphsWithPrepositionsStr;
     }

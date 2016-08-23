@@ -33,17 +33,17 @@ public class FilterKeywordSpammingBySeparators implements Filter {
     }
 
     private String getParagraphsWithoutRepeatedSeparator(List<String> separatedParagraphs, Optional<String> extraArg) {
-
-        String toReturn = "";
+        final StringBuilder toReturn = new StringBuilder();
         final char separator = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty()) ? extraArg.get().charAt(0) : DEFAULT_SEPARATOR;
 
         for (int i = 0; i < separatedParagraphs.size(); i++) {
-            if (knowIfExceedsAmountOfSeparators(separatedParagraphs.get(i),separator)) {
-                toReturn += separatedParagraphs.get(i) + "\n";
+            if (knowIfExceedsAmountOfSeparators(separatedParagraphs.get(i),separator)
+                    || separatedParagraphs.get(i).split(" ").length == 1) {
+                toReturn.append(separatedParagraphs.get(i) + "\n");
             }
         }
 
-        return CommonStringOperations.removeLastNewLine(toReturn);
+        return CommonStringOperations.removeLastNewLine(toReturn.toString());
     }
 
     private boolean knowIfExceedsAmountOfSeparators(String paragraph, char separator) {

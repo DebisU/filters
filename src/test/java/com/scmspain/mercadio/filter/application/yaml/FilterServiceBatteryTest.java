@@ -1,8 +1,11 @@
-package com.scmspain.mercadio.filter.application.usecases;
+package com.scmspain.mercadio.filter.application.yaml;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.scmspain.mercadio.filter.application.usecases.FilterUseCase;
+import com.scmspain.mercadio.filter.application.usecases.FilterUseCaseRequest;
+import com.scmspain.mercadio.filter.application.usecases.FilterUseCaseResponse;
 import com.scmspain.mercadio.filter.domain.ExampleAd;
 import com.scmspain.mercadio.filter.domain.FilterRequest;
 import org.testng.Assert;
@@ -15,7 +18,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FilterServiceTest {
+public class FilterServiceBatteryTest {
+    public static final int OBJECT_WIDTH = 3;
     private FilterUseCase sut;
 
     @BeforeMethod
@@ -31,21 +35,21 @@ public class FilterServiceTest {
 
         final FilterUseCaseResponse filterUseCaseResponse = sut.execute(filterUseCaseRequest);
 
-        final int distance = getDistanceWithLevenshteinDistanceAlgorithm(filterUseCaseResponse.getResult(),expected);
+        final boolean validDistance = getDistanceWithLevenshteinDistanceAlgorithm(filterUseCaseResponse.getResult(),expected) < 5 ? true : false;
 
-        //Assert.assertTrue(distance < 5,scenario);
-        Assert.assertEquals(filterUseCaseResponse.getResult(),expected);
+        Assert.assertTrue(validDistance,scenario);
+        //Assert.assertEquals(filterUseCaseResponse.getResult(),expected);
     }
 
     @DataProvider(name = "examples")
     public Object[][] examples() {
         final ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
         final Object[][] toReturn;
-
+        
         try {
             List<ExampleAd> tempExampleAd = mapper.readValue(getClass().getResource("/examples.yml"),  new TypeReference<List<ExampleAd>>(){});
-            final int objectMaxSize = tempExampleAd.size();
-            toReturn = new Object[objectMaxSize][3];
+            final int objectHeight = tempExampleAd.size();
+            toReturn = new Object[objectHeight][OBJECT_WIDTH];
 
             int index = 0;
             for (ExampleAd item : tempExampleAd) {

@@ -40,7 +40,7 @@ public class CommonStringOperations {
 
     public static boolean checkIfStringMatchesItemFromList(String inputString, List<String> items) {
         for(int i =0; i < items.size(); i++) {
-            final String actualItemToMatch = "((.*"+items.get(i).toLowerCase()+".*).)*" ;
+            final String actualItemToMatch = "(([a-zA-Z0-9_,.;: -]*?"+items.get(i).toLowerCase()+"[_,.;: -]*?).)*" ;
 
             if(inputString.toLowerCase().matches(actualItemToMatch)) {
                 return true;
