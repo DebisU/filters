@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class FilterMultilineKeywordSpamming implements Filter {
+public class FilterKeywordMultilineSpamming implements Filter {
     private static final String NUMBERS = ".*[0-9]+.*";
     private final Logger logger = LoggerFactory.getLogger(getClass());
 

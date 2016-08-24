@@ -29,6 +29,7 @@ task wrapper(type: Wrapper) {
 
 subprojects {
     test {
-        use testNG()
+        useTestNG()
+        useJUnit()
     }
 }

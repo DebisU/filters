@@ -41,10 +41,13 @@ public class FilterUseCase {
                     filter.addFilter(new FilterRemoveSpecificWords(extraArg));
                     break;
                 case "multilinespam":
-                    filter.addFilter(new FilterMultilineKeywordSpamming());
+                    filter.addFilter(new FilterKeywordMultilineSpamming());
                     break;
                 case "endspam":
                     filter.addFilter(new FilterKeywordSpammingAtTheEnd());
+                    break;
+                case "detectpattern":
+                    filter.addFilter(new FilterKeywordSpammingDetectPattern());
                     break;
                 default:
                     throw new FilterNotFoundException(filterToApply);

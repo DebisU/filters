@@ -9,7 +9,7 @@ public class FilterMultilineKeywordSpammingTest {
 
     @Before
     public void setUp() throws Exception {
-        sut = new FilterMultilineKeywordSpamming();
+        sut = new FilterKeywordMultilineSpamming();
     }
 
     @Test

@@ -42,7 +42,7 @@ public class FilterTest {
                 new Object[] {new FilterKeywordSpammingByCommonWords()},
                 new Object[] {new FilterKeywordSpammingBySeparators(Optional.of("."))},
                 new Object[] {new FilterKeywordSpammingWithForbiddenWords(Optional.of("tags"))},
-                new Object[] {new FilterMultilineKeywordSpamming()},
+                new Object[] {new FilterKeywordMultilineSpamming()},
                 new Object[] {new FilterRemoveSpecificWords(Optional.of("search"))},
                 new Object[] {new FilterKeywordSpammingAtTheEnd()},
                 new Object[] {new FilterUrl()}

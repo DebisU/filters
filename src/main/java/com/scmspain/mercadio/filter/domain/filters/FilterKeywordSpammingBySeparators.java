@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public class FilterKeywordSpammingBySeparators implements Filter {
     private static final char DEFAULT_SEPARATOR = ',';
-    public static final int MIN_SEPARATOR_DIVIDER = 12;
+    private static final int MIN_SEPARATOR_DIVIDER = 12;
     private final Optional<String> extraArg;
     private final Logger logger = LoggerFactory.getLogger(getClass());
 

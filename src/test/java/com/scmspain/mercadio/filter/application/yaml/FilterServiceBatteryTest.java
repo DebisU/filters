@@ -35,10 +35,10 @@ public class FilterServiceBatteryTest {
 
         final FilterUseCaseResponse filterUseCaseResponse = sut.execute(filterUseCaseRequest);
 
-        final boolean validDistance = getDistanceWithLevenshteinDistanceAlgorithm(filterUseCaseResponse.getResult(),expected) < 5 ? true : false;
+        final boolean validDistance = getDistanceWithLevenshteinDistanceAlgorithm(filterUseCaseResponse.getResult().replace(" ",""),expected.replace(" ","")) < 5 ? true : false;
 
-        Assert.assertTrue(validDistance,scenario);
-        //Assert.assertEquals(filterUseCaseResponse.getResult(),expected);
+        //Assert.assertTrue(validDistance,scenario);
+        Assert.assertEquals(filterUseCaseResponse.getResult().replace(" ",""),expected.replace(" ",""));
     }
 
     @DataProvider(name = "examples")
@@ -76,7 +76,9 @@ public class FilterServiceBatteryTest {
         filters.put("separators","");
         filters.put("url","");
         filters.put("commonwords","");
-        filters.put("multilinespam","");
+        //filters.put("multilinespam","");
+        //filters.put("detectpattern","");
+
 
         filterRequest.setFiltersToApply(filters);
 
