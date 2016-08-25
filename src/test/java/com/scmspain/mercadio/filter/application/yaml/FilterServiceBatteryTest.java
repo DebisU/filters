@@ -39,19 +39,18 @@ public class FilterServiceBatteryTest {
 
         try {
             final URL url = FilterServiceBatteryTest.class.getResource("/examples.yml");
-            final List<ExampleAd> tempExampleAd = mapper.readValue(url,  new TypeReference<List<ExampleAd>>(){});
-            final int objectHeight = tempExampleAd.size();
-            final Object[][] toReturn = new Object[objectHeight][OBJECT_WIDTH];
+            final List<ExampleAd> examples = mapper.readValue(url,  new TypeReference<List<ExampleAd>>(){});
+            final Object[][] result = new Object[examples.size()][OBJECT_WIDTH];
 
             int index = 0;
-            for (ExampleAd item : tempExampleAd) {
-                toReturn[index][0]=item.getIn();
-                toReturn[index][1]=item.getOut();
-                toReturn[index][2]=item.getScenario();
+            for (ExampleAd example : examples) {
+                result[index][0] = example.getIn();
+                result[index][1] = example.getOut();
+                result[index][2] = example.getScenario();
                 index++;
             }
 
-            return Arrays.asList(toReturn);
+            return Arrays.asList(result);
         } catch (IOException e) {
             Assert.fail();
         }
