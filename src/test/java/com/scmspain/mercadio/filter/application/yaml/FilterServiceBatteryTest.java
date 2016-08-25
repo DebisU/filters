@@ -14,8 +14,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
@@ -35,27 +35,31 @@ public class FilterServiceBatteryTest {
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
-        final ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        final List<ExampleAd> examples = loadExamples();
+        final Object[][] result = new Object[examples.size()][OBJECT_WIDTH];
 
-        try {
-            final URL url = FilterServiceBatteryTest.class.getResource("/examples.yml");
-            final List<ExampleAd> examples = mapper.readValue(url,  new TypeReference<List<ExampleAd>>(){});
-            final Object[][] result = new Object[examples.size()][OBJECT_WIDTH];
-
-            int index = 0;
-            for (ExampleAd example : examples) {
-                result[index][0] = example.getIn();
-                result[index][1] = example.getOut();
-                result[index][2] = example.getScenario();
-                index++;
-            }
-
-            return Arrays.asList(result);
-        } catch (IOException e) {
-            Assert.fail();
+        int index = 0;
+        for (ExampleAd example : examples) {
+            result[index][0] = example.getIn();
+            result[index][1] = example.getOut();
+            result[index][2] = example.getScenario();
+            index++;
         }
 
-        return Arrays.asList(new Object[0][0]);
+        return Arrays.asList(result);
+    }
+
+    private static List<ExampleAd> loadExamples() {
+        final ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        final URL url = FilterServiceBatteryTest.class.getResource("/examples.yml");
+        List<ExampleAd> result = new ArrayList<>();
+        try {
+            result = mapper.readValue(url,  new TypeReference<List<ExampleAd>>(){});
+        } catch (Exception e) {
+            Assert.fail("Could not open examples file");
+        }
+
+        return result;
     }
 
     public FilterServiceBatteryTest(final String text, final String expected, final String scenario) {
