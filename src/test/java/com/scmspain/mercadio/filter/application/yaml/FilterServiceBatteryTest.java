@@ -3,71 +3,89 @@ package com.scmspain.mercadio.filter.application.yaml;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.scmspain.mercadio.filter.application.usecases.FilterNotFoundException;
 import com.scmspain.mercadio.filter.application.usecases.FilterUseCase;
 import com.scmspain.mercadio.filter.application.usecases.FilterUseCaseRequest;
 import com.scmspain.mercadio.filter.application.usecases.FilterUseCaseResponse;
 import com.scmspain.mercadio.filter.domain.ExampleAd;
 import com.scmspain.mercadio.filter.domain.FilterRequest;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
-import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@RunWith(Parameterized.class)
 public class FilterServiceBatteryTest {
-    public static final int OBJECT_WIDTH = 3;
-    private FilterUseCase sut;
+    private static final int OBJECT_WIDTH = 3;
+    private static final int LEVENSHTEIN_DISTANCE_THRESHOLD = 5;
 
-    @BeforeMethod
-    public void setUp() throws Exception {
-        sut = new FilterUseCase();
+    private final String text;
+    private final String expected;
+    private final String scenario;
+
+    private final FilterUseCase sut;
+
+    @Parameterized.Parameters
+    public static Collection<Object[]> data() {
+        final List<ExampleAd> examples = loadExamples();
+        final Object[][] result = new Object[examples.size()][OBJECT_WIDTH];
+
+        int index = 0;
+        for (ExampleAd example : examples) {
+            result[index][0] = example.getIn();
+            result[index][1] = example.getOut();
+            result[index][2] = example.getScenario();
+            index++;
+        }
+
+        return Arrays.asList(result);
     }
 
-    @Test(dataProvider = "examples")
-    public void runAllFiltersTest(final String text, final String expected, final String scenario) throws Exception {
-        final FilterRequest filterRequest = getFilterRequest();
-        filterRequest.setTextToFilter(text);
+    private static List<ExampleAd> loadExamples() {
+        final ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        final URL url = FilterServiceBatteryTest.class.getResource("/examples.yml");
+        List<ExampleAd> result = new ArrayList<>();
+        try {
+            result = mapper.readValue(url,  new TypeReference<List<ExampleAd>>(){});
+        } catch (Exception e) {
+            Assert.fail("Could not open examples file");
+        }
+
+        return result;
+    }
+
+    public FilterServiceBatteryTest(final String text, final String expected, final String scenario) {
+        this.text = text;
+        this.expected = expected;
+        this.scenario = scenario;
+        this.sut = new FilterUseCase();
+    }
+
+    @Test
+    public void testSort() throws FilterNotFoundException {
+        final FilterRequest filterRequest = getFilterRequest(text);
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);
 
         final FilterUseCaseResponse filterUseCaseResponse = sut.execute(filterUseCaseRequest);
+        final String actual = filterUseCaseResponse.getResult();
 
-        final boolean validDistance = getDistanceWithLevenshteinDistanceAlgorithm(filterUseCaseResponse.getResult().replace(" ",""),expected.replace(" ","")) < 5 ? true : false;
-
-        //Assert.assertTrue(validDistance,scenario);
-        Assert.assertEquals(filterUseCaseResponse.getResult().replace(" ",""),expected.replace(" ",""));
+        Assert.assertTrue(scenario, hasValidDistance(actual.replace(" ", ""), this.expected.replace(" ", "")));
+        Assert.assertEquals(scenario, actual.replace(" ",""), this.expected.replace(" ",""));
     }
 
-    @DataProvider(name = "examples")
-    public Object[][] examples() {
-        final ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
-        final Object[][] toReturn;
-        
-        try {
-            List<ExampleAd> tempExampleAd = mapper.readValue(getClass().getResource("/examples.yml"),  new TypeReference<List<ExampleAd>>(){});
-            final int objectHeight = tempExampleAd.size();
-            toReturn = new Object[objectHeight][OBJECT_WIDTH];
-
-            int index = 0;
-            for (ExampleAd item : tempExampleAd) {
-                toReturn[index][0]=item.getIn();
-                toReturn[index][1]=item.getOut();
-                toReturn[index][2]=item.getScenario();
-                index++;
-            }
-
-            return toReturn;
-
-        } catch (IOException e) {
-            Assert.fail();
-        }
-        return new Object[0][0];
+    private boolean hasValidDistance(String current, String expected) {
+        return getLevenshteinDistance(current, expected) < LEVENSHTEIN_DISTANCE_THRESHOLD;
     }
 
-    private FilterRequest getFilterRequest() {
+    private FilterRequest getFilterRequest(String text) {
         final FilterRequest filterRequest = new FilterRequest();
         final Map<String,String> filters = new HashMap<>();
 
@@ -81,11 +99,11 @@ public class FilterServiceBatteryTest {
 
 
         filterRequest.setFiltersToApply(filters);
-
+        filterRequest.setTextToFilter(text);
         return filterRequest;
     }
 
-    public static int getDistanceWithLevenshteinDistanceAlgorithm(String a, String b) {
+    private static int getLevenshteinDistance(String a, String b) {
         a = a.toLowerCase();
         b = b.toLowerCase();
 
