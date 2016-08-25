@@ -25,7 +25,7 @@ public class ExampleAd {
         return out;
     }
 
-    public Object getScenario() {
+    public String getScenario() {
         return scenario;
     }
 }
