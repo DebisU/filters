@@ -16,7 +16,7 @@ public class FilterUrlTest {
     public void shouldDeleteAllUrls() throws Exception {
         final String result = sut.filter(getTextWithUrls());
 
-        Assert.assertEquals("",result.trim());
+        Assert.assertEquals("google.es",result.trim());
     }
 
     private static String getTextWithUrls() {

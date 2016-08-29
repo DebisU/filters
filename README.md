@@ -25,8 +25,8 @@ forbiddenWords      | Texts separated by coma   |       YES        |       Nothi
 separators          | One separator             |       NO         |         ','             |
 removeSpecificWords | Texts separated by coma   |       YES        |       Nothing           |
 multilineSpam       | No arguments              |       NO         |  One word on each line  |
-endSpam             | No arguments              |       NO         |       REGEX             |
-detectPatterns      | No arguments              |       NO         |       REGEX             |
+endSpam             | No arguments              |       NO         |        REGEX            |
+detectPatterns      | No arguments              |       NO         |        REGEX            |
 
 - - - -
 ## Standard Request example:
@@ -43,7 +43,7 @@ detectPatterns      | No arguments              |       NO         |       REGEX
         filters.put("endspam","");
 
         filterRequest.setFiltersToApply(filters);
-        filterRequest.setTextToFilter(text);
+        filterRequest.setTextToFilter("Text to filter");
 
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);
 

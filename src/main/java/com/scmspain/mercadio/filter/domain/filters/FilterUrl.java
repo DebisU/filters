@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class FilterUrl implements Filter {
-    private final String URL_REGEX = "\\b(http://|https://|HTTP://|HTTPS://)?(www\\.|WWW\\.)?[a-zA-Z0-9_-]*\\.[a-zA-Z]{2,5}\\b";
+    private final String URL_REGEX = "\\b(http://|https://|HTTP://|HTTPS://|http://www\\.|https://www\\.|HTTPS://WWW\\.|HTTP://www\\.)?(www\\.|WWW\\.|http://|https://|HTTPS://|HTTP://)[a-zA-Z0-9_-]*\\.[a-zA-Z]{2,5}\\b";
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override

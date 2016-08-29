@@ -1,10 +1,43 @@
 -
+  in: "SAMSUNG SMART TV SERIES 4 4500 32 PULGADAS NUEVA A ESTRENAR <br /><br /><br />NO SABES QUE HACER CON TU MOVIL DE ULTIMA GENERACION? LLAMANOS. <br /> <br />ACEPTAMOS MOVILES NUEVOS O SEMINUEVOS COMO PARTE DE PAGO <br /> <br />Interesados llamar por teléfono, el numero de teléfono viene a la derecha de la
+       pantalla donde pone ver teléfono del anunciante, los telefonos son originales. <br /> <br />TODOS LOS TELEFONOS TIENEN UN AÑO DE GARANTIA. <br /> <br />TIENDA FISICA EN MADRID <br /> <br />LLAMANOS O VISITA NUESTRA TIENDA MOVILTELAN QUE ESTA SITUADA EN LA CALLE
+       VALLEHERMOSO 39, METRO QUEVEDO LINEA 2. <br /> <br />HORARIO DE 10:00 A 14:00 Y DE 16:00 A 20:00 DE LUNES A VIERNES. <br /> <br />***TAMBIEN ENVIAMOS A TODA ESPAÑA*** <br /> <br /> <br />En nuestra tienda virtual tambien podra encontrar: <br />Iphone 5, 5c, 5s de 16gb, 32gb, 64gb, iphone 6 16gb, 64gb, 128gb, iphone 6s y 6s
+       plus, ipad air, ipad mini 2, ipad mini 4, ipad air 2, ipad pro <br />Samsung s3 mini, s3, s4, s4 mini, s5, s5 mini, s6, s6 edge y s6 edge plus de 32gb,
+       64gb y 128gb, S7 <br />sony z1, z2, z3 compact, z3, z5 <br />huawei p6, p7, p8, p8 lite, mate s, g3s, leon, l5 II, l7 <br />lg g2, g3 mini, g3, g4, g flex 2 <br />htc one m7, m8, m9 <br />nokia lumia <br />bq aquiaris <br />Android, ios</p>"
+  out: "SAMSUNG SMART TV SERIES 4 4500 32 PULGADAS NUEVA A ESTRENAR\n
+\n
+\n
+        NO SABES QUE HACER CON TU MOVIL DE ULTIMA GENERACION? LLAMANOS.\n
+\n
+        ACEPTAMOS MOVILES NUEVOS O SEMINUEVOS COMO PARTE DE PAGO\n
+\n
+        Interesados llamar por teléfono, el numero de teléfono viene a la derecha de la
+        pantalla donde pone ver teléfono del anunciante, los telefonos son originales.\n
+\n
+        TODOS LOS TELEFONOS TIENEN UN AÑO DE GARANTIA.\n
+\n
+        TIENDA FISICA EN MADRID\n
+\n
+        LLAMANOS O VISITA NUESTRA TIENDA MOVILTELAN QUE ESTA SITUADA EN LA CALLE
+        VALLEHERMOSO 39, METRO QUEVEDO LINEA 2.\n
+\n
+        HORARIO DE 10:00 A 14:00 Y DE 16:00 A 20:00 DE LUNES A VIERNES.\n
+\n
+        ***TAMBIEN ENVIAMOS A TODA ESPAÑA***\n
+\n
+\n
+        En nuestra tienda virtual tambien podra encontrar:\n
+        nokia lumia\n
+        bq aquiaris\n
+        Android, ios "
+  scenario: "Debe borrar el spam del final. En este caso no se puede borrar todo porque afectaria a otors anuncios bien formados"
+-
   in: "iphone 5c 16GB libre como nuevo tel+carg solo vendemos telefonos originales y con ticket de venta para la garantía cogemos tu teléfono usado o nuevo como parte de pago llámanos y te lo tasamos. \n\n¿tienes un movil de ultima generación? llamanos o acércate a nuestras tiendas de francisco silvela nº69 o galileo nº70 \ntodos nuestro telefonos donde se especifica nuevos son a estrenar y con garantía\n. \n*************TE COGEMOS TU TELEFONO COMO PARTE DE PAGO*********** \n\nvisita nuestras tiendas físicas en Madrid: \ncalle francisco silvela n69 forma de llegar linea 4 y 6 del metro diego de leon y linea 6 7 y 8 de avda de América muy cerca de UGT o visita nuestra pagina que viene a la derecha donde pone pagina web o llámanos \n******************************************************************************* \ntambién nos puedes encontrar en la calle de galileo n70 forma de llegar linea 7 islas filipinas y linea 4 de princesa muy ceraca del corte ingles de princesa o llamanos \nnuevo horario: \nlunes a viernes de 10 a 14 y 16 a 20,30 horas y sabado de 10 a 14 horas \n******************************************************************************* \ngracias por confiar en movil center madrid\n\nTAMBIEN DISPONIBLE EN NUETRAS TIENDAS \nSAMSUNG S5 , S6 , S6 EDGE DE 32 64 Y 128, S6 EDGE PLUS 32 ,64, NOTE 3 , NOTE 4 , GALAXY TAB , GALAXY J , TAB A, TAB S2 \nIPHONE 6 , 6S DE 16 32 Y 64 , 6SPLUS DE 16 32GB 64GB Y 128GB , 6PLUS DE 16 64 Y 128 , 5S , 4S, IPHONE 5\nLG G4 , LG G3 , LG G2 , LG G4C LG G4 STYLUS , LG ZERO \nHUAWEI P8 LITE , HUAWEI P8 , HUAWEI G8 , HUAWEI G7 , P7\nSONY XPERIA Z2 , Z3 , Z3COMPACT , Z5 , Z5COMPACT , M4 AQUA , E3 , Z \nBLACKBERRY Q20 , Q0 , PASSPORT"
-  out: "iphone 5c 16GB libre como nuevo tel+carg solo vendemos telefonos originales y con ticket de venta para la garantía cogemos tu teléfono usado o nuevo como parte de pago llámanos y te lo tasamos. \n\n¿tienes un movil de ultima generación? llamanos o acércate a nuestras tiendas de francisco silvela nº69 o galileo nº70\n todos nuestro telefonos donde se especifica nuevos son a estrenar y con garantía\n.\n*************TE COGEMOS TU TELEFONO COMO PARTE DE PAGO***********\n\nvisita nuestras tiendas físicas en Madrid:\ncalle francisco silvela n69 forma de llegar linea 4 y 6 del metro diego de leon y linea 6 7 y 8 de avda de América muy cerca de UGT o visita nuestra pagina que viene a la derecha donde pone pagina web o llámanos\ntambién nos puedes encontrar en la calle de galileo n70 forma de llegar linea 7 islas filipinas y linea 4 de princesa muy ceraca del corte ingles de princesa o llamanos\nnuevo horario:\nlunes a viernes de 10 a 14 y 16 a 20,30 horas y sabado de 10 a 14 horas\ngracias por confiar en movil center madrid\n\nTAMBIEN DISPONIBLE EN NUETRAS TIENDAS IPHONE 6 , 6S DE 16 32 Y 64 , 6SPLUS DE 16 32GB 64GB Y 128GB , 6PLUS DE 16 64 Y 128 , 5S , 4S, IPHONE 5 \nLG G4 , LG G3 , LG G2 , LG G4C LG G4 STYLUS , LG ZERO \nBLACKBERRY Q20 , Q0 , PASSPORT "
+  out: "iphone 5c 16GB libre como nuevo tel+carg solo vendemos telefonos originales y con ticket de venta para la garantía cogemos tu teléfono usado o nuevo como parte de pago llámanos y te lo tasamos. \n\n¿tienes un movil de ultima generación? llamanos o acércate a nuestras tiendas de francisco silvela nº69 o galileo nº70\n todos nuestro telefonos donde se especifica nuevos son a estrenar y con garantía\n.\n*************TE COGEMOS TU TELEFONO COMO PARTE DE PAGO***********\n\nvisita nuestras tiendas físicas en Madrid:\ncalle francisco silvela n69 forma de llegar linea 4 y 6 del metro diego de leon y linea 6 7 y 8 de avda de América muy cerca de UGT o visita nuestra pagina que viene a la derecha donde pone pagina web o llámanos\ntambién nos puedes encontrar en la calle de galileo n70 forma de llegar linea 7 islas filipinas y linea 4 de princesa muy ceraca del corte ingles de princesa o llamanos\nnuevo horario:\nlunes a viernes de 10 a 14 y 16 a 20,30 horas y sabado de 10 a 14 horas\ngracias por confiar en movil center madrid\n\nTAMBIEN DISPONIBLE EN NUETRAS TIENDAS\n IPHONE 6 , 6S DE 16 32 Y 64 , 6SPLUS DE 16 32GB 64GB Y 128GB , 6PLUS DE 16 64 Y 128 , 5S , 4S, IPHONE 5 \nLG G4 , LG G3 , LG G2 , LG G4C LG G4 STYLUS , LG ZERO \nBLACKBERRY Q20 , Q0 , PASSPORT "
   scenario: "Debe borrar el spam del final. En este caso no se puede borrar todo porque afectaria a otors anuncios bien formados"
 -
   in: "DISPONIBLE DE 1 Y DE 2 PLAZAS . \n \nNUEVA Y CON GARANTÍA. \n \nPUEDE VER FOTOS DE TODOS LOS MODELOS EN NUESTRA WEB : \nALMACENBARATO.COM \n \n- Ventaja con respecto a los paddle sup rígidos : pesa 4 veces menos y se puede transportar en una mochila de mano a cualquier lugar. \n- Una vez hinchado se siente como una tabla de paddle sup rígida gracias a la alta presión que soporta la cámara, con la ventaja de poder maniobrar mas rápidamente gracias a su reducido peso. \n \n7 MODELOS DISPONIBLES EN NUESTRA TIENDA ALMACENBARATO.COM \n \nincluye : \n- Tabla paddle sup. con anclajes para asiento (asiento no incluido) \n- Remo extensible. \n- Bomba hinchado de alta presión. \n- Mochila de transporte. \n \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n \nPalabras de búsqueda : apple iphone 4 4s 5 5c 5s 6 plus ipad ipod air macbook pro imac 2 3 samsung galaxy s2 s3 s4 s5 s6 note edge lg g3 g2 sony xperia z1 z2 z3 tablet tab htc one plus blackberry nokia lumia nexus motorola mini ps4 ps3 psp xbox hp toshiba lenovo m9 m8 xiaomi mi mi4 acer vaio huawei p7 p8 zte lite alienware msi ultrabook notebook alcatel ps3 juegos i3 i7 g x tv smart go cámara icloud smartphone android monster beats gear reloj pulsera wear watch ordenador sobremesa bq wii nintendo canon nikon 6s \nmovil mobil chino libre libres chinos comprar barato baratos smarphone smarfone Smartphone dualsim duales 0 4.7 4 4.0 celular moviles celulares bq tablet pulgadas \" 5.7\" 5.5\" 4.7\" 4.5\" 5\" mobile movile phone kayac cayak cayac canoa embarcacion zodiak zodiac neumatica barca surf \n edge bq xperia sony htc lg note 4 samsumg galaxy s6 ,galaxy s5 galaxy s4 galaxy s3 galaxi galaxia note 5, galaxia samsum Samsun sansung jiayu replica clon iPhone lenovo hdc ,huawei huawey z3 apple z2 z1 z5 z6, g3 g4 z4, samsung, aifon, comprar \n\n"
-  out: "DISPONIBLE DE 1 Y DE 2 PLAZAS . \n \nNUEVA Y CON GARANTÍA. \n \nPUEDE VER FOTOS DE TODOS LOS MODELOS EN NUESTRA WEB : \n \n \n- Ventaja con respecto a los paddle sup rígidos : pesa 4 veces menos y se puede transportar en una mochila de mano a cualquier lugar. \n- Una vez hinchado se siente como una tabla de paddle sup rígida gracias a la alta presión que soporta la cámara, con la ventaja de poder maniobrar mas rápidamente gracias a su reducido peso. \n \n7 MODELOS DISPONIBLES EN NUESTRA TIENDA  \n \nincluye : \n- Tabla paddle sup. con anclajes para asiento (asiento no incluido) \n- Remo extensible. \n- Bomba hinchado de alta presión. \n- Mochila de transporte. \n \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n "
+  out: "DISPONIBLE DE 1 Y DE 2 PLAZAS . \n \nNUEVA Y CON GARANTÍA. \n \nPUEDE VER FOTOS DE TODOS LOS MODELOS EN NUESTRA WEB : \nALMACENBARATO.COM \n \n- Ventaja con respecto a los paddle sup rígidos : pesa 4 veces menos y se puede transportar en una mochila de mano a cualquier lugar. \n- Una vez hinchado se siente como una tabla de paddle sup rígida gracias a la alta presión que soporta la cámara, con la ventaja de poder maniobrar mas rápidamente gracias a su reducido peso. \n \n7 MODELOS DISPONIBLES EN NUESTRA TIENDA ALMACENBARATO.COM \n \nincluye : \n- Tabla paddle sup. con anclajes para asiento (asiento no incluido) \n- Remo extensible. \n- Bomba hinchado de alta presión. \n- Mochila de transporte. \n \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \ns. \n. \n. \n. \n. \n. \n. \n. \n "
   scenario: "Debe de borrar el spam del final."
 -
   in: "FORD C-Max 1.6 TDCi 115 Titanium, Gris / Plata, año 2012, 88000 km, Asientos modulables,Paquete Flotas Titanium 17\" Plus,Cristales privacidad + Cromado marco ventanilla,Gris Midnight (metalizado),Auto-Start-Stop,FordProtect Life 5 años/100.000 km,, 11799 eur., FORD HNOS PIÑAR, SANTA FE, GRANADA. Vehículo de reestreno muy cuidado, motor 1.6 tdci 115cv, bajo consumo, seis velocidades, radio cd mp3, mandos de radio en volante, manos libres bluetooh original, climatizador bizona, control de velocidad, ordenador de a bordo, lunas tintadas, llantas de aleación ligera, sensor de lluvia y luces, faros antiniebla, etc. EN EL PRECIO NO SE INCLUYEN LOS GASTOS DE GARANTIA Y TRANSFERENCIA. similar a mercedes, bmw, citroen, seat, peugeot, toyota, audi, volkswagen, samsung, tab, iphone, ipad, galaxy, apple, honda, yamaha."
@@ -12,7 +45,7 @@
   scenario: "Debe de borrar el spam del final."
 -
   in:  "**********Replicandroid.com***************** <br />TIENDA ESPECIALIZADA EN TELEFONIA <br /> <br />* GARANTIA DE 2 AÑOS con reparación gratuita o sustitución del terminal por uno nuevo. <br /> <br />Gran variedad de modelos, llámenos o contáctenos por whatsapp y le informaremos!! <br /> <br /> <br />Llevamos más de 2 años trabajando como tienda online, 100% legal, 100% fiable y valorados muy positivamente por nuestros clientes. Realizamos entregas en menos de 24h desde su pedido. Nuestro cliente es nuestra preferencia. Buscamos la mejor calidad para nuestros productos negociando directamente con el fabricante. Producto directo de fábrica - SIN INTERMEDIARIOS -. ALMACEN EN ESPAÑA <br /> <br />Todos los teléfonos son NUEVOS, se entregan en paquete precintado con auriculares, cargador, cable de conexión, todo ello revisado y certificado. <br />  <br /> <br />NOVEDAD!!!! LIBRE / CUALQUIER COMPAÑÍA - Réplica perfecta, peso, dimensiones exactas, todos los accesorios sirven..Galaxy s7 <br /> <br />Características: <br />-Sistema Android 6.0 lolipot. <br />2GB RAM, <br />8GB ROM <br />13mpx CAMARA, <br />PROCESADOR de 4 NUCLEOS a 2Ghz de velocidad. <br />WIFI, BLUETOOTH y GPS. <br />Acceso a todas las aplicaciones PLAY STORE: FACEBOOK, TWITTER, WHATSAPP. Sin lugar a dudas la mejor réplica del mercado! <br />Entre en nuestra web y descubra las imágenes reales <br /> <br />ENVIO GRATUITO EN 24h!!! <br /> <br />Háganos el pedido antes de las 19:00 y lo recibirá a la mañana siguiente. <br /> <br />PERMITIMOS ABRIR PAQUETE PARA SU SEGURIDAD! <br />PAGUE SOLO CUANDO LO RECIBA EN SU DOMICILIO! <br />AMPLIA GAMA DE MODELOS EN NUESTRAS TIENDAS <br /> <br /> <br />********OFERTAS Y NOVEDADES*********** <br />Este movil no es: s5 ,, galaxy s6, iphone 6 , note , galaxy , galaxi , galaxia ,galaxya , samsung galaxy note 4 , clon, replica, samsung , samsun , sansun , sansung, movil , mobil , mobile , movile , smartphone , phone , telefono , barato, iphone , app...</p>"
-  out: "*************************** \nTIENDA ESPECIALIZADA EN TELEFONIA \n \n* GARANTIA DE 2 AÑOS con reparación gratuita o sustitución del terminal por uno nuevo. \n \nGran variedad de modelos, llámenos o contáctenos por whatsapp y le informaremos!! \n \n \nLlevamos más de 2 años trabajando como tienda online, 100% legal, 100% fiable y valorados muy positivamente por nuestros clientes. Realizamos entregas en menos de 24h desde su pedido. Nuestro cliente es nuestra preferencia. Buscamos la mejor calidad para nuestros productos negociando directamente con el fabricante. Producto directo de fábrica - SIN INTERMEDIARIOS -. ALMACEN EN ESPAÑA \n \nTodos los teléfonos son NUEVOS, se entregan en paquete precintado con auriculares, cargador, cable de conexión, todo ello revisado y certificado. \n  \n \nNOVEDAD!!!! LIBRE / CUALQUIER COMPAÑÍA - Réplica perfecta, peso, dimensiones exactas, todos los accesorios sirven..Galaxy s7 \n \nCaracterísticas: \n-Sistema Android 6.0 lolipot. \n8GB ROM \n13mpx CAMARA, \nPROCESADOR de 4 NUCLEOS a 2Ghz de velocidad. \nWIFI, BLUETOOTH y GPS. \nAcceso a todas las aplicaciones PLAY STORE: FACEBOOK, TWITTER, WHATSAPP. Sin lugar a dudas la mejor réplica del mercado! \nEntre en nuestra web y descubra las imágenes reales \n \nENVIO GRATUITO EN 24h!!! \n \nHáganos el pedido antes de las 19:00 y lo recibirá a la mañana siguiente. \n \nPERMITIMOS ABRIR PAQUETE PARA SU SEGURIDAD! \nPAGUE SOLO CUANDO LO RECIBA EN SU DOMICILIO! \nAMPLIA GAMA DE MODELOS EN NUESTRAS TIENDAS \n \n \n********OFERTAS Y NOVEDADES*********** "
+  out: "**********Replicandroid.com***************** \nTIENDA ESPECIALIZADA EN TELEFONIA \n \n* GARANTIA DE 2 AÑOS con reparación gratuita o sustitución del terminal por uno nuevo. \n \nGran variedad de modelos, llámenos o contáctenos por whatsapp y le informaremos!! \n \n \nLlevamos más de 2 años trabajando como tienda online, 100% legal, 100% fiable y valorados muy positivamente por nuestros clientes. Realizamos entregas en menos de 24h desde su pedido. Nuestro cliente es nuestra preferencia. Buscamos la mejor calidad para nuestros productos negociando directamente con el fabricante. Producto directo de fábrica - SIN INTERMEDIARIOS -. ALMACEN EN ESPAÑA \n \nTodos los teléfonos son NUEVOS, se entregan en paquete precintado con auriculares, cargador, cable de conexión, todo ello revisado y certificado. \n  \n \nNOVEDAD!!!! LIBRE / CUALQUIER COMPAÑÍA - Réplica perfecta, peso, dimensiones exactas, todos los accesorios sirven..Galaxy s7 \n \nCaracterísticas: \n-Sistema Android 6.0 lolipot.\n2GBRAM,\n8GB ROM \n13mpx CAMARA, \nPROCESADOR de 4 NUCLEOS a 2Ghz de velocidad. \nWIFI, BLUETOOTH y GPS. \nAcceso a todas las aplicaciones PLAY STORE: FACEBOOK, TWITTER, WHATSAPP. Sin lugar a dudas la mejor réplica del mercado! \nEntre en nuestra web y descubra las imágenes reales \n \nENVIO GRATUITO EN 24h!!! \n \nHáganos el pedido antes de las 19:00 y lo recibirá a la mañana siguiente. \n \nPERMITIMOS ABRIR PAQUETE PARA SU SEGURIDAD! \nPAGUE SOLO CUANDO LO RECIBA EN SU DOMICILIO! \nAMPLIA GAMA DE MODELOS EN NUESTRAS TIENDAS \n \n \n********OFERTAS Y NOVEDADES*********** "
   scenario: "Debe de borrar el spam que hay al principio(URL) y el que hay al final."
 -
   in: "Si lo que buscas es ampliar la potencia gráfica de tu equipo para esos juegos tipo WOW o MineCraft, por muy poquito dinero, ésta es tu gráfica. \n Reacondicionada en nuestro taller y comprobado funciona al 100% ok. \n Especificaciones: \n Engine Clock: 600Mhz Video memory: 1Gb DDR3 Memory Clock: 1800Mhz Memory Interface: 256bit Bus: PCI-Express x16 (Support PCI-Express 2.0 y 3.0) Max. Resolution: 2560x1600 Conexiones: Dual DVI-I; 1x TV-out (HDTV ready) RAMDAC: 400Mhz Thermal: Glaciator Fansink Support nVidia SLI Technology Support nVidia Quantum Technology Support nVidia PureVideo HD Technology Support Microsoft DirectX 10, Shader Model 4.0 and OpenGL 2.0"
@@ -267,6 +300,7 @@
         Llantas\n
         Ryde Disc Bull\n
         Tamaño de rueda\n
+        27,5Zoll\n
         Neumáticos\n
         Pedales\n
         Wellgo\n
@@ -281,7 +315,7 @@
   scenario: "No deberia borrar nada(Revisar este anuncio)."
 -
   in: "ALFA ROMEO Giulietta 1.6 JTDm 105cv Distinctive, Blanco, año 2012, 138868 km, Espejo Retrovisor Interno Electrocromado,Sensor de Lluvia y sensor encendido automático de luces,Llantas de aleación 16'' Elegante con neumáticos 205/55,Sensor de Parking Trasero,, 10900 eur., FINANCIACION SIN ENTRADA 151,63 euros/MES.<br />CERTIFICAMOS KILOMETROS Y NO TENER SINIESTROS. <br />IVA DEDUCIBLE (desglosado en factura). <br />EQUIPAMIENTO: llantas de aluminio 16\", faros antiniebla, sensores de aparcamiento traseros, cromados en puertas parte superior, elevalunas eléctricos delanteros y traseros, retrovisores termoeléctricos, climatizador bizona, 6 velocidades, sensor de luces y limpiaparabrisas, retrovisor autocromico, 6 airbags (frontales y laterales de conductor y acompañante y de cortina), ISOFIX, MP3 con mandos en el volante, volante de cuero, control de velocidad, cierre centralizado con mando a distancia,juego de 2 llaves, etc ....<br />VISITE NUESTRA PAGINA WEB (automovilesmlosada.com)..</p>"
-  out: "ALFA ROMEO Giulietta 1.6 JTDm 105cv Distinctive, Blanco, año 2012, 138868 km, Espejo Retrovisor Interno Electrocromado,Sensor de Lluvia y sensor encendido automático de luces,Llantas de aleación 16'' Elegante con neumáticos 205/55,Sensor de Parking Trasero,, 10900 eur., FINANCIACION SIN ENTRADA 151,63 euros/MES.\nCERTIFICAMOS KILOMETROS Y NO TENER SINIESTROS. \nIVA DEDUCIBLE (desglosado en factura). \nEQUIPAMIENTO: llantas de aluminio 16\", faros antiniebla, sensores de aparcamiento traseros, cromados en puertas parte superior, elevalunas eléctricos delanteros y traseros, retrovisores termoeléctricos, climatizador bizona, 6 velocidades, sensor de luces y limpiaparabrisas, retrovisor autocromico, 6 airbags (frontales y laterales de conductor y acompañante y de cortina), ISOFIX, MP3 con mandos en el volante, volante de cuero, control de velocidad, cierre centralizado con mando a distancia,juego de 2 llaves, etc ....\nVISITE NUESTRA PAGINA WEB ().. "
+  out: "ALFA ROMEO Giulietta 1.6 JTDm 105cv Distinctive, Blanco, año 2012, 138868 km, Espejo Retrovisor Interno Electrocromado,Sensor de Lluvia y sensor encendido automático de luces,Llantas de aleación 16'' Elegante con neumáticos 205/55,Sensor de Parking Trasero,, 10900 eur., FINANCIACION SIN ENTRADA 151,63 euros/MES.\nCERTIFICAMOS KILOMETROS Y NO TENER SINIESTROS. \nIVA DEDUCIBLE (desglosado en factura). \nEQUIPAMIENTO: llantas de aluminio 16\", faros antiniebla, sensores de aparcamiento traseros, cromados en puertas parte superior, elevalunas eléctricos delanteros y traseros, retrovisores termoeléctricos, climatizador bizona, 6 velocidades, sensor de luces y limpiaparabrisas, retrovisor autocromico, 6 airbags (frontales y laterales de conductor y acompañante y de cortina), ISOFIX, MP3 con mandos en el volante, volante de cuero, control de velocidad, cierre centralizado con mando a distancia,juego de 2 llaves, etc ....\nVISITE NUESTRA PAGINA WEB (automovilesmlosada.com).. "
   scenario: "Debe borrar la URL del final."
 -
   in: "Ba&ntilde;os: 2<br /><br />Sagunto/sagunt, Puerto de Sagunto, 66 m2, 3 habitaciones, 2 baños, trastero, Parking, 296 eur. / mes, EDIFICIO en C/ Miguel Mihura 2, 4, 6, 8, 10, 12 y 14 de Sagunto. De 5 alturas y compuesto por  3 zonas comunes, una de ellas con juegos infantiles, 70 VIVIENDAS PROTEGIDAS EN RÉGIMEN DE ALQUILER CON OPCIÓN A COMPRA y 6 VIVIENDAS EN VENTA, trasteros, y garajes. Los citados inmuebles se comercializan a través de la Agencia Valenciana de Alquiler siguiendo el procedimiento establecido por la legislación vigente. Ubicado en Puerto de Sagunto, zona de nuevo desarrollo pero con los servicio necesarios que aportar calidad de vida..</p>"
@@ -320,7 +354,7 @@
   scenario: "No debe borrar nada."
 -
   in: "PRECIOS HIPER REBAJADOS. Somos Distribuidores. Camas articuladas motorizadas, domiciliarias nuevas confortables. Dormitorum.com, envía a toda Canarias, desde Canarias, en sólo 24/48 horas. Tenerife, Gran Canaria, Fuerteventura, Lanzarote, La Gomera, El Hierro, La Palma. TENEMOS VARIAS MEDIDAS. 90x190, 105x190, 135x190, 150x190, 160x190 (doble), 180x190 (doble) TRANSPORTE GRATUITO <br />Visítanos también en nuestra tienda física: <br />Calle Nuestra Señora de la Ternura, 5, Nave 6A, La Laguna, 38108 <br />Justo de bajo de MAKRO, entre LIDL e HIPERJUGUETES. <br /> <br />¡¡¡Paga esta cama cuando la recibas en tu domicilio, para tu mayor tranquilidad y seguridad!!! <br /> <br />CARACTERÍSTICAS <br />-Camas somier articulada, motorizada, eléctrica, ortopédica, domiciliaria nueva fabricada en acero reforzado, bastidor exterior en tubo de 50x20m y el interior de 30x30m. <br />-Somier de 5 planos de articulación. <br />-Motor electrónico alemán, batería de 9 w, (4500 Nw) <br />-Mando a distancia. <br />-Láminas de haya vaporizada. <br />-Combine estos somieres articulados eléctricos con nuestros colchones nuevos sin muelles, aloe vera, eliocel, látex, viscolástico. <br />-Individual: de 80, de 90, de 1,05 <br />-Matrimonio: de 1,35, de 1,50, de 1,60, de 1,80, largos de 2,00 ( x 2 metros) <br />-Somieres articulados motorizados eléctricos motorizados nuevos con tacos insonoros que garantizan ausencia de ruidos, para un mejor descanso del enfermo. <br />-Somier articulado motorizado eléctrico nuevo con un Juego de 4 patas metálicas de 26 cm de altura. <br />-Gran estabilidad y firmeza. <br />-Ofertas para Geriátricos, hospitales y en camas hospitalarias electricas geriátrica con carro elevador (elevable en altura) <br />-Precios: Baratos, Barato, económicos, económico / Ofertas: Baratas, barata, económica, económicas <br /> <br /><br /></p>"
-  out: "PRECIOS HIPER REBAJADOS. Somos Distribuidores. Camas articuladas motorizadas, domiciliarias nuevas confortables. , envía a toda Canarias, desde Canarias, en sólo 24/48 horas. Tenerife, Gran Canaria, Fuerteventura, Lanzarote, La Gomera, El Hierro, La Palma. TENEMOS VARIAS MEDIDAS. 90x190, 105x190, 135x190, 150x190, 160x190 (doble), 180x190 (doble) TRANSPORTE GRATUITO\n
+  out: "PRECIOS HIPER REBAJADOS. Somos Distribuidores. Camas articuladas motorizadas, domiciliarias nuevas confortables. Dormitorum.com, envía a toda Canarias, desde Canarias, en sólo 24/48 horas. Tenerife, Gran Canaria, Fuerteventura, Lanzarote, La Gomera, El Hierro, La Palma. TENEMOS VARIAS MEDIDAS. 90x190, 105x190, 135x190, 150x190, 160x190 (doble), 180x190 (doble) TRANSPORTE GRATUITO\n
         Visítanos también en nuestra tienda física:\n
         Calle Nuestra Señora de la Ternura, 5, Nave 6A, La Laguna, 38108\n
         Justo de bajo de MAKRO, entre LIDL e HIPERJUGUETES.\n
@@ -364,3 +398,345 @@
   in: "LAND-ROVER Range Rover 4.4 SDV8 340CV VOGUE, Amarillo (ARUBA), año 2015, 10500 km, 99000 eur., LAND-ROVER Range Rover, Diesel, año 2015, 10500 kilómetros, color Amarillo (Amarillo (ARUBA) metalizado) metalizado, precio 99000euros. InControl Remote, Pack fumador, Meridian Surround Sound Audio System (825w), Guarnecido interior del techo en Cirrus, Ivory o Ebony Alston, Monitorización del ángulo muerto (BSM), Aruba Premium (metalizado), Control de crucero adaptativo con sistema de seguridad a baja velocidad con freno de emergencia inteligente, Techo Panorámico deslizante (incl. Panel interior eléctrico) con cortinilla eléctrica, Dual view (incl. 1 juego de auriculares), Piel Almond, Pintura metálica, Llantas de aleación de 20\" con 5 radios dobles - Style 502 y acabado Shadow Chrome, Cristales \"Privacy\", Climatizador 4 zonas (conductor y pasajeros con una salida auxiliar trasera). CONSULTAS Y PERSONA DE CONTACTO, JORGE MARTIN 673,558,714. VEHÍCULO TOTALMENTE GARANTIZADO, POSIBILIDAD DE VEHÍCULO A CAMBIO.*PRECIO SUJETO A FINANCIACIÓN (MÍNIMO 50000 euros), GARANTIA DE 2 AÑOS. VEHÍCULO UBICADO EN MUNDICAR, Avda de Elche 160. Concesionario Oficial LAND ROVER ALICANTE.<br />.Equipamiento extraAruba Premium (metalizado)Climatizador 4 zonas (conductor y pasajeros con una salida auxiliar trasera)Control de crucero adaptativo con sistema de seguridad a baja velocidad con freno de emergencia inteligenteCristales \"Privacy\"Dual view (incl. 1 juego de auriculares)Guarnecido interior del techo en CirrusInControl RemoteIvory o Ebony AlstonLlantas de aleación de 20\" con 5 radios dobles - Style 502 y acabado Shadow ChromeMeridian Surround Sound Audio System (825w)Monitorización del ángulo muerto (BSM)Pack fumadorPiel AlmondPintura metálicaTecho Panorámico deslizante (incl. Panel interior eléctrico) con cortinilla eléctrica.</p>"
   out: "LAND-ROVER Range Rover 4.4 SDV8 340CV VOGUE, Amarillo (ARUBA), año 2015, 10500 km, 99000 eur., LAND-ROVER Range Rover, Diesel, año 2015, 10500 kilómetros, color Amarillo (Amarillo (ARUBA) metalizado) metalizado, precio 99000euros. InControl Remote, Pack fumador, Meridian Surround Sound Audio System (825w), Guarnecido interior del techo en Cirrus, Ivory o Ebony Alston, Monitorización del ángulo muerto (BSM), Aruba Premium (metalizado), Control de crucero adaptativo con sistema de seguridad a baja velocidad con freno de emergencia inteligente, Techo Panorámico deslizante (incl. Panel interior eléctrico) con cortinilla eléctrica, Dual view (incl. 1 juego de auriculares), Piel Almond, Pintura metálica, Llantas de aleación de 20\" con 5 radios dobles - Style 502 y acabado Shadow Chrome, Cristales \"Privacy\", Climatizador 4 zonas (conductor y pasajeros con una salida auxiliar trasera). CONSULTAS Y PERSONA DE CONTACTO, JORGE MARTIN 673,558,714. VEHÍCULO TOTALMENTE GARANTIZADO, POSIBILIDAD DE VEHÍCULO A CAMBIO.*PRECIO SUJETO A FINANCIACIÓN (MÍNIMO 50000 euros), GARANTIA DE 2 AÑOS. VEHÍCULO UBICADO EN MUNDICAR, Avda de Elche 160. Concesionario Oficial LAND ROVER ALICANTE.\n.Equipamiento extraAruba Premium (metalizado)Climatizador 4 zonas (conductor y pasajeros con una salida auxiliar trasera)Control de crucero adaptativo con sistema de seguridad a baja velocidad con freno de emergencia inteligenteCristales \"Privacy\"Dual view (incl. 1 juego de auriculares)Guarnecido interior del techo en CirrusInControl RemoteIvory o Ebony AlstonLlantas de aleación de 20\" con 5 radios dobles - Style 502 y acabado Shadow ChromeMeridian Surround Sound Audio System (825w)Monitorización del ángulo muerto (BSM)Pack fumadorPiel AlmondPintura metálicaTecho Panorámico deslizante (incl. Panel interior eléctrico) con cortinilla eléctrica. "
   scenario: "No debe borrar nada."
+-
+  in: "Dispongo de guacamayo arauna, con el certificado veterinario y el documento de
+       cesión.<br />Nació el 02 abril, ( tres meses y medio).<br />Dispongo de whassap.<br />800 euros.</p>"
+  out: "Dispongo de guacamayo arauna, con el certificado veterinario y el documento de
+        cesión.\nNació el 02 abril, ( tres meses y medio).\nDispongo de whassap.\n800 euros. "
+  scenario: "No debe borrar nada."
+-
+  in: "hola muy buenas cambio o vendo mi playstation 2 pirateada con la memory card y un
+        disco duro de 160gb con 32 juegos y un mando mas 6 juegos originales por ninfa
+        papillera pregunte sin compromiso se puede ver y probar la cambio por que no le
+        doy uso alguno y me gustaria tener ninfa papillera que por el coste no me lo
+        podría permitir costesto a whatsapp negociable</p>"
+  out: "hola muy buenas cambio o vendo mi playstation 2 pirateada con la memory card y un
+        disco duro de 160gb con 32 juegos y un mando mas 6 juegos originales por ninfa
+        papillera pregunte sin compromiso se puede ver y probar la cambio por que no le
+        doy uso alguno y me gustaria tener ninfa papillera que por el coste no me lo
+        podría permitir costesto a whatsapp negociable</p>"
+  scenario: "No debe borrar nada."
+-
+  in: "Pareja capacitadores Alphasonik de 2 vías de cruce.<br />Sistemas de altavoces de audio conveniente para 6.5  , 5.25 , 4  , 3.5 , 6X9  ,
+       6X8  <br />12 dB por octava red <br />120 vatios RMS <br />Manejo de potencia.<br />Doble agujero de montaje.<br />Hingtat 100V módulos de condensador.<br />Bobinados de de alta calidad. Crossover nave como muestra la imagen (sin el
+       embalaje al por menor).<br />Cada cruce acepta 1 entrada, y ofrece 1 altavoz de agudos y 1 salida de gama alta.<br /> Estan En perfecto estado.</p>"
+  out: "Pareja capacitadores Alphasonik de 2 vías de cruce.\nSistemas de altavoces de audio conveniente para 6.5  , 5.25 , 4  , 3.5 , 6X9  ,
+        6X8  \n12 dB por octava red \n120 vatios RMS \nManejo de potencia.\nDoble agujero de montaje.\nHingtat 100V módulos de condensador.\nBobinados de de alta calidad. Crossover nave como muestra la imagen (sin el
+        embalaje al por menor).\nCada cruce acepta 1 entrada, y ofrece 1 altavoz de agudos y 1 salida de gama alta.\n Estan En perfecto estado."
+  scenario: "No debe borrar nada."
+-
+  in: "Vendo caseta para aves rapaces y aves de presa como, águilas Harris, halcones,
+       gavilanes, cernícalos, lechuzas, mochuelos, colasrojas, azores, autillos, carabo
+       común, buos, etc,fabricada en tablero marino de gran calidad y resistente a la
+       interperie.<br />las medidas son de alto 1,02 cm. x 1,15 cm. de ancho x 62 cm.de fondo.</p>"
+  out: "Vendo caseta para aves rapaces y aves de presa como, águilas Harris, halcones,
+        gavilanes, cernícalos, lechuzas, mochuelos, colasrojas, azores, autillos, carabo
+        común, buos, etc,fabricada en tablero marino de gran calidad y resistente a la
+        interperie.\nlas medidas son de alto 1,02 cm. x 1,15 cm. de ancho x 62 cm.de fondo."
+  scenario: "No debe borrar nada."
+-
+  in: "Hola vendo cernicalo , por cuestión de tiempo . Esta criado parental .Con sus
+       papeles en regla . No se vuela desde hace 8 meses .</p>"
+  out: "Hola vendo cernicalo , por cuestión de tiempo . Esta criado parental .Con sus
+        papeles en regla . No se vuela desde hace 8 meses ."
+  scenario: "No ha de borrar nada."
+-
+  in: "Compramos diamantes!! Maxima tasacion por sus brillantes AQUI. Quiere vender sus
+       diamantes a un precio justo y con profesionalidad? contacten conmigo y le
+       informare, tasacion al instante</p>"
+  out: "Compramos diamantes!! Maxima tasacion por sus brillantes AQUI. Quiere vender sus
+        diamantes a un precio justo y con profesionalidad? contacten conmigo y le
+        informare, tasacion al instante"
+  scenario: "No debe de borrar nada."
+-
+  in: "VENDO O CAMBIO  <br />1-IPAD 2-GEN BLANCO 230 <br />2-BQ AQUARIS E5 4G NUEVO CAJA FACTURA GARANTIA 210<br />3-APPLE IPOD TOUCH ULTIMA GENERACION 5 32GB NUEVO CAJA TODO SIN USO 230 EN TIENDA
+       RONDA LOS 330<br />4-SMARTPHONE MAJESTIC NUEVO DOBLE SIM CAJA FACTURA GARANTIA 150<br />5-PS3 SUPER SLIM NUEVO NO SE HA USADO CON CAJA TODO MAS 5 JUEGOS 210<br />6-XBOX ONE +JUEGOS 350<br />7-LG G2 MINI NUEVO EN CAJA Y FUNDA SIN USO 150<br />8-SAMSUNG GALAXY TAB NOT2 3G Y WIFI EN CAJA LIVRE 165<br />9-DELL XPS GAMING 450<br />10-ACER I5 nuevo 500<br />POSIBLES CAMBIOS. TERMINALES.
+       CONSOLAS.PORTATILES.MOVILES.TABLEST.IPAD.MAC.TV.COCHE.MOTO.OFERTAS SERIAS SI NO NI
+       ME CANSO EN RESPONDER 631797984</p>"
+  out: "VENDO O CAMBIO  \n1-IPAD 2-GEN BLANCO 230 \n2-BQ AQUARIS E5 4G NUEVO CAJA FACTURA GARANTIA 210\n3-APPLE IPOD TOUCH ULTIMA GENERACION 5 32GB NUEVO CAJA TODO SIN USO 230 EN TIENDA
+        RONDA LOS 330\n4-SMARTPHONE MAJESTIC NUEVO DOBLE SIM CAJA FACTURA GARANTIA 150\n5-PS3 SUPER SLIM NUEVO NO SE HA USADO CON CAJA TODO MAS 5 JUEGOS 210\n6-XBOX ONE +JUEGOS 350\n7-LG G2 MINI NUEVO EN CAJA Y FUNDA SIN USO 150\n8-SAMSUNG GALAXY TAB NOT2 3G Y WIFI EN CAJA LIVRE 165\n9-DELL XPS GAMING 450\n10-ACER I5 nuevo 500\nPOSIBLES CAMBIOS. TERMINALES.
+        CONSOLAS.PORTATILES.MOVILES.TABLEST.IPAD.MAC.TV.COCHE.MOTO.OFERTAS SERIAS SI NO NI
+        ME CANSO EN RESPONDER 631797984"
+  scenario: "No debe de borrar nada."
+-
+  in: "Hola vendo o cambio Pionner ddj SR. por ddj SX más dinero a su favor, la mesa está
+       como nueva con solo 6 meses de uso, fue un regalo, soy Dj y necesito una mesa de 4
+       canales por qué voy a poner un Estudio.. La vendo con la maleta valorada en 240
+       más la mesa que cuesta 599 un total de 839 está como nueva la puede probar en cuál
+       quier momento.. La vendo por 550 negociable o cambio por ddj sx o ddj sx2 más
+       dinero a su favor, cuál quier duda llamarme o escribirme al whatsapp a cuál quier
+       hora al : 691798802</p>"
+  out: "Hola vendo o cambio Pionner ddj SR. por ddj SX más dinero a su favor, la mesa está
+        como nueva con solo 6 meses de uso, fue un regalo, soy Dj y necesito una mesa de 4
+        canales por qué voy a poner un Estudio.. La vendo con la maleta valorada en 240
+        más la mesa que cuesta 599 un total de 839 está como nueva la puede probar en cuál
+        quier momento.. La vendo por 550 negociable o cambio por ddj sx o ddj sx2 más
+        dinero a su favor, cuál quier duda llamarme o escribirme al whatsapp a cuál quier
+        hora al : 691798802"
+  scenario: "No debe de borrar nada."
+-
+  in: "Pareja de jarrones de porcelana con pedestal.<br /><br />Años 20.<br /><br />Porcelana esmaltada a mano.<br /><br />Elementos decorativos de estilo neoclásico.<br /><br />En muy buen estado de conservación.<br /><br />Medidas totales incluido pedestal: 135 cm de altura.<br /><br />Medidas jarrón: 70 cm de altura.<br /><br />Medidas pedestal: 65 cm de altura.<br /><br />                              35 x 35 cm.<br /><br />ENVIAMOS A TODA ESPAÑA. TRANSPORTES ECONÓMICOS PROFESIONALES.<br /><br />CONSULTE CON NOSOTROS</p>"
+  out: "Pareja de jarrones de porcelana con pedestal.\n\nAños 20.\n\nPorcelana esmaltada a mano.\n\nElementos decorativos de estilo neoclásico.\n\nEn muy buen estado de conservación.\n\nMedidas totales incluido pedestal: 135 cm de altura.\n\nMedidas jarrón: 70 cm de altura.\n\nMedidas pedestal: 65 cm de altura.\n\n                              35 x 35 cm.\n\nENVIAMOS A TODA ESPAÑA. TRANSPORTES ECONÓMICOS PROFESIONALES.\n\nCONSULTE CON NOSOTROS"
+  scenario: "No debe de borrar nada."
+-
+  in: "Urracas papilleras en perfecto estado de salud y pluma. No encontradas en la
+       calle. Animales inteligentes y fascinantes. Totalmente socializadas y cariñosas
+       desde el primer momento.</p>"
+  out: "Urracas papilleras en perfecto estado de salud y pluma. No encontradas en la
+        calle. Animales inteligentes y fascinantes. Totalmente socializadas y cariñosas
+        desde el primer momento."
+  scenario: "No debe de borrar nada."
+-
+  in: "Tenemos diversos tipos de jaulas nuevas para; hurones, conejos, pajaros, etc.
+       todas a mitad de precio. Los portes a cargo del comprador o se puede recoger en la
+       provincia de Girona</p>"
+  out: "Tenemos diversos tipos de jaulas nuevas para; hurones, conejos, pajaros, etc.
+        todas a mitad de precio. Los portes a cargo del comprador o se puede recoger en la
+        provincia de Girona"
+  scenario: "No debe de borrar nada."
+-
+  in: "Disponible joven pareja de Fischer, ambos del 014, anilla cerrada, mutaci&#243;n
+       azul D o cobalto, perfectos de salud y pluma, precio de 50 euros, no me interesan
+       cambios ni regateos, env&#237;o con portes reducidos a toda la pen&#237;nsula,
+       adjunto documento de cesi&#243;n, criador nacional, socio de AECA y la BVA, dejo
+       alguna foto, tengo whatsapp....Ficher, Fischer, Fixer ... </p>"
+  out: "Disponible joven pareja de Fischer, ambos del 014, anilla cerrada, mutaci&#243;n
+        azul D o cobalto, perfectos de salud y pluma, precio de 50 euros, no me interesan
+        cambios ni regateos, env&#237;o con portes reducidos a toda la pen&#237;nsula,
+        adjunto documento de cesi&#243;n, criador nacional, socio de AECA y la BVA, dejo
+        alguna foto, tengo whatsapp....Ficher, Fischer, Fixer ... "
+  scenario: "No debe de borrar nada."
+-
+  in: "Dispongo de canarios nuevos de 2016 de varios colores, verdes intensos y nevados,
+       ágatas, opales, pasteles y grises cobalto, machos y hembras, todos anillados.
+       Magníficos ejemplares obtenidos a través de los mejores criadores. <br />Desparasitados interna y externamente con Pulmosan. Pájaros sanos con muy buena
+       talla y pluma. <br />Posibilidad de ceder por lotes de 5 unidades a 13/unidad.<br />Unidades sueltas a 17. Recoger en Rincón de la Victoria. Dispongo de wathsapp.</p>"
+  out: "Dispongo de canarios nuevos de 2016 de varios colores, verdes intensos y nevados,
+        ágatas, opales, pasteles y grises cobalto, machos y hembras, todos anillados.
+        Magníficos ejemplares obtenidos a través de los mejores criadores. \nDesparasitados interna y externamente con Pulmosan. Pájaros sanos con muy buena
+        talla y pluma. \nPosibilidad de ceder por lotes de 5 unidades a 13/unidad.\nUnidades sueltas a 17. Recoger en Rincón de la Victoria. Dispongo de wathsapp."
+  scenario: "No debe de borrar nada."
+-
+  in: "Desde Loro Camp, queremos presentaros este bello ejemplar de Loris de espalda
+       amarilla. Los Loris se alimentan a base de frutas y néctar, son poco ruidosos y
+       muy juguetones. <br /><br />Disponemos de dos ejemplares (un macho y una hembra), el macho nacido en 2015 y la
+       hembra nacida en 2014. Criados a mano (papilleros). <br /><br />Atendemos Whatsapp, teléfono y mail. <br /><br />() </p>"
+  out: "Desde Loro Camp, queremos presentaros este bello ejemplar de Loris de espalda
+        amarilla. Los Loris se alimentan a base de frutas y néctar, son poco ruidosos y
+        muy juguetones. \n\nDisponemos de dos ejemplares (un macho y una hembra), el macho nacido en 2015 y la
+        hembra nacida en 2014. Criados a mano (papilleros). \n\nAtendemos Whatsapp, teléfono y mail.\n\n()"
+  scenario: "No debe de borrar nada."
+-
+  in: "Damos la bienvenida a Loro Camp, a este espectacular ejemplar de Cacatua
+       ducorpsii.<br /><br />Es un macho nacido en el año 2015, criado a mano y al igual que el resto de
+       nuestras aves, proviene de Loro Parque Fundación.<br /><br />Se cede junto con el certificado de garantía con el sexaje realizado por
+       endoscopia y el análisis negativo de enfermedades, registro en el SOIVRE, y la
+       factura con su correspondiente IVA.<br /><br />Visite nuestra web, donde podrá observar todas las especies disponibles...<br /><br /><br /><br />Atendemos Whatsapps, e-mails y llamadas en horarios continuo de 9:00 a 19:00.</p>"
+  out: "Damos la bienvenida a Loro Camp, a este espectacular ejemplar de Cacatua
+        ducorpsii.\n\nEs un macho nacido en el año 2015, criado a mano y al igual que el resto de
+        nuestras aves, proviene de Loro Parque Fundación.\n\nSe cede junto con el certificado de garantía con el sexaje realizado por
+        endoscopia y el análisis negativo de enfermedades, registro en el SOIVRE, y la
+        factura con su correspondiente IVA.\n\nVisite nuestra web, donde podrá observar todas las especies disponibles...\n\n\n\nAtendemos Whatsapps, e-mails y llamadas en horarios continuo de 9:00 a 19:00."
+  scenario: "No debe de borrar nada."
+-
+  in: "Un bajazo que ya no está ni si quiera en venta. Vendo por adquisición de un
+       Rickenbacker o un Fender jazz Bass, ya que el sonido del gretsch ya lo tengo
+       cubierto por un hofner.<br />Aquí dejo las especificaciones:<br /><br />-G6073-Electrone-Electric-Guitar/dp/B000GACXQI<br /><br />Incluye el estuche original. Para vender tendría que hablarse primero.</p>"
+  out: "Un bajazo que ya no está ni si quiera en venta. Vendo por adquisición de un
+        Rickenbacker o un Fender jazz Bass, ya que el sonido del gretsch ya lo tengo
+        cubierto por un hofner.\nAquí dejo las especificaciones:\n\n-G6073-Electrone-Electric-Guitar/dp/B000GACXQI\n\nIncluye el estuche original. Para vender tendría que hablarse primero."
+  scenario: "No debe de borrar nada."
+-
+  in: "Divertido pastel con el que sin duda sorprenderás a los recientes papás<br />Original. Práctico, Útil..<br />Un acierto!!!<br />Varios modelos y tamaños<br />Creación propia<br />Hago envíos<br />Atiendo whatsapp<br />Modelo foto 37euros</p>"
+  out: "Divertido pastel con el que sin duda sorprenderás a los recientes papás\nOriginal. Práctico, Útil..\nUn acierto!!!\nVarios modelos y tamaños\nCreación propia\nHago envíos\nAtiendo whatsapp\nModelo foto 37euros"
+  scenario: "No debe de borrar nada."
+-
+  in: "se ofrecen gallos ingleses .brasileros. argentinos.dominicanos.y puerto
+       rique&#241;os. envios por seur a toda espa&#241;a .gallos bozales . crestones y
+       jugados.  de buena casta y espuela ..no contesto wassap solo gente interesada. </p>"
+  out: "se ofrecen gallos ingleses .brasileros. argentinos.dominicanos.y puerto
+        rique&#241;os. envios por seur a toda espa&#241;a .gallos bozales . crestones y
+        jugados.  de buena casta y espuela ..no contesto wassap solo gente interesada."
+  scenario: "No debe de borrar nada."
+-
+  in: "Vendo canarios espa&#241;olitos de 2016 amarillos y p&#237;os 15? pico.est&#225;n
+       todos anillados.en Alcal&#225; de Henares. Tb se pueden entregar en Madrid zona
+       barrio Salamanca. Contacto a trav&#233;s de whatsup. </p>"
+  out: "Vendo canarios espa&#241;olitos de 2016 amarillos y p&#237;os 15? pico.est&#225;n
+        todos anillados.en Alcal&#225; de Henares. Tb se pueden entregar en Madrid zona
+        barrio Salamanca. Contacto a trav&#233;s de whatsup. "
+  scenario: "No debe de borrar nada."
+-
+  in: "Reproductora gravadora dvd Samsung SH873. Funciona bien, tenemos su manual de uso.
+       Precio original 140 eur.</p>"
+  out: "Reproductora gravadora dvd Samsung SH873. Funciona bien, tenemos su manual de uso.
+        Precio original 140 eur."
+  scenario: "No debe de borrar nada."
+-
+  in: "Guacamayo papillero con algo mas de un año. Es tranquilo esta comiendo su fruta y
+       su pienso. Vacunas y desparasitaciones al día por veterinaria especializada en
+       aves exoticas. Lo quito por no poder atender tanto tiempo como quisiera. El de la
+       foto no es el pero son los mismo colores.</p>"
+  out: "Guacamayo papillero con algo mas de un año. Es tranquilo esta comiendo su fruta y
+        su pienso. Vacunas y desparasitaciones al día por veterinaria especializada en
+        aves exoticas. Lo quito por no poder atender tanto tiempo como quisiera. El de la
+        foto no es el pero son los mismo colores."
+  scenario: "No debe de borrar nada."
+-
+  in: "Ninfas en varias mutaciones por nacer;albinas,cb manchados,ancestrales ,lutinos/as
+       ,cb perlados,perlados...<br />Agapornis varias mutaciones .</p>"
+  out: "Ninfas en varias mutaciones por nacer;albinas,cb manchados,ancestrales ,lutinos/as
+        ,cb perlados,perlados...\nAgapornis varias mutaciones ."
+  scenario: "No debe de borrar nada."
+-
+  in: "Son de vidrio, miden respectivamente 15 y 17 cm de alto, incluyendo el tapón (ver
+       fotos). Precio: 8 /unidad. Gastos de envío no incluidos en el precio.</p>"
+  out: "Son de vidrio, miden respectivamente 15 y 17 cm de alto, incluyendo el tapón (ver
+        fotos). Precio: 8 /unidad. Gastos de envío no incluidos en el precio."
+  scenario: "No debe de borrar nada."
+-
+  in: "Oferta válida solo hasta fin de mes! Atencion somos tienda profesional, no
+       particulares. Todos nuestros artículos son nuevos. Entra en nuestra página web
+       cuadrosretro.com y compra directamente de una manera sencilla y cómoda. Cuadro
+       lienzo con motivo Buda compuesto de 5 partes de medidas160x80 cm, tal y como se ve
+       en las fotografías. Impresión sobre lienzo de altísima calidad. El cuadro viene
+       montado ya en bastidor de madera de 2 cm de grosor listo para llegar y colgar, no
+       necesita nada mas! PRECIO CON ENVÍO INCLUIDO!!*(Los envíos a Baleares, Canarias,
+       Ceuta y Melilla tienen un suplemento de tan solo 5 euros) Formas de pago
+       aceptadas: Tarjeta de credito o debito, transferencia bancaria o ingreso en cuenta
+       (La Caixa), paypal o contrareembolso. Si el pago es contrareembolso se
+       incrementará el precio en 10 euros. Consultanos y visita nuestra página web con
+       más de 100 artículos distintos. Puedes efectuar la compra directamente a través de
+       nuestra página web. Disponemos de Certificado de Seguridad SSL para tus compras
+       por internet. Compras 100% seguras!! Gracias</p>"
+  out: "Oferta válida solo hasta fin de mes! Atencion somos tienda profesional, no
+        particulares. Todos nuestros artículos son nuevos. Entra en nuestra página web
+        cuadrosretro.com y compra directamente de una manera sencilla y cómoda. Cuadro
+        lienzo con motivo Buda compuesto de 5 partes de medidas160x80 cm, tal y como se ve
+        en las fotografías. Impresión sobre lienzo de altísima calidad. El cuadro viene
+        montado ya en bastidor de madera de 2 cm de grosor listo para llegar y colgar, no
+        necesita nada mas! PRECIO CON ENVÍO INCLUIDO!!*(Los envíos a Baleares, Canarias,
+        Ceuta y Melilla tienen un suplemento de tan solo 5 euros) Formas de pago
+        aceptadas: Tarjeta de credito o debito, transferencia bancaria o ingreso en cuenta
+        (La Caixa), paypal o contrareembolso. Si el pago es contrareembolso se
+        incrementará el precio en 10 euros. Consultanos y visita nuestra página web con
+        más de 100 artículos distintos. Puedes efectuar la compra directamente a través de
+        nuestra página web. Disponemos de Certificado de Seguridad SSL para tus compras
+        por internet. Compras 100% seguras!! Gracias"
+  scenario: "No debe de borrar nada."
+-
+  in: "¿Estas pensando en climatizar tu vivienda?. Si buscas una empresa profesional,
+       confía en nosotros. En CLISEVA estudiamos tus necesidades, calculamos tu
+       instalación, y te daremos una solución PERSONALIZADA, que te aportará confort
+       durante duchos años. Confía en auténtico PROFESIONALES. Confía en CLISEVA. <br /></p>"
+  out: "¿Estas pensando en climatizar tu vivienda?. Si buscas una empresa profesional,
+        confía en nosotros. En CLISEVA estudiamos tus necesidades, calculamos tu
+        instalación, y te daremos una solución PERSONALIZADA, que te aportará confort
+        durante duchos años. Confía en auténtico PROFESIONALES. Confía en CLISEVA. \n"
+  scenario: "No debe de borrar nada."
+-
+  in: "Espejo Neo led con espejo aumento exposición de 80 x 60 antes 266 euros, ahora
+       solo 1 unidad por solo 129 euros, aprovéchese, único exposición, atención de
+       primera calidad fabricado en España ! , visítenos en la calle villardondiego nº 21
+       posterior (en la parte baja del colegio Minerva) en vicalvaro (madrid) horario
+       comercial de lunes a viernes de 10. 30 a 13. 30 y de 17. 30 a 20. 00 y sábados de
+       10. 30 a 13. 30.</p>"
+  out: "Espejo Neo led con espejo aumento exposición de 80 x 60 antes 266 euros, ahora
+        solo 1 unidad por solo 129 euros, aprovéchese, único exposición, atención de
+        primera calidad fabricado en España ! , visítenos en la calle villardondiego nº 21
+        posterior (en la parte baja del colegio Minerva) en vicalvaro (madrid) horario
+        comercial de lunes a viernes de 10. 30 a 13. 30 y de 17. 30 a 20. 00 y sábados de
+        10. 30 a 13. 30."
+  scenario: "No debe de borrar nada."
+-
+  in: "Descripción de Espejo Joyero Blanco Con Cajonera Armario Joya Gabinete <br />Este armario de la joyería con espejo tiene varios ganchos, bandejas y placas para
+       dar una amplia gama de joyas. Cuando la puerta está cerrada, esta hermosa pieza de
+       mobiliario es un espejo de pie. Este espejo de pie está hecho de MDF y el interior
+       está cubierto con una tela suave. Finalmente, la puerta se puede cerrar con una
+       preciosa llave. <br />  <br />Tenga en cuanta que este mobiliario es una artesanía que está hecho de madera y
+       pintado de color blanco, puede venir con un pequeño defecto. <br />Gracias al grosor de 9,5 cm, es posible almacenar varios artículos en este
+       gabinete con espejo.<br /><br /><br />Características <br />Color: blanco <br />Material: MDF + vidrio + madera <br />Dimensiones totales: 46 x 37 x 146 cm (Largo x Ancho x Altura) <br />Grosor: 9,5 cm <br />Tamaño del espejo: 23,5 x 107 cm (Ancho x Altura) <br />Construcción robusta y espacio abundante para el almacenaje de joyería <br />Gabinete de joyería de pie libre con espejo de ángulo ajustable <br />Marca: vidaXL <br />SKU: 60643 <br />EAN: 8718475826255<br /><br /><br />Envío GRATUITO en toda España en solo 5 días laborables <br />Garantía de 2 Años <br />Devoluciones GRATIS durante 14 días <br />Para ver el producto, visite nuestra página web vidaXL.es y busque el producto con
+       la referencia: 60643 <br />El precio final siempre es el listado en la página de vidaXL <br /><br /></p>"
+  out: "Descripción de Espejo Joyero Blanco Con Cajonera Armario Joya Gabinete \nEste armario de la joyería con espejo tiene varios ganchos, bandejas y placas para
+        dar una amplia gama de joyas. Cuando la puerta está cerrada, esta hermosa pieza de
+        mobiliario es un espejo de pie. Este espejo de pie está hecho de MDF y el interior
+        está cubierto con una tela suave. Finalmente, la puerta se puede cerrar con una
+        preciosa llave. \n\nTenga en cuanta que este mobiliario es una artesanía que está hecho de madera y
+        pintado de color blanco, puede venir con un pequeño defecto. \nGracias al grosor de 9,5 cm, es posible almacenar varios artículos en este
+        gabinete con espejo.\n\n\nCaracterísticas \nColor: blanco \nMaterial: MDF + vidrio + madera \nDimensiones totales: 46 x 37 x 146 cm (Largo x Ancho x Altura) \nGrosor: 9,5 cm \nTamaño del espejo: 23,5 x 107 cm (Ancho x Altura) \nConstrucción robusta y espacio abundante para el almacenaje de joyería \nGabinete de joyería de pie libre con espejo de ángulo ajustable \nMarca: vidaXL \nSKU: 60643 \n  EAN: 8718475826255\n\n\nEnvío GRATUITO en toda España en solo 5 días laborables \nGarantía de 2 Años \nDevoluciones GRATIS durante 14 días \nPara ver el producto, visite nuestra página web vidaXL.es y busque el producto con
+        la referencia: 60643 \nEl precio final siempre es el listado en la página de vidaXL\n\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "Sillon chester 2p granate en su color de origen desgastado<br />Soy especialista en BISCUIT, CHESTER y GPLAN, y compito con los propios ingleses y
+       franceses para conseguir sus antigüedades fashion del siglo XX.<br /><br />Tiene un pequeño golpe restaurado,se puede expertizar su estado en ANTIQUERIA
+       SANTA MARIA c/Francisco de Rojas 1 (semiesquina Sagasta) Madrid.<br /><br />El precio indicado es por unidad</p>"
+  out: "Sillon chester 2p granate en su color de origen desgastado\nSoy especialista en BISCUIT, CHESTER y GPLAN, y compito con los propios ingleses y
+        franceses para conseguir sus antigüedades fashion del siglo XX.\nTiene un pequeño golpe restaurado,se puede expertizar su estado en ANTIQUERIA
+        SANTA MARIA c/Francisco de Rojas 1 (semiesquina Sagasta) Madrid.\n\nEl precio indicado es por unidad"
+  scenario: "No debe de borrar nada"
+-
+  in: "Cámara de fotos réflex digital CANON 760D (cuerpo) totalmente nuevo
+       (desprecintado), original y con 1 año de garantía. Posibilidad de adquirir solo el
+       cuerpo o con cualquier objetivo del mercado. Pregunte precios. Somos tienda.
+       Portes gratis. Envíos en 24-48 horas para artículos en stock. Posibilidad de
+       recogida en mano por 10€ más. Aceptamos todas las formas de pago: transferencia
+       bancaria, tarjeta de crédito, contrareembolso o PayPal. Para más información,
+       consulte nuestra página web. Oferta válida hasta agotar existencias. Si no quedas
+       satisfecho, te devolvemos tu dinero.</p>"
+  out: "Cámara de fotos réflex digital CANON 760D (cuerpo) totalmente nuevo
+        (desprecintado), original y con 1 año de garantía. Posibilidad de adquirir solo el
+        cuerpo o con cualquier objetivo del mercado. Pregunte precios. Somos tienda.
+        Portes gratis. Envíos en 24-48 horas para artículos en stock. Posibilidad de
+        recogida en mano por 10€ más. Aceptamos todas las formas de pago: transferencia
+        bancaria, tarjeta de crédito, contrareembolso o PayPal. Para más información,
+        consulte nuestra página web. Oferta válida hasta agotar existencias. Si no quedas
+        satisfecho, te devolvemos tu dinero."
+  scenario: "No debe de borrar nada."
+-
+  in: "----------------------  CANAL OCIO CONCORDE -------------------------<br />             NUEVA TIENDA DE VIDEOJUEGOS Y CONSOLAS<br />                       EN SANTA CRUZ DE TENERIFE<br />-------------HACEMOS ENVIOS A CUALQUIER LUGAR--------------<br /><br />SMARTPHONE IPHONE 6 DE 16GB Y D 64GB..IMPECABLES, CON SU GARANTÍA, APROVECHATE DE
+       ESTA OPORTUNIDAD Y PRUEBA CON ESTOS IPHONE A UN PRECIO ÚNICO.<br />VEN A NUESTRA TIENDA, Y COMPRUEBA TODAS NUESTRAS OFERTAS.<br /><br />*MÁS DE 500 JUEGOS DE PLAYSTATION , DESDE 1 €<br /><br />COMPRAMOS,VENDEMOS Y CAMBIAMOS, PRODUCTOS DE ELECTRÓNICA, TODA CLASE DE CONSOLAS,<br />VIDEOJUEGOS, MÓVILES,TABLES, ...<br />SI PREFIERES LOS PUEDES ALQUILAR POR 1,50€<br /><br />SI TUS OBJETOS NO LOS QUIERES PERDER, Y NECESITAS EFECTIVO LO PUEDES RECUPERAR,
+       EMPEÑALO..Y LO VIENES A BUSCAR CUANDO QUIERAS...<br /><br />SI PREFIERES LOS PUEDES ALQUILAR POR 1,50€<br /><br />PREGÚNTANOS POR---- WHATSAPP--- AL <br />TLF. (entrar en nuestra tienda para ver teléfono móvil)<br /><br />BUSCANOS EN FACEBOOK ,POR canal ocio concorde y entérate de nuestras ofertas.<br /><br />Estamos en el CENTRO COMERCIAL CONCORDE, <br />SANTA CRUZ DE TENERIFE<br />SOMOS TIENDA FISÍCA<br /><br />*EMPEÑOS<br />*COMPRAMOS<br />*VENDEMOS VIDEOJUEGOS DESDE 1,95€, CONSOLAS<br />PELÍCULAS, MÓVILES, TABLETS...<br /><br />Visitanos en el CENTRO COMERCIAL CONCORDE<br />SANTA CRUZ DE TENERIFE<br />CTRA. GENERAL DEL SUR, KM 6,3 LOCAL Nº11<br />---facebook---CANAL OCIO CONCORDE</p>"
+  out: "----------------------  CANAL OCIO CONCORDE -------------------------\n             NUEVA TIENDA DE VIDEOJUEGOS Y CONSOLAS\n                       EN SANTA CRUZ DE TENERIFE\n-------------HACEMOS ENVIOS A CUALQUIER LUGAR--------------\n\nSMARTPHONE IPHONE 6 DE 16GB Y D 64GB..IMPECABLES, CON SU GARANTÍA, APROVECHATE DE
+        ESTA OPORTUNIDAD Y PRUEBA CON ESTOS IPHONE A UN PRECIO ÚNICO.\nVEN A NUESTRA TIENDA, Y COMPRUEBA TODAS NUESTRAS OFERTAS.\n\n*MÁS DE 500 JUEGOS DE PLAYSTATION , DESDE 1 €\n\nCOMPRAMOS,VENDEMOS Y CAMBIAMOS, PRODUCTOS DE ELECTRÓNICA, TODA CLASE DE CONSOLAS,\nSI PREFIERES LOS PUEDES ALQUILAR POR 1,50€\n\nSI TUS OBJETOS NO LOS QUIERES PERDER, Y NECESITAS EFECTIVO LO PUEDES RECUPERAR,
+        EMPEÑALO..Y LO VIENES A BUSCAR CUANDO QUIERAS...\n\nSI PREFIERES LOS PUEDES ALQUILAR POR 1,50€\n\nPREGÚNTANOS POR---- WHATSAPP--- AL \nTLF. (entrar en nuestra tienda para ver teléfono móvil)\n\nBUSCANOS EN FACEBOOK ,POR canal ocio concorde y entérate de nuestras ofertas.\n\nEstamos en el CENTRO COMERCIAL CONCORDE, \nSANTA CRUZ DE TENERIFE\nSOMOS TIENDA FISÍCA\n\n*EMPEÑOS\n*COMPRAMOS\n*VENDEMOS VIDEOJUEGOS DESDE 1,95€, CONSOLAS\nPELÍCULAS, MÓVILES, TABLETS...\n\nVisitanos en el CENTRO COMERCIAL CONCORDE\nSANTA CRUZ DE TENERIFE\nCTRA. GENERAL DEL SUR, KM 6,3 LOCAL Nº11\n---facebook---CANAL OCIO CONCORDE"
+  scenario: "Ha de borrar la línea que equivale a: VIDEOJUEGOS,MÓVILES,TABLES,..."
+-
+  in: "El patinete eléctrico Urbano más ligero y potente del mercado!<br /><br />El sistema HUb era hasta ahora muy usado en las bicicletas electricas por el gran
+       compormiso en la fiabilidad , bajo consumo y sobretodo la ausencia de
+       mantenimiento en las mismas., Pues bien dicho sistema empieza a implantarse en
+       Patinetes electricos con esto se consigue un patinete electrico Mucho menos Pesado
+       ya que el motor al ser sin escobillas Brushless es mucho mas ligero, al no
+       disponer de escobillas dichos motores consumen hasta un 50% menos de batería que
+       un patinete normal, sin dejar de lado que un motor sin escobillas a igualdad de
+       potencia llega ser hasta un 40% mas potente que un patinete con escobillas, si
+       ademas al aumento de potencia y bajada de peso el patinete se entrega con baterias
+       de Litio -Polímero Samsung, tenemos la Armonía perfecta de un patinete Hecho para
+       durar y hacernos los desplazamientos mas cómodos y económicos.<br /><br />Tipo de motor: Motor BrushLESS DC 24Voltios<br />Potencia máxima: 350 W<br />Velocidad máxima: 27 Km/h<br />Autonomía: de 25 a 30 km<br />Batería: Polímero de Litio (LiPo) 24 V<br />Tiempo de carga: 2 a 3 horas<br />Chasis: Aluminio pulido 6061 T6 de alta resistencia<br />Base: Aluminio anodizado de color negro o blanco (a elegir)<br />Peso total (con batería): 10,8 Kg<br />Transmisión: Motor de cubo en la rueda delantera (sin correa)<br />Largo: 94 cm<br />Ancho: 13,5 cm<br />Alto: de 107 a 116 cm<br />Color: Negro o Blanco</p>"
+  out: "El patinete eléctrico Urbano más ligero y potente del mercado!\n\nEl sistema HUb era hasta ahora muy usado en las bicicletas electricas por el gran
+        compormiso en la fiabilidad , bajo consumo y sobretodo la ausencia de
+        mantenimiento en las mismas., Pues bien dicho sistema empieza a implantarse en
+        Patinetes electricos con esto se consigue un patinete electrico Mucho menos Pesado
+        ya que el motor al ser sin escobillas Brushless es mucho mas ligero, al no
+        disponer de escobillas dichos motores consumen hasta un 50% menos de batería que
+        un patinete normal, sin dejar de lado que un motor sin escobillas a igualdad de
+        potencia llega ser hasta un 40% mas potente que un patinete con escobillas, si
+        ademas al aumento de potencia y bajada de peso el patinete se entrega con baterias
+        de Litio -Polímero Samsung, tenemos la Armonía perfecta de un patinete Hecho para
+        durar y hacernos los desplazamientos mas cómodos y económicos.\n\nTipo de motor: Motor BrushLESS DC 24Voltios\nPotencia máxima: 350 W\nVelocidad máxima: 27 Km/h\nAutonomía: de 25 a 30 km\nBatería: Polímero de Litio (LiPo) 24 V\nTiempo de carga: 2 a 3 horas\nChasis: Aluminio pulido 6061 T6 de alta resistencia\nBase: Aluminio anodizado de color negro o blanco (a elegir)\nPeso total (con batería): 10,8 Kg\nTransmisión: Motor de cubo en la rueda delantera (sin correa)\nLargo: 94 cm\nAncho: 13,5 cm\nAlto: de 107 a 116 cm\nColor: Negro o Blanco"
+  scenario: "No debe de borrar nada."
+-
+  in: "SE VENDE OBJETIVO DE FOCAL FIJA AUTO-FOCO PARA LARGO ALCANCE DE SIGMA PARA
+       MONTURAS DE NIKON FORMATO FX/DX. MODELO SIGMA AF 400 MM F5.6 APO. OBJETICO CON
+       PARASOL, SOPORTE DE TRIPODE Y ESTUCHE DE TRANSPORTE. OBJETIVO EN PERFECTO ESTADO
+       CON 1 AÑO DE GARANTIA. ENTREGA EN TIENDA O POR AGENCIA DE TRANSPORTES SEUR EN
+       24/48 HORAS.</p>"
+  out: "SE VENDE OBJETIVO DE FOCAL FIJA AUTO-FOCO PARA LARGO ALCANCE DE SIGMA PARA
+        MONTURAS DE NIKON FORMATO FX/DX. MODELO SIGMA AF 400 MM F5.6 APO. OBJETICO CON
+        PARASOL, SOPORTE DE TRIPODE Y ESTUCHE DE TRANSPORTE. OBJETIVO EN PERFECTO ESTADO
+        CON 1 AÑO DE GARANTIA. ENTREGA EN TIENDA O POR AGENCIA DE TRANSPORTES SEUR EN
+        24/48 HORAS."
+  scenario: "No debe de borrar nada."
+-
+  in: "Maleta marca Pentax.<br /><br />Gran tamaño, ideal para guardar equipo fotográfico completo.<br /><br />Tiene signos de uso, revisar las fotos, pero no esta en mal estado.<br /><br />las pestañas de cierre funcionan correctamente pero no dispongo de la llave.<br /><br />Consultar sin compromiso<br /><br /></p>"
+  out: "Maleta marca Pentax.\n\nGran tamaño, ideal para guardar equipo fotográfico completo.\n\nTiene signos de uso, revisar las fotos, pero no esta en mal estado.\n\nlas pestañas de cierre funcionan correctamente pero no dispongo de la llave.\n\nConsultar sin compromiso\n\n"
+  scenario: "No debe de borrar nada."
