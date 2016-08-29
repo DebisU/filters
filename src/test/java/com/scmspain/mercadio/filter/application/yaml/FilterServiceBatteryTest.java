@@ -78,6 +78,7 @@ public class FilterServiceBatteryTest {
         final String actual = filterUseCaseResponse.getResult();
 
         Assert.assertTrue(scenario, hasValidDistance(actual.replace(" ", ""), this.expected.replace(" ", "")));
+//        Assert.assertEquals(scenario, this.expected.replace(" ", ""),actual.replace(" ", ""));
     }
 
     private boolean hasValidDistance(String current, String expected) {

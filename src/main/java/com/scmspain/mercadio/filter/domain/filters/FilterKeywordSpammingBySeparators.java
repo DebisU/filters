@@ -48,10 +48,12 @@ public class FilterKeywordSpammingBySeparators implements Filter {
 
     private boolean knowIfExceedsAmountOfSeparators(String paragraph, char separator) {
         int amountOfSeparatorsInParagraph = 0;
-
         for (int i = 0 ; i < paragraph.length() ; i++) {
             if (paragraph.charAt(i) == separator) {
                 amountOfSeparatorsInParagraph++;
+                if (paragraph.trim().matches("^[0-9].*")) {
+                    return true;
+                }
             }
         }
 
