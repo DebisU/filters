@@ -58,4 +58,29 @@ public class CommonStringOperations {
         }
         return request;
     }
+
+    public static List<String> getAllPrepositions() {
+        final List<String> prepositions = Arrays.asList(" a "," ante "," bajo "," cabe "," con "," contra "," de "," desde "," en "," entre "," hacia "," hasta "," para "," por "," según "," segun "," sin "," so "," sobre "," tras ");
+        return prepositions;
+    }
+
+    public static List<String> getMostCommonSpanishWords() {
+        final List<String> commonWords = Arrays.asList(" la "," que "," el "," los ", " las "," se "," del "," un "," su "," se "," es "," no "," si ");
+        return commonWords;
+    }
+
+    public static List<String> getTimeUnits() {
+        final List<String> meassureTimeUnits = Arrays.asList("horas", "minutos", "segundos", "hours", "años");
+        return meassureTimeUnits;
+    }
+
+    public static List<String> getSpecificationWords() {
+        final List<String> techWords = Arrays.asList("3D", "HD","lúmens","wi-fi","accesorios","universal","regulable","regulables","funda","idiomas");
+        return techWords;
+    }
+
+    public static List<String> getAbbreviatedUnitsOfMeasure() {
+        final List<String> unitsOfMeasure = Arrays.asList("mhz","ghz","hz","m²","m³","km","gb","mb","tb","mpx","cm","mm");
+        return unitsOfMeasure;
+    }
 }

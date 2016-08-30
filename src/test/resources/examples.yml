@@ -33,11 +33,11 @@
   scenario: "Debe borrar el spam del final. En este caso no se puede borrar todo porque afectaria a otors anuncios bien formados"
 -
   in: "iphone 5c 16GB libre como nuevo tel+carg solo vendemos telefonos originales y con ticket de venta para la garantía cogemos tu teléfono usado o nuevo como parte de pago llámanos y te lo tasamos. \n\n¿tienes un movil de ultima generación? llamanos o acércate a nuestras tiendas de francisco silvela nº69 o galileo nº70 \ntodos nuestro telefonos donde se especifica nuevos son a estrenar y con garantía\n. \n*************TE COGEMOS TU TELEFONO COMO PARTE DE PAGO*********** \n\nvisita nuestras tiendas físicas en Madrid: \ncalle francisco silvela n69 forma de llegar linea 4 y 6 del metro diego de leon y linea 6 7 y 8 de avda de América muy cerca de UGT o visita nuestra pagina que viene a la derecha donde pone pagina web o llámanos \n******************************************************************************* \ntambién nos puedes encontrar en la calle de galileo n70 forma de llegar linea 7 islas filipinas y linea 4 de princesa muy ceraca del corte ingles de princesa o llamanos \nnuevo horario: \nlunes a viernes de 10 a 14 y 16 a 20,30 horas y sabado de 10 a 14 horas \n******************************************************************************* \ngracias por confiar en movil center madrid\n\nTAMBIEN DISPONIBLE EN NUETRAS TIENDAS \nSAMSUNG S5 , S6 , S6 EDGE DE 32 64 Y 128, S6 EDGE PLUS 32 ,64, NOTE 3 , NOTE 4 , GALAXY TAB , GALAXY J , TAB A, TAB S2 \nIPHONE 6 , 6S DE 16 32 Y 64 , 6SPLUS DE 16 32GB 64GB Y 128GB , 6PLUS DE 16 64 Y 128 , 5S , 4S, IPHONE 5\nLG G4 , LG G3 , LG G2 , LG G4C LG G4 STYLUS , LG ZERO \nHUAWEI P8 LITE , HUAWEI P8 , HUAWEI G8 , HUAWEI G7 , P7\nSONY XPERIA Z2 , Z3 , Z3COMPACT , Z5 , Z5COMPACT , M4 AQUA , E3 , Z \nBLACKBERRY Q20 , Q0 , PASSPORT"
-  out: "iphone 5c 16GB libre como nuevo tel+carg solo vendemos telefonos originales y con ticket de venta para la garantía cogemos tu teléfono usado o nuevo como parte de pago llámanos y te lo tasamos. \n\n¿tienes un movil de ultima generación? llamanos o acércate a nuestras tiendas de francisco silvela nº69 o galileo nº70\n todos nuestro telefonos donde se especifica nuevos son a estrenar y con garantía\n.\n*************TE COGEMOS TU TELEFONO COMO PARTE DE PAGO***********\n\nvisita nuestras tiendas físicas en Madrid:\ncalle francisco silvela n69 forma de llegar linea 4 y 6 del metro diego de leon y linea 6 7 y 8 de avda de América muy cerca de UGT o visita nuestra pagina que viene a la derecha donde pone pagina web o llámanos\ntambién nos puedes encontrar en la calle de galileo n70 forma de llegar linea 7 islas filipinas y linea 4 de princesa muy ceraca del corte ingles de princesa o llamanos\nnuevo horario:\nlunes a viernes de 10 a 14 y 16 a 20,30 horas y sabado de 10 a 14 horas\ngracias por confiar en movil center madrid\n\nTAMBIEN DISPONIBLE EN NUETRAS TIENDAS\n IPHONE 6 , 6S DE 16 32 Y 64 , 6SPLUS DE 16 32GB 64GB Y 128GB , 6PLUS DE 16 64 Y 128 , 5S , 4S, IPHONE 5 \nLG G4 , LG G3 , LG G2 , LG G4C LG G4 STYLUS , LG ZERO \nBLACKBERRY Q20 , Q0 , PASSPORT "
+  out: "iphone 5c 16GB libre como nuevo tel+carg solo vendemos telefonos originales y con ticket de venta para la garantía cogemos tu teléfono usado o nuevo como parte de pago llámanos y te lo tasamos. \n\n¿tienes un movil de ultima generación? llamanos o acércate a nuestras tiendas de francisco silvela nº69 o galileo nº70\n todos nuestro telefonos donde se especifica nuevos son a estrenar y con garantía\n.\n*************TE COGEMOS TU TELEFONO COMO PARTE DE PAGO***********\n\nvisita nuestras tiendas físicas en Madrid:\ncalle francisco silvela n69 forma de llegar linea 4 y 6 del metro diego de leon y linea 6 7 y 8 de avda de América muy cerca de UGT o visita nuestra pagina que viene a la derecha donde pone pagina web o llámanos\n******************************************************************************* \ntambién nos puedes encontrar en la calle de galileo n70 forma de llegar linea 7 islas filipinas y linea 4 de princesa muy ceraca del corte ingles de princesa o llamanos\nnuevo horario:\nlunes a viernes de 10 a 14 y 16 a 20,30 horas y sabado de 10 a 14 horas\n******************************************************************************* \ngracias por confiar en movil center madrid\n\nTAMBIEN DISPONIBLE EN NUETRAS TIENDAS\n IPHONE 6 , 6S DE 16 32 Y 64 , 6SPLUS DE 16 32GB 64GB Y 128GB , 6PLUS DE 16 64 Y 128 , 5S , 4S, IPHONE 5 \nLG G4 , LG G3 , LG G2 , LG G4C LG G4 STYLUS , LG ZERO \nBLACKBERRY Q20 , Q0 , PASSPORT "
   scenario: "Debe borrar el spam del final. En este caso no se puede borrar todo porque afectaria a otors anuncios bien formados"
 -
   in: "DISPONIBLE DE 1 Y DE 2 PLAZAS . \n \nNUEVA Y CON GARANTÍA. \n \nPUEDE VER FOTOS DE TODOS LOS MODELOS EN NUESTRA WEB : \nALMACENBARATO.COM \n \n- Ventaja con respecto a los paddle sup rígidos : pesa 4 veces menos y se puede transportar en una mochila de mano a cualquier lugar. \n- Una vez hinchado se siente como una tabla de paddle sup rígida gracias a la alta presión que soporta la cámara, con la ventaja de poder maniobrar mas rápidamente gracias a su reducido peso. \n \n7 MODELOS DISPONIBLES EN NUESTRA TIENDA ALMACENBARATO.COM \n \nincluye : \n- Tabla paddle sup. con anclajes para asiento (asiento no incluido) \n- Remo extensible. \n- Bomba hinchado de alta presión. \n- Mochila de transporte. \n \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n \nPalabras de búsqueda : apple iphone 4 4s 5 5c 5s 6 plus ipad ipod air macbook pro imac 2 3 samsung galaxy s2 s3 s4 s5 s6 note edge lg g3 g2 sony xperia z1 z2 z3 tablet tab htc one plus blackberry nokia lumia nexus motorola mini ps4 ps3 psp xbox hp toshiba lenovo m9 m8 xiaomi mi mi4 acer vaio huawei p7 p8 zte lite alienware msi ultrabook notebook alcatel ps3 juegos i3 i7 g x tv smart go cámara icloud smartphone android monster beats gear reloj pulsera wear watch ordenador sobremesa bq wii nintendo canon nikon 6s \nmovil mobil chino libre libres chinos comprar barato baratos smarphone smarfone Smartphone dualsim duales 0 4.7 4 4.0 celular moviles celulares bq tablet pulgadas \" 5.7\" 5.5\" 4.7\" 4.5\" 5\" mobile movile phone kayac cayak cayac canoa embarcacion zodiak zodiac neumatica barca surf \n edge bq xperia sony htc lg note 4 samsumg galaxy s6 ,galaxy s5 galaxy s4 galaxy s3 galaxi galaxia note 5, galaxia samsum Samsun sansung jiayu replica clon iPhone lenovo hdc ,huawei huawey z3 apple z2 z1 z5 z6, g3 g4 z4, samsung, aifon, comprar \n\n"
-  out: "DISPONIBLE DE 1 Y DE 2 PLAZAS . \n \nNUEVA Y CON GARANTÍA. \n \nPUEDE VER FOTOS DE TODOS LOS MODELOS EN NUESTRA WEB : \nALMACENBARATO.COM \n \n- Ventaja con respecto a los paddle sup rígidos : pesa 4 veces menos y se puede transportar en una mochila de mano a cualquier lugar. \n- Una vez hinchado se siente como una tabla de paddle sup rígida gracias a la alta presión que soporta la cámara, con la ventaja de poder maniobrar mas rápidamente gracias a su reducido peso. \n \n7 MODELOS DISPONIBLES EN NUESTRA TIENDA ALMACENBARATO.COM \n \nincluye : \n- Tabla paddle sup. con anclajes para asiento (asiento no incluido) \n- Remo extensible. \n- Bomba hinchado de alta presión. \n- Mochila de transporte. \n \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \ns. \n. \n. \n. \n. \n. \n. \n. \n "
+  out: "DISPONIBLE DE 1 Y DE 2 PLAZAS . \n \nNUEVA Y CON GARANTÍA. \n \nPUEDE VER FOTOS DE TODOS LOS MODELOS EN NUESTRA WEB : \nALMACENBARATO.COM \n \n- Ventaja con respecto a los paddle sup rígidos : pesa 4 veces menos y se puede transportar en una mochila de mano a cualquier lugar. \n- Una vez hinchado se siente como una tabla de paddle sup rígida gracias a la alta presión que soporta la cámara, con la ventaja de poder maniobrar mas rápidamente gracias a su reducido peso. \n \n7 MODELOS DISPONIBLES EN NUESTRA TIENDA ALMACENBARATO.COM \n \nincluye : \n- Tabla paddle sup. con anclajes para asiento (asiento no incluido) \n- Remo extensible. \n- Bomba hinchado de alta presión. \n- Mochila de transporte. \n \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n. \n "
   scenario: "Debe de borrar el spam del final."
 -
   in: "FORD C-Max 1.6 TDCi 115 Titanium, Gris / Plata, año 2012, 88000 km, Asientos modulables,Paquete Flotas Titanium 17\" Plus,Cristales privacidad + Cromado marco ventanilla,Gris Midnight (metalizado),Auto-Start-Stop,FordProtect Life 5 años/100.000 km,, 11799 eur., FORD HNOS PIÑAR, SANTA FE, GRANADA. Vehículo de reestreno muy cuidado, motor 1.6 tdci 115cv, bajo consumo, seis velocidades, radio cd mp3, mandos de radio en volante, manos libres bluetooh original, climatizador bizona, control de velocidad, ordenador de a bordo, lunas tintadas, llantas de aleación ligera, sensor de lluvia y luces, faros antiniebla, etc. EN EL PRECIO NO SE INCLUYEN LOS GASTOS DE GARANTIA Y TRANSFERENCIA. similar a mercedes, bmw, citroen, seat, peugeot, toyota, audi, volkswagen, samsung, tab, iphone, ipad, galaxy, apple, honda, yamaha."
@@ -53,7 +53,7 @@
   scenario: "No debe borrar nada."
 -
   in: "Espectacular y elegante Gps con pantalla táctil de 7\", especial para camioneros; cuenta con módulo camión instalado, lleva todos los mapas de Europa, polígonos, alturas, empresas, firmas, logística...<br /><br /> <br /><br />Cuenta con los radares fijos y móviles de toda Europa, instalados los puntos negros por accidentes, posibles controles de policía.<br /><br /> <br /><br />Los edificios, planimetría y el terreno se ven en 3D (como si fuera real).<br /><br /> <br /><br />Aparte del módulo camión también lleva modo coche, peatón, ciclista, urgencia, autobús y taxi.<br /><br />Ahora con bluetooth y AV-IN integrados!!! te permite hacer llamadas, recibir llamadas, hablar y escuchar por los altavoces del camión/coche.<br /><br /> <br /><br />Completísimo con todos los accesorios: soporte de coche con ventosa, cargador de coche, cable usb.<br /><br /> <br /><br /> <br /><br /> <br /><br />ESPECIFICACIONES<br /><br /> <br /><br />- Modelo: Gps 7\"<br /><br /> <br /><br />- Pantalla: 7\" TFT, 800*480 pixels<br /><br /> <br /><br />- Sistema Operativo: Windows Ce 6.0<br /><br /> <br /><br />- Procesador: MT3351<br /><br /> <br /><br />- Memoria Ram: 128 Mb<br /><br /> <br /><br />- Memoria Interna: 4Gb<br /><br /> <br /><br />- Slot para tarjetas de memoria<br /><br />- Bluetooth<br /><br />- AV-IN<br /><br /> <br /><br />- Tiempo de posicionamiento al encender: escasos 2 minutos.<br /><br /> <br /><br />- Recalcula automaticamente la ruta.<br /><br /> <br /><br />- Soporta multitud de formatos de audio y video.<br /><br /> <br /><br />- Idiomas multiples: español, inglés, frances, rumano...<br /><br /> <br /><br />- Funciona como ebook<br /><br /> <br /><br />- Batería: 2400mAh<br /><br /> <br /><br />- Dimensiones: 183 x 115 x 13 mm<br /> <br /> <br /><br />CONTENIDO DEL PAQUETE<br /> <br />- Gps 7\"<br /> <br />- Soporte con ventosa<br /> <br />- Cargador<br /> <br />- Cable usb<br /> <br /><br />PAGOS Y ENVIOS<br /><br />Envio gratuito por agencia de transportes Tipsa, en 24 horas lo recibes cómodamente en tu casa.<br /><br />Pago por contrareembolso (al recibirlo, tiene un coste de 5€ a mayores), transferencia, paypal o tarjeta.<br /><br />Damos la opción de abrir el paquete antes de efectuar el pago para tu seguridad.</p>"
-  out: "Espectacular y elegante Gps con pantalla táctil de 7\", especial para camioneros; cuenta con módulo camión instalado, lleva todos los mapas de Europa, polígonos, alturas, empresas, firmas, logística... \n\n \n\nCuenta con los radares fijos y móviles de toda Europa, instalados los puntos negros por accidentes, posibles controles de policía. \n\n \n\nLos edificios, planimetría y el terreno se ven en 3D (como si fuera real). \n\n \n\nAparte del módulo camión también lleva modo coche, peatón, ciclista, urgencia, autobús y taxi. \n\nAhora con bluetooth y AV-IN integrados!!! te permite hacer llamadas, recibir llamadas, hablar y escuchar por los altavoces del camión/coche. \n\n \n\nCompletísimo con todos los accesorios: soporte de coche con ventosa, cargador de coche, cable usb. \n\n \n\n \n\n \n\nESPECIFICACIONES \n\n \n\n- Modelo: Gps 7\" \n\n \n\n- Pantalla: 7\" TFT, 800*480 pixels \n\n \n\n- Sistema Operativo: Windows Ce 6.0 \n\n \n\n- Procesador: MT3351 \n\n \n\n- Memoria Ram: 128 Mb \n\n \n\n- Memoria Interna: 4Gb \n\n \n\n- Slot para tarjetas de memoria \n\n- Bluetooth \n\n- AV-IN \n\n \n\n- Tiempo de posicionamiento al encender: escasos 2 minutos. \n\n \n\n- Recalcula automaticamente la ruta. \n\n \n\n- Soporta multitud de formatos de audio y video. \n \n \n \n \n \n \n- Funciona como ebook \n \n \n \n- Batería: 2400mAh \n\n \n\n- Dimensiones: 183 x 115 x 13 mm \n\n \n\nCONTENIDO DEL PAQUETE \n \n- Gps 7\" \n \n- Soporte con ventosa \n \n- Cargador \n \n- Cable usb \n \n\nPAGOS Y ENVIOS \n\nEnvio gratuito por agencia de transportes Tipsa, en 24 horas lo recibes cómodamente en tu casa. \n\nPago por contrareembolso (al recibirlo, tiene un coste de 5€ a mayores), transferencia, paypal o tarjeta. \n\nDamos la opción de abrir el paquete antes de efectuar el pago para tu seguridad. "
+  out: "Espectacular y elegante Gps con pantalla táctil de 7\", especial para camioneros; cuenta con módulo camión instalado, lleva todos los mapas de Europa, polígonos, alturas, empresas, firmas, logística... \n\n \n\nCuenta con los radares fijos y móviles de toda Europa, instalados los puntos negros por accidentes, posibles controles de policía. \n\n \n\nLos edificios, planimetría y el terreno se ven en 3D (como si fuera real). \n\n \n\nAparte del módulo camión también lleva modo coche, peatón, ciclista, urgencia, autobús y taxi. \n\nAhora con bluetooth y AV-IN integrados!!! te permite hacer llamadas, recibir llamadas, hablar y escuchar por los altavoces del camión/coche. \n\n \n\nCompletísimo con todos los accesorios: soporte de coche con ventosa, cargador de coche, cable usb. \n\n \n\n \n\n \n\nESPECIFICACIONES \n\n \n\n- Modelo: Gps 7\" \n\n \n\n- Pantalla: 7\" TFT, 800*480 pixels \n\n \n\n- Sistema Operativo: Windows Ce 6.0 \n\n \n\n- Procesador: MT3351 \n\n \n\n- Memoria Ram: 128 Mb \n\n \n\n- Memoria Interna: 4Gb \n\n \n\n- Slot para tarjetas de memoria \n\n- Bluetooth \n\n- AV-IN \n\n \n\n- Tiempo de posicionamiento al encender: escasos 2 minutos. \n\n \n\n- Recalcula automaticamente la ruta. \n\n \n\n- Soporta multitud de formatos de audio y video. \n \n \n \n-Idiomas multiples: español, inglés, frances, rumano... \n \n \n \n - Funciona como ebook \n \n \n \n- Batería: 2400mAh \n\n \n\n- Dimensiones: 183 x 115 x 13 mm \n\n \n\nCONTENIDO DEL PAQUETE \n \n- Gps 7\" \n \n- Soporte con ventosa \n \n- Cargador \n \n- Cable usb \n \n\nPAGOS Y ENVIOS \n\nEnvio gratuito por agencia de transportes Tipsa, en 24 horas lo recibes cómodamente en tu casa. \n\nPago por contrareembolso (al recibirlo, tiene un coste de 5€ a mayores), transferencia, paypal o tarjeta. \n\nDamos la opción de abrir el paquete antes de efectuar el pago para tu seguridad. "
   scenario: "Debe de borrar el spam del final."
 -
   in: "AUDI Q7 4.2 TDI quattro tiptronic DPF, Blanco, año 2008, 147000 km, Cristales laminado doble+tintado oscuro,lane assist + side assist,Set de fijación y soporte de bicicletas para el maletero,3ª fila de asientos en cuero (7 plazas),Alcántara/Cuero Negro - Moqueta Fresco,Saco portaesquís,Audi music interface,Bolsa para CD,Equipo de sonido BOSE Surround,MMI,Sistema de navegación con DVD,Climatizador de confort de 4 zonas,Columna de dirección eléctrica,Control de crucero adaptativo,Control de presión de neumáticos,Cortinilla manual en luneta posterior,Cortinilla manual en luneta posterior y en ventanillas traseras,Luces de lectura orientables para las plazas traseras Audi exclusive,Paquete exterior S line,Set de fijación para maletero,Sistema de control por voz,Cristales con laminado doble,Cristales tintados oscuros,Espejos exteriores retrovisores antideslumbrantes automáticos y plegables eléctricamente,Gancho de remolque con bola ocultable manual,Llantas de aleación 10Jx20 20 radios 2 piezas con neumáticos 295/40 R20,Rueda deshinchada con compresor,Sin inscripción trasera de cilindrada,Sin inscripción trasera de modelo y cilindrada,Audi parking system advanced,Audi parking system plus,Audi parking system trasero,ISOFIX+desactivador airbag acompañante,Tyre mobility system,, 24000 eur., AUDI Q7,4.2 TDI V-8,faros bixenon direccionales,paquete s-line  exterior, sistema de navegacion profesional ,equipo de sonido bose, cargador de 6 dvd, control de velocidad con distronic,sillones  electricos con memoria en piel negra, climatizador digital plazas delanteras, suspension neumatica adaptativa, sensores de parking delanteros y traseros, asistente para luz de carretera, espejos anti deslumbrantes electricos y abatibles, llantas de 20 pulgadas..</p>"
@@ -740,3 +740,737 @@
   in: "Maleta marca Pentax.<br /><br />Gran tamaño, ideal para guardar equipo fotográfico completo.<br /><br />Tiene signos de uso, revisar las fotos, pero no esta en mal estado.<br /><br />las pestañas de cierre funcionan correctamente pero no dispongo de la llave.<br /><br />Consultar sin compromiso<br /><br /></p>"
   out: "Maleta marca Pentax.\n\nGran tamaño, ideal para guardar equipo fotográfico completo.\n\nTiene signos de uso, revisar las fotos, pero no esta en mal estado.\n\nlas pestañas de cierre funcionan correctamente pero no dispongo de la llave.\n\nConsultar sin compromiso\n\n"
   scenario: "No debe de borrar nada."
+-
+  in: "Por temas de liquidación de materiales de la empresa, estamos vendiendo el
+       siguiente PC con las siguientes caracteristicas. El ordenador fue diseñado con
+       fines de desarrollo de aplicaciones, un ordenador bastante completo:<br />Caja: BitFenix Comrade ATX USB 3.0 Negra<br />Placa Base: Gigabyte 970A-DS3P socket AM3+<br />Procesador: AMD FX-8320 Black Edition<br />Disipador: Cooler Master Hyper 212 EVO<br />Memoria: 16GB: G.skill Sniper DDR3 1866 PC3-14900 2x8GB CL9<br />Grafica: Gigabyte GeForce GT210 1Gb GDDR3<br />Disco duro: Crucial MX100 256Gb SSD SATA 3<br />Fuente: Be Quiet System Power 7 500W 80plus silver</p>"
+  out: "Por temas de liquidación de materiales de la empresa, estamos vendiendo el
+        siguiente PC con las siguientes caracteristicas. El ordenador fue diseñado con
+        fines de desarrollo de aplicaciones, un ordenador bastante completo:\nCaja: BitFenix Comrade ATX USB 3.0 Negra\nPlaca Base: Gigabyte 970A-DS3P socket AM3+\nProcesador: AMD FX-8320 Black Edition\nDisipador: Cooler Master Hyper 212 EVO\nMemoria: 16GB: G.skill Sniper DDR3 1866 PC3-14900 2x8GB CL9\nGrafica: Gigabyte GeForce GT210 1Gb GDDR3\nDisco duro: Crucial MX100 256Gb SSD SATA 3\nFuente: Be Quiet System Power 7 500W 80plus silver<"
+  scenario: "No debe de borrar nada."
+-
+  in: "MSI GS60 6QE-295ES i7-6700HQ 15.6\" 4K<br />Procesador Intel® Core i7-6700HQ-<br />Memoria RAM 16GB DDR4 SODIMM-<br />Disco duro1TB (7200 rpm S-ATA)+ 256GB SSD-<br />Display 15.6\" LED UHD (3840 x 2160) 16:9 Anti-Glare eDP-<br />Controlador gráfico Nvidia GeForce GTX 970M 3GB GDDR5-<br />LAN 10/100/1000 Killer Pro-<br />802.11 ac a/b/g/n-<br />Bluetooth V4.0 High Speed-<br />Cámara de portátil-<br />Micrófono -<br />Batería 6 celdas Ion de litio-<br />1 x Mini Display Port-<br />1 x HDMI-<br />1 x salida de auriculares-<br />1 x entrada de micrófono-<br />2 x USB 2.0-<br />1 x USB 3.1-<br />1 x RJ45-<br />Lector de Tarjetas 3 en 1 (SD, SDHC, MMC)-<br /></p>"
+  out: "MSI GS60 6QE-295ES i7-6700HQ 15.6\" 4K\nProcesador Intel® Core i7-6700HQ-\nMemoria RAM 16GB DDR4 SODIMM-\nDisco duro1TB (7200 rpm S-ATA)+ 256GB SSD-\nDisplay 15.6\" LED UHD (3840 x 2160) 16:9 Anti-Glare eDP-\nControlador gráfico Nvidia GeForce GTX 970M 3GB GDDR5-\nLAN 10/100/1000 Killer Pro-\n802.11 ac a/b/g/n-\nBluetooth V4.0 High Speed-\nCámara de portátil-\nMicrófono -\nBatería 6 celdas Ion de litio-\n1 x Mini Display Port-\n1 x HDMI-\n1 x salida de auriculares-\n1 x entrada de micrófono-\n2 x USB 2.0-\n1 x USB 3.1-\n1 x RJ45-\nLector de Tarjetas 3 en 1 (SD, SDHC, MMC)-\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "TV LED 65 Pulgadas Philips 65PUS6521/12 UHD 4K, Android TV, Ambilight, Plata<br /><br />Tecnología Ambilight en tres lados que proporciona nitidez, color y contraste de
+       calidad<br /><br />Pantalla diagonal (pulgadas) | 65 <br />Pantalla diagonal (cm) | 164 <br />Tecnología del televisor | LED <br />Smart TV | Sí <br />WiFi | Integrado <br />3D | No <br /><br />Características generales<br />Pantalla diagonal (pulgadas)<br />65<br />Pantalla diagonal (cm)<br />164<br />Tipo de resolución<br />Ultra HD 4K<br />Resolución (píxeles)<br />3840 x 2160<br />Tecnología del televisor<br />LED<br />Brillo (cd/m²)<br />400<br />Frecuencia (Hz)<br />1800<br />Tecnología de frecuencia<br />PPI<br />Tecnología de imagen<br />Micro Dimming Pro<br />Resolución Ultra<br /></p>"
+  out: "TV LED 65 Pulgadas Philips 65PUS6521/12 UHD 4K, Android TV, Ambilight, Plata\n\nTecnología Ambilight en tres lados que proporciona nitidez, color y contraste de
+        calidad\n\nPantalla diagonal (pulgadas) | 65 \nPantalla diagonal (cm) | 164 \nTecnología del televisor | LED \nSmart TV | Sí \nWiFi | Integrado \n3D | No \n\nCaracterísticas generales\nPantalla diagonal (pulgadas)\n65\nPantalla diagonal (cm)\n164\nTipo de resolución\nUltra HD 4K\nResolución (píxeles)\n3840 x 2160\nTecnología del televisor\nLED\nBrillo (cd/m²)\n400\nFrecuencia (Hz)\n1800\nTecnología de frecuencia\nPPI\nTecnología de imagen\nMicro Dimming Pro\nResolución Ultra\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "TAB Z 4G PRECINTADA<br />==================================== <br />TIENDA FISICA: <br />CALLE MARQUESA VIUDA DE ALDAMA 66 ALCOBENDAS MADRID 28100----- 916525858--- <br />HORARIO DE 10.00 A 14.00 Y DE 17.00 A 20.30 DE LUNES A VIERNES <br />Y DE 10.00 A 14.00 SABADOS <br />REPARAMOS Y LIBERAMOS TODOS LOS TELEFONOS TENEMOS TODA CLASE DE ACCESORIOS
+       ORIGINALES Y NO ORIGINALES. <br />===================================== <br />SOLO VENDEMOS MOVILES NUEVOS LIBRES CON SU GARANTIA OFICIAL DE LA MARCA Y FACTURA
+       DE COMPRA. <br />ACEPTAMOS SMARTS PHONES COMO PARTE DE PAGO LLEVAMOS MAS DE 14 AÑOS EN EL SECTOR.. <br />MAXIMA SERIEDAD. <br />===================================== <br />ACEPTAMOS VISA <br />ENVIOS CONTRAREMBOLSO <br />ENVIOS A TODA ESPAÑA <br />VISITA NUESTRA WEB:MOVILINES <br />===================================== <br /> STOCK DISPONIBLE EN TIENDA: <br />I PHONE 4-- I PHONE 4S-- I PHONE 5--IPHONE 5S-I PHONE 6 16G 64G 128G--I PHONE 6
+       PLUS 16G 64G 128G--I PHONE 6S 16G 64G 128G--I PHONE 6S PLUS 16G 64G 128G <br />SONY X PERIA Z-- Z1-- Z1 COMPACT--Z2--Z3--Z3 COMPACT--Z5--Z5 COMPACT <br />SAMSUNG S4--S4 MINI--S5--S5 MINI-S6 32G--S6 64G--S6 128G--S6 EDGE 32G --S6 EDGE
+       64G--S6 EDGE PLUS 32G--S6 EDGE PLUS 64G-S7 32G--S7 64G-S7 EDGE PLUS 32G-S7 EDGE
+       PLUS 64G <br />SAMSUNG J1--J5-GRAND PRIME--CORE PRIME--GRAN NEO PLUS DUOS <br />HUAWEI G7--HUAWEI G8--HUAWEI P8--HUAWEI P8 LITE <br />LG G2--LG G3--LG G4 <br />BQ E5--BQ X5--BQ M5 <br />GALAXY TAB--TAB S2 <br />I PAD AIR--I PAD AIR 2</p>" 
+  out: "TAB Z 4G PRECINTADA\n==================================== \nTIENDA FISICA: \nCALLE MARQUESA VIUDA DE ALDAMA 66 ALCOBENDAS MADRID 28100----- 916525858--- \nHORARIO DE 10.00 A 14.00 Y DE 17.00 A 20.30 DE LUNES A VIERNES \nY DE 10.00 A 14.00 SABADOS \nREPARAMOS Y LIBERAMOS TODOS LOS TELEFONOS TENEMOS TODA CLASE DE ACCESORIOS
+        ORIGINALES Y NO ORIGINALES. \n===================================== \nSOLO VENDEMOS MOVILES NUEVOS LIBRES CON SU GARANTIA OFICIAL DE LA MARCA Y FACTURA
+        DE COMPRA. \nACEPTAMOS SMARTS PHONES COMO PARTE DE PAGO LLEVAMOS MAS DE 14 AÑOS EN EL SECTOR.. \nMAXIMA SERIEDAD. \n===================================== \nACEPTAMOS VISA \nENVIOS CONTRAREMBOLSO \nENVIOS A TODA ESPAÑA \nVISITA NUESTRA WEB:MOVILINES \n===================================== \n STOCK DISPONIBLE EN TIENDA: \nHUAWEI G7--HUAWEI G8--HUAWEI P8--HUAWEI P8 LITE \nLG G2--LG G3--LG G4 \nBQ E5--BQ X5--BQ M5 \nGALAXY TAB--TAB S2 \nI PAD AIR--I PAD AIR 2"
+  scenario: "Debe borrar el spam que hay al final (aun queda un poco de spam, revisar mas adelante)"
+-
+  in: "Proyector Acer U5320W 3000 Lúmens DLP WXGA  <br /><br />Un proyector ideal para aulas y salas de presentación. El U5320W combina
+       resolución y luminosidad para convertirse en el proyector perfecto educacional.
+       Con un contraste 13000:1 y una resolución máxima de 1920 x 1200 con formatos
+       seleccionables 4:3/16:9/16:10 podrás colocarlo en cualquier aula y realizar tus
+       proyecciones de manera fácil y eficaz. Podrás ajustar la imagen deseada a la
+       perfección gracias a su lente con enfoque manual.<br /><br />Especificaciones:<br /> Imagen<br />o Resolución nativa 1280 x 800<br />o Resolución máx. 1920 x 1200<br />o Modo de luminosidad estándar 3000 lm<br />o Relación de aspecto nativo 16:10<br />o Relación de aspecto compatible 16:9/ 4:3<br />o Relación de Contraste 13,000:1<br />o Índice de proyección 0,37:1<br />o Zoom Digital 2x<br />o Corrección trapezoidal vertical -15°/+15°<br />o Corrección trapezoidal horizontal -15°/+15°<br />o Sincronización vertical máx. 120 Hz<br />o Sincronización horizontal máx. 100 kHz<br />o Sincronización vertical mínima 24 Hz<br />o Sincronización horizontal mínima 15 kHz<br />o Colores Admitidos 1.07 Billones de colores (30-bit)<br /> Lentes de Proyección<br />o Tipo de Lente Enfoque manual<br />o Apertura de Lente (Máx.) F/2,53<br />o Longitud focal máxima 5,38 mm<br />o Tamao de imagen diagonal mínima 1778 mm<br />o Tamaño máximo de imágen en diagonal 3,05 m<br />o Distancia de Proyección (Mín.) 220 mm<br />o Distancia de Proyección (Máx.) 630 mm<br /></p>"
+  out: "Proyector Acer U5320W 3000 Lúmens DLP WXGA  \n\nUn proyector ideal para aulas y salas de presentación. El U5320W combina
+        resolución y luminosidad para convertirse en el proyector perfecto educacional.
+        Con un contraste 13000:1 y una resolución máxima de 1920 x 1200 con formatos
+        seleccionables 4:3/16:9/16:10 podrás colocarlo en cualquier aula y realizar tus
+        proyecciones de manera fácil y eficaz. Podrás ajustar la imagen deseada a la
+        perfección gracias a su lente con enfoque manual.\n\nEspecificaciones:\n Imagen\no Resolución nativa 1280 x 800\no Resolución máx. 1920 x 1200\no Modo de luminosidad estándar 3000 lm\no Relación de aspecto nativo 16:10\no Relación de aspecto compatible 16:9/ 4:3\no Relación de Contraste 13,000:1\no Índice de proyección 0,37:1\no Zoom Digital 2x\no Corrección trapezoidal vertical -15°/+15°\no Corrección trapezoidal horizontal -15°/+15°\no Sincronización vertical máx. 120 Hz\no Sincronización horizontal máx. 100 kHz\no Sincronización vertical mínima 24 Hz\no Sincronización horizontal mínima 15 kHz\no Colores Admitidos 1.07 Billones de colores (30-bit)\n Lentes de Proyección\no Tipo de Lente Enfoque manual\no Apertura de Lente (Máx.) F/2,53\no Longitud focal máxima 5,38 mm\no Tamao de imagen diagonal mínima 1778 mm\no Tamaño máximo de imágen en diagonal 3,05 m\no Distancia de Proyección (Mín.) 220 mm\no Distancia de Proyección (Máx.) 630 mm\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "Proyector Benq MH856UST 3500 Lúmens DLP UXGA - Proyector<br /><br /><br />El proyector BenQ MH856UST es la solución total para el aula interactiva. Ofrece
+       una calidad de imagen superior full HD 1080p con un diseño de ultracorta
+       distancia, además del PointWrite interactivo a modo opcional. El brillo de 3.500
+       ANSI lúmens y la vida de la lámpara se ven reforzadas por la tecnología SmartEco
+       para preservar la calidad de las imágenes de forma duraderas, fiables y vibrantes.
+       BenQ ofrece el mejor proyector interactivo para el aula.<br /><br />Especificaciones:<br /> Sistema de Proyección DLP<br /> Resolución Nativa 1080P (1920 x 1080)<br /> Luminosidad* 3,500 lumens<br /> Ratio de Contraste 10,000:1<br /> Paleta de Color 1.07 Billion Colors<br /> Lente F2.5, f=5.1mm<br /> Relación de Aspecto Native 16:9 (6 aspect ratio selectable)<br /> Relación de Tiro 0.33<br /> Tamaño de imagen (Diagonal) 88.9\"-110<br /> Ratio de Zoom Fix<br /> Lámpara (Normal/ Modo Económica/ Modo SmartEco)* 3,000/ 4,000/ 7,000 hours<br /> Ajuste de Keystone 2D, Vertical/ Horizontal ±15 degrees<br /> Corner fit ±5 degrees.<br /> Proyección Offset 150% ±5%<br /> Soporte de Resolución VGA (640 x 480) to UXGA (1600 x 1200)<br /> Frecuencia Horizontal 15K-102KHz<br /> Frecuencia Vertical 23-120Hz<br /> Interfaz<br /></p> "
+  out: "Proyector Benq MH856UST 3500 Lúmens DLP UXGA - Proyector\n\n\nEl proyector BenQ MH856UST es la solución total para el aula interactiva. Ofrece
+        una calidad de imagen superior full HD 1080p con un diseño de ultracorta
+        distancia, además del PointWrite interactivo a modo opcional. El brillo de 3.500
+        ANSI lúmens y la vida de la lámpara se ven reforzadas por la tecnología SmartEco
+        para preservar la calidad de las imágenes de forma duraderas, fiables y vibrantes.
+        BenQ ofrece el mejor proyector interactivo para el aula.\n\nEspecificaciones:\n Sistema de Proyección DLP\n Resolución Nativa 1080P (1920 x 1080)\n Luminosidad* 3,500 lumens\n Ratio de Contraste 10,000:1\n Paleta de Color 1.07 Billion Colors\n Lente F2.5, f=5.1mm\n Relación de Aspecto Native 16:9 (6 aspect ratio selectable)\n Relación de Tiro 0.33\n Tamaño de imagen (Diagonal) 88.9\"-110\n Ratio de Zoom Fix\n Lámpara (Normal/ Modo Económica/ Modo SmartEco)* 3,000/ 4,000/ 7,000 hours\n Ajuste de Keystone 2D, Vertical/ Horizontal ±15 degrees\n Corner fit ±5 degrees.\n Proyección Offset 150% ±5%\n Soporte de Resolución VGA (640 x 480) to UXGA (1600 x 1200)\n Frecuencia Horizontal 15K-102KHz\n Frecuencia Vertical 23-120Hz\n Interfaz"
+  scenario: "No debe de borrar nada."
+-
+  in: "Sistema Operativo Google Android 5.0 (Lollipop)<br />Tamaño Pantalla 10,1\" (25,65 cm)<br />Memoria Interna 32 GB<br />Conectividad Wireless MIMO IEEE 802.11a/b/g/n/ac + WI-FI® MIRACAST + WI-FI DIRECT
+       + Bluetooth 4.1<br />Conexiones MHL3.0 con micro USB-B OTG, 3,5 mm, conector de audio de 5 pines
+       compatible con DNC</p>"
+  out: "Sistema Operativo Google Android 5.0 (Lollipop)\nTamaño Pantalla 10,1\" (25,65 cm)\nMemoria Interna 32 GB\nConectividad Wireless MIMO IEEE 802.11a/b/g/n/ac + WI-FI® MIRACAST + WI-FI DIRECT
+        + Bluetooth 4.1\nConexiones MHL3.0 con micro USB-B OTG, 3,5 mm, conector de audio de 5 pines
+        compatible con DNC"
+  scenario: "No debe de borrar nada."
+-
+  in: "TV LED 43\" - LG 43LH630V, Full HD, WebOS 3.0, Virtual Surround Plus<br /><br />Pantalla LED Direct y un procesaso Triple Xd-Engine Dual core<br />Pantalla diagonal (cm) | 109 <br />Tecnología del televisor | LED <br />Smart TV | Sí <br />WiFi | Integrado <br />3D | No <br />Descripción<br />Con una resolución de imagen Full HD, un sonido Virtual Surround Plus y un Smart
+       TV intuitivo y veloz, el televisor 43LH630V.AEU de LG se convertirá en el centro
+       neurálgico de tu hogar. No sólo verás la tele sino que también podrás navegar por
+       Internet, conectar tu Smartphone, compartir tus fotos, escuchar listas de
+       canciones de tu ordenador conectándolo mediante HDMI o DLNA y mucho más.<br /></p>"
+  out: "TV LED 43\" - LG 43LH630V, Full HD, WebOS 3.0, Virtual Surround Plus\n\nPantalla LED Direct y un procesaso Triple Xd-Engine Dual core\nPantalla diagonal (cm) | 109 \nTecnología del televisor | LED \nSmart TV | Sí \nWiFi | Integrado \n3D | No \nDescripción\nCon una resolución de imagen Full HD, un sonido Virtual Surround Plus y un Smart
+        TV intuitivo y veloz, el televisor 43LH630V.AEU de LG se convertirá en el centro
+        neurálgico de tu hogar. No sólo verás la tele sino que también podrás navegar por
+        Internet, conectar tu Smartphone, compartir tus fotos, escuchar listas de
+        canciones de tu ordenador conectándolo mediante HDMI o DLNA y mucho más.\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "Ebook Reader Sony PRS-600.<br />En perfecto estado. Incluye accesorios (funda y cable usb) y embalaje original.</p>"
+  out: "Ebook Reader Sony PRS-600.\nEn perfecto estado. Incluye accesorios (funda y cable usb) y embalaje original."
+  scenario: "No debe de borrar nada."
+-
+  in: "Intel Core 2 Duo T5500 / 1. 66 GHz Dual Core 2 gb de Ram 320gb de disco duro,
+       Grabadora de dvd, pantalla de 13, 3 pulgadas, conexiones Wifi, vga, usb, etc. Se
+       entrega con bateria cargada y en buen estado y cargador original.</p>"
+  out: "Intel Core 2 Duo T5500 / 1. 66 GHz Dual Core 2 gb de Ram 320gb de disco duro,
+        Grabadora de dvd, pantalla de 13, 3 pulgadas, conexiones Wifi, vga, usb, etc. Se
+        entrega con bateria cargada y en buen estado y cargador original."
+  scenario: "No debe de borrar nada."
+-
+  in: "Proyector MINI LED. Proyecta hasta 80 pulgadas! Muy pequeño y ligero, pesa menos
+       de un kilo! Con este fantástico proyector podrás ver películas, series, jugar a
+       juegos, ver fotos y videos, proyectar la imagen de tu ordenador, televisión, TDT
+       etc...<br />Incluye USB, HDMI, VGA, conexión para tarjeta SD y altavoz propio interno. No
+       necesitarás cambiar la lámpara, ya que tiene una duración de hasta 20.000 horas.<br /><br />Producto totalmente NUEVO A ESTRENAR. Se envía desde ESPAÑA.<br /><br />DESCUENTOS por varias unidades, CONTACTA POR WHATSAPP!<br /><br />Contenido:<br /><br />- Mini proyector LED<br />- Manual de instrucciones<br />- Adaptador de corriente<br />- Mando a distancia<br /><br /><br />Especificaciones:<br /><br />- Resolución soportada: 576P, 720P (Soporta HD)<br />- Dimensiones imagen: hasta 80 pulgadas<br />- Peso: 0.8kg<br />- Brillo: 60 Lumens<br />- Contraste: 1000:1<br />- Resolución nativa: 480*320<br />- Dimensiones: 168*110*70mm<br />- Voltaje: 90-240V/50-60Hz<br />- Conexiones: HDMI/VGA/AV/USB/SD y sonido<br />- Soporte archivos de vídeo MPEG1, MPEG2, MP4, AVI.. y audio WMA,MP4,M4A<br /><br />Condiciones:<br /><br />- Envío 24/48H Correos Express y pago CONTRARREMBOLSO. El coste es de 6,00€ PIDAS
+       LO QUE PIDAS.<br /><br />Más modelos disponibles en www.bargainshop.es<br />Contacto por correo electrónico o por WHATSAPP las 24H/365 días al año.<br /><br />tags Proyector projector proyeccion tv television hd full hd 4k 1080p home cinema
+       Acer Benq Asus Canon Casio Dell Epson Hitachi LG Mitsubishi Infocus LG Panasonic
+       Philips Ricoh Sharp Sony ViewSonic</p>"
+  out: "Proyector MINI LED. Proyecta hasta 80 pulgadas! Muy pequeño y ligero, pesa menos
+        de un kilo! Con este fantástico proyector podrás ver películas, series, jugar a
+        juegos, ver fotos y videos, proyectar la imagen de tu ordenador, televisión, TDT
+        etc...\nIncluye USB, HDMI, VGA, conexión para tarjeta SD y altavoz propio interno. No
+        necesitarás cambiar la lámpara, ya que tiene una duración de hasta 20.000 horas.\n\nProducto totalmente NUEVO A ESTRENAR. Se envía desde ESPAÑA.\n\nDESCUENTOS por varias unidades, CONTACTA POR WHATSAPP!\n\nContenido:\n\n- Mini proyector LED\n- Manual de instrucciones\n- Adaptador de corriente\n- Mando a distancia\n\n\nEspecificaciones:\n\n- Resolución soportada: 576P, 720P (Soporta HD)\n- Dimensiones imagen: hasta 80 pulgadas\n- Peso: 0.8kg\n- Brillo: 60 Lumens\n- Contraste: 1000:1\n- Resolución nativa: 480*320\n- Dimensiones: 168*110*70mm\n- Voltaje: 90-240V/50-60Hz\n- Conexiones: HDMI/VGA/AV/USB/SD y sonido\n- Soporte archivos de vídeo MPEG1, MPEG2, MP4, AVI.. y audio WMA,MP4,M4A\n\nCondiciones:\n\n- Envío 24/48H Correos Express y pago CONTRARREMBOLSO. El coste es de 6,00€ PIDAS
+        LO QUE PIDAS.\n\nMás modelos disponibles en\nContacto por correo electrónico o por WHATSAPP las 24H/365 días al año.\n\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "GRANIZADORA SENCOTEL A ESTRENAR 12 LTS x 2 depositos<br />TOTALMENTE A ESTRENAR.<br />Refrigerante R-404ª.<br />Profundo 470.<br />Potencia 800w.<br />Peso 56.<br />Litros 2 x 12.<br />Voltaje 220v / 50Hz.<br />Ancho 400.<br />Alto 850.<br />Versatil, de reducidas dimensiones, concebida para preparar y producir granizados,
+       sorbetes y bebidas frias.<br />Maquina con elevada capacidad productiva gracias a sus depositos de 12 litros.<br />Esta maquina sale de serie con el sistema incorporado FAST FREEZE, dotado de un
+       circuito de refrigeración potenciado que permite abreviar notablemente el tiempo
+       de preparación del producto. Ideal para locales en los que se pide con frecuencia
+       sorbetes y granizados.<br />Viene equipada con un termostato electronico y con un display digital que señala
+       la temperatura de la bebida.<br />El grifo en forma de campana garantiza una limpieza y una higiene perfectas.<br />Paneles en acero inoxidable.<br />Sistema de conducción del liquido de condensación del deposito.<br />Deposito y grifo facil de desmontar, sin emplear herramientas herramientas<br /></p>"
+  out: "GRANIZADORA SENCOTEL A ESTRENAR 12 LTS x 2 depositos\nTOTALMENTE A ESTRENAR.\nRefrigerante R-404ª.\nProfundo 470.\nPotencia 800w.\nPeso 56.\nLitros 2 x 12.\nVoltaje 220v / 50Hz.\nAncho 400.\nAlto 850.\nVersatil, de reducidas dimensiones, concebida para preparar y producir granizados,
+        sorbetes y bebidas frias.\nMaquina con elevada capacidad productiva gracias a sus depositos de 12 litros.\nEsta maquina sale de serie con el sistema incorporado FAST FREEZE, dotado de un
+        circuito de refrigeración potenciado que permite abreviar notablemente el tiempo
+        de preparación del producto. Ideal para locales en los que se pide con frecuencia
+        sorbetes y granizados.\nViene equipada con un termostato electronico y con un display digital que señala
+        la temperatura de la bebida.\nEl grifo en forma de campana garantiza una limpieza y una higiene perfectas.\nPaneles en acero inoxidable.\nSistema de conducción del liquido de condensación del deposito.\nDeposito y grifo facil de desmontar, sin emplear herramientas herramientas\n"
+  scenario: "No debe de borrar nada"
+-
+  in: "All in One - Asus Z220ICUK, 21.5\", i5-6400T, 8GB, 1TB<br /><br />SonicMaster Premium para ofrecerte una experiencia de sonido envolvente<br />RAM | 8GB <br />Capacidad de Disco | 1TB <br />Descripción<br />Navega y reproduce tus contenidos favorito con el All in One Z220ICUK de Asus, el
+       complemento perfecto para tu escritorio en tema de rendimiento, versatilidad y
+       diseño.<br />Todo el espacio que necesitas<br />Cuenta con una capacidad de almacenamiento de 1TB y 8GB de RAM, que incluso podrás
+       ampliar hasta 16GB, para que puedas guardar fotos, vídeos, documentos y mucho más.<br />Disfruta de un sonido envolvente<br />Dispone de 6 altavoces con una potencia de hasta 16W, que harán que te sientas en
+       un concierto en directo.<br />Reproduce tus mejores contenidos<br />Su pantalla táctil de 21.5 pulgadas te permitirá disfrutar de todos tus contenidos
+       multimediales como pelis, juegos y programas con resolución Full HD.<br />Múltiples conexiones<br /></p>"
+  out: "All in One - Asus Z220ICUK, 21.5\", i5-6400T, 8GB, 1TB\n\nSonicMaster Premium para ofrecerte una experiencia de sonido envolvente\nRAM | 8GB \nCapacidad de Disco | 1TB \nDescripción\nNavega y reproduce tus contenidos favorito con el All in One Z220ICUK de Asus, el
+        complemento perfecto para tu escritorio en tema de rendimiento, versatilidad y
+        diseño.\nTodo el espacio que necesitas\nCuenta con una capacidad de almacenamiento de 1TB y 8GB de RAM, que incluso podrás
+        ampliar hasta 16GB, para que puedas guardar fotos, vídeos, documentos y mucho más.\nDisfruta de un sonido envolvente\nDispone de 6 altavoces con una potencia de hasta 16W, que harán que te sientas en
+        un concierto en directo.\nReproduce tus mejores contenidos\nSu pantalla táctil de 21.5 pulgadas te permitirá disfrutar de todos tus contenidos
+        multimediales como pelis, juegos y programas con resolución Full HD.\nMúltiples conexiones\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "Impresora 3D - BQ Witbox Negra<br /><br />Calidad de impresión 3D espectacular <br />Con la impresora 3D de BQ Witbox podrás imprimir todo lo que quieras, desde
+       figuras de gran tamaño o con múltiples partes de una sola vez a un nivel al que no
+       llega ninguna otra impresora. <br />Esta impresora ha sido minuciosamente diseñada para optimizar su funcionalidad.
+       Ofreciendo una definición y resolución de los objetos impresos espectacular.
+       Gracias a su sistema de flujo de aire variable, el plástico se enfría más rápido,
+       logrando una impresión más estable.<br />La BQ Witbox es totalmente cerrada, lo que evita el acceso accidental durante la
+       impresión, y cuenta con una puerta frontal con sistema de bloqueo que la hace
+       especialmente segura en ambientes donde hay niños. Su diseño cerrado contribuye a
+       minimizar el ruido. Además, evita la fuga de calor y los flujos de aire,
+       manteniendo constante la temperatura en el interior de la impresora.<br /></p>"
+  out: "Impresora 3D - BQ Witbox Negra\n\nCalidad de impresión 3D espectacular \nCon la impresora 3D de BQ Witbox podrás imprimir todo lo que quieras, desde
+       figuras de gran tamaño o con múltiples partes de una sola vez a un nivel al que no
+       llega ninguna otra impresora. \nEsta impresora ha sido minuciosamente diseñada para optimizar su funcionalidad.
+       Ofreciendo una definición y resolución de los objetos impresos espectacular.
+       Gracias a su sistema de flujo de aire variable, el plástico se enfría más rápido,
+       logrando una impresión más estable.\nLa BQ Witbox es totalmente cerrada, lo que evita el acceso accidental durante la
+       impresión, y cuenta con una puerta frontal con sistema de bloqueo que la hace
+       especialmente segura en ambientes donde hay niños. Su diseño cerrado contribuye a
+       minimizar el ruido. Además, evita la fuga de calor y los flujos de aire,
+       manteniendo constante la temperatura en el interior de la impresora.\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "KAYAK DE PESCA PESCADOR 12 A ESTRENAR<br /><br />A ESTRENAR  De los mejores Kayak de pescaKAYAK PESCADOR 12 pesca super-equipada. <br />Asiento css abatible , Reposapies regulables , 3 tambuchos estancos. <br />Amplia zona de carga posterior. <br />2 cañeros posteriores, Cañero rotatorio proa scotty 360º, carro harmony, kit de
+       ancla.<br />Chaleco harmony universal, Pala drifter desmontable, saco estanco 5l<br /></p>"
+  out: "KAYAK DE PESCA PESCADOR 12 A ESTRENAR\n\nA ESTRENAR  De los mejores Kayak de pescaKAYAK PESCADOR 12 pesca super-equipada. \nAsiento css abatible , Reposapies regulables , 3 tambuchos estancos. \nAmplia zona de carga posterior. \n2 cañeros posteriores, Cañero rotatorio proa scotty 360º, carro harmony, kit de
+        ancla.\nChaleco harmony universal, Pala drifter desmontable, saco estanco 5l\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "Cámara Réflex Canon EOS 1300D + 18-55 DC + Funda + Tarjeta SD + Libro<br /><br />Grabación de vídeo en Full HD y procesador DIGIC 4+<br /><br />Tipo de sensor | Aprox. 22,3 mm x 14,9 mm <br />Píxeles efectivos (MP) | 18 <br />Longitud focal | Equivalente a 1,6x la longitud focal del objetivo <br />Tipo | Balance de blancos automático con el sensor de imagen <br />Tipo | Pentaespejo <br />Tipo | Visor electrónico con sensor de imágenes <br /><br />Da un paso más en el mundo de la fotografía y hazte con la cámara réflex EOS 1300D
+       de Canon. Realiza fotos y vídeos de alta calidad de manera muy sencilla y
+       compártelos al instante gracias a su conexión WiFi con NFC.<br />Gran calidad de imagen<br />Consigue unas fotos con de gran calidad gracias al procesador DIGIC 4+ y al sensor
+       de tamaño APS-C, de 18 megapíxeles, que te permiten captar hasta el más mínimo
+       detalle de la escena.<br />Vídeos Full HD<br />Dale carácter a tus recuerdos. No solo tendrás imágenes de 18 megapíxeles llenas
+       de detalles si no que obtendrás vídeos en calidad Full HD con aspecto profesional
+       que te dejarán asombrado cuando los veas en un televisor HD.<br />Comparte tus fotos al instante<br />Gracias a la conexión WiFi integrada con emparejamiento NFC podrás controlar la
+       cámara de manera remota, mediante la app de Canon, con cualquier dispositivo móvil
+       compatible. Además podrás transferir las imágenes de la cámara a tu Smartphone o
+       Tablet.<br />Fotografía artística<br />Aunque seas un principiante con la EOS 1300D podrás captar fotos con una calidad
+       espectacular desde el primer momento. Consigue unas fotos únicas utilizando sus
+       filtros creativos como el Ojo de Pez y la Cámara de Juguete.<br /><br /><br />Especificaciones<br />Esconder todas<br />Sensor<br /></p>"
+  out: "Cámara Réflex Canon EOS 1300D + 18-55 DC + Funda + Tarjeta SD + Libro\n\nGrabación de vídeo en Full HD y procesador DIGIC 4+\n\nTipo de sensor | Aprox. 22,3 mm x 14,9 mm \nPíxeles efectivos (MP) | 18 \nLongitud focal | Equivalente a 1,6x la longitud focal del objetivo \nTipo | Balance de blancos automático con el sensor de imagen \nTipo | Pentaespejo \nTipo | Visor electrónico con sensor de imágenes \n\nDa un paso más en el mundo de la fotografía y hazte con la cámara réflex EOS 1300D
+        de Canon. Realiza fotos y vídeos de alta calidad de manera muy sencilla y
+        compártelos al instante gracias a su conexión WiFi con NFC.\nGran calidad de imagen\nConsigue unas fotos con de gran calidad gracias al procesador DIGIC 4+ y al sensor
+        de tamaño APS-C, de 18 megapíxeles, que te permiten captar hasta el más mínimo
+        detalle de la escena.\nVídeos Full HD\nDale carácter a tus recuerdos. No solo tendrás imágenes de 18 megapíxeles llenas
+        de detalles si no que obtendrás vídeos en calidad Full HD con aspecto profesional
+        que te dejarán asombrado cuando los veas en un televisor HD.\nComparte tus fotos al instante\nGracias a la conexión WiFi integrada con emparejamiento NFC podrás controlar la
+        cámara de manera remota, mediante la app de Canon, con cualquier dispositivo móvil
+        compatible. Además podrás transferir las imágenes de la cámara a tu Smartphone o
+        Tablet.\nFotografía artística\nAunque seas un principiante con la EOS 1300D podrás captar fotos con una calidad
+        espectacular desde el primer momento. Consigue unas fotos únicas utilizando sus
+        filtros creativos como el Ojo de Pez y la Cámara de Juguete.\n\n\nEspecificaciones\nEsconder todas\nSensor\n"
+  scenario: "No debe de borrar nada."
+-
+  in: "COMPRO LOTES GRANDES O PEQUEÑOS DE ELECTRONICA , GAFAS DE SOL , PERFUMES DE HOMBRE
+       Y MUJER  , GAMA BLANCA , TODO A ESTRENAR PRECINTADO PRECIOS RAZONABLES PARA
+       UNIDADES , LOTES ,PALETS PAGO AL INSTANTE TODA MERCANCIAS, SE PIDE
+       SERIEDAD,CONTESTO SOLO TF6916205WHATSAPP99<br /><br />PALABRA DE BUSQUEDA IPHONE 6 ,SAMSUNG S7 ACER SONY ASUS NIKON MSI BOSE CANON IPOD
+       ROOMBA DISCO DURO  ROBOT KITCHENAID KAYAK TABLET  BARBACOA ORDENADOR ARCOS RAYBAN
+       ARNETTE ARMANI VIDEOCAMARA AURICULARES ASPIRADORA PANASONIC PARROT TOMTOM RATON
+       MESA DE MEZCLAS REFLEX CAMARA COMPACTA HOME CINEMA HOM-BOT GARMIN NUVI ETREX
+       OREGON HP TOSHIBA CASCO APLLE MACBOOK PRO IPAD TELEFONO MODEM JUEGO PS4 XBOX ONE
+       WII U 3DS XL CASIO BREIL ROLEX CARRERA TAG HEUER FESTINA LOTUS JVC QC25 VPL TWIN
+       I-ROBOT</p>"
+  out: "COMPRO LOTES GRANDES O PEQUEÑOS DE ELECTRONICA , GAFAS DE SOL , PERFUMES DE HOMBRE
+        Y MUJER  , GAMA BLANCA , TODO A ESTRENAR PRECINTADO PRECIOS RAZONABLES PARA
+        UNIDADES , LOTES ,PALETS PAGO AL INSTANTE TODA MERCANCIAS, SE PIDE
+        SERIEDAD,CONTESTO SOLO TF6916205WHATSAPP99"
+  scenario: "Debe borrar el spam que hay a partir de 'PALABRA DE BUSQUEDA'."
+-
+  in: "Altavoces Harman Kardon Soundsticks III , nuevos a estrenar caja precintada. Con
+       facura para su garantia de dos años. SOn impresionantes tanto en diseño como en
+       calidad de sonido.<br /><br />Repito son nuevos precintados y factura.<br /><br />Tambien contesto al whatsapp<br /><br />Apple, mac, iphone 6s, macbook pro, Samsung, sony, s6 s7 edge</p>"
+  out: "Altavoces Harman Kardon Soundsticks III , nuevos a estrenar caja precintada. Con
+        facura para su garantia de dos años. SOn impresionantes tanto en diseño como en
+        calidad de sonido.\n\nRepito son nuevos precintados y factura.\n\nTambien contesto al whatsapp\n\n"
+  scenario: "Debe borrar el spam del final."
+-
+  in: "Sony VAIO PCG-71211M Disipador y ventilador 76_a<br /><br />Probado, testeado y funcionando. Buen estado, puede tener pequeñas marcas de uso.<br />La foto no pertenece al artículo en venta, se pone a titulo informativo, no es
+       contractual. Si quieres fotos reales pidelas. Puede tener pequeñas marcas de uso<br />Todos nuestros envios se hacen desde España y por correo certificado o por
+       transporte servicio 24/72 Horas, a no ser que ponga lo contrario en el anuncio</p>"
+  out: "Sony VAIO PCG-71211M Disipador y ventilador 76_a\n\nProbado, testeado y funcionando. Buen estado, puede tener pequeñas marcas de uso.\nLa foto no pertenece al artículo en venta, se pone a titulo informativo, no es
+        contractual. Si quieres fotos reales pidelas. Puede tener pequeñas marcas de uso\nTodos nuestros envios se hacen desde España y por correo certificado o por
+        transporte servicio 24/72 Horas, a no ser que ponga lo contrario en el anuncio"
+  scenario: "No debe de borrar nada."
+-
+  in: "Vendo Impresora de fotos A4 marca Sony UP-DR80MD, imprime varios tama&#241;os
+       desde 10x15, 20x25 y 20x30 con una excelente calidad profesional, La vendo en
+       500?. ( y opci&#243;n trueque ). </p>"
+  out: "Vendo Impresora de fotos A4 marca Sony UP-DR80MD, imprime varios tama&#241;os
+        desde 10x15, 20x25 y 20x30 con una excelente calidad profesional, La vendo en
+        500?. ( y opci&#243;n trueque )."
+  scenario: "No debe de borrar nada."
+-
+  in: "Bateria externa (Power Bank)  de 6800 mAh valida para cualquier tipo de terminal o
+       aparato eléctrico que permita carga mediante USB.<br /><br />Es nueva sin ningún uso, solo abierto una vez para comprobar su correcto
+       funcionamiento. <br /><br />Detalles específicos:<br /><br />Tamaño:  100 x 74 x 23,5 mm<br />Peso :  200g<br />Capacidad : 6800mAh<br />Voltaje de entrada : corriente DC 5V / 1A Max<br />Tensión de salida : Corriente DC 5V / 1A y 5V / 2.1A Max<br />Tipo de Batería : Polímero de litio<br />Esperanza de vida : más de 500 cargas<br />Material de la carcasa  :  Metal<br /><br />Samsung, Sony, iPhone, Xiaomi, Elephone, LG, Motorola, HTC, ZTE, Huawei, Lenovo,
+       ZTE, Marvel, Avengers, Captain America,</p>"
+  out: "Bateria externa (Power Bank)  de 6800 mAh valida para cualquier tipo de terminal o
+        aparato eléctrico que permita carga mediante USB.\n\nEs nueva sin ningún uso, solo abierto una vez para comprobar su correcto
+        funcionamiento. \n\nDetalles específicos:\n\nTamaño:  100 x 74 x 23,5 mm\nPeso :  200g\nCapacidad : 6800mAh\nVoltaje de entrada : corriente DC 5V / 1A Max\nTensión de salida : Corriente DC 5V / 1A y 5V / 2.1A Max\nTipo de Batería : Polímero de litio\nEsperanza de vida : más de 500 cargas\nMaterial de la carcasa  :  Metal\n\n"
+  scenario: "Debe borrar el spam del final."
+-
+  in: "Por dejar de fumar se vende lote de tabaco compuesto por 16 cajetillas de Camel,
+       16 de L&M y 15 de Malboro pocket 90 euros todo y regalo 3 cajetillas de Camel y
+       tres de Malboro. Tambien se venden por lotes por marcas a 30 cada uno.</p>"
+  out: "Por dejar de fumar se vende lote de tabaco compuesto por 16 cajetillas de Camel,
+        16 de L&M y 15 de Malboro pocket 90 euros todo y regalo 3 cajetillas de Camel y
+        tres de Malboro. Tambien se venden por lotes por marcas a 30 cada uno."
+  scenario: "No debe de borrar nada."
+-
+  in: "Se venden paneles solares poli cristalinos y moncristalinos 24v de 230w y 8, 34 ah
+       de carga. Usados 6 meses al 100% de rendimiento a toda prueba. Especiales para
+       bombeo directo, caravanas o casas de campo. Son compatibles con instalaciones de
+       12v por regulador automatico. Disponemos de diferentes modelos de placas solares,
+       inversores de diferentes watios, reguladores de carga PWM y MPPT, baterías AGM.
+       Envíos contra reembolso. Opcion a transporte privado Inversol. se hace precio por
+       lotes</p>"
+  out: "Se venden paneles solares poli cristalinos y moncristalinos 24v de 230w y 8, 34 ah
+        de carga. Usados 6 meses al 100% de rendimiento a toda prueba. Especiales para
+        bombeo directo, caravanas o casas de campo. Son compatibles con instalaciones de
+        12v por regulador automatico. Disponemos de diferentes modelos de placas solares,
+        inversores de diferentes watios, reguladores de carga PWM y MPPT, baterías AGM.
+        Envíos contra reembolso. Opcion a transporte privado Inversol. se hace precio por
+        lotes"
+  scenario: "No debe de borrar nada."
+-
+  in: "Venta y distribucion de pellet de pino para calderas y estufas de calidad Enplus
+       A1, que es la maxima calidad certificada. Sus caracteristicas son: % de cenizas
+       0,42, poder calorifico 18MJ/Kg, humedad entre 5-6%, durabilidad 98,7 %, densidad
+       700-720 Kg/m.<br />Precio 3,80 euros el saco de 15Kg. recojiendo para un palet de 72 sacos. <br />Descuentos por cantidad<br />Porte segun zona y minimo 1 palet completo.<br />Inmejorable precio y maxima calidad.<br />Preferible pedidos al e-mail y consultas al telefono.</p>"
+  out: "Venta y distribucion de pellet de pino para calderas y estufas de calidad Enplus
+        A1, que es la maxima calidad certificada. Sus caracteristicas son: % de cenizas
+        0,42, poder calorifico 18MJ/Kg, humedad entre 5-6%, durabilidad 98,7 %, densidad
+        700-720 Kg/m.\nPrecio 3,80 euros el saco de 15Kg. recojiendo para un palet de 72 sacos. \nDescuentos por cantidad\nPorte segun zona y minimo 1 palet completo.\nInmejorable precio y maxima calidad.\nPreferible pedidos al e-mail y consultas al telefono."
+  scenario: "No debe de borrar nada."
+-
+  in: "Vaporizador Herborizer starndard junta de 14.5mm<br />Regalo bong Jelly Joker<br />Esta todo en perfecto estado con sus accesorios. <br />Vendo por no usarlo<br />Prefiero entrega en mano en Madrid</p>"
+  out: "Vaporizador Herborizer starndard junta de 14.5mm\nRegalo bong Jelly Joker\nEsta todo en perfecto estado con sus accesorios. \nVendo por no usarlo\nPrefiero entrega en mano en Madrid"
+  scenario: "No debe de borrar nada."
+-
+  in: "Dos garrafas de 5 litros repletas de anillas chapas de las latas de  refrescos y
+       cervezas para manualidades de bolsos, cortinas,cinturones,monederos...etc ...etc..<br />No se las q van pero hay miles las garrafas estan llenas a no caver mas y regalo
+       otros dos puñados q no cojian .<br />Precio por lote.</p>"
+  out: "Dos garrafas de 5 litros repletas de anillas chapas de las latas de  refrescos y
+        cervezas para manualidades de bolsos, cortinas,cinturones,monederos...etc ...etc..\nNo se las q van pero hay miles las garrafas estan llenas a no caver mas y regalo
+        otros dos puñados q no cojian .\nPrecio por lote."
+  scenario: "No debe de borrar nada."
+-
+  in: "Véndese nicho no cemiterio de Santa María  da Pobra do Caramiñal.<br />número nicho: 433</p>"
+  out: "Véndese nicho no cemiterio de Santa María  da Pobra do Caramiñal.\nnúmero nicho: 433"
+  scenario: "No debe de borrar nada."
+-
+  in: "TABACO PARA ENTUBAR O LIAR, BUENA CALIDAD Y NATURAL, ENVÍO TODA ESPAÑA, <br />VIRGINIA ORO............. 27 &#8364; VIRGINIA FULL-FAVOR..... 28 &#8364;<br />VIRGINIA MÉDIUM............ 25 &#8364; VIRGINIA LEMON.......... 25 &#8364;<br />VIRGINIA ORO LIGHT....... 28 &#8364; VIRGINIA MÉDIUM LIGHT. 28 &#8364;<br />VIRGINIA LEMON LIGHT..28 &#8364; BURLEY..................... 27 &#8364;<br />KENTUCKY....... 27 &#8364; AMERICAN BLEND........ 27 &#8364;<br />COMBINACIÓN GRAN AROMA: <br />KENTUCKY-VIRGINIAS-BURLEY................ 28 &#8364;</p>"
+  out: "TABACO PARA ENTUBAR O LIAR, BUENA CALIDAD Y NATURAL, ENVÍO TODA ESPAÑA, \nVIRGINIA ORO............. 27 &#8364; VIRGINIA FULL-FAVOR..... 28 &#8364;\nVIRGINIA MÉDIUM............ 25 &#8364; VIRGINIA LEMON.......... 25 &#8364;\nVIRGINIA ORO LIGHT....... 28 &#8364; VIRGINIA MÉDIUM LIGHT. 28 &#8364;\nVIRGINIA LEMON LIGHT..28 &#8364; BURLEY..................... 27 &#8364;\nKENTUCKY....... 27 &#8364; AMERICAN BLEND........ 27 &#8364;\nCOMBINACIÓN GRAN AROMA: \nKENTUCKY-VIRGINIAS-BURLEY................ 28 &#8364;"
+  scenario: "No debe de borrar nada."
+-
+  in: "REGLA DE CÁLCULO AUSTRALIANA W & G DUALFACE MODEL 432 UTILIZADA EN CÁLCULOS
+       ELECTRICOS - UNA GRAN CALCULADORA SLIDE RULE -<br /><br />De madera con su caja original, el cursor de cristal con marco metálico presenta
+       fisuras en el cristal, esto no afecta al correcto funcionamiento de la regla.<br /><br />Medidas 35,5 cm x 4,5 cm.<br />En las fotografías adjuntas se pueden apreciar los detalles, si tienen alguna duda
+       o desean más fotografías gustosamente se las facilitaremos.<br /> <br />Si están interesados en aparatos de medida antiguos, relojes, reglas de cálculo,
+       ábacos, nomogramas, máquinas de escribir, calculadoras mecánicas, electrónicas o
+       libros, manuales, catálogos sobre estos temas, soliciten información y trataremos
+       de facilitarles la información de que dispongamos.</p>"
+  out: "REGLA DE CÁLCULO AUSTRALIANA W & G DUALFACE MODEL 432 UTILIZADA EN CÁLCULOS
+        ELECTRICOS - UNA GRAN CALCULADORA SLIDE RULE -\n\nDe madera con su caja original, el cursor de cristal con marco metálico presenta
+        fisuras en el cristal, esto no afecta al correcto funcionamiento de la regla.\n\nMedidas 35,5 cm x 4,5 cm.\nEn las fotografías adjuntas se pueden apreciar los detalles, si tienen alguna duda
+        o desean más fotografías gustosamente se las facilitaremos.\n \nSi están interesados en aparatos de medida antiguos, relojes, reglas de cálculo,
+        ábacos, nomogramas, máquinas de escribir, calculadoras mecánicas, electrónicas o
+        libros, manuales, catálogos sobre estos temas, soliciten información y trataremos
+        de facilitarles la información de que dispongamos."
+  scenario: "No debe de borrar nada."
+-
+  in: "GRABADO XILOGRAFICO (LINOLEO) DE AGUSTIN IBARROLA<br />1974<br />ORIGINAL. <br />Medidas 70 x 50 cm.  <br />Se trata de una obra clandestina del autor. <br />Firma del autor. Original. Tirada limitada de 500 ejemplares. Ejemplar Nº 8. <br />El autor no llego a estampar 500 ejemplares, dada la prohibición. <br />Papel grueso<br />400</p>"
+  out: "GRABADO XILOGRAFICO (LINOLEO) DE AGUSTIN IBARROLA\n1974\nORIGINAL. \nMedidas 70 x 50 cm.  \nSe trata de una obra clandestina del autor. \nFirma del autor. Original. Tirada limitada de 500 ejemplares. Ejemplar Nº 8. \nEl autor no llego a estampar 500 ejemplares, dada la prohibición. \nPapel grueso\n400"
+  scenario: "No debe de borrar nada."
+-
+  in: "Billetes de ida y vuelta con Ryanair<br />- Ida: 2 de septiembre 10:25 (Vuelo FR7257)<br />- Vuelta: 9 de septiembre 17:15 (Vuelo FR7156)<br /><br />En el precio se incluye el coste del cambio de titularidad de los billetes<br /><br />Contactar por privado para demostración de la posesión de los billetes y para la
+       venta</p>"
+  out: "Billetes de ida y vuelta con Ryanair\n- Ida: 2 de septiembre 10:25 (Vuelo FR7257)\n- Vuelta: 9 de septiembre 17:15 (Vuelo FR7156)\n\nEn el precio se incluye el coste del cambio de titularidad de los billetes\n\nContactar por privado para demostración de la posesión de los billetes y para la
+        venta"
+  scenario: "No debe de borrar nada."
+-
+  in: "Herramienta indispensable para poder sacar pernos de relojes.<br /><br />Incorpora la punta saca perno y en su extremo palanca para abrir relojes<br /><br />En medio va estriado para un mejor agarre.<br /><br />Fabricadas en metal.<br /><br />2 UNIDADES</p>"
+  out: "Herramienta indispensable para poder sacar pernos de relojes.\n\nIncorpora la punta saca perno y en su extremo palanca para abrir relojes\n\nEn medio va estriado para un mejor agarre.\n\nFabricadas en metal.\n\n2 UNIDADES"
+  scenario: "No debe de borrar nada."
+-
+  in: "Nuevo.<br />Color rojo<br />Medidas 25 x 18cm</p>"
+  out: "Nuevo.\nColor rojo\nMedidas 25 x 18cm"
+  scenario: "No debe de borrar nada."
+-
+  in: "Ataúd nuevo por cierre de funeraria, se envía a toda España, en perfecto
+       estado.Precio negociable.contacto por email por favor</p>"
+  out: "Ataúd nuevo por cierre de funeraria, se envía a toda España, en perfecto
+        estado.Precio negociable.contacto por email por favor"
+  scenario: "No debe de borrar nada."
+-
+  in: "Se vende caja entera de carbón 5 estrellas, la caja contiene 10 paquetes con<br />10 pastillas de carbón cada una un total de 100 pastillas de carbón<br /><br />Excelente carbón para  pipa de agua, Narguile, cachimba o Shisha también muy<br />utilizado para quemar  incienso en grano. <br /><br />Es uno de los mejores carbones del mercado  y de una duración de una hora<br />por pastilla Aprox.<br /><br />Cada paquete de 10 pastillas de carbón te sale a 1..<br /><br />NO SE VENDEN SUELTAS!!</p>"
+  out: "Se vende caja entera de carbón 5 estrellas, la caja contiene 10 paquetes con\n10 pastillas de carbón cada una un total de 100 pastillas de carbón\n\nExcelente carbón para  pipa de agua, Narguile, cachimba o Shisha también muy\nutilizado para quemar  incienso en grano. \n\nEs uno de los mejores carbones del mercado  y de una duración de una hora\npor pastilla Aprox.\n\nCada paquete de 10 pastillas de carbón te sale a 1..\n\nNO SE VENDEN SUELTAS!!"
+  scenario: "No debe de borrar nada."
+-
+  in: "ENVIO INCLUIDO <br />DORY PRODUCTO OFICIAL <br />MAYORISTAS DE ARTICULOS DE REGALOS <br />PRODUCTO NUEVO <br />ENVIO A TODAS LAS PROVINCIAS DE ESPAÑA<br />cantidad minima 1</p>"
+  out: "ENVIO INCLUIDO \nDORY PRODUCTO OFICIAL \nMAYORISTAS DE ARTICULOS DE REGALOS \nPRODUCTO NUEVO \nENVIO A TODAS LAS PROVINCIAS DE ESPAÑA\ncantidad minima 1"
+  scenario: "No debe de borrar nada."
+-
+  in: "4 Noches de hotel en Estambul. <br />Habitación doble con desayuno incluido.<br />Cerca del Gran Bazar.<br />Transfiero por no poder ir y porque no me reembolsan el dinero.<br />Valorado en 200 eur.<br />Hotel equivalente a un 4 estrellas.<br />Divani Ali Hotel, excelentes críticas en Trip Advisor.<br />=</p>"
+  out: "4 Noches de hotel en Estambul. \nHabitación doble con desayuno incluido.\nCerca del Gran Bazar.\nTransfiero por no poder ir y porque no me reembolsan el dinero.\nValorado en 200 eur.\nHotel equivalente a un 4 estrellas.\nDivani Ali Hotel, excelentes críticas en Trip Advisor.\n="
+  scenario: "No debe de borrar nada."
+-
+  in: "Experiencia Única. Conducción de Lamborghini Gallardo, tracción 4 ruedas,  durante
+       20 Km con monitor especializado con la empresa MOTOR CLUB EXPERIENCE.  <br />Fue un regalo que no llegué a disfrutar por asuntos personales. El precio original
+       fue de 100 euros ( puedes comprobarlo en la web de la empresa:   )<br />Puedes elegir la experiencia en Igualada ( Barcelona ), La Cabrera ( Madrid ),
+       Montilla ( Andalucía ) , Reinosa ( Cantabria ), Chiva ( Valencia ). <br />No importa si no vives en mi localidad, puesto que la reserva se procesa mediante
+       una contraseña online en la web. Contraseña que yo te daría.</p>"
+  out: "Experiencia Única. Conducción de Lamborghini Gallardo, tracción 4 ruedas,  durante
+        20 Km con monitor especializado con la empresa MOTOR CLUB EXPERIENCE.  \nFue un regalo que no llegué a disfrutar por asuntos personales. El precio original
+        fue de 100 euros ( puedes comprobarlo en la web de la empresa:   )\nPuedes elegir la experiencia en Igualada ( Barcelona ), La Cabrera ( Madrid ),
+        Montilla ( Andalucía ) , Reinosa ( Cantabria ), Chiva ( Valencia ). \nNo importa si no vives en mi localidad, puesto que la reserva se procesa mediante
+        una contraseña online en la web. Contraseña que yo te daría."
+  scenario: "No debe de borrar nada."
+-
+  in: "Cachimba de gran rendimiento. En perfecto estado (un solo uso)<br />Color rojo en acero inoxidable, con manguera de silicona negra, recipiente color
+       cebra.<br />70cm de altura.<br />2 salidas de manguera.<br />De REGALO caja de 1kg de carbón entera, dosificador de calor aladin y un tabaco
+       sabor pink de la.marca starbuzz. Todo en total hace más de 160 euros. Lo vendo en
+       115</p>"
+  out: "Cachimba de gran rendimiento. En perfecto estado (un solo uso)\nColor rojo en acero inoxidable, con manguera de silicona negra, recipiente color
+        cebra.\n70cm de altura.\n2 salidas de manguera.\nDe REGALO caja de 1kg de carbón entera, dosificador de calor aladin y un tabaco
+        sabor pink de la.marca starbuzz. Todo en total hace más de 160 euros. Lo vendo en
+        115"
+  scenario: "No debe de borrar nada."
+-
+  in: "Vendo juegos GuitarHero 2 y 3 para Ps2 con la guitarra. Todo con sus cajas
+       originales. Tiene poco uso, aunque la caja de la guitarra este algo gastada. Se
+       vende todo el conjunto, o por separado. Todos los precios son negociables. Entrega
+       en mano zonas de Santa Cruz y La Laguna</p>"
+  out: "Vendo juegos GuitarHero 2 y 3 para Ps2 con la guitarra. Todo con sus cajas
+        originales. Tiene poco uso, aunque la caja de la guitarra este algo gastada. Se
+        vende todo el conjunto, o por separado. Todos los precios son negociables. Entrega
+        en mano zonas de Santa Cruz y La Laguna"
+  scenario: "No debe de borrar nada."
+-
+  in: "Prensa manual fabricación italiana con refuerzos de acero impreso tornillo de
+       acero de alta resistencia y jaula de madera de haya.<br />Prensa para la produción de vino.<br />Altura jaula 45 cm diametro 30cm y capacidad 30. Esta totalmente nuevo, nunca se
+       ha usado.</p>"
+  out: "Prensa manual fabricación italiana con refuerzos de acero impreso tornillo de
+        acero de alta resistencia y jaula de madera de haya.\nPrensa para la produción de vino.\nAltura jaula 45 cm diametro 30cm y capacidad 30. Esta totalmente nuevo, nunca se
+        ha usado."
+  scenario: "No debe de borrar nada."
+-
+  in: "TOTALMENTE A ESTRENAR.<br />Diametro 22 cms.<br />Altura  20 cms.<br />Con abridor en el asa incorporado.<br />Precio NO negociable.<br />Exclusivamente entrega en mano, zona metro San Mamés(Bilbao).</p>"
+  out: "TOTALMENTE A ESTRENAR.\nDiametro 22 cms.\nAltura  20 cms.\nCon abridor en el asa incorporado.\nPrecio NO negociable.\nExclusivamente entrega en mano, zona metro San Mamés(Bilbao)."
+  scenario: "No debe de borrar nada."
+-
+  in: "Vendo Yamaha tzr del 2007 dada de baja tengo documentación original a mi nombre
+       la vendo para despiece o lonque se quiera hacer la moto esta en perfecto estado
+       el motor tiene apenas 13.500 km nunca se a trucado apenas tiene un calibrador 21 y
+       filtro de aire Polini  la moto  la entrego montada si se quiere la tengo así por
+       falta de espacio   es una buena opción para morar una moto nueva o piezas de
+       recambio  se puede ver sin problemas</p>"
+  out: "Vendo Yamaha tzr del 2007 dada de baja tengo documentación original a mi nombre
+        la vendo para despiece o lonque se quiera hacer la moto esta en perfecto estado
+        el motor tiene apenas 13.500 km nunca se a trucado apenas tiene un calibrador 21 y
+        filtro de aire Polini  la moto  la entrego montada si se quiere la tengo así por
+        falta de espacio   es una buena opción para morar una moto nueva o piezas de
+        recambio  se puede ver sin problemas"
+  scenario: "No debe de borrar nada."
+-
+  in: "Ps3 slim 320gb nueva flasheada con último cfw 4.80 para jugar online tiene
+       instalado 70 juegos de ps3 te instalo los juegos que quieras también tiene
+       instalado emuladores de las máquinas recreativas. mame , super Nintendo, sega
+       génesis, fba netx, amiga, game boy. cada emulador tiene más de 8000 juegos también
+       tiene instalado juegos de ps2 psx y psp. Con caja su mando y cables precio
+       negociable.cambiaría por Samsung galaxy s5. Llamar al  o WhatsApp <br /><br />Tags# audi bmw mercedes leon opel renault iPod iPad macbook pro air gps play wii 
+       wiiu Nintendo 3d 2ds 3ds  3dsxl new 3ds y new 3dsxl psp psx ps2 psvita ps4 wii
+       xbox 360 imac tablet ordenador portátil teléfono móvil iphone samsung galaxy sony
+       nexus htc</p> "
+  out: "Ps3 slim 320gb nueva flasheada con último cfw 4.80 para jugar online tiene
+        instalado 70 juegos de ps3 te instalo los juegos que quieras también tiene
+        instalado emuladores de las máquinas recreativas. mame , super Nintendo, sega
+        génesis, fba netx, amiga, game boy. cada emulador tiene más de 8000 juegos también
+        tiene instalado juegos de ps2 psx y psp. Con caja su mando y cables precio
+        negociable.cambiaría por Samsung galaxy s5. Llamar al  o WhatsApp \n\n"
+  scenario: "Ha de borrar el spam del final del anuncio."
+-
+  in: "OFERTA!OFERTA!OFERTA! BARBACOA CONTRUCCION EN ACERO INOX. MEDIDA 800*900*900.
+       PATAS DE ACERO INOX. REGUDABLES EN ALTURA. PARRILLA REGULABLE EN ALTURA EXTRAIBLE.
+       TUBO EN ACERO INOX DE GRAN CAPACIDAD PARA RECOGIDA DE CENIZA YA GRASAS.SI ESTA
+       INTERESADO, CONNETANOS O PASA A NUESTRA OFICINA QUE ESTA EN CARRER DE RICART N54
+       08930 SANT ADRIA DE BESOS BCN.</p>"
+  out: "OFERTA!OFERTA!OFERTA! BARBACOA CONTRUCCION EN ACERO INOX. MEDIDA 800*900*900.
+        PATAS DE ACERO INOX. REGUDABLES EN ALTURA. PARRILLA REGULABLE EN ALTURA EXTRAIBLE.
+        TUBO EN ACERO INOX DE GRAN CAPACIDAD PARA RECOGIDA DE CENIZA YA GRASAS.SI ESTA
+        INTERESADO, CONNETANOS O PASA A NUESTRA OFICINA QUE ESTA EN CARRER DE RICART N54
+        08930 SANT ADRIA DE BESOS BCN."
+  scenario: "No debe de borrar nada."
+-
+  in: "Balanza digital con 4 vendedores,desglose de iva en el ticket,valida para nueva
+       normativa de factura simplificada,dispone de 8000plus,programacion de 4 líneas de
+       cabecera de ticket para datos fiscales y 4 de pie de ticket,quita ventas,teclado
+       en castellano,.......consultar mas modelos y tambien disponemos de
+       estanterías,hornos,freidoras industriales,planchas,envasadoras al vacio,formadoras
+       de hamburguesas,batidoras,amasadoras,picadoras de carne cortadoras de embutido
+       fiambre,peladoras,ralladoras,divisoras,mesas frias,mesas de trabajo,armarios
+       refrigerados,neveras,murales,vitrinas,arcones,camaras frio,basculas
+       plataforma,pesapalets,maniquies,hornos de pollos,registradoras,tpv,lector de
+       códigos,escaner,pistolas de precios,termoselladoras etc.<br />WEB..hostelgalicia.com</p>"
+  out: "Balanza digital con 4 vendedores,desglose de iva en el ticket,valida para nueva
+        normativa de factura simplificada,dispone de 8000plus,programacion de 4 líneas de
+        cabecera de ticket para datos fiscales y 4 de pie de ticket,quita ventas,teclado
+        en castellano,.......consultar mas modelos y tambien disponemos de
+        estanterías,hornos,freidoras industriales,planchas,envasadoras al vacio,formadoras
+        de hamburguesas,batidoras,amasadoras,picadoras de carne cortadoras de embutido
+        fiambre,peladoras,ralladoras,divisoras,mesas frias,mesas de trabajo,armarios
+        refrigerados,neveras,murales,vitrinas,arcones,camaras frio,basculas
+        plataforma,pesapalets,maniquies,hornos de pollos,registradoras,tpv,lector de
+        códigos,escaner,pistolas de precios,termoselladoras etc.\nWEB..hostelgalicia.com"
+  scenario: "Ha de borrar el spam que hay(no lo filtra bien por el formato del texto.falta revisar el algoritmo o implementar un filtro nuevo)."
+-
+  in: "Oferta/Chollo : Pendrive Multi-Sistemas, autoarrancable/autoejecutable para
+       instalar en todos los pcs/cualquier ordenador/portátil, todos los sistemas
+       operativos Windows originales (XP,7,8,8.1 y 10), en todas sus versiones 32 y 64
+       bits + incluido el Pendrive, Precio = 70. Si lo quieres con Antivirus Gratuito y
+       Office cuesta 25 más. Si lo quieres con todas las licencias cuesta 150 más. El
+       PenDrive Se usa igual que un CD/DVD. Madrid capital/Control Remoto.645.708.596.
+       Técnico Informático Profesional de Madrid 24H. <br /><br /><br /><br />También tengo y vendo/instalo el único Antivirus que Protege para cualquier
+       Windows 100% Asegurado. No te dejes engañar por Informáticos - inexpertos en la
+       Informática que no saben cuál es el Mejor y Único Antivirus que Protege y te va a
+       Proteger. Nada de Avast/Mcafee/Kaspersky/Norton etc... , mierdas/basuras de
+       antivirus\"falsos\", falsos por que en realidad no Protegen, porque si deverdad
+       PROTEGIESEN, ¿ Porque todos los clientes que me vienen por problemas de virus,
+       lentitud, publicidad, programas basura tienen instalados esos antivirus Originales
+       comprados en tienda-física o Online ?, Y vienen a que les formatée su pc y encima
+       los muy \"Inteligentes\" les vuelve a instalar su cacho-mierda de antivirus, que no
+       Protege siendo el Autor/Causante/Detonante de esa Infección por virus, trollanos y
+       gusanos. Jajajaja jajajaa. Sííí, Señoras y Señores ante ustedes se despide el
+       \"Mejor Técnico Informático Profesional de Verdad, de todo Madrid, Fiable y Serio,
+       a Domicilio las 24H en todo Madrid. También trabajo por control remoto. Muchos de
+       ustedes me conocen y saben que es verdad lo que digo porque han pagado por mi
+       antivirus - el bueno, no el malo - Avast. </p>"
+  out: "Oferta/Chollo : Pendrive Multi-Sistemas, autoarrancable/autoejecutable para
+       instalar en todos los pcs/cualquier ordenador/portátil, todos los sistemas
+       operativos Windows originales (XP,7,8,8.1 y 10), en todas sus versiones 32 y 64
+       bits + incluido el Pendrive, Precio = 70. Si lo quieres con Antivirus Gratuito y
+       Office cuesta 25 más. Si lo quieres con todas las licencias cuesta 150 más. El
+       PenDrive Se usa igual que un CD/DVD. Madrid capital/Control Remoto.645.708.596.
+       Técnico Informático Profesional de Madrid 24H. También tengo y vendo/instalo el único Antivirus que Protege para cualquier
+       Windows 100% Asegurado. No te dejes engañar por Informáticos - inexpertos en la
+       Informática que no saben cuál es el Mejor y Único Antivirus que Protege y te va a
+       Proteger. Nada de Avast/Mcafee/Kaspersky/Norton etc... , mierdas/basuras de
+       antivirus\"falsos\", falsos por que en realidad no Protegen, porque si deverdad
+       PROTEGIESEN, ¿ Porque todos los clientes que me vienen por problemas de virus,
+       lentitud, publicidad, programas basura tienen instalados esos antivirus Originales
+       comprados en tienda-física o Online ?, Y vienen a que les formatée su pc y encima
+       los muy \"Inteligentes\" les vuelve a instalar su cacho-mierda de antivirus, que no
+       Protege siendo el Autor/Causante/Detonante de esa Infección por virus, trollanos y
+       gusanos. Jajajaja jajajaa. Sííí, Señoras y Señores ante ustedes se despide el
+       \"Mejor Técnico Informático Profesional de Verdad, de todo Madrid, Fiable y Serio,
+       a Domicilio las 24H en todo Madrid. También trabajo por control remoto. Muchos de
+       ustedes me conocen y saben que es verdad lo que digo porque han pagado por mi
+       antivirus - el bueno, no el malo - Avast."
+  scenario: "No debe de borrar nada."
+-
+  in: "SON NUEVOS CON GARANTIA. Kit compuesto por 4 paneles monocristalinos de 24v 180
+       watios cada uno con su regulador de carga de 30 amperios  que marca el estado de
+       baterías, producción etc mas un inversor de 24v a 220v que produce 3000 watios
+       reales y 6000 de pico, para ver Tv, Luz, Pc, Radial, taladros, microondas, nevera,
+       cafeteras, bombas de agua, focos led etc. INSTALACION FACIL Y SENCILLA, NO HACE
+       FALTA SABER DE ELECTRICIDAD. MANUAL DE INSTALACION INCLUIDO.. Disponemos  de
+       diferentes kits solares, Se venden también por separado. inversores de diferentes
+       watios y voltages, placas solares, reguladores de carga, etc. . . También
+       INSTALAMOS. Envios contrareembolso</p>"
+  out: "SON NUEVOS CON GARANTIA. Kit compuesto por 4 paneles monocristalinos de 24v 180
+        watios cada uno con su regulador de carga de 30 amperios  que marca el estado de
+        baterías, producción etc mas un inversor de 24v a 220v que produce 3000 watios
+        reales y 6000 de pico, para ver Tv, Luz, Pc, Radial, taladros, microondas, nevera,
+        cafeteras, bombas de agua, focos led etc. INSTALACION FACIL Y SENCILLA, NO HACE
+        FALTA SABER DE ELECTRICIDAD. MANUAL DE INSTALACION INCLUIDO.. Disponemos  de
+        diferentes kits solares, Se venden también por separado. inversores de diferentes
+        watios y voltages, placas solares, reguladores de carga, etc. . . También
+        INSTALAMOS. Envios contrareembolso"
+  scenario: "No debe de borrar nada."
+-
+  in: "Ba&ntilde;os: 2<br /><br />Calpe/calp, Urb. La Merced ,26 I, 180 m2, 4 habitaciones, 2 baños, aa, armarios,
+       calefacción, jardín, CocinaOffice, Piscina, suite, Amueblado, Electrodomésticos,
+       Horno, Lavadora, Microondas, TV, mascotas, internet, 585 eur. / semana, Villa de
+       veraneo para 8 personas. <br /> <br /> <br />Villa en Calpe, Costa Blanca, España con piscina privada, para un máximo de 8
+       personas. <br />Esta villa está situada en una zona urbana con colinas, cerca de restaurantes y
+       bares, tiendas y supermercados y a 1 km de la playa de Playa Levante. El
+       alojamiento tiene un jardín con gravilla y árboles. <br />La cercanía de la playa, sitios para salir y lugares para ir de compras hace de
+       esta villa un alojamiento apropiado para pasar sus vacaciones con su familia, sus
+       amigos y sus mascotas. <br /> <br />Interior <br /> ?villa de 2 plantas <br />?salón/comedor con aire acondicionado y televisión <br />?4 dormitorios <br />?aseo para invitados <br />?antena satélite <br />?televisión cable <br /> <br />Cocina <br />?cocina con cocina eléctrica, microondas, lavavajillas, frigorífico y cafetera <br /> <br />Dormitorios y baños <br />?4 dormitorios, cada uno con cama doble <br />?total de 2 cuartos de baño <br /> <br />Exterior <br /> ?parcela vallada  <br />?piscina privada de 8m x 4m <br />?jardín con gravilla y árboles <br />?terraza cubierta <br />?barbacoa <br /> <br />Más info <br /> ?se admiten mascotas <br /> <br />Características / servicios <br /> <br />lavadora <br /> <br /> <br />PRECIO EN ? POR SEMANA <br />08/01/16 20/03/16 585 ? <br />20/03/16 29/03/16 900 ? <br />29/03/16 28/05/16 585 ? <br />28/05/16 02/07/16 800 ? <br />02/07/16 16/07/16 1.450 ? <br />16/07/16 30/07/16 2.250 ? <br />30/07/16 20/08/16 2.600 ? <br />20/08/16 27/08/16 2.250 ? <br />27/08/16 03/09/16 1.450 ? <br />03/09/16 24/09/16 800 ? <br />24/09/16 01/11/16 625 ? <br />01/11/16 26/12/16 585 ? <br />26/12/16 08/01/17 900 ? <br />08/01/17 09/04/17 585 ? <br />09/04/17 18/04/17 900 ? <br />18/04/17 27/05/17 585 ? <br />27/05/17 01/07/17 800 ? <br />01/07/17 15/07/17 1.450 ? <br />15/07/17 29/07/17 2.250 ? <br />29/07/17 19/08/17 2.600 ? <br />19/08/17 26/08/17 2.250 ? <br />26/08/17 02/09/17 1.450 ? <br />02/09/17 23/09/17 800 ? <br />23/09/17 01/11/17 625 ? <br />01/11/17 26/12/17 585 ? <br />26/12/17 08/01/18 900 ? <br />08/01/18 24/03/18 585 ? <br />24/03/18 02/04/18 900 ? <br />02/04/18 26/05/18 585 ? <br />26/05/18 30/06/18 800 ? <br />30/06/18 14/07/18 1.450 ? <br />14/07/18 28/07/18 2.250 ? <br />28/07/18 18/08/18 2.600 ? <br />18/08/18 25/08/18 2.250 ? <br />25/08/18 01/09/18 1.450 ? <br />01, ref. ROMERO.</p>"
+  out: "Ba&ntilde;os: 2\n\nCalpe/calp, Urb. La Merced ,26 I, 180 m2, 4 habitaciones, 2 baños, aa, armarios,
+        calefacción, jardín, CocinaOffice, Piscina, suite, Amueblado, Electrodomésticos,
+        Horno, Lavadora, Microondas, TV, mascotas, internet, 585 eur. / semana, Villa de
+        veraneo para 8 personas. \n \n \nVilla en Calpe, Costa Blanca, España con piscina privada, para un máximo de 8
+        personas. \nEsta villa está situada en una zona urbana con colinas, cerca de restaurantes y
+        bares, tiendas y supermercados y a 1 km de la playa de Playa Levante. El
+        alojamiento tiene un jardín con gravilla y árboles. \nLa cercanía de la playa, sitios para salir y lugares para ir de compras hace de
+        esta villa un alojamiento apropiado para pasar sus vacaciones con su familia, sus
+        amigos y sus mascotas. \n \nInterior \n ?villa de 2 plantas \n?salón/comedor con aire acondicionado y televisión \n?4 dormitorios \n?aseo para invitados \n?antena satélite \n?televisión cable \n \nCocina \n?cocina con cocina eléctrica, microondas, lavavajillas, frigorífico y cafetera \n \nDormitorios y baños \n?4 dormitorios, cada uno con cama doble \n?total de 2 cuartos de baño \n \nExterior \n ?parcela vallada  \n?piscina privada de 8m x 4m \n?jardín con gravilla y árboles \n?terraza cubierta \n?barbacoa \n \nMás info \n ?se admiten mascotas \n \nCaracterísticas / servicios \n \nlavadora \n \n \nPRECIO EN ? POR SEMANA \n08/01/16 20/03/16 585 ? \n20/03/16 29/03/16 900 ? \n29/03/16 28/05/16 585 ? \n28/05/16 02/07/16 800 ? \n02/07/16 16/07/16 1.450 ? \n16/07/16 30/07/16 2.250 ? \n30/07/16 20/08/16 2.600 ? \n20/08/16 27/08/16 2.250 ? \n27/08/16 03/09/16 1.450 ? \n03/09/16 24/09/16 800 ? \n24/09/16 01/11/16 625 ? \n01/11/16 26/12/16 585 ? \n26/12/16 08/01/17 900 ? \n08/01/17 09/04/17 585 ? \n09/04/17 18/04/17 900 ? \n18/04/17 27/05/17 585 ? \n27/05/17 01/07/17 800 ? \n01/07/17 15/07/17 1.450 ? \n15/07/17 29/07/17 2.250 ? \n29/07/17 19/08/17 2.600 ? \n19/08/17 26/08/17 2.250 ? \n26/08/17 02/09/17 1.450 ? \n02/09/17 23/09/17 800 ? \n23/09/17 01/11/17 625 ? \n01/11/17 26/12/17 585 ? \n26/12/17 08/01/18 900 ? \n08/01/18 24/03/18 585 ? \n24/03/18 02/04/18 900 ? \n02/04/18 26/05/18 585 ? \n26/05/18 30/06/18 800 ? \n30/06/18 14/07/18 1.450 ? \n14/07/18 28/07/18 2.250 ? \n28/07/18 18/08/18 2.600 ? \n18/08/18 25/08/18 2.250 ? \n25/08/18 01/09/18 1.450 ? \n01, ref. ROMERO."
+  scenario: "No debe de borrar nada."
+-
+  in: "Aseos: 2<br /><br />Barcelona Capital, Horta - Guinardó - El Guinardó, 150 m2, 2 aseos, buen estado,
+       130000 eur., Bar Bodega de 150 m2, situado en el barrio del Guinardó. Consta de
+       salón para 40 comensales, con 10 mesas y 40 sillas, con 7 barriles de 230 litros y
+       2 barriles de 400 litros. Cuenta con barra de 7 metros con 6 taburetes, cafetera,
+       tirador de cerveza, máquina registradora,  cortador de fiambres, microondas y 3
+       botelleros de 2 puertas.  <br />Dispone de almacén, 2 aseos y 3 TV. Actualmente tiene máquinas recreativas
+       (contrato hasta noviembre).  <br />Local de espacio diáfano y con techo insonorizado.  <br />Venta de 400 litros de vino por semana aproximado. <br />Alquiler: 1.200euros + IVA. Contrato: 10 años., ref. T-346-07.</p>"
+  out: "Aseos: 2\n\nBarcelona Capital, Horta - Guinardó - El Guinardó, 150 m2, 2 aseos, buen estado,
+        130000 eur., Bar Bodega de 150 m2, situado en el barrio del Guinardó. Consta de
+        salón para 40 comensales, con 10 mesas y 40 sillas, con 7 barriles de 230 litros y
+        2 barriles de 400 litros. Cuenta con barra de 7 metros con 6 taburetes, cafetera,
+        tirador de cerveza, máquina registradora,  cortador de fiambres, microondas y 3
+        botelleros de 2 puertas.  \nDispone de almacén, 2 aseos y 3 TV. Actualmente tiene máquinas recreativas
+        (contrato hasta noviembre).  \nLocal de espacio diáfano y con techo insonorizado.  \nVenta de 400 litros de vino por semana aproximado. \nAlquiler: 1.200euros + IVA. Contrato: 10 años., ref. T-346-07."
+  scenario: "No debe de borrar nada."
+-
+  in: "Ba&ntilde;os: 1<br /><br />Valencia Capital, C/. convento jersusalen, 50 m2, 2 habitaciones, 1 baños, muy
+       buen estado, aa, armarios, calefacción, Ascensor, CocinaOffice, Amueblado,
+       Electrodomésticos, Lavadora, Microondas, Nevera, TV, Balcón, internet, 56 eur. /
+       día, Estancia mínima de 2 noches. <br />Durante el período del 01 de Julio - 31 de Agosto de 2015 la estancia mínima es de
+       4 noches. <br /> <br />Apartamento amplio y exterior con mucha luz. Se encuentra en la calle Convento de
+       Jerusalén, justo en el centro de la ciudad, calle sin ruidos por la noche. <br />2 habitaciones. La principal con una cama de 1,50 cm y la segunda con dos camas
+       literas de 1.10 cm <br />Capacidad para 5 personas.  <br />2 Sofás,uno de ellos sofá cama. <br />3 balcones a la calle con preciosas vistas. <br />Cuarto de baño con una ducha muy amplia y moderna. <br />Cocina americana totalmente equipada con menaje completo. <br />Recientemente renovado (mayo de 2014). <br />Edificio con ascensor. <br /> <br />? Si vienes en coche podrás aparcar GRATIS en la calle del apartamento o en las
+       calles colindantes, aunque también puedes dejar el coche en un parking privado a
+       100 metros del apartamento por sólo 10 euros / día. <br /> <br />? Guardamos tus maletas si llegas antes de la hora del Check-in o te marchas
+       después de la hora del Check-out. <br /> <br />? No hay ningún problema si llegáis tarde, os esperamos. <br /> <br />EN EL APARTAMENTO ENCONTRARÁS: <br />- Internet Wifi. <br />- A / C (calor y frío), que será muy útil durante los meses de verano! y los
+       calentadores eléctricos para los días más fríos del invierno. <br />- Nevera,microondas, tostadora,cafetera, hervidor de agua. <br />- Ropa de cama y toallas. <br />- TV de pantalla plana. <br />- Lavadora y detergente para la ropa. <br />-Secador de pelo, plancha y tabla de planchar. <br />- Vajilla, ollas y sartenes. <br />? CHILD-FRIENDLY: Si viajas con tu bebé no te preocupes por nada, tenemos cuna de
+       barrotes, ropa de cama,trona, bañera especial para tu bebé. El apartamento tiene
+       calefacción para tu total tranquilidad. <br /> <br />? SUPERMERCADO, justo al lado del Edificio. <br /> <br />Desde 52euros/noche Los precios son indicativos según temporadas y ocupación.
+       Gastos de gestión no incluidos. Depósito 100euros que se devolverá a la salida del
+       apartamento. Parking opcional 10euros/día. Limpieza final del apartamento:
+       estancias inferiores a 10 días 25euros y estancias sup, ref. ESTUDIO CITY CENTER
+       4A.</p>"
+  out: "Ba&ntilde;os: 1\n\nValencia Capital, C/. convento jersusalen, 50 m2, 2 habitaciones, 1 baños, muy
+        buen estado, aa, armarios, calefacción, Ascensor, CocinaOffice, Amueblado,
+        Electrodomésticos, Lavadora, Microondas, Nevera, TV, Balcón, internet, 56 eur. /
+        día, Estancia mínima de 2 noches. \nDurante el período del 01 de Julio - 31 de Agosto de 2015 la estancia mínima es de
+        4 noches. \n \nApartamento amplio y exterior con mucha luz. Se encuentra en la calle Convento de
+        Jerusalén, justo en el centro de la ciudad, calle sin ruidos por la noche. \n2 habitaciones. La principal con una cama de 1,50 cm y la segunda con dos camas
+        literas de 1.10 cm \nCapacidad para 5 personas.  \n2 Sofás,uno de ellos sofá cama. \n3 balcones a la calle con preciosas vistas. \nCuarto de baño con una ducha muy amplia y moderna. \nCocina americana totalmente equipada con menaje completo. \nRecientemente renovado (mayo de 2014). \nEdificio con ascensor. \n \n? Si vienes en coche podrás aparcar GRATIS en la calle del apartamento o en las
+        calles colindantes, aunque también puedes dejar el coche en un parking privado a
+        100 metros del apartamento por sólo 10 euros / día. \n \n? Guardamos tus maletas si llegas antes de la hora del Check-in o te marchas
+        después de la hora del Check-out. \n \n? No hay ningún problema si llegáis tarde, os esperamos. \n \nEN EL APARTAMENTO ENCONTRARÁS: \n- Internet Wifi. \n- A / C (calor y frío), que será muy útil durante los meses de verano! y los
+        calentadores eléctricos para los días más fríos del invierno. \n- Nevera,microondas, tostadora,cafetera, hervidor de agua. \n- Ropa de cama y toallas. \n- TV de pantalla plana. \n- Lavadora y detergente para la ropa. \n-Secador de pelo, plancha y tabla de planchar. \n- Vajilla, ollas y sartenes. \n? CHILD-FRIENDLY: Si viajas con tu bebé no te preocupes por nada, tenemos cuna de
+        barrotes, ropa de cama,trona, bañera especial para tu bebé. El apartamento tiene
+        calefacción para tu total tranquilidad. \n \n? SUPERMERCADO, justo al lado del Edificio. \n \nDesde 52euros/noche Los precios son indicativos según temporadas y ocupación.
+        Gastos de gestión no incluidos. Depósito 100euros que se devolverá a la salida del
+        apartamento. Parking opcional 10euros/día. Limpieza final del apartamento:
+        estancias inferiores a 10 días 25euros y estancias sup, ref. ESTUDIO CITY CENTER
+        4A."
+  scenario: "No debe de borrar nada."
+-
+  in: "OCASIÓN:<br /><br />IDEAL PARA UN GRAN REGALO<br /><br />Cinta de correr profesional.De muy alta gama.LEE<br /><br />LEER BIEN ANTES DE CONTACTAR.<br />SE QUITA POR ESPACIO Y MUDANZA:<br /><br />Cinta de correr tipo gimnasio. gama muy alta. domyos tc490. gama alta. muy poco
+       uso. velocidad maxima: 16 km/h equivalente a correr a ritmo de 3 45 /km potencia
+       continua de motor 1, 75 cv soporta un peso máximo de 130 kg. superficie de carrera
+       antideslizante de 45x130 cm. <br /><br />Inclinación eléctrica motorizada de 0 hasta 10% pantalla digital con indicador de:
+       calorías - pulso cardíaco - velocidad - distancia recorrida - tiempo -
+       inclinación. 6 programas modificables con variación de velocidad e inclinación
+       según tus objetivos.<br />Es alta gama. De las que se ven en los gimnasios.<br /><br />Se puede recoger y plegar fácilmente  <br /><br />Sin el más mínimo desgaste en la cinta y mandos que demuestran UN MÍNIMO USO Y SU
+       IMPECABLE ESTADO.<br /><br />SERIEDAD: Se comprueba lo expuesto, así como su perfecto y correcto FUNCIONAMIENTO
+       en el momento de retirarla, para TU TRANQUILIDAD.<br /><br />Por favor...ABSTENERSE REVENDEDORES HABITUALES<br /><br />Precio 350 euros. Aunque de llevártela hoy, ya que la quito POR RAZONES DE ESPACIO
+       Y MUDANZA, te la dejaría en sólo 250 euros, NO NEGOCIABLES. <br />EL VALOR PARA CAMBIOS...500 euros.<br /><br />También la cambio por Samsung note 5 o Sony z5 que este en igual IMPECABLE estado
+       que mi cinta.<br /><br />Es una auténtica ocasión. Cuesta en la actualidad casi 800 euros.<br /><br />Tengo wasat</p>"
+  out: "OCASIÓN:\n\nIDEAL PARA UN GRAN REGALO\n\nCinta de correr profesional.De muy alta gama.LEE\n\nLEER BIEN ANTES DE CONTACTAR.\nSE QUITA POR ESPACIO Y MUDANZA:\n\nCinta de correr tipo gimnasio. gama muy alta. domyos tc490. gama alta. muy poco
+        uso. velocidad maxima: 16 km/h equivalente a correr a ritmo de 3 45 /km potencia
+        continua de motor 1, 75 cv soporta un peso máximo de 130 kg. superficie de carrera
+        antideslizante de 45x130 cm. \n\nInclinación eléctrica motorizada de 0 hasta 10% pantalla digital con indicador de:
+        calorías - pulso cardíaco - velocidad - distancia recorrida - tiempo -
+        inclinación. 6 programas modificables con variación de velocidad e inclinación
+        según tus objetivos.\nEs alta gama. De las que se ven en los gimnasios.\n\nSe puede recoger y plegar fácilmente  \n\nSin el más mínimo desgaste en la cinta y mandos que demuestran UN MÍNIMO USO Y SU
+        IMPECABLE ESTADO.\n\nSERIEDAD: Se comprueba lo expuesto, así como su perfecto y correcto FUNCIONAMIENTO
+        en el momento de retirarla, para TU TRANQUILIDAD.\n\nPor favor...ABSTENERSE REVENDEDORES HABITUALES\n\nPrecio 350 euros. Aunque de llevártela hoy, ya que la quito POR RAZONES DE ESPACIO
+        Y MUDANZA, te la dejaría en sólo 250 euros, NO NEGOCIABLES. \nEL VALOR PARA CAMBIOS...500 euros.\n\nTambién la cambio por Samsung note 5 o Sony z5 que este en igual IMPECABLE estado
+        que mi cinta.\n\nEs una auténtica ocasión. Cuesta en la actualidad casi 800 euros.\n\nTengo wasat"
+  scenario: "No debe de borrar nada."
+-
+  in: "Antonio Ruiz Duran de maquinasespecialesaaa  ES UN FRAUDE<br /><br />ANTONIO RUIZ DURAN EL TIMADOR EL CUENTISTA de 3w maquinasespecialesaaa es  ,es un
+      FRAUDE y un ESTAFADOR !! SE ESCONDE DETRAS DE NOMBRES COMO MARIA, MARIOLA, ETC<br /><br />NO TE LO PIERDAS CONOCE A MARIA&gt;   facebook . com / anamaria . maciasmulero  <br /><br />PERO SI HASTA HA CREADO UNA IDENTIDAD FALSA Ana María Macias Mulero PARA REGISTRAR
+      LA WEB 3w maquinasespeciales es PERO SI ES MAS FALSO QUE SUS RELOJES CHINOS !!!! 
+      QUE SE LOS VENDO YO !!!!! bueno, se los vendía. EL TIMO DE LA ESTAMPITA !!!!<br /><br />Y cuando me entere de QUE COBRABA Y NO MANDABA LOS RELOJES A LOS CLIENTES LO MANDE
+      A TOMAR POR C( )LO !!!!!! Y AUN TENIA MAS QUE DECIR!!!!!<br /><br />PAGAS Y NO TE MANDA NINGUN RELOJ !! CON 2 HUEVOS QUE TIENE EL NIÑATO !!!!!!! Y SUS
+      CLIENTES DETRAS MIA PIDIENDOME EXPLICACIONES !!!!!! UN ESTAFADOR ES LO QUE ES!!!<br /><br />ES UNA VERGÜENZA PARA EL GREMIO Y CUANDO VAS A COMPRAR TE PIDE TODOS LOS DATOS DE
+      TU TARJETA O TE MANDA UNA CUENTA DE SABE DIOS DONDE !!!!! <br /><br />POR ESO DEJE DE TRABAJAR CON ESTE ESTAFADOR<br /><br />SI LE IBAS A COMPRAR TEN CUIDADO. ESTAS AVISADO!!!!!<br /><br />Soy Antonio (otro Antonio por supuesto!! ) el EX DISTRIBUIDOR oficial de tres w
+      maquinasespecialesaaa  , ahora vendo en este portal al 40% más barato que este
+      FARSANTE Y ESTAFADOR  de 3w maquinasespecialesaaa es<br /><br />rolex, panerai, hublot, casio, orient, seiko, reloj de pared, omega, iwc, audi,
+      bmw, mercedes, seat, citroen, kia, juguete, iphone, samsung, telefonos, ropa,
+      moda, accesorios, coches, piso, muebles, deportes, reloj, television, informática,
+      ordenadores, sony, omega<br /></p>"
+  out: "Antonio Ruiz Duran de maquinasespecialesaaa  ES UN FRAUDE\n\nANTONIO RUIZ DURAN EL TIMADOR EL CUENTISTA de 3w maquinasespecialesaaa es  ,es un
+        FRAUDE y un ESTAFADOR !! SE ESCONDE DETRAS DE NOMBRES COMO MARIA, MARIOLA, ETC\n\nNO TE LO PIERDAS CONOCE A MARIA&gt;   facebook . com / anamaria . maciasmulero  \n\nPERO SI HASTA HA CREADO UNA IDENTIDAD FALSA Ana María Macias Mulero PARA REGISTRAR
+        LA WEB 3w maquinasespeciales es PERO SI ES MAS FALSO QUE SUS RELOJES CHINOS !!!! 
+        QUE SE LOS VENDO YO !!!!! bueno, se los vendía. EL TIMO DE LA ESTAMPITA !!!!\n\nY cuando me entere de QUE COBRABA Y NO MANDABA LOS RELOJES A LOS CLIENTES LO MANDE
+        A TOMAR POR C( )LO !!!!!! Y AUN TENIA MAS QUE DECIR!!!!!\n\nPAGAS Y NO TE MANDA NINGUN RELOJ !! CON 2 HUEVOS QUE TIENE EL NIÑATO !!!!!!! Y SUS
+        CLIENTES DETRAS MIA PIDIENDOME EXPLICACIONES !!!!!! UN ESTAFADOR ES LO QUE ES!!!\n\nES UNA VERGÜENZA PARA EL GREMIO Y CUANDO VAS A COMPRAR TE PIDE TODOS LOS DATOS DE
+        TU TARJETA O TE MANDA UNA CUENTA DE SABE DIOS DONDE !!!!! \n\nPOR ESO DEJE DE TRABAJAR CON ESTE ESTAFADOR\n\nSI LE IBAS A COMPRAR TEN CUIDADO. ESTAS AVISADO!!!!!\n\nSoy Antonio (otro Antonio por supuesto!! ) el EX DISTRIBUIDOR oficial de tres w
+        maquinasespecialesaaa  , ahora vendo en este portal al 40% más barato que este
+        FARSANTE Y ESTAFADOR  de 3w maquinasespecialesaaa es\n\n"
+  scenario: "Ha de borrar el spam del final."
+-
+  in: "Visita nuestra web uneplus . com <br />  <br />NOTE 5,1\" 109 € <br />Teléfono libre (válido para cualquier compañía: vodafone, yoigo...) <br />pantalla 5,1\" , <br />wifi, <br />cámara 5 mpx <br />whatsapp, <br />40 gb memoria <br />gps <br />cuatribanda <br />redes sociales facebook..., <br />Libre y Nuevo a estrenar con dos años de garantía. <br />ENVIO CONTRAREEMBOLSO EN 24H. 2 AÑOS DE GARANTIA. PIDELO YA¡ . <br /><br /><br />Tambien disponibles otros modelos: <br /><br /><br />NOTE 5,7\" 139€ <br />IS7 159€ <br />PHONE 6 139€ <br /><br /><br />HOY REGALO FUNDA <br /><br /><br />movil , mobil , chino , libre , libres , chinos , comprar , barato , baratos ,
+       smarphone , smarfone , Smartphone , dualsim , duales , 0 4.7 4 4.0 celular ,
+       moviles , celulares , bq , tablet , pulgadas , \" , 5.7\" 5.5\" 4.7\" 4.5\" 5\" , mobile
+       , movile , phone <br />este modelo no es: meizu , otium , mijue , ulefone , kingelon , jiake , zopo ,
+       inew , thl , edge , bq , xperia , sony , htc , lg , note 4 , xiaomi , samsumg ,
+       galaxy s6 ,galaxy s5 , galaxy s4 , galaxy s3 , galaxi , galaxia , note 5, galaxia
+       , samsum , Samsun , sansung , jiayu , replica , clon , iPhone , lenovo , hdc
+       ,huawei , huawey , z3 , apple , z2 , z1 , z5 , z6, g3 , g4 , g5 , doogee ,
+       elephone , cubot o z4, samsung, aifon, compra, 1, 2, 3, 4, 5, 6, 7</p>"
+  out: "Visita nuestra web uneplus . com \n  \nNOTE 5,1\" 109 € \nTeléfono libre (válido para cualquier compañía: vodafone, yoigo...) \npantalla 5,1\" , \nwifi, \ncámara 5 mpx \nwhatsapp, \n40 gb memoria \ngps \ncuatribanda \nredes sociales facebook..., \nLibre y Nuevo a estrenar con dos años de garantía. \nENVIO CONTRAREEMBOLSO EN 24H. 2 AÑOS DE GARANTIA. PIDELO YA¡ . \n\n\nTambien disponibles otros modelos: \n\n\nNOTE 5,7\" 139€ \nIS7 159€ \nPHONE 6 139€ \n\n\nHOY REGALO FUNDA \n\n"
+  scenario: "Ha de borrar el spam del final."
+-
+  in: "FORD Mondeo 2.0 TDCi Sport, Negro, año 2004, 113311 km, Radio Sony 6 CD,Kit Sport
+       con spoiler,Llantas de 18\" (10 radios),Paquete Eléctrico,Pintura
+       Metalizada,Retrovisores abatibles eléctricos,, 5800 eur., El coche procede de
+       cambio por coche nuevo en red oficial, se entrega totalmente revisado y con el
+       KILOMETRAJE CERTIFICADO. Se trata de una amplia, fiable y robusta berlina
+       familiar, con un espectacular toque deportivo y en un extraordinario estado de
+       conservación, el coche esta impecable y eso se percibe nada mas acercarnos a el,
+       especialmente gracias a su impecable estado de pintura y a sus sofisticados
+       interiores. Se trata de una unidad que no debe dejar de ver antes de decidirse por
+       cualquier otro, hay muy pocos Mondeo con este paquete deportivo, se trató de una
+       serie con equipamiento especial deportivo. En su amplio y lujoso interior
+       encontraremos todo tipo de comodidades; climatizador digital, radio-cd Sony
+       original, acabados en madera, espejos plegables eléctricamente, sensor de luces y
+       de lluvia, ordenador de viaje, espejo fotocromático, tapicería especifica de esta
+       versión y muchísimas cosas mas. El precio INCLUYE 1 año de garantía, cambio de
+       nombre y revisión pre-entrega..</p>"
+  out: "FORD Mondeo 2.0 TDCi Sport, Negro, año 2004, 113311 km, Radio Sony 6 CD,Kit Sport
+        con spoiler,Llantas de 18\" (10 radios),Paquete Eléctrico,Pintura
+        Metalizada,Retrovisores abatibles eléctricos,, 5800 eur., El coche procede de
+        cambio por coche nuevo en red oficial, se entrega totalmente revisado y con el
+        KILOMETRAJE CERTIFICADO. Se trata de una amplia, fiable y robusta berlina
+        familiar, con un espectacular toque deportivo y en un extraordinario estado de
+        conservación, el coche esta impecable y eso se percibe nada mas acercarnos a el,
+        especialmente gracias a su impecable estado de pintura y a sus sofisticados
+        interiores. Se trata de una unidad que no debe dejar de ver antes de decidirse por
+        cualquier otro, hay muy pocos Mondeo con este paquete deportivo, se trató de una
+        serie con equipamiento especial deportivo. En su amplio y lujoso interior
+        encontraremos todo tipo de comodidades; climatizador digital, radio-cd Sony
+        original, acabados en madera, espejos plegables eléctricamente, sensor de luces y
+        de lluvia, ordenador de viaje, espejo fotocromático, tapicería especifica de esta
+        versión y muchísimas cosas mas. El precio INCLUYE 1 año de garantía, cambio de
+        nombre y revisión pre-entrega.."
+  scenario: "No ha de borrar nada."
+-
+  in: "Sony xpeira Z3 libre nuevo sin abrir solo vendemos telefonos originales y con
+       ticket de venta para la garantía cogemos tu teléfono usado o nuevo como parte de
+       pago llámanos y te lo tasamos. <br /><br />¿tienes un movil de ultima generación? llamanos o acércate a nuestras tiendas de
+       francisco silvela nº69 o galileo nº70 <br />todos nuestro telefonos donde se especifica nuevos son a estrenar y con garantía<br />. <br />*************TE COGEMOS TU TELEFONO COMO PARTE DE PAGO*********** <br /><br />visita nuestras tiendas físicas en Madrid: <br />calle francisco silvela n69 forma de llegar linea 4 y 6 del metro diego de leon y
+       linea 6 7 y 8 de avda de América muy cerca de UGT o visita nuestra pagina que
+       viene a la derecha donde pone pagina web o llámanos <br />******************************************************************************* <br />también nos puedes encontrar en la calle de galileo n70 forma de llegar linea 7
+       islas filipinas y linea 4 de princesa muy ceraca del corte ingles de princesa o
+       llamanos <br />nuevo horario: <br />lunes a viernes de 10 a 14 y 16 a 20,30 horas y sabado de 10 a 14 horas <br />******************************************************************************* <br />gracias por confiar en movil center madrid<br /><br />TAMBIEN DISPONIBLE EN NUETRAS TIENDAS <br />SAMSUNG S5 , S6 , S6 EDGE DE 32 64 Y 128, S6 EDGE PLUS 32 ,64, NOTE 3 , NOTE 4 ,
+       GALAXY TAB , GALAXY J , TAB A, TAB S2 <br />IPHONE 6 , 6S DE 16 32 Y 64 , 6SPLUS DE 16 32GB 64GB Y 128GB , 6PLUS DE 16 64 Y
+       128 , 5S , 4S, IPHONE 5<br />LG G4 , LG G3 , LG G2 , LG G4C LG G4 STYLUS , LG ZERO <br />HUAWEI P8 LITE , HUAWEI P8 , HUAWEI G8 , HUAWEI G7 , P7<br />SONY XPERIA Z2 , Z3 , Z3COMPACT , Z5 , Z5COMPACT , M4 AQUA , E3 , Z <br />BLACKBERRY Q20 , Q0 , PASSPORT</p>"
+  out: "Sony xpeira Z3 libre nuevo sin abrir solo vendemos telefonos originales y con
+        ticket de venta para la garantía cogemos tu teléfono usado o nuevo como parte de
+        pago llámanos y te lo tasamos. \n\n¿tienes un movil de ultima generación? llamanos o acércate a nuestras tiendas de
+        francisco silvela nº69 o galileo nº70 \ntodos nuestro telefonos donde se especifica nuevos son a estrenar y con garantía\n. \n*************TE COGEMOS TU TELEFONO COMO PARTE DE PAGO*********** \n\nvisita nuestras tiendas físicas en Madrid: \ncalle francisco silvela n69 forma de llegar linea 4 y 6 del metro diego de leon y
+        linea 6 7 y 8 de avda de América muy cerca de UGT o visita nuestra pagina que
+        viene a la derecha donde pone pagina web o llámanos \n******************************************************************************* \ntambién nos puedes encontrar en la calle de galileo n70 forma de llegar linea 7
+        islas filipinas y linea 4 de princesa muy ceraca del corte ingles de princesa o
+        llamanos \nnuevo horario: \nlunes a viernes de 10 a 14 y 16 a 20,30 horas y sabado de 10 a 14 horas \n******************************************************************************* \ngracias por confiar en movil center madrid\n\nTAMBIEN DISPONIBLE EN NUETRAS TIENDAS \n
+        IPHONE 6 , 6S DE 16 32 Y 64 , 6SPLUS DE 16 32GB 64GB Y 128GB , 6PLUS DE 16 64 Y 128 , 5S , 4S, IPHONE 5\n
+        LG G4 , LG G3 , LG G2 , LG G4C LG G4 STYLUS , LG ZERO \n
+        BLACKBERRY Q20 , Q0 , PASSPORT"
+  scenario: "Ha de borrar el spam del final. (aun no filtra todo el spam)"
+-
+  in: "Psp slim lite 3004 nueva flasheada lleno de juegos de psp también tiene instalado
+       emuladores de máquinas recreativas. mame, super Nintendo, sega génesis, y más
+       llamar al  o WhatsApp <br /><br />Palabras de búsqueda : apple , iphone , 4 , 4s, 5 , 5c , 5s , 6 , plus , ipad ,
+       ipod , air , macbook , pro , imac , 2 , 3 , samsung , galaxy , s2 , s3 , s4 , s5 ,
+       s6 , note , edge , lg , g3 , g4 , g2 , sony , xperia , z5 , z2 , z3 , tablet , tab
+       , htc , one , blackberry , nokia , lumia , nexus , motorola , mini , ps4 , ps3 ,
+       ps2 , psx ,  psp ,psvita,xbox 360, hp , toshiba , lenovo , m9 , m8 , xiaomi , mi ,
+       mi4 , mi3 , passport , classic , alpha , meizu , mx4 , mx5 , asus , acer , vaio ,
+       huawei , p7 , p8 , zte , lite , alienware , msi , ultrabook , notebook , alcatel ,
+       ps3 , juegos , i3 , i7 , g , x , tv , smart , go , cámara , icloud , smartphone ,
+       android , monster , beats , gear , reloj , pulsera , wear , watch , ordenador ,
+       sobremesa , bq , wii , wiiu , Nintendo 3d, 2ds, 3ds, 3dsxl, new , 3ds y new ,
+       3dsxl  nintendo , canon , nikon , 6s , nano , compact , mac , redmi , pc , gaming
+       , gamer , cpu , torre , portatil , monitor</p>"
+  out: "Psp slim lite 3004 nueva flasheada lleno de juegos de psp también tiene instalado
+        emuladores de máquinas recreativas. mame, super Nintendo, sega génesis, y más
+        llamar al  o WhatsApp \n"
+  scenario: "Ha de borrar el spam del final."
+-
+  in: "Visita nuestra web uneplus . com <br /> <br />Teléfono movil Phone 6 139€ <br />Teléfono libre <br />pantalla 5,5\" o 5,7\" <br />wifi, <br />cámara 13 mpx <br />whatsapp, <br />40 gb memoria <br />gps <br />cuatribanda <br />redes sociales facebook..., <br />Libre y Nuevo a estrenar con dos años de garantía. <br />ENVIO CONTRAREEMBOLSO EN 24H. 2 AÑOS DE GARANTIA. PIDELO YA¡ . <br /> <br />Tambien disponibles otros modelos: <br /> <br />Note 5\" 109€ <br />Phone 6 139€ <br />IS7 159€ <br />NOTE 5,7\" 139€ <br /> <br />REGALO CARGADOR DE COCHE <br /> <br />movil , mobil , chino , libre , libres , chinos , comprar , barato , baratos ,
+       smarphone , smarfone , Smartphone , dualsim , duales , 0 4.7 4 4.0 celular ,
+       moviles , celulares , bq , tablet , pulgadas , \" , 5.7\" 5.5\" 4.7\" 4.5\" 5\" , mobile
+       , movile , phone <br />este modelo no es: meizu , otium , mijue , ulefone , kingelon , jiake , zopo ,
+       inew , thl , edge , bq , xperia , sony , htc , lg , note , xiaomi , samsumg ,
+       galaxy s6 ,galaxy s5 , galaxy s4 , galaxy s3 , galaxi , galaxia , galaxia , samsum
+       , Samsun , sansung , jiayu , replica , clon , iPhone , lenovo , hdc ,huawei ,
+       huawey , z3 , apple , z2 , z1 , z5 , z6, g3 , g4 , g5 , doogee , elephone , cubot
+       o z4, samsung, aifon, comprar, 1, 2, 3, 4, 5, 6, 7</p>"
+  out: "Visita nuestra web uneplus . com \n \nTeléfono movil Phone 6 139€ \nTeléfono libre \npantalla 5,5\" o 5,7\" \nwifi, \ncámara 13 mpx \nwhatsapp, \n40 gb memoria \ngps \ncuatribanda \nredes sociales facebook..., \nLibre y Nuevo a estrenar con dos años de garantía. \nENVIO CONTRAREEMBOLSO EN 24H. 2 AÑOS DE GARANTIA. PIDELO YA¡ . \n \nTambien disponibles otros modelos: \n \nNote 5\" 109€ \nPhone 6 139€ \nIS7 159€ \nNOTE 5,7\" 139€ \n \nREGALO CARGADOR DE COCHE \n \n"
+  scenario: "Ha de borrar el spam del final."

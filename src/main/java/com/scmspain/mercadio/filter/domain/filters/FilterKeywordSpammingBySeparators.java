@@ -10,6 +10,8 @@ import java.util.Optional;
 public class FilterKeywordSpammingBySeparators implements Filter {
     private static final char DEFAULT_SEPARATOR = ',';
     private static final int MIN_SEPARATOR_DIVIDER = 12;
+    public static final String NUMBER_AND_WHATEVER_REGEX = "^[0-9].*";
+    public static final String INCHES_REGEX = ".*?[0-9],[0-9]\".*?";
     private final Optional<String> extraArg;
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -51,7 +53,7 @@ public class FilterKeywordSpammingBySeparators implements Filter {
         for (int i = 0 ; i < paragraph.length() ; i++) {
             if (paragraph.charAt(i) == separator) {
                 amountOfSeparatorsInParagraph++;
-                if (paragraph.trim().matches("^[0-9].*")) {
+                if (paragraph.trim().matches(NUMBER_AND_WHATEVER_REGEX) || paragraph.trim().matches(INCHES_REGEX)) {
                     return true;
                 }
             }
