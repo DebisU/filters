@@ -75,7 +75,7 @@ public class CommonStringOperations {
     }
 
     public static List<String> getSpecificationWords() {
-        final List<String> techWords = Arrays.asList("3D", "HD","lúmens","wi-fi","accesorios","universal","regulable","regulables","funda","idiomas");
+        final List<String> techWords = Arrays.asList("3D", "HD","lúmens","wi-fi","accesorios","universal","regulable","regulables","tarjeta sd","idiomas");
         return techWords;
     }
 

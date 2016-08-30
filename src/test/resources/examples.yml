@@ -266,7 +266,7 @@
         Altura del cuadro\n
         44/49/54 cm\n
         Peso\n
-        \n
+        ~ 24,9 kg\n
         Horquilla\n
         Rock Shox Pike RC Solo Air, 150mm, 15 mm through Axle\n
         Amortiguador\n
@@ -368,6 +368,8 @@
         -Mando a distancia.\n
         -Láminas de haya vaporizada.\n
         -Combine estos somieres articulados eléctricos con nuestros colchones nuevos sin muelles, aloe vera, eliocel, látex, viscolástico.\n
+        -Individual:de80,de90,de1,05 \n
+        -Matrimonio:de1,35,de1,50,de1,60,de1,80,largosde2,00(x2metros) \n
         -Somieres articulados motorizados eléctricos motorizados nuevos con tacos insonoros que garantizan ausencia de ruidos, para un mejor descanso del enfermo.\n
         -Somier articulado motorizado eléctrico nuevo con un Juego de 4 patas metálicas de 26 cm de altura.\n
         -Gran estabilidad y firmeza.\n
@@ -1474,3 +1476,227 @@
        o z4, samsung, aifon, comprar, 1, 2, 3, 4, 5, 6, 7</p>"
   out: "Visita nuestra web uneplus . com \n \nTeléfono movil Phone 6 139€ \nTeléfono libre \npantalla 5,5\" o 5,7\" \nwifi, \ncámara 13 mpx \nwhatsapp, \n40 gb memoria \ngps \ncuatribanda \nredes sociales facebook..., \nLibre y Nuevo a estrenar con dos años de garantía. \nENVIO CONTRAREEMBOLSO EN 24H. 2 AÑOS DE GARANTIA. PIDELO YA¡ . \n \nTambien disponibles otros modelos: \n \nNote 5\" 109€ \nPhone 6 139€ \nIS7 159€ \nNOTE 5,7\" 139€ \n \nREGALO CARGADOR DE COCHE \n \n"
   scenario: "Ha de borrar el spam del final."
+-
+  in: "Proyector Doogee Smart Cube P1 DLP con Android ¡¡Nuevos!!<br /><br />Múltiples aplicaciones, micro PC, películas, canales (Kodi), fotos, videos,
+       juegos, presentaciones profesionales, etc. <br /><br />Características:<br />Iluminación LED<br />Tecnología DLP<br />70 lúmens reales (1000 lúmens visibles)<br />Resolución: 854 x 480p / 1280 x 720p<br />Proyección a 16:9<br />Contraste 800:1<br />Batería de 4.800 mAh.<br />Procesador Amlogic Quad Core<br />RAM: 1 GB<br />ROM: 8 GB<br />USB, WiFi, Bluetooth 4.0<br />Miracast, Airplay, DLNA<br />Mide 6,2 x 6,2 x 6,2 cm. <br />Pesa 239 gramos.<br /><br />Burgos, entrego en mano. <br />Otras ciudades, envío por correo +5 euros.<br /><br />Más gadgets, teléfonos móviles, smartwatch, gafas VR realidad virtual, mini
+       teléfonos auricular, mini cámaras, drones, relojes mecánicos y cuarzo, en mi
+       perfil aquí en Vibbo.<br /><br />Palabras busquedas:<br />oferta ganga LG Samsung iphone S5 S6 S7 i5 i6 i7 Huawei Homtom Xiaomi Meizu Umi
+       Elephone Oukitel Smart TV Box barato promoción rebaja celular smartphone Sony Bq
+       Motorola pantalla bici pulgadas resolución HD Full 5\" 5.5\" SIM SD focus Ulefone
+       LeTv Cubot Bluboo Blackview Lenovo Jiayu Leagoo THL bolso tous moto coche
+       bicicleta</p>"
+  out: "Proyector Doogee Smart Cube P1 DLP con Android ¡¡Nuevos!!\n\nMúltiples aplicaciones, micro PC, películas, canales (Kodi), fotos, videos,
+        juegos, presentaciones profesionales, etc. \n\nCaracterísticas:\nIluminación LED\nTecnología DLP\n70 lúmens reales (1000 lúmens visibles)\nResolución: 854 x 480p / 1280 x 720p\nProyección a 16:9\nContraste 800:1\nBatería de 4.800 mAh.\nProcesador Amlogic Quad Core\nRAM: 1 GB\nROM: 8 GB\nUSB, WiFi, Bluetooth 4.0\nMide 6,2 x 6,2 x 6,2 cm. \nPesa 239 gramos.\n\nBurgos, entrego en mano. \nOtras ciudades, envío por correo +5 euros.\n\nMás gadgets, teléfonos móviles, smartwatch, gafas VR realidad virtual, mini
+        teléfonos auricular, mini cámaras, drones, relojes mecánicos y cuarzo, en mi
+        perfil aquí en Vibbo."
+  scenario: "Ha de borrar el spam del final. (borra una linea de más: Miracast,Airplay,DLNA)"
+-
+  in: "S7 MOVIL LIBRE 169€<br /><br />Caracteristicas:<br /><br />Procesador OCTACORE<br /><br />Pantalla: 5.7? <br /><br />Sistema operativo Android<br /><br />Cámara 13MPX<br /><br />Almacenamiento 40GB<br /><br />Reconomiciento de Huella<br /><br />WIFI<br /><br />Bluetooth<br /><br />USB 3.0<br /><br />Batería 3000mAh<br /><br /><br />TAMBIEN DISPONIBLES OTROS MODELOS:<br /><br />NOTE 5 179€<br />S7 159€<br />S6 149€<br />PHONE 6 149€<br /><br /><br />Palabras de busqueda: s5 , S7 , s6 , note , galaxy , galaxi , galaxia , galaxya ,
+       samsung , samsun , sansun , sansung, movil , mobil , mobile , movile , smartphone
+       , phone , telefono , barato, iphone , apple , teléfono , edge , plus, android ,
+       libre , htc , xperia , sony , bq , jiayu , xiaomi , lenovo , hdc , htc, huawei ,
+       huawey , z3 , z2 , z1 , z4 , z5 , Lg , Marca , G3 , G4 , G5 , Lenovo , DOOGEE ,
+       Elephone , Cubot , MEIZU , Oukitel , Otium , Mijue , Ulefone , M-HORSE , Kingelon
+       , Jiake , Mpie , HTM , LANDVO , Zopo , Haipai , INEW , Tianhe , THL , RAM<br /><br /></p>"
+  out: "S7 MOVIL LIBRE 169€\n\nCaracteristicas:\n\nProcesador OCTACORE\n\nPantalla: 5.7? \n\nSistema operativo Android\n\nCámara 13MPX\n\nAlmacenamiento 40GB\n\nReconomiciento de Huella\n\nWIFI\n\nBluetooth\n\nUSB 3.0\n\nBatería 3000mAh\n\n\nTAMBIEN DISPONIBLES OTROS MODELOS:\n\nNOTE 5 179€\nS7 159€\nS6 149€\nPHONE 6 149€\n\n\n"
+  scenario: "Ha de borrar el spam del final."
+-
+  in: "Lote de juegos para la Sony Ps1. Todos probados y funcionando perfectamente. Las
+       cajas están bastante tocadas, algunas rotas y otras con grietas. <br />Los juegos son: Tomb Raider 3 Completo Platinum, Tomb Raider Chronicles Completo,
+       Egipto II (falta manual), Medievil 2 Platinum (falta portada), UEFA Champions
+       League Season 2000/2001 Completo, ThunderHawk 2 (falta portada), L'Amerzone
+       Completo, SpeedBall 2100 (falta portada).</p>"
+  out: "Lote de juegos para la Sony Ps1. Todos probados y funcionando perfectamente. Las
+        cajas están bastante tocadas, algunas rotas y otras con grietas. \nLos juegos son: Tomb Raider 3 Completo Platinum, Tomb Raider Chronicles Completo,
+        Egipto II (falta manual), Medievil 2 Platinum (falta portada), UEFA Champions
+        League Season 2000/2001 Completo, ThunderHawk 2 (falta portada), L'Amerzone
+        Completo, SpeedBall 2100 (falta portada)."
+  scenario: "No ha de borrar nada."
+-
+  in: "VENDO SONY XPERIA Z ULTRA COLOR NEGRO EN PERFECTO ESTADO, CON CAJA Y ACCESORIOS.
+       NINGUNA RAYA, EN PERFECTO ESTADO. ENTREGA EN ALCOBENDAS. ENVÍO CONTRAREMBOLSO
+       CORREOS +12. NO CAMBIOS Y NO NEGOCIO EL PRECIO</p>"
+  out: "VENDO SONY XPERIA Z ULTRA COLOR NEGRO EN PERFECTO ESTADO, CON CAJA Y ACCESORIOS.
+        NINGUNA RAYA, EN PERFECTO ESTADO. ENTREGA EN ALCOBENDAS. ENVÍO CONTRAREMBOLSO
+        CORREOS +12. NO CAMBIOS Y NO NEGOCIO EL PRECIO"
+  scenario: "No ha de borrar nada."
+-
+  in: "NOTE 5,1\" 109 € <br />Teléfono libre (válido para cualquier compañía: vodafone, yoigo...) <br />pantalla 5,1\" , <br />wifi, <br />cámara 8 mpx <br />whatsapp, <br />40 gb memoria <br />gps <br />cuatribanda <br />redes sociales facebook..., <br />Libre y Nuevo a estrenar con dos años de garantía. <br />ENVIO CONTRAREEMBOLSO EN 24H. 2 AÑOS DE GARANTIA. PIDELO YA¡ . <br /> <br />TAMBIEN DISPONIBLES OTROS MODELOS: <br /> <br />NOTE 5,7\" 139€ <br />IS7 159€ <br />PHONE 6 139€ <br /> <br />HOY REGALO FUNDA <br /> <br />movil , mobil , chino , libre , libres , chinos , comprar , barato , baratos ,
+       smarphone , smarfone , Smartphone , dualsim , duales , 0 4.7 4 4.0 celular ,
+       moviles , celulares , bq , tablet , pulgadas , \" , 5.7\" 5.5\" 4.7\" 4.5\" 5\" , mobile
+       , movile , phone <br />este modelo no es: meizu , otium , mijue , ulefone , kingelon , jiake , zopo ,
+       inew , thl , edge , bq , xperia , sony , htc , lg , note 4 , xiaomi , samsumg ,
+       galaxy s6 ,galaxy s5 , galaxy s4 , galaxy s3 , galaxi , galaxia , note 5, galaxia
+       , samsum , Samsun , sansung , jiayu , replica , clon , iPhone , lenovo , hdc
+       ,huawei , huawey , z3 , apple , z2 , z1 , z5 , z6, g3 , g4 , g5 , doogee ,
+       elephone , cubot o z4, samsung, aifon, compra, 1, 2, 3, 4, 5, 6, 7</p>"
+  out: "NOTE 5,1\" 109 € \nTeléfono libre (válido para cualquier compañía: vodafone, yoigo...) \npantalla 5,1\" , \nwifi, \ncámara 8 mpx \nwhatsapp, \n40 gb memoria \ngps \ncuatribanda \nredes sociales facebook..., \nLibre y Nuevo a estrenar con dos años de garantía. \nENVIO CONTRAREEMBOLSO EN 24H. 2 AÑOS DE GARANTIA. PIDELO YA¡ . \n \nTAMBIEN DISPONIBLES OTROS MODELOS: \n \nNOTE 5,7\" 139€ \nIS7 159€ \nPHONE 6 139€ \n \nHOY REGALO FUNDA \n"
+  scenario: "Ha de borrar todo el spam que contiene"
+-
+  in: "Vendo Consola Sony PS4 Call Of Duty Black Ops 3 Limited Edition 1TB en perfectas
+       condicioned comprada en Navidad 2015 Ninguna sinal de golpes, PERFECTA! Inclue 6
+       Juegos:<br />- Call of Duty Black Ops 3<br />- Pro Evolution Soccer 2016<br />- Natuto Shippuden: Ultimate Ninja Storm 3<br />- Just Dance 2016<br />- Need For Speed Rivals<br />- Gran Theft Auto: San Andreas ( en el disco duro).<br />Ademas inclue 2 mandos originales, estacion de carga para los mandos, cable HDMI y
+       cable de alimentacion. Se puede ver y probar sin problemas.<br />El precio total es de 550, si estas enteresado llama al numero 622711699.</p>"
+  out: "Vendo Consola Sony PS4 Call Of Duty Black Ops 3 Limited Edition 1TB en perfectas
+        condicioned comprada en Navidad 2015 Ninguna sinal de golpes, PERFECTA! Inclue 6
+        Juegos:\n- Call of Duty Black Ops 3\n- Pro Evolution Soccer 2016\n- Natuto Shippuden: Ultimate Ninja Storm 3\n- Just Dance 2016\n- Need For Speed Rivals\n- Gran Theft Auto: San Andreas ( en el disco duro).\nAdemas inclue 2 mandos originales, estacion de carga para los mandos, cable HDMI y
+        cable de alimentacion. Se puede ver y probar sin problemas.\nEl precio total es de 550, si estas enteresado llama al numero 622711699."
+  scenario: "No ha de borrar nada."
+-
+  in: "Pokeball POWER BANK con proyector de figura Pokemon!! Potencia de 10000mAh!!<br />Carga tu móvil sin fin y sigue jugando a Pokemon Go!! Envío a TODA España!!
+       Producto NUEVO!!<br /><br />Carcasa Funda Smartphone Huawei Sony LG Cosplay Entrenador Juguete Anime Nintendo
+       2DS 3DS XL Ash Team Rocket Samsung Galaxy S5 S6 S7 Edge iPhone 4 4S 5 5S 6 6S 7
+       Pikachu Pokedex Ultraball Monstruoball Liga Kanto Medallas Insignias Hoenn Johto
+       Sinnoh Teselia Compi Safari Pantano Nexo Ensueñoball Oak rojo azul Pokeball
+       clásica blanca Liga Naranja Oro Heartgold Plata Soulsilver Aaron Lucario Snorlax
+       Joy Sam Wailord Cepoball Teclaball Mewtwo Ocasoball Velozball Ensueñoball
+       pesterball Honorball Mallaball Turnoball Sanaball Rapidball ceboball Nivelball
+       Pesoball Amorball Amigoball Lunaball Competiball Lujoball Nidoball</p>"
+  out: "Pokeball POWER BANK con proyector de figura Pokemon!! Potencia de 10000mAh!!\nCarga tu móvil sin fin y sigue jugando a Pokemon Go!! Envío a TODA España!!
+        Producto NUEVO!!\n\n"
+  scenario: "Ha de borrar todo el spam del final."
+-
+  in: "En venta Samsung Galaxy S6 edge Plus <br /><br />Galaxy S6 Edge+<br />Dimensiones<br />154.45 x 75.80 x 6.85mm<br />Peso<br />153 gramos<br />Pantalla<br />5,7 pulgadas Super AMOLED 2560 x 1440<br />Procesador<br />Exynos 7 Octacore 14 nm<br />RAM<br />4 GB LPDDR4<br />Sistema operativo<br />Android 5.1 Lollipop (Touchwiz)<br />Almacenamiento<br />32/64<br />Cámaras<br />16 megapíxeles con OIS y VDIS / 5 megapíxeles<br />Batería<br />3.000 mAh, carga inalámbrica<br />Otros<br />LTE, Bluetooth 4.2, NFC, sensor de huellas<br /><br />No leer<br /><br />Samsung , sony , apple , iphone , edge , note 5 , ps3 , ps4 , juego , moto ,
+       bicicleta , oferta , rebaja , mudanza , nuevo , telefono , ipad , portatil ,
+       ordenador , gps</p>"
+  out: "En venta Samsung Galaxy S6 edge Plus \n\nGalaxy S6 Edge+\nDimensiones\n154.45 x 75.80 x 6.85mm\nPeso\n153 gramos\nPantalla\n5,7 pulgadas Super AMOLED 2560 x 1440\nProcesador\nExynos 7 Octacore 14 nm\nRAM\n4 GB LPDDR4\nSistema operativo\nAndroid 5.1 Lollipop (Touchwiz)\nAlmacenamiento\n32/64\nCámaras\n16 megapíxeles con OIS y VDIS / 5 megapíxeles\nBatería\n3.000 mAh, carga inalámbrica\nOtros\nLTE, Bluetooth 4.2, NFC, sensor de huellas\n\nNo leer\n"
+  scenario: "Ha de borrar todo el spam del final."
+-
+  in: "Vendo  playstation 4 , play 2 y play 3, todos de segunda mano. <br />Play 2 primeras generaciones +mando + 1 juego 50<br />play 2 plata +mando Sony plata+ 1 juego en 65,00<br />Play 2 negra+ 2 mandos+ 1 juego pes 65,00<br />Play 3 + 2 mandos y 1 juego  160<br />Play 3 slim + 2 mandos y 1 juego 160<br />Playstation 4 1tb (3 meses de vidas) + mando Sony+ 1 juego Last of Us   295,00</p>"
+  out: "Vendo  playstation 4 , play 2 y play 3, todos de segunda mano. \nPlay 2 primeras generaciones +mando + 1 juego 50\nplay 2 plata +mando Sony plata+ 1 juego en 65,00\nPlay 2 negra+ 2 mandos+ 1 juego pes 65,00\nPlay 3 + 2 mandos y 1 juego  160\nPlay 3 slim + 2 mandos y 1 juego 160\nPlaystation 4 1tb (3 meses de vidas) + mando Sony+ 1 juego Last of Us   295,00"
+  scenario: "No debe de borrar nada."
+-
+  in: "ES NUEVO DEL TODO,PERO TIENE UN PROBLEMA DE PLACA BASE, FUNCIONA TODO PERO PARA
+       HABLAR SE TIENE QUE HACER CON EL MANOS LIBRES, TAMBIÉN SE PUEDE UTILIZAR PARA
+       RECAMBIO. <br /><br />SmartPhone Dual SIM , 4G, 3G y 2G libre, MIUI V6.5.5 en Español. 2GB/16GB.
+       Pantalla 5 pulgadas de 1920x1080 Cámara: Sony / Samsung de 13Mpx, 4208 x 2368
+       píxeles, 1920 x 1080 píxeles, 30 fps, doble flash, Auto focus/Enfoque automático,
+       Disparo continuo, Zoom digital, Estabilización digital de imagen, Geoetiquetado,
+       Captura imágenes panorámicas, Modo de alto rango dinámico (HDR), Toque de enfoque,
+       Detección de rostro, Balance de blancos, Ajustes de sensibilidad ISO, Compensación
+       de la exposición, Autodisparador, Selección de escenas</p>"
+  out: "ES NUEVO DEL TODO,PERO TIENE UN PROBLEMA DE PLACA BASE, FUNCIONA TODO PERO PARA
+        HABLAR SE TIENE QUE HACER CON EL MANOS LIBRES, TAMBIÉN SE PUEDE UTILIZAR PARA
+        RECAMBIO. \n\nSmartPhone Dual SIM , 4G, 3G y 2G libre, MIUI V6.5.5 en Español. 2GB/16GB.
+        Pantalla 5 pulgadas de 1920x1080 Cámara: Sony / Samsung de 13Mpx, 4208 x 2368
+        píxeles, 1920 x 1080 píxeles, 30 fps, doble flash, Auto focus/Enfoque automático,
+        Disparo continuo, Zoom digital, Estabilización digital de imagen, Geoetiquetado,
+        Captura imágenes panorámicas, Modo de alto rango dinámico (HDR), Toque de enfoque,
+        Detección de rostro, Balance de blancos, Ajustes de sensibilidad ISO, Compensación
+        de la exposición, Autodisparador, Selección de escenas"
+  scenario: "No ha de borrar nada."
+-
+  in: "Samsung UE60KU6000K 60\" 4K Ultra HD Smart TV Wifi Negro - Televisor (4K Ultra HD,
+       Tizen, A, 16:9, 3840 x 2160, 2160p<br />.<br />-¡¡¡P.V.P.= mas de 1.200!!! <br />-No se ha abierto, esta nueva y precintada.<br />-2 años de garantia de fabricante.<br />-NO SE ACEPTAN CAMBIOS.<br />-Precio algo negociable<br />.<br />+ Receptor de satélite IRIS 9800<br />-Nuevo y precintado <br />-Con 2 años de garantia<br />-¡¡¡P.V.P.=135!!!<br />.<br />Apple tele philips mac ordenador movil iphone tablet computadora consola play xbox
+       electronica 1 2 3 4 5 6 7 8 9 mobil pulgadas samsung galaxy s note grand neo lg
+       engel sony acer</p>"
+  out: "Samsung UE60KU6000K 60\" 4K Ultra HD Smart TV Wifi Negro - Televisor (4K Ultra HD,
+        Tizen, A, 16:9, 3840 x 2160, 2160p\n.\n-¡¡¡P.V.P.= mas de 1.200!!! \n-No se ha abierto, esta nueva y precintada.\n-2 años de garantia de fabricante.\n-NO SE ACEPTAN CAMBIOS.\n-Precio algo negociable\n.\n+ Receptor de satélite IRIS 9800\n-Nuevo y precintado \n-Con 2 años de garantia\n-¡¡¡P.V.P.=135!!!\n.\n"
+  scenario: "Ha de borrar el spam del final."
+-
+  in: "El móvil funcionaba perfectamente hasta que decidí instalar un rom Miui,después de
+       hacerlo el móvil se queda en logotipo de inicio y de ahí no pasa.<br /><br />Lo vendo barato por si alguien quiere arreglarlo. <br /><br />La pantalla está en buen estado sin marcas, la carcasa con un poco de desgaste en
+       los latetales. <br /><br />Entrego el móvil y 2 baterías. Nada más. <br />Android 5.1 Lollipop<br />64Bit Octa core<br />3Gb Ram <br />16GB memoria interna <br />Pantalla 5.5  1080*1920<br />Cámara Sony 13mpx<br />Lector huellas<br />4G LTE <br />Batería larga duración</p>"
+  out: "El móvil funcionaba perfectamente hasta que decidí instalar un rom Miui,después de
+        hacerlo el móvil se queda en logotipo de inicio y de ahí no pasa.\n\nLo vendo barato por si alguien quiere arreglarlo. \n\nLa pantalla está en buen estado sin marcas, la carcasa con un poco de desgaste en
+        los latetales. \n\nEntrego el móvil y 2 baterías. Nada más. \nAndroid 5.1 Lollipop\n64Bit Octa core\n3Gb Ram \n16GB memoria interna \nPantalla 5.5  1080*1920\nCámara Sony 13mpx\nLector huellas\n4G LTE \nBatería larga duración"
+  scenario: "No ha de borrar nada."
+-
+  in: "Vendo Sony Xperia X nuevo a estrenar, sin abrir la caja aún. Color negro. <br />23 megapixeles y 13 de frontal, pantalla de 5\", Android 6, 3 Gb RAM, 32 gigas
+       memoria interna ampliable con Micro-SD de hasta 200. NFC, OTG, HML...</p>"
+  out: "Vendo Sony Xperia X nuevo a estrenar, sin abrir la caja aún. Color negro. \n23 megapixeles y 13 de frontal, pantalla de 5\", Android 6, 3 Gb RAM, 32 gigas
+        memoria interna ampliable con Micro-SD de hasta 200. NFC, OTG, HML..."
+  scenario: "No ha de borrar nada."
+-
+  in: "Se vende tv Sony comprado en Noviembre del 2015.<br />Tamaño Pantalla<br />65\" / 165 cm ( Equivalencia entre pulgadas y cm ).<br />Herzios:MotionFlow 800 Hz<br />Resolución / TDT: 3840 x 2160 ( 4K ) / Integrado HD<br />Conexiones: 4 x HDMI, 3 x USB<br />Smart TV: Si<br />Dimensiones: 171.6 x 91.6 x 32.0 cm<br />Ranura CI (TDT de pago)CI+<br />USB Reproductor: Si ( audio, video, foto )<br />Compatible 3D: Si<br />Peso: 46.6 Kg<br /></p>"
+  out: "Se vende tv Sony comprado en Noviembre del 2015.\nTamaño Pantalla\n65\" / 165 cm ( Equivalencia entre pulgadas y cm ).\nHerzios:MotionFlow 800 Hz\nResolución / TDT: 3840 x 2160 ( 4K ) / Integrado HD\nConexiones: 4 x HDMI, 3 x USB\nSmart TV: Si\nDimensiones: 171.6 x 91.6 x 32.0 cm\nRanura CI (TDT de pago)CI+\nUSB Reproductor: Si ( audio, video, foto )\nCompatible 3D: Si\nPeso: 46.6 Kg\n"
+  scenario: "No ha de borrar nada."
+-
+  in: "Disponemos de diferentes modelos como Galaxy S7, S6, Note 5 y Wiko desde el precio
+       indicado en el anuncio.<br /><br />Producto nuevo, a estrenar, precintado, somos tienda online, GARANTIA DE 2 AÑOS
+       DESDE ESPAÑA!!!!<br /><br />Servicio técnico propio en ESPAÑA!!<br /><br />Contamos con un amplio stock en piezas de repuesto a precio costo.<br /><br />Android (Lollipop) actualizable 100%!!!<br /><br />SENSORES: detector facial, dactilar (funciona con todas las huellas), doble flash,
+       puedes cambiar el tv, acelerómetro, control del ritmo cardíaco, contador de pasos,
+       giroscópico, .......<br /><br />Método de envio / pago:<br /><br />-&gt; CONTRAREEMBOLSO (((((pagas al recibirlo en casa, OPCIÓN DE ABRIR EL PAQUETE
+       antes de pagar para comprobar que esta todo correcto))))).<br /><br />OFERTA captación nuevos clientes!!!!! Cada terminal incluye regalos!!!!!!:<br /><br />- Funda libro con pantalla transparente<br /><br />- Protector de pantalla rígido y gamuza<br /><br />- Bateria externa 2600mAh<br /><br />- Palo para fotos selfie<br /><br />Pida más información por whatsapp, teléfono o email.<br /><br />Aceptamos cambios!!<br /><br />Atención al cliente las 24h los 365 días del año!!<br /><br />Seriedad<br /><br />* ** * Compatible con tu televisor, coche (audi, bmw, mercedes, leon, opel,
+       renault,....), iPod, iPad, macbook pro, air, gps, play, ps4, wii, xbox, imac,
+       tablet, ordenador, portátil, teléfonos móviles (iphone 6,6s PLUS,5,5s Samsung,
+       Galaxy S6, S5, note 5, 4, Sony, Xperia Z5, Z4, Z3, Nokia lumia, LG G4, G3, Nexus
+       one, htc ....) y otros dispositivos con entrada jack 3,5 mm.<br /><br /></p>"
+  out: "Disponemos de diferentes modelos como Galaxy S7, S6, Note 5 y Wiko desde el precio
+       indicado en el anuncio.\n\nProducto nuevo, a estrenar, precintado, somos tienda online, GARANTIA DE 2 AÑOS
+       DESDE ESPAÑA!!!!\n\nServicio técnico propio en ESPAÑA!!\n\nContamos con un amplio stock en piezas de repuesto a precio costo.\n\nAndroid (Lollipop) actualizable 100%!!!\n\nSENSORES: detector facial, dactilar (funciona con todas las huellas), doble flash,
+       puedes cambiar el tv, acelerómetro, control del ritmo cardíaco, contador de pasos,
+       giroscópico, .......\n\nMétodo de envio / pago:\n\n-&gt; CONTRAREEMBOLSO (((((pagas al recibirlo en casa, OPCIÓN DE ABRIR EL PAQUETE
+       antes de pagar para comprobar que esta todo correcto))))).\n\nOFERTA captación nuevos clientes!!!!! Cada terminal incluye regalos!!!!!!:\n\n- Funda libro con pantalla transparente\n\n- Protector de pantalla rígido y gamuza\n\n- Bateria externa 2600mAh\n\n- Palo para fotos selfie\n\nPida más información por whatsapp, teléfono o email.\n\nAceptamos cambios!!\n\nAtención al cliente las 24h los 365 días del año!!\n\nSeriedad\n\n* ** * Compatible con tu televisor, coche (audi, bmw, mercedes, leon, opel,
+       renault,....), iPod, iPad, macbook pro, air, gps, play, ps4, wii, xbox, imac,
+       tablet, ordenador, portátil, teléfonos móviles (iphone 6,6s PLUS,5,5s Samsung,
+       Galaxy S6, S5, note 5, 4, Sony, Xperia Z5, Z4, Z3, Nokia lumia, LG G4, G3, Nexus
+       one, htc ....) y otros dispositivos con entrada jack 3,5 mm.\n\n"
+  scenario: "No ha de borrar nada(aunque lo parezca)."
+-
+  in: "Si buscas alguien que lo tiene o lo consiga todo aquí lo tienes. Autocad 2017,
+       Photoshop cc, Adobe master collection, Windows 7 windows 8, 10 windows xp windows
+       vista Nero 17 corel draw sony vegas, contaplus presto cubase, office 2013 2016,
+       programas edicion audio y video. talleres automovil, todo tipo de programas para
+       negocios, envio a toda España. Atiendo correo, whatsapp o llamadas en el instante.
+       Rara vez me piden algún programa que no tenga o no pueda conseguir. Llamar a todas
+       horas.</p>"
+  out: "Si buscas alguien que lo tiene o lo consiga todo aquí lo tienes. Autocad 2017,
+        Photoshop cc, Adobe master collection, Windows 7 windows 8, 10 windows xp windows
+        vista Nero 17 corel draw sony vegas, contaplus presto cubase, office 2013 2016,
+        programas edicion audio y video. talleres automovil, todo tipo de programas para
+        negocios, envio a toda España. Atiendo correo, whatsapp o llamadas en el instante.
+        Rara vez me piden algún programa que no tenga o no pueda conseguir. Llamar a todas
+        horas."
+  scenario: "No ha de borrar nada."
+-
+  in: "Gamewatch Oil panic funcionando perfectamente.<br /><br />Todo en la vida es negociable, pero no respondere oferts absurdas y rebaja por
+       lotes.<br /><br />Ire poniendo mucho de videojuegos, tengo más sin listar si estas intersado en
+       material retro vintage de consolas preguntame.<br /><br />Posibilidad de envo previo pago. Posibilida de entrega en mano en Madrid zonas
+       Aluche, PAU carabanchel, batan o chamberi entre semana, no m desplazo.<br /><br />Tags: psx psp ps1 ps2 ps3 ps4 tekken pokkemon zelda digimon kirby juego juegos
+       game boy nintendo sony ds 3ds n64 game cube wii nes snes gc wii supernintendo sega
+       mega drive megadrive master system ms md saturn ss gg gamegear gear consola
+       videoconsola videojuegos ocio dc dream cast dreamcast megaman supermario mario
+       donkey castelvania emo friky freaky star wars magic cartas roll rpg nintendo64
+       coleco gw game watch gamewatch tabletop maquinita marcianitos marcianos atari.</p>"
+  out: "Gamewatch Oil panic funcionando perfectamente.\n\nTodo en la vida es negociable, pero no respondere oferts absurdas y rebaja por
+        lotes.\n\nIre poniendo mucho de videojuegos, tengo más sin listar si estas intersado en
+        material retro vintage de consolas preguntame.\n\nPosibilidad de envo previo pago. Posibilida de entrega en mano en Madrid zonas
+        Aluche, PAU carabanchel, batan o chamberi entre semana, no m desplazo.\n\n"
+  scenario: "Ha de borrar el spam del final."
+-
+  in: "Compro moviles de gama media alta. . . . solo compro moviles originales con caja
+        accesorios y facturas. . . . iphone 5, 5C, 5S, 6, 6 plus, 6S, 6S+. . . samsung
+        galaxy S4, S5, S6, S6, S7 edge, note 3, note 4, note 5, note edge. . . . lg G2,
+        G3, G4, G flex 2. . . . sony xperia Z2, Z3, Z3+, Z5 compact. . . htc one M8, M9,
+        desire. . . . huawei ascend mate 7, 8, P8. . . . solo compro en mano en BENIDORM.
+        . . . . no acepto envios. . . consultar precios por whatsapp</p>"
+  out: "Compro moviles de gama media alta. . . . solo compro moviles originales con caja
+        accesorios y facturas. . . . iphone 5, 5C, 5S, 6, 6 plus, 6S, 6S+. . . samsung
+        galaxy S4, S5, S6, S6, S7 edge, note 3, note 4, note 5, note edge. . . . lg G2,
+        G3, G4, G flex 2. . . . sony xperia Z2, Z3, Z3+, Z5 compact. . . htc one M8, M9,
+        desire. . . . huawei ascend mate 7, 8, P8. . . . solo compro en mano en BENIDORM.
+        . . . . no acepto envios. . . consultar precios por whatsapp"
+  scenario: "No ha de borrar nada."
+-
+  in: "Vendo o cambio ultra portatil Vaio p blanco, como nuevo, con un Windows 7 lite
+       instalado, tiene modem 3g integrado, solo portatil y cargador original<br /><br />Para cambios solo ofertas serias por favor.<br /><br />Especificaciones:<br />Procesador Intel Atom Z520 1.33 Ghz<br />2 GBs de RAM<br />Pantalla de 8 1600×768 LED<br />Disco Duro de 60 GBs<br />Tarjeta de Video Intel GMA 500<br />Wifi / Bluetooth / GPS / 3G <br />Lector de tarjetas SD / SDHC / Memory Stick<br />Webcam Motion Eye<br />Batería de 2 celdas</p>"
+  out: "Vendo o cambio ultra portatil Vaio p blanco, como nuevo, con un Windows 7 lite
+        instalado, tiene modem 3g integrado, solo portatil y cargador original\n\nPara cambios solo ofertas serias por favor.\n\nEspecificaciones:\nProcesador Intel Atom Z520 1.33 Ghz\n2 GBs de RAM\nPantalla de 8 1600×768 LED\nDisco Duro de 60 GBs\nTarjeta de Video Intel GMA 500\nWifi / Bluetooth / GPS / 3G \nLector de tarjetas SD / SDHC / Memory Stick\nWebcam Motion Eye\nBatería de 2 celdas"
+  scenario: "No ha de borrar nada."
+-
+  in: "CON FACTURAA<br />El Sony Xperia Z3 16GB es un móvil Android bueno con procesador de 2500Mhz e
+       4-cores que permite ejecutar juegos y aplicaciones pesadas.<br /><br />Con una ranura para tarjeta SIM, el Sony Xperia Z3 16GB permite download hasta 150
+       Mbps para la navegación por Internet, pero esto también depende del operador
+       móvil.<br /><br />Gran conectividad de este terminal que incluye Bluetooth Versión 4.0 con A2DP,
+       WiFi 802.11 a/b/g/n/ac y NFC para realizar pagos y permite la conexión a otros
+       terminales.<br /><br />Incluyendo la batería, el móvil Sony Xperia Z3 16GB tiene 152 gramos y es un
+       terminal muy delgado con solamente 7,3 mm.</p>"
+  out: "CON FACTURAA\nEl Sony Xperia Z3 16GB es un móvil Android bueno con procesador de 2500Mhz e
+        4-cores que permite ejecutar juegos y aplicaciones pesadas.\n\nCon una ranura para tarjeta SIM, el Sony Xperia Z3 16GB permite download hasta 150
+        Mbps para la navegación por Internet, pero esto también depende del operador
+        móvil.\n\nGran conectividad de este terminal que incluye Bluetooth Versión 4.0 con A2DP,
+        WiFi 802.11 a/b/g/n/ac y NFC para realizar pagos y permite la conexión a otros
+        terminales.\n\nIncluyendo la batería, el móvil Sony Xperia Z3 16GB tiene 152 gramos y es un
+        terminal muy delgado con solamente 7,3 mm."
+  scenario: "No ha de borrar nada."
