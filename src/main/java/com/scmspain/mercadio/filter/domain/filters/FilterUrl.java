@@ -19,7 +19,7 @@ public class FilterUrl implements Filter {
     public String filter(String text) {
         final String filteredText = takeDecision(text);
 
-        logger.info("\nRequest URL filter: \n"+ filteredText.toString());
+        logger.info("\nRequest URL filter: \n "+ filteredText.toString());
 
         return filteredText.toString();
     }
