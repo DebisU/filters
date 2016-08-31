@@ -89,7 +89,7 @@ public class FilterServiceBatteryTest {
         final FilterRequest filterRequest = new FilterRequest();
         final Map<String,String> filters = new HashMap<>();
 
-        filters.put("forbiddenwords","tags,keywords");
+        filters.put("forbiddenwords","tags,keywords,palabra de busqueda,palabras de busqueda,palabras busquedas,oferta ganga");
         filters.put("removespecificwords","Palabras de búsqueda,search");
         filters.put("separators","");
         filters.put("url","");

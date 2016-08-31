@@ -5,13 +5,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class FilterKeywordSpammingByCommonWords implements Filter {
-    public static final int MIN_LINE_LENGTH_TO_ANALYZE = 55;
+    public static final int MIN_LINE_LENGTH_TO_ANALYZE_REGEX = 55;
     private static final String BANNER_TEXT_REGEX = "[<>·#._,-]{8,}[a-zA-Z0-9 ]+[<>·#._,-]{8,}";
-    private static final String LINE_STARTS_WITH_NUMBERS = "[0-9]+.*?";
+    private static final String LINE_STARTS_WITH_NUMBERS_REGEX = "[0-9]+.*?";
+    public static final String SEPARATOR_LINE_REGEX = "[*+_-]{15,}";
+    public static final String CONTAINS_A_LOT_OF_EXCLAMATION_AND_INTERROGATION_REGEX = ".*?[!¡¿?]{5,}.*?";
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override
@@ -45,9 +46,12 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
     private boolean checkConditions(String text) {
         if (CommonStringOperations.checkIfStringContainsItemFromList(text,getMostCommonWords())
                 || CommonStringOperations.checkIfStringMatchesItemFromList(text,getWordsToMatch())
+                || getAmountOfSpecificCharacters(text) >= 8
                 || text.trim().matches(BANNER_TEXT_REGEX)
-                || text.trim().matches(LINE_STARTS_WITH_NUMBERS)
-                || text.length()< MIN_LINE_LENGTH_TO_ANALYZE) {
+                || text.trim().matches(CONTAINS_A_LOT_OF_EXCLAMATION_AND_INTERROGATION_REGEX)
+                || text.trim().matches(SEPARATOR_LINE_REGEX)
+                || text.trim().matches(LINE_STARTS_WITH_NUMBERS_REGEX)
+                || text.length()< MIN_LINE_LENGTH_TO_ANALYZE_REGEX) {
             return true;
         }
         return false;
@@ -63,37 +67,38 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
     }
 
     private static List<String> getMostCommonWords() {
-        final List<String> commonWords = new ArrayList<>(getAllPrepositions());
-        commonWords.addAll(getMostCommonSpanishWords());
+        final List<String> commonWords = new ArrayList<>(CommonStringOperations.getAllPrepositions());
+        commonWords.addAll(CommonStringOperations.getMostCommonSpanishWords());
+        commonWords.addAll(CommonStringOperations.getTimeUnits());
 
         return commonWords;
     }
 
     private static List<String> getWordsToMatch() {
-        final List<String> wordsToMatch = new ArrayList<>(getAbbreviatedUnitsOfMeasure());
-        wordsToMatch.addAll(getSpecificationWords());
+        final List<String> wordsToMatch = new ArrayList<>(CommonStringOperations.getAbbreviatedUnitsOfMeasure());
+        wordsToMatch.addAll(CommonStringOperations.getSpecificationWords());
 
         return wordsToMatch;
     }
 
+    private static int getAmountOfSpecificCharacters(String text) {
+        int amountOfPoints = 0;
+        int amountOfComas = 0;
+        int amountOfLowBar = 0;
 
-    private static List<String> getAllPrepositions() {
-        final List<String> prepositions = Arrays.asList(" a "," ante "," bajo "," cabe "," con "," contra "," de "," desde "," en "," entre "," hacia "," hasta "," para "," por "," según "," segun "," sin "," so "," sobre "," tras ");
-        return prepositions;
+        for (int i = 0 ; i < text.length() ; i++) {
+            switch (text.charAt(i)) {
+                case '.': amountOfPoints++;
+                    break;
+                case ',': amountOfComas++;
+                    break;
+                case '_': amountOfLowBar++;
+                    break;
+                default:
+                    break;
+            }
+        }
+        return amountOfComas > amountOfPoints ? amountOfComas : amountOfPoints > amountOfLowBar ? amountOfPoints : amountOfLowBar;
     }
 
-    private static List<String> getMostCommonSpanishWords() {
-        final List<String> commonWords = Arrays.asList(" la "," que "," el "," los ", " las "," se "," del "," un "," su "," se "," es "," no "," si ");
-        return commonWords;
-    }
-
-    private static List<String> getSpecificationWords() {
-        final List<String> techWords = Arrays.asList("3D", "HD");
-        return techWords;
-    }
-
-    private static List<String> getAbbreviatedUnitsOfMeasure() {
-        final List<String> unitsOfMeasure = Arrays.asList("mhz","ghz","hz","m²","m³","km","gb","mb","tb","mpx","cm","mm");
-        return unitsOfMeasure;
-    }
 }

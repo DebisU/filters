@@ -10,6 +10,10 @@ import java.util.Optional;
 public class FilterKeywordSpammingBySeparators implements Filter {
     private static final char DEFAULT_SEPARATOR = ',';
     private static final int MIN_SEPARATOR_DIVIDER = 12;
+    public static final String NUMBER_AND_WHATEVER_REGEX = "^[0-9].*";
+    public static final String INCHES_REGEX = ".*?[0-9],[0-9]\".*?";
+    public static final String DIMENSIONS_REGEX = ".*?[0-9]{1,6},[0-9]{1,6}.*?";
+
     private final Optional<String> extraArg;
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -51,7 +55,7 @@ public class FilterKeywordSpammingBySeparators implements Filter {
         for (int i = 0 ; i < paragraph.length() ; i++) {
             if (paragraph.charAt(i) == separator) {
                 amountOfSeparatorsInParagraph++;
-                if (paragraph.trim().matches("^[0-9].*")) {
+                if (checkConditions(paragraph)) {
                     return true;
                 }
             }
@@ -60,5 +64,14 @@ public class FilterKeywordSpammingBySeparators implements Filter {
         final int maxSeparators = paragraph.length()/ MIN_SEPARATOR_DIVIDER;
 
         return amountOfSeparatorsInParagraph > maxSeparators ? false : true;
+    }
+
+    private boolean checkConditions(String paragraph) {
+        if (paragraph.trim().matches(NUMBER_AND_WHATEVER_REGEX)
+                || paragraph.trim().matches(DIMENSIONS_REGEX)
+                || paragraph.trim().matches(INCHES_REGEX)) {
+            return true;
+        }
+        return false;
     }
 }
