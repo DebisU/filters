@@ -17,11 +17,11 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
 
     @Override
     public String filter(String text) {
-        final String finalResult = checkIfKeywordSpamming(text);
+        final String filteredText = checkIfKeywordSpamming(text);
 
-        logger.info("\nRequest Keyword spamming filter by common words: \n"+ finalResult);
+        logger.info("\nRequest Keyword spamming filter by common words: \n"+ filteredText);
 
-        return finalResult;
+        return filteredText;
     }
 
     private String checkIfKeywordSpamming(String request) {
