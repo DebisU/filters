@@ -1,13 +1,42 @@
 // For publishing see http://axion-release-plugin.readthedocs.org/en/latest/
+def getVersion() {
+    if (project.hasProperty("pr.number")) {
+        String prNumber = project["pr.number"]
+
+        if (prNumber.isNumber()) {
+            String version = scmVersion.version
+            return version.replace("-SNAPSHOT", "-PR$prNumber-SNAPSHOT")
+        }
+    }
+
+    return scmVersion.version
+}
+
+
 scmVersion {
+    tag {
+        prefix = ""
+    }
     ignoreUncommittedChanges = false
 }
 
-project.version = scmVersion.version
+ext {
+    artifactory_user = project.hasProperty('artifactory_scm_user')? project.artifactory_scm_user: System.env.ARTIFACTORY_SCM_USER
+    artifactory_password = project.hasProperty('artifactory_scm_password')? project.artifactory_scm_password: System.env.ARTIFACTORY_SCM_PASSWORD
+
+    project_version = getVersion()
+
+}
+
+project.version = project_version
+
+task currentVersion(overwrite: true) << {
+    println ("\nProject version: $project_version")
+}
 
 tasks.whenTaskAdded { t ->
     if( t.name == "publishMavenJavaPublicationToMavenRepository"){
-        if (!project.hasProperty('artifactory_scm_user') || !project.hasProperty('artifactory_scm_password')) {
+        if (!artifactory_user || !artifactory_password) {
             throw new GradleException("Properties 'artifactory_scm_user' and 'artifactory_scm_password' are mandatory to do a publish, please add this information in your ~/.gradle/gradle.properties")
         }
     }
@@ -39,8 +68,8 @@ publishing {
     repositories {
         maven {
             credentials {
-                username project.hasProperty('artifactory_scm_user')? artifactory_scm_user: ''
-                password project.hasProperty('artifactory_scm_password')? artifactory_scm_password: ''
+                username artifactory_user
+                password artifactory_password
             }
 
             url "http://artifactory.scmspain.com/artifactory/libs-release-mercadio"
