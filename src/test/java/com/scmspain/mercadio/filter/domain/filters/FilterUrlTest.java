@@ -4,12 +4,14 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Optional;
+
 public class FilterUrlTest {
     public Filter sut;
 
     @Before
     public void setUp() throws Exception {
-        sut = new FilterUrl();
+        sut = new FilterUrl(Optional.of(""));
     }
 
     @Test

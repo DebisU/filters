@@ -18,11 +18,11 @@ public class FilterRemoveSpecificWords implements Filter {
 
     @Override
     public String filter(String text) {
-        final String finalResult = replaceWords(text,extraArg);
+        final String filteredText = replaceWords(text,extraArg);
 
-        logger.info("\nRequest remove specific words filter: \n"+ finalResult);
+        logger.info("\nRequest remove specific words filter: \n"+ filteredText);
 
-        return finalResult;
+        return filteredText;
     }
 
     private String replaceWords(String request, Optional<String> extraArg) {

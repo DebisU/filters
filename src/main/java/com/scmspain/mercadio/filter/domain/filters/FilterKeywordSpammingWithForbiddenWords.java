@@ -20,26 +20,26 @@ public class FilterKeywordSpammingWithForbiddenWords implements Filter {
 
     @Override
     public String filter(String text) {
-        final String finalResult = checkIfKeywordSpamming(text,extraArg);
+        final String filteredText = checkIfKeywordSpamming(text,extraArg);
 
-        logger.info("\nRequest Keyword spamming with forbidden words: \n"+ finalResult);
+        logger.info("\nRequest Keyword spamming with forbidden words: \n"+ filteredText);
 
-        return finalResult;
+        return filteredText;
     }
 
     private String checkIfKeywordSpamming(String request, Optional<String> extraArg) {
         final List<String> separatedParagraphs = CommonStringOperations.splitParagraphs(request);
-        final StringBuilder toReturn = new StringBuilder();
+        final StringBuilder filteredText = new StringBuilder();
 
         final List<String> forbiddenWords = (extraArg != null && extraArg.isPresent()) ?  getForbiddenWords(extraArg) : new ArrayList<>();
 
         for (int i = 0 ; i < separatedParagraphs.size() ; i++) {
             if (! CommonStringOperations.checkIfStringContainsItemFromList(separatedParagraphs.get(i).toLowerCase(),forbiddenWords)) {
-                toReturn.append( separatedParagraphs.get(i) + "\n" );
+                filteredText.append( separatedParagraphs.get(i) + "\n" );
             }
         }
 
-        return CommonStringOperations.removeLastNewLine(toReturn.toString());
+        return CommonStringOperations.removeLastNewLine(filteredText.toString());
     }
 
 

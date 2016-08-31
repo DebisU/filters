@@ -23,11 +23,11 @@ public class FilterKeywordSpammingBySeparators implements Filter {
 
     @Override
     public String filter(String text) {
-        final String finalResult = checkIfKeywordSpamming(text, extraArg);
+        final String filteredText = checkIfKeywordSpamming(text, extraArg);
 
-        logger.info("\nRequest Keyword spamming filter: \n"+ finalResult);
+        logger.info("\nRequest Keyword spamming filter: \n"+ filteredText);
 
-        return finalResult;
+        return filteredText;
     }
 
     private String checkIfKeywordSpamming(String request, Optional<String> extraArg) {
@@ -37,17 +37,17 @@ public class FilterKeywordSpammingBySeparators implements Filter {
     }
 
     private String getParagraphsWithoutRepeatedSeparator(List<String> separatedParagraphs, Optional<String> extraArg) {
-        final StringBuilder toReturn = new StringBuilder();
+        final StringBuilder filteredText = new StringBuilder();
         final char separator = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty()) ? extraArg.get().charAt(0) : DEFAULT_SEPARATOR;
 
         for (int i = 0; i < separatedParagraphs.size(); i++) {
             if (knowIfExceedsAmountOfSeparators(separatedParagraphs.get(i),separator)
                     || separatedParagraphs.get(i).split(" ").length == 1) {
-                toReturn.append(separatedParagraphs.get(i) + "\n");
+                filteredText.append(separatedParagraphs.get(i) + "\n");
             }
         }
 
-        return CommonStringOperations.removeLastNewLine(toReturn.toString());
+        return CommonStringOperations.removeLastNewLine(filteredText.toString());
     }
 
     private boolean knowIfExceedsAmountOfSeparators(String paragraph, char separator) {

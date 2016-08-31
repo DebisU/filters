@@ -45,7 +45,7 @@ public class FilterTest {
                 new Object[] {new FilterKeywordMultilineSpamming()},
                 new Object[] {new FilterRemoveSpecificWords(Optional.of("search"))},
                 new Object[] {new FilterKeywordSpammingAtTheEnd()},
-                new Object[] {new FilterUrl()}
+                new Object[] {new FilterUrl(Optional.of(""))}
                 );
     }
 }

@@ -14,11 +14,11 @@ public class FilterKeywordMultilineSpamming implements Filter {
 
     @Override
     public String filter(String text) {
-        final String finalResult = checkIfKeywordSpamming(text);
+        final String filteredText = checkIfKeywordSpamming(text);
 
-        logger.info("\nRequest multiline keyword spamming filter: \n"+ finalResult);
+        logger.info("\nRequest multiline keyword spamming filter: \n"+ filteredText);
 
-        return finalResult;
+        return filteredText;
     }
 
     private String checkIfKeywordSpamming(String request) {
@@ -30,11 +30,11 @@ public class FilterKeywordMultilineSpamming implements Filter {
     }
 
     private String getResultString(List<String> paragraphsWithMoreThanOneWord) {
-        final StringBuilder toReturn = new StringBuilder();
+        final StringBuilder filteredText = new StringBuilder();
         for (String item : paragraphsWithMoreThanOneWord) {
-            toReturn.append (item + "\n" );
+            filteredText.append (item + "\n" );
         }
-        return CommonStringOperations.removeLastNewLine(toReturn.toString());
+        return CommonStringOperations.removeLastNewLine(filteredText.toString());
     }
 
     private List<String> getSeparatedParagraphs(List<String> paragraphs) {

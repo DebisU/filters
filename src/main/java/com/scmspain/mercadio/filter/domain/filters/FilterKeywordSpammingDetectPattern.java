@@ -8,16 +8,16 @@ public class FilterKeywordSpammingDetectPattern implements Filter{
     private static final String WORDS_SEPARATED_BY_COMMAS = "([a-zA-Z0-9 ]{6,14},\\s)([a-zA-Z0-9 ]{6,14}(\\.|\n)+)?";
     @Override
     public String filter(String text) {
-        final String finalResult = checkIfKeywordSpamming(text);
+        final String filteredText = checkIfKeywordSpamming(text);
 
-        logger.info("\nRequest Keyword spamming filter by common words: \n"+ finalResult);
+        logger.info("\nRequest Keyword spamming filter by common words: \n"+ filteredText);
 
-        return finalResult;
+        return filteredText;
     }
 
     private String checkIfKeywordSpamming(String text) {
-        final String toReturn = text.replaceAll(WORDS_SEPARATED_BY_COMMAS,"");
+        final String filteredText = text.replaceAll(WORDS_SEPARATED_BY_COMMAS,"");
 
-        return toReturn;
+        return filteredText;
     }
 }

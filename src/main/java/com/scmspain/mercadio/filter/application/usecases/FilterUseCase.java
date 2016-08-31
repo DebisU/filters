@@ -32,7 +32,7 @@ public class FilterUseCase {
                     filter.addFilter(new FilterKeywordSpammingWithForbiddenWords(extraArg));
                     break;
                 case "url":
-                    filter.addFilter(new FilterUrl());
+                    filter.addFilter(new FilterUrl(extraArg));
                     break;
                 case "commonwords":
                     filter.addFilter(new FilterKeywordSpammingByCommonWords());
