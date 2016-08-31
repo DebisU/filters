@@ -1700,3 +1700,51 @@
         terminales.\n\nIncluyendo la batería, el móvil Sony Xperia Z3 16GB tiene 152 gramos y es un
         terminal muy delgado con solamente 7,3 mm."
   scenario: "No ha de borrar nada."
+-
+  in: "Ba&ntilde;os: 4<br /><br />Carranque, C/. Cetreria, 360 m2, 650 m2 terreno, 6 habitaciones, 4 baños, muy buen
+       estado, armarios, calefacción, garaje, gres, jardín, trastero, Piscina, suite,
+       Amueblado, Electrodomésticos, Horno, Lavadora, Nevera, Solar, 249000 eur.,
+       !!!!!!!CHOLLO EN CARRANQUE!!!!!!, Increíble chalet individual con 360 mts
+       habitables, la vivienda se divide en tres plantas, en la primera planta
+       encontramos tres habitaciones dos de ellas de matrimonio, cocina con sala office y
+       comedor, baño completo. En la segunda planta se hallan ubicados tres dormitorios,
+       el principal con baño y vestidor, hay un despacho forrado completamente de madera,
+       y el salón principal de casi 40 mts. En la ultima planta se encuentra la
+       buhardilla con 100 mts y completa mente terminada ideal para sala de juegos. <br />La parcela tiene 540 mts, con una impresionante piscina de mas de 30 mts, almacén,
+       invernadero, barbacoa, taller, cenador y un baño exterior. <br />La vivienda esta prácticamente amueblada, para entrar a vivir con todos los
+       electrodomésticos y muy buenas calidades de construcción. <br />Suelos de gres, armarios empotrados en todas las habitaciones, alarma. <br />Vivienda de lujo, en una exclusiva urbanización, las ventajas del campo ganando
+       calidad de vida, ideal para grandes familias, como vivienda habitual. <br />La propiedad se encuentra en una de las mejores urbanizaciones de Carranque (Coto
+       del Zagal), contando con club social, pista de tenis y piscina comunitaria. La
+       localidad de Carranque cuenta con todos los servicios fundamentales, colegios con
+       inserción al ingles, instituto de secundaria y bachillerato en la misma localidad,
+       centro de salud, campo de fútbol, polideportivo y piscina municipal, casa de la
+       cultura con una gran oferta en cursos y actividades, supermercado y pequeño
+       comercio, autobuses hacia Madrid y pueblos de alrededor. Muy buena comunicación
+       por carretera estando Madrid a 20 minutos del centro del pueblo. <br />Si quiere ampliar la información sobre este u otro inmueble no dude en ponerse en
+       contacto con nosotros., ref. CH0006.</p>"
+  out: "Ba&ntilde;os: 4\n\nCarranque, C/. Cetreria, 360 m2, 650 m2 terreno, 6 habitaciones, 4 baños, muy buen
+        estado, armarios, calefacción, garaje, gres, jardín, trastero, Piscina, suite,
+        Amueblado, Electrodomésticos, Horno, Lavadora, Nevera, Solar, 249000 eur.,
+        !!!!!!!CHOLLO EN CARRANQUE!!!!!!, Increíble chalet individual con 360 mts
+        habitables, la vivienda se divide en tres plantas, en la primera planta
+        encontramos tres habitaciones dos de ellas de matrimonio, cocina con sala office y
+        comedor, baño completo. En la segunda planta se hallan ubicados tres dormitorios,
+        el principal con baño y vestidor, hay un despacho forrado completamente de madera,
+        y el salón principal de casi 40 mts. En la ultima planta se encuentra la
+        buhardilla con 100 mts y completa mente terminada ideal para sala de juegos. \nLa parcela tiene 540 mts, con una impresionante piscina de mas de 30 mts, almacén,
+        invernadero, barbacoa, taller, cenador y un baño exterior. \nLa vivienda esta prácticamente amueblada, para entrar a vivir con todos los
+        electrodomésticos y muy buenas calidades de construcción. \nSuelos de gres, armarios empotrados en todas las habitaciones, alarma. \nVivienda de lujo, en una exclusiva urbanización, las ventajas del campo ganando
+        calidad de vida, ideal para grandes familias, como vivienda habitual. \nLa propiedad se encuentra en una de las mejores urbanizaciones de Carranque (Coto
+        del Zagal), contando con club social, pista de tenis y piscina comunitaria. La
+        localidad de Carranque cuenta con todos los servicios fundamentales, colegios con
+        inserción al ingles, instituto de secundaria y bachillerato en la misma localidad,
+        centro de salud, campo de fútbol, polideportivo y piscina municipal, casa de la
+        cultura con una gran oferta en cursos y actividades, supermercado y pequeño
+        comercio, autobuses hacia Madrid y pueblos de alrededor. Muy buena comunicación
+        por carretera estando Madrid a 20 minutos del centro del pueblo. \nSi quiere ampliar la información sobre este u otro inmueble no dude en ponerse en
+        contacto con nosotros., ref. CH0006."
+  scenario: "No ha de borrar nada."
+-
+  in: "LA CAZA Y LA CETRERIA.<br />I. Facsímil.<br />Belisario Acquaviva<br />Editorial Joyas Bibliográficas 1971<br />Facsímil del incunable de 1500.<br />Encuadernación semi rígida<br />Medidas 29 x 20,5 cm.<br /> Hojas sin desbarbar<br />70€</p>"
+  out: "LA CAZA Y LA CETRERIA.\nI. Facsímil.\nBelisario Acquaviva\nEditorial Joyas Bibliográficas 1971\nFacsímil del incunable de 1500.\nEncuadernación semi rígida\nMedidas 29 x 20,5 cm.\n Hojas sin desbarbar\n70€"
+  scenario: "No ha de borrar nada."
