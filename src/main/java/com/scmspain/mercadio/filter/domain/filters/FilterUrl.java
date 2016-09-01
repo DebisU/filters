@@ -27,9 +27,9 @@ public class FilterUrl implements Filter {
     private String takeDecision(String text) {
         final StringBuilder filteredText = new StringBuilder();
 
-        if (extraArg.get().equals("delete")) {
+        if (extraArg.get().toLowerCase().equals("delete")) {
             filteredText.append(extractUrls(text));
-        } else if (extraArg.get().equals("replace")) {
+        } else if (extraArg.get().toLowerCase().equals("replace")) {
             filteredText.append(replacePrefix(text));
         } else {
             filteredText.append(extractUrls(text));
@@ -68,6 +68,10 @@ public class FilterUrl implements Filter {
         return text
                 .replace("www.","")
                 .replace("WWW.","")
+                .replace("http://","")
+                .replace("https://","")
+                .replace("HTTP://","")
+                .replace("HTTPS://","")
                 .replace("http://www.","")
                 .replace("https://www.","")
                 .replace("https://WWW.","")

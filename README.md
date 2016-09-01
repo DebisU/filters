@@ -20,7 +20,7 @@
 KEY                 |           VALUE           |     REQUIRED     |     DEFAULT VALUE       |
 --------------------|---------------------------|------------------|-------------------------|
 commonWords         | No arguments              |       NO         |All spanish prepositions |
-url                 | No arguments              |       NO         |        REGEX            |
+url                 | One argument(replace)     |       NO         |        Delete           |
 forbiddenWords      | Texts separated by coma   |       YES        |       Nothing           |
 separators          | One separator             |       NO         |         ','             |
 removeSpecificWords | Texts separated by coma   |       YES        |       Nothing           |
