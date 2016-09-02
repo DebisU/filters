@@ -1,0 +1,33 @@
+apply plugin: 'pl.allegro.tech.build.axion-release'
+
+ext {
+    project_version = getVersion()
+}
+
+// For publishing see http://axion-release-plugin.readthedocs.org/en/latest/
+def getVersion() {
+    if (project.hasProperty("pr.number")) {
+        String prNumber = project["pr.number"]
+
+        if (prNumber.isNumber()) {
+            String version = scmVersion.version
+            return version.replace("-SNAPSHOT", "-PR$prNumber-SNAPSHOT")
+        }
+    }
+
+    return scmVersion.version
+}
+
+
+scmVersion {
+    tag {
+        prefix = ""
+    }
+    ignoreUncommittedChanges = false
+}
+
+project.version = project_version
+
+task currentVersion(overwrite: true) << {
+    println ("\nProject version: $project_version")
+}

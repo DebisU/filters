@@ -1,0 +1,38 @@
+apply plugin: 'pmd'
+apply plugin: 'findbugs'
+apply plugin: 'checkstyle'
+apply plugin: 'jacoco'
+apply plugin: 'org.sonarqube'
+
+pmd {
+    ruleSetFiles = files("$rootProject.projectDir/staticCodeAnalysis/pmd/pmd-ruleset.xml")
+    consoleOutput = true
+}
+
+findbugs {
+    includeFilter = file("$rootProject.projectDir/staticCodeAnalysis/findbugs/findbugs-config.xml")
+    excludeFilter = file("$rootProject.projectDir/staticCodeAnalysis/findbugs/findbugs-excludes.xml")
+}
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+checkstyle {
+    toolVersion = "6.16"
+    configFile = file("${rootProject.projectDir}/staticCodeAnalysis/checkstyle/checkstyle.xml")
+    configProperties = [ "suppressionFile" : file("${rootProject.projectDir}/staticCodeAnalysis/checkstyle/checkstyle-suppressions.xml")]
+}
+
+jacoco {
+    toolVersion = "0.7.7.201606060606"
+    reportsDir = file("$project.buildDir/customJacocoReportDir")
+}
+
+sonarqube {
+    properties {
+        property "sonar.analysis.mode", "preview"
+    }
+}
