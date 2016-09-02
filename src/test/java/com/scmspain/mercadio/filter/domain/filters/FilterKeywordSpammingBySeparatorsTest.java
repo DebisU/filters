@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.util.Optional;
 
 public class FilterKeywordSpammingBySeparatorsTest {
-    public Filter sut;
+    private Filter sut;
 
     @Before
     public void setUp() throws Exception {

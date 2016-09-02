@@ -15,7 +15,7 @@ import static org.mockito.Mockito.when;
 
 @RunWith(Parameterized.class)
 public class FilterTest {
-    public Filter sut;
+    private Filter sut;
 
     public FilterTest(Filter filter) {
         sut = filter;

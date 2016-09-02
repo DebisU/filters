@@ -14,9 +14,7 @@ public class FilterUseCase {
 
         final String result = filter.filter(textToFilter);
 
-        final FilterUseCaseResponse filterUseCaseResponse = new FilterUseCaseResponse(result);
-
-        return filterUseCaseResponse;
+        return new FilterUseCaseResponse(result);
     }
 
     private Filter configureFilter(Map<String, String> filtersToApply) throws FilterNotFoundException {

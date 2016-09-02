@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FilterRequestTest {
-    FilterRequest sut;
-    final Map<String, String> myMap = getEmptyMap();
+    private FilterRequest sut;
+    private final Map<String, String> myMap = getEmptyMap();
 
     @Test
     public void filterRequestZeroArgumentConstructorTest() throws Exception {
@@ -31,13 +31,13 @@ public class FilterRequestTest {
 
     @Test
     public void filterRequestThreeArgumentConstructorTest() throws Exception {
-        sut = new FilterRequest("",myMap,"");
+        sut = new FilterRequest("",myMap);
 
         Assert.assertEquals(sut.getTextToFilter(),"");
         Assert.assertEquals(sut.getFiltersToApply(),myMap);
     }
 
     private Map<String, String> getEmptyMap() {
-        return new HashMap<String,String>();
+        return new HashMap<>();
     }
 }

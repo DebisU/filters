@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class FilterKeywordMultilineSpamming implements Filter {
     private static final String NUMBERS = ".*[0-9]+.*";
@@ -24,15 +25,14 @@ public class FilterKeywordMultilineSpamming implements Filter {
     private String checkIfKeywordSpamming(String request) {
         final List<String> paragraphs = CommonStringOperations.splitParagraphs(request);
         final List<String> paragraphsWithMoreThanOneWordList = getSeparatedParagraphs(paragraphs);
-        final String paragraphsWithMoreThanOneWordString = getResultString(paragraphsWithMoreThanOneWordList);
 
-        return paragraphsWithMoreThanOneWordString;
+        return getResultString(paragraphsWithMoreThanOneWordList);
     }
 
     private String getResultString(List<String> paragraphsWithMoreThanOneWord) {
         final StringBuilder filteredText = new StringBuilder();
         for (String item : paragraphsWithMoreThanOneWord) {
-            filteredText.append (item + "\n" );
+            filteredText.append(item).append("\n");
         }
         return CommonStringOperations.removeLastNewLine(filteredText.toString());
     }
@@ -45,7 +45,7 @@ public class FilterKeywordMultilineSpamming implements Filter {
             if ( (splittedAndTrimedItem.size() > 1)
                     || (containsIndexer(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1)
                     || (containsSuffixes(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1)
-                    || (splittedAndTrimedItem.get(0) == "\n" && splittedAndTrimedItem.size() == 1)
+                    || (Objects.equals(splittedAndTrimedItem.get(0), "\n") && splittedAndTrimedItem.size() == 1)
                     || (splittedAndTrimedItem.get(0).matches(NUMBERS) && splittedAndTrimedItem.size() == 1) ){
                 paragraphsWithMoreThanOneWord.add(item);
             }

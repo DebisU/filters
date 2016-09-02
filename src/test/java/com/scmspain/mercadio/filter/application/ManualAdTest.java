@@ -35,11 +35,11 @@ public class ManualAdTest {
         } catch (FilterNotFoundException e) {
             e.printStackTrace();
         }
-        final String result = filterUseCaseResponse.getResult();
+        final String result = filterUseCaseResponse != null ? filterUseCaseResponse.getResult() : null;
 
         System.out.println("*******______RESULTADO DE LOS FILTROS______*******");
         System.out.println();
-        System.out.println(result);
+        System.out.println(result != null ? result : "");
         System.out.println();
         System.out.println("*******______FIN RESULTADO DE LOS FILTROS______*******");
     }
@@ -52,13 +52,5 @@ public class ManualAdTest {
                 "mosaicos,12 de sobre año y 21 nuevos,31 amarillo lipocromo y portadores de blancos" +
                 "recesivo,22 nuevos y 9 de sobre año,16 blancos recesivos,9 nuevos y 7 sobre año," +
                 "mando fotos por whasap</p>";
-    }
-
-    private void texts() {
-        final String check0 = "---------------------- CANAL OCIO CONCORDE -------------------------<br />     NUEVA TIENDA DE VIDEOJUEGOS Y CONSOLAS<br />                      EN SANTA CRUZ DE TENERIFE<br /><br />Juegos En Perfecto Estado<br /><br />---------------------------De PlayStation1(Y Mas" +
-                "Plataformas)------------------------<br /><br />Final Fantasy VIII,Crash Bandicout 2 y 3, Tomb Raider 1,2 y 3 Y Muchos Mas!!!" +
-                "Desde 5 euros!!! También Compramos Y Cambiamos Tus Juegos!!!<br /> <br />ADEMÁS DISPONEMOS DE VARIAS PLATAFORMAS RETRO COMO GAMECUBE NES SNES NINTENDO 64" +
-                "DREAMCAST...<br /><br />COMPRAMOS,VENDEMOS Y CAMBIAMOS,  PRODUCTOS DE ELECTRÓNICA, TODA CLASE DE CONSOLAS," +
-                "VIDEOJUEGOS, MÓVILES,TABLES, ...<br /><br />SI PREFIERES LOS PUEDES ALQUILAR POR 1,50€<br />SOMOS TIENDA FISÍCA<br /><br />PREGÚNTANOS POR WHATSAPP AL <br />TLF. (nº móvil en la ficha de la tienda)<br />Y ASÍ SERÁS EL PRIMERO EN ENTERARTE<br />DE NUESTRAS PROMOCIONES.<br /><br />COMPRAMOS Y VENDEMOS<br />VIDEOJUEGOS DESDE 1,95€, CONSOLAS<br />PELÍCULAS, MÓVILES, TABLETS...<br /><br />Visitanos en el CENTRO COMERCIAL CONCORDE<br />CTRA. GENERAL DEL SUR, KM 6,3 LOCAL Nº11<br />--- O En Facebook: Canal Ocio Concorde<br />----------------------Y Conoce Nuestras ofertas---------------------------------- <br /><br />producto original</p>";
     }
 }

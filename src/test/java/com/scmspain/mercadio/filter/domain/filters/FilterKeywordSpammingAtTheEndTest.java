@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class FilterKeywordSpammingAtTheEndTest {
-    public Filter sut;
+    private Filter sut;
 
     @Before
     public void setUp() throws Exception {

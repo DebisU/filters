@@ -33,18 +33,16 @@ public class FilterKeywordSpammingWithForbiddenWords implements Filter {
 
         final List<String> forbiddenWords = (extraArg != null && extraArg.isPresent()) ?  getForbiddenWords(extraArg) : new ArrayList<>();
 
-        for (int i = 0 ; i < separatedParagraphs.size() ; i++) {
-            if (! CommonStringOperations.checkIfStringContainsItemFromList(separatedParagraphs.get(i).toLowerCase(),forbiddenWords)) {
-                filteredText.append( separatedParagraphs.get(i) + "\n" );
-            }
-        }
+        separatedParagraphs.stream().filter(separatedParagraph ->
+                !CommonStringOperations.checkIfStringContainsItemFromList(separatedParagraph.toLowerCase(), forbiddenWords))
+                .forEach(separatedParagraph -> filteredText.append(separatedParagraph).append("\n"));
 
         return CommonStringOperations.removeLastNewLine(filteredText.toString());
     }
 
 
     private List<String> getForbiddenWords(Optional<String> request) {
-        final String requestStr = request.get();
+        final String requestStr = request.isPresent() && request.get() != null ? request.get() : "";
         return Arrays.asList(requestStr.split(DEFAULT_SEPARATOR));
     }
 }

@@ -16,8 +16,6 @@ public class FilterKeywordSpammingDetectPattern implements Filter{
     }
 
     private String checkIfKeywordSpamming(String text) {
-        final String filteredText = text.replaceAll(WORDS_SEPARATED_BY_COMMAS,"");
-
-        return filteredText;
+        return text.replaceAll(WORDS_SEPARATED_BY_COMMAS,"");
     }
 }

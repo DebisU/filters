@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class FilterNotFoundExceptionTest {
-    Exception filterException;
+    private Exception filterException;
 
     @Before
     public void setUp() throws Exception {

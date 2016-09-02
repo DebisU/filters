@@ -10,9 +10,9 @@ import java.util.Optional;
 public class FilterKeywordSpammingBySeparators implements Filter {
     private static final char DEFAULT_SEPARATOR = ',';
     private static final int MIN_SEPARATOR_DIVIDER = 12;
-    public static final String NUMBER_AND_WHATEVER_REGEX = "^[0-9].*";
-    public static final String INCHES_REGEX = ".*?[0-9],[0-9]\".*?";
-    public static final String DIMENSIONS_REGEX = ".*?[0-9]{1,6},[0-9]{1,6}.*?";
+    private static final String NUMBER_AND_WHATEVER_REGEX = "^[0-9].*";
+    private static final String INCHES_REGEX = ".*?[0-9],[0-9]\".*?";
+    private static final String DIMENSIONS_REGEX = ".*?[0-9]{1,6},[0-9]{1,6}.*?";
 
     private final Optional<String> extraArg;
     private final Logger logger = LoggerFactory.getLogger(getClass());
@@ -40,12 +40,9 @@ public class FilterKeywordSpammingBySeparators implements Filter {
         final StringBuilder filteredText = new StringBuilder();
         final char separator = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty()) ? extraArg.get().charAt(0) : DEFAULT_SEPARATOR;
 
-        for (int i = 0; i < separatedParagraphs.size(); i++) {
-            if (knowIfExceedsAmountOfSeparators(separatedParagraphs.get(i),separator)
-                    || separatedParagraphs.get(i).split(" ").length == 1) {
-                filteredText.append(separatedParagraphs.get(i) + "\n");
-            }
-        }
+        separatedParagraphs.stream().filter(separatedParagraph ->
+                knowIfExceedsAmountOfSeparators(separatedParagraph, separator) || separatedParagraph.split(" ").length == 1)
+                .forEach(separatedParagraph -> filteredText.append(separatedParagraph).append("\n"));
 
         return CommonStringOperations.removeLastNewLine(filteredText.toString());
     }
@@ -63,15 +60,12 @@ public class FilterKeywordSpammingBySeparators implements Filter {
 
         final int maxSeparators = paragraph.length()/ MIN_SEPARATOR_DIVIDER;
 
-        return amountOfSeparatorsInParagraph > maxSeparators ? false : true;
+        return amountOfSeparatorsInParagraph <= maxSeparators;
     }
 
     private boolean checkConditions(String paragraph) {
-        if (paragraph.trim().matches(NUMBER_AND_WHATEVER_REGEX)
+        return paragraph.trim().matches(NUMBER_AND_WHATEVER_REGEX)
                 || paragraph.trim().matches(DIMENSIONS_REGEX)
-                || paragraph.trim().matches(INCHES_REGEX)) {
-            return true;
-        }
-        return false;
+                || paragraph.trim().matches(INCHES_REGEX);
     }
 }

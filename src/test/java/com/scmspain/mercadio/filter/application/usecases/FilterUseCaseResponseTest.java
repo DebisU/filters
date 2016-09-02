@@ -12,7 +12,6 @@ public class FilterUseCaseResponseTest {
     @Test
     public void getFilterRequestTestWithMock() throws Exception {
         final FilterUseCaseResponse sut = Mockito.mock(FilterUseCaseResponse.class);
-        final FilterRequest filterRequest = Mockito.mock(FilterRequest.class);
 
         when(sut.getResult()).thenReturn("result");
 

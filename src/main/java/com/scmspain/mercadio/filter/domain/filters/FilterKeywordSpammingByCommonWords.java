@@ -6,13 +6,14 @@ import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FilterKeywordSpammingByCommonWords implements Filter {
-    public static final int MIN_LINE_LENGTH_TO_ANALYZE_REGEX = 55;
+    private static final int MIN_LINE_LENGTH_TO_ANALYZE_REGEX = 55;
     private static final String BANNER_TEXT_REGEX = "[<>·#._,-]{8,}[a-zA-Z0-9 ]+[<>·#._,-]{8,}";
     private static final String LINE_STARTS_WITH_NUMBERS_REGEX = "[0-9]+.*?";
-    public static final String SEPARATOR_LINE_REGEX = "[*+_-]{15,}";
-    public static final String CONTAINS_A_LOT_OF_EXCLAMATION_AND_INTERROGATION_REGEX = ".*?[!¡¿?]{5,}.*?";
+    private static final String SEPARATOR_LINE_REGEX = "[*+_-]{15,}";
+    private static final String CONTAINS_A_LOT_OF_EXCLAMATION_AND_INTERROGATION_REGEX = ".*?[!¡¿?]{5,}.*?";
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override
@@ -30,37 +31,26 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
     }
 
     private String getParagraphsWithCommonWords(List<String> separatedParagraphs) {
-        final List<String> paragraphsWithPrepositions = new ArrayList<>();
+        final List<String> paragraphsWithPrepositions = separatedParagraphs.stream().filter(this::checkConditions).collect(Collectors.toList());
 
-        for (int i = 0 ; i < separatedParagraphs.size() ; i++) {
-            if (checkConditions(separatedParagraphs.get(i))) {
-                paragraphsWithPrepositions.add(separatedParagraphs.get(i));
-            }
-        }
-
-        final String paragraphsWithPrepositionsStr = getResultAsString(paragraphsWithPrepositions);
-
-        return paragraphsWithPrepositionsStr;
+        return getResultAsString(paragraphsWithPrepositions);
     }
 
     private boolean checkConditions(String text) {
-        if (CommonStringOperations.checkIfStringContainsItemFromList(text,getMostCommonWords())
-                || CommonStringOperations.checkIfStringMatchesItemFromList(text,getWordsToMatch())
+        return CommonStringOperations.checkIfStringContainsItemFromList(text, getMostCommonWords())
+                || CommonStringOperations.checkIfStringMatchesItemFromList(text, getWordsToMatch())
                 || getAmountOfSpecificCharacters(text) >= 8
                 || text.trim().matches(BANNER_TEXT_REGEX)
                 || text.trim().matches(CONTAINS_A_LOT_OF_EXCLAMATION_AND_INTERROGATION_REGEX)
                 || text.trim().matches(SEPARATOR_LINE_REGEX)
                 || text.trim().matches(LINE_STARTS_WITH_NUMBERS_REGEX)
-                || text.length()< MIN_LINE_LENGTH_TO_ANALYZE_REGEX) {
-            return true;
-        }
-        return false;
+                || text.length() < MIN_LINE_LENGTH_TO_ANALYZE_REGEX;
     }
 
     private String getResultAsString(List<String> paragraphsWithPrepositions) {
         final StringBuilder paragraphsWithPrepositionsStr = new StringBuilder();
-        for (int i = 0 ; i < paragraphsWithPrepositions.size() ; i++) {
-            paragraphsWithPrepositionsStr.append(paragraphsWithPrepositions.get(i) + "\n");
+        for (String paragraphsWithPreposition : paragraphsWithPrepositions) {
+            paragraphsWithPrepositionsStr.append(paragraphsWithPreposition).append("\n");
 
         }
         return CommonStringOperations.removeLastNewLine(paragraphsWithPrepositionsStr.toString());

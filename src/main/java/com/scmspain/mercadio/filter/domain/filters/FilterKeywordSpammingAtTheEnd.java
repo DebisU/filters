@@ -4,13 +4,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FilterKeywordSpammingAtTheEnd implements Filter {
-    private final String SPAM_END_PATTERN = ".*(\\w+[,._-]\\s?){8,}.*";
+
+    private static final String SPAM_END_PATTERN = ".*(\\w+[,._-]\\s?){8,}.*";
 
     @Override
     public String filter(String text) {
-        final String filteredText = deleteSpamAtTheEnd(text);
-
-        return filteredText;
+        return deleteSpamAtTheEnd(text);
     }
 
 
@@ -45,6 +44,6 @@ public class FilterKeywordSpammingAtTheEnd implements Filter {
     }
 
     private boolean textEndWithDot(String text) {
-        return text.charAt(text.length()-1) == '.' ? true : false;
+        return text.charAt(text.length() - 1) == '.';
     }
 }

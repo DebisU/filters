@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Optional;
 
 public class FilterUrl implements Filter {
-    private final String URL_REGEX = "\\b(http://|https://|HTTP://|HTTPS://|http://www\\.|https://www\\.|HTTPS://WWW\\.|HTTP://www\\.)?(www\\.|WWW\\.|http://|https://|HTTPS://|HTTP://)[a-zA-Z0-9_-]*\\.[a-zA-Z]{2,5}\\b";
+    private static final String URL_REGEX = "\\b(http://|https://|HTTP://|HTTPS://|http://www\\.|https://www\\.|HTTPS://WWW\\.|HTTP://www\\.)?(www\\.|WWW\\.|http://|https://|HTTPS://|HTTP://)[a-zA-Z0-9_-]*\\.[a-zA-Z]{2,5}\\b";
     private final Logger logger = LoggerFactory.getLogger(getClass());
     private final Optional<String> extraArg;
 
@@ -19,19 +19,20 @@ public class FilterUrl implements Filter {
     public String filter(String text) {
         final String filteredText = takeDecision(text);
 
-        logger.info("\nRequest URL filter: \n "+ filteredText.toString());
+        logger.info("\nRequest URL filter: \n "+ filteredText);
 
-        return filteredText.toString();
+        return filteredText;
     }
 
     private String takeDecision(String text) {
         final StringBuilder filteredText = new StringBuilder();
 
-        if (extraArg.get().toLowerCase().equals("delete")) {
+        if (extraArg.isPresent() && extraArg.get().equalsIgnoreCase("delete")) {
             filteredText.append(extractUrls(text));
-        } else if (extraArg.get().toLowerCase().equals("replace")) {
+        } else if (extraArg.isPresent() && extraArg.get().equalsIgnoreCase("replace")) {
             filteredText.append(replacePrefix(text));
         } else {
+
             filteredText.append(extractUrls(text));
         }
 
@@ -42,23 +43,21 @@ public class FilterUrl implements Filter {
         final StringBuilder filteredText = new StringBuilder();
         final String[] lineInParts = text.split(" ");
 
-        for (int i = 0; i < lineInParts.length; i++) {
-            final String lineInPart = replaceURLPrefixes(lineInParts[i]);
+        for (String lineInPart1 : lineInParts) {
+            final String lineInPart = replaceURLPrefixes(lineInPart1);
 
-            filteredText.append( lineInPart.replaceAll(URL_REGEX,"") + " " );
+            filteredText.append(lineInPart.replaceAll(URL_REGEX, "")).append(" ");
         }
 
         return filteredText.toString();
     }
 
     private String extractUrls(String part) {
-        final String lowerPart = part;
-        final String[] lineInParts = lowerPart.split(" ");
+        final String[] lineInParts = part.split(" ");
         final StringBuilder filteredText = new StringBuilder();
 
-        for (int i = 0; i < lineInParts.length; i++) {
-            final String lineInPart = lineInParts[i];
-            filteredText.append( lineInPart.replaceAll(URL_REGEX,"") + " " );
+        for (final String lineInPart : lineInParts) {
+            filteredText.append(lineInPart.replaceAll(URL_REGEX, "")).append(" ");
         }
 
         return filteredText.toString();

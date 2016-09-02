@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.Optional;
 
 public class FilterKeywordSpammingWithForbiddenWordsTest {
-    public Filter sut;
+    private Filter sut;
 
     @Test
     public void shouldDeleteTheParagraphWithTheForbiddenWord() throws Exception {
