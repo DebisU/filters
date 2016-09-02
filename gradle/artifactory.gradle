@@ -1,37 +1,8 @@
-// For publishing see http://axion-release-plugin.readthedocs.org/en/latest/
-def getVersion() {
-    if (project.hasProperty("pr.number")) {
-        String prNumber = project["pr.number"]
-
-        if (prNumber.isNumber()) {
-            String version = scmVersion.version
-            return version.replace("-SNAPSHOT", "-PR$prNumber-SNAPSHOT")
-        }
-    }
-
-    return scmVersion.version
-}
-
-
-scmVersion {
-    tag {
-        prefix = ""
-    }
-    ignoreUncommittedChanges = false
-}
+apply plugin: 'maven-publish'
 
 ext {
     artifactory_user = project.hasProperty('artifactory_scm_user')? project.artifactory_scm_user: System.env.ARTIFACTORY_SCM_USER
     artifactory_password = project.hasProperty('artifactory_scm_password')? project.artifactory_scm_password: System.env.ARTIFACTORY_SCM_PASSWORD
-
-    project_version = getVersion()
-
-}
-
-project.version = project_version
-
-task currentVersion(overwrite: true) << {
-    println ("\nProject version: $project_version")
 }
 
 tasks.whenTaskAdded { t ->

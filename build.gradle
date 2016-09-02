@@ -1,15 +1,29 @@
-plugins {
-    id 'java'
-    id 'maven-publish'
-    id 'pl.allegro.tech.build.axion-release' version '1.3.2'
-}
+apply plugin: 'java'
 
-apply from: 'gradle/artifactory.gradle'
+apply from: rootProject.file('gradle/artifactory.gradle')
+apply from: rootProject.file('gradle/build-release.gradle')
+apply from: rootProject.file('gradle/build-static-code-analysis.gradle')
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
+    mavenLocal()
     mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+
+    dependencies {
+        // For publication
+        classpath('pl.allegro.tech.build:axion-release-plugin:1.3.4')
+        // Static code analysis platform: sonarqube
+        classpath('org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:1.2')
+    }
 }
 
 dependencies {
