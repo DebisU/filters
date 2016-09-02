@@ -26,6 +26,12 @@ checkstyle {
     configProperties = [ "suppressionFile" : file("${rootProject.projectDir}/staticCodeAnalysis/checkstyle/checkstyle-suppressions.xml")]
 }
 
+tasks.withType(Checkstyle) {
+    reports {
+        html.enabled = true
+    }
+}
+
 jacoco {
     toolVersion = "0.7.7.201606060606"
     reportsDir = file("$project.buildDir/customJacocoReportDir")
