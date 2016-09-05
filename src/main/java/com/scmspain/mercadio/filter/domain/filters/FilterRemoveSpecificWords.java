@@ -26,17 +26,20 @@ public class FilterRemoveSpecificWords implements Filter {
     }
 
     private String replaceWords(String request, Optional<String> extraArg) {
-        final List<String> wordsToReplace = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty()) ? Arrays.asList(extraArg.get().split(",")) : new ArrayList<>();
-        request = getReplacedString(request, wordsToReplace);
-        return request.trim();
+        final List<String> wordsToReplace = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty()) ?
+                Arrays.asList(extraArg.get().split(",")) : new ArrayList<>();
+
+        return getReplacedString(request, wordsToReplace).trim();
     }
 
     private String getReplacedString(String request, List<String> wordsToReplace) {
+        String replacedString = request;
+
         if (wordsToReplace.size() > 0) {
             for (String item : wordsToReplace) {
-                request = request.replaceAll(item,"");
+                replacedString = replacedString.replaceAll(item,"");
             }
         }
-        return request;
+        return replacedString;
     }
 }

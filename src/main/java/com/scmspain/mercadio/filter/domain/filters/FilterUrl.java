@@ -32,7 +32,6 @@ public class FilterUrl implements Filter {
         } else if (extraArg.isPresent() && extraArg.get().equalsIgnoreCase("replace")) {
             filteredText.append(replacePrefix(text));
         } else {
-
             filteredText.append(extractUrls(text));
         }
 
@@ -63,7 +62,7 @@ public class FilterUrl implements Filter {
         return filteredText.toString();
     }
 
-    private String replaceUrlPrefixes(String text) {
+    private static String replaceUrlPrefixes(String text) {
         return text
                 .replace("www.","")
                 .replace("WWW.","")

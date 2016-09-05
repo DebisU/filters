@@ -51,7 +51,6 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
         final StringBuilder paragraphsWithPrepositionsStr = new StringBuilder();
         for (String paragraphsWithPreposition : paragraphsWithPrepositions) {
             paragraphsWithPrepositionsStr.append(paragraphsWithPreposition).append("\n");
-
         }
         return CommonStringOperations.removeLastNewLine(paragraphsWithPrepositionsStr.toString());
     }
@@ -88,7 +87,13 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
                     break;
             }
         }
-        return amountOfComas > amountOfPoints ? amountOfComas : amountOfPoints > amountOfLowBar ? amountOfPoints : amountOfLowBar;
+        return isGreater(amountOfPoints, amountOfComas)
+                ? amountOfComas : (isGreater(amountOfLowBar, amountOfPoints))
+                ? amountOfPoints : amountOfLowBar;
+    }
+
+    private static boolean isGreater(int amountOfPoints, int amountOfComas) {
+        return amountOfComas > amountOfPoints;
     }
 
 }
