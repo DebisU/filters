@@ -26,7 +26,7 @@ public class FilterRemoveSpecificWords implements Filter {
     }
 
     private String replaceWords(String request, Optional<String> extraArg) {
-        final List<String> wordsToReplace = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty())
+        final List<String> wordsToReplace = extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty()
                 ? Arrays.asList(extraArg.get().split(",")) : new ArrayList<>();
 
         return getReplacedString(request, wordsToReplace).trim();

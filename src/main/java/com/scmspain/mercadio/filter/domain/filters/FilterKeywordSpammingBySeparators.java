@@ -38,7 +38,7 @@ public class FilterKeywordSpammingBySeparators implements Filter {
 
     private String getParagraphsWithoutRepeatedSeparator(List<String> separatedParagraphs, Optional<String> extraArg) {
         final StringBuilder filteredText = new StringBuilder();
-        final char separator = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty())
+        final char separator = extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty()
                 ? extraArg.get().charAt(0) : DEFAULT_SEPARATOR;
 
         separatedParagraphs.stream().filter(separatedParagraph ->

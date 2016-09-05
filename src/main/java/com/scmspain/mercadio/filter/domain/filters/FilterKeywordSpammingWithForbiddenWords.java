@@ -31,7 +31,7 @@ public class FilterKeywordSpammingWithForbiddenWords implements Filter {
         final List<String> separatedParagraphs = CommonStringOperations.splitParagraphs(request);
         final StringBuilder filteredText = new StringBuilder();
 
-        final List<String> forbiddenWords = (extraArg != null && extraArg.isPresent())
+        final List<String> forbiddenWords = extraArg != null && extraArg.isPresent()
                 ?  getForbiddenWords(extraArg) : new ArrayList<>();
 
         separatedParagraphs.stream().filter(separatedParagraph ->

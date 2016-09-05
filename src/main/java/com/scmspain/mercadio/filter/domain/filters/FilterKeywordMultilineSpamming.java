@@ -50,11 +50,11 @@ public class FilterKeywordMultilineSpamming implements Filter {
     }
 
     private boolean checkConditions(List<String> splittedAndTrimedItem) {
-        return ( (splittedAndTrimedItem.size() > 1)
-                || (containsIndexer(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1)
-                || (containsSuffixes(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1)
-                || (Objects.equals(splittedAndTrimedItem.get(0), "\n") && splittedAndTrimedItem.size() == 1)
-                || (splittedAndTrimedItem.get(0).matches(NUMBERS) && splittedAndTrimedItem.size() == 1) );
+        return splittedAndTrimedItem.size() > 1
+                || containsIndexer(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1
+                || containsSuffixes(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1
+                || Objects.equals(splittedAndTrimedItem.get(0), "\n") && splittedAndTrimedItem.size() == 1
+                || splittedAndTrimedItem.get(0).matches(NUMBERS) && splittedAndTrimedItem.size() == 1;
     }
 
 

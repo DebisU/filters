@@ -25,10 +25,8 @@ public class FilterKeywordSpammingAtTheEnd implements Filter {
 
         filteredText.append(filteredLastParagraph);
 
-        if (textEndWithDot(text)) {
-            if (filteredText.toString().charAt(filteredText.toString().length() - 1) != '.') {
-                filteredText.append(".");
-            }
+        if (textEndWithDot(text) && filteredText.toString().charAt(filteredText.toString().length() - 1) != '.') {
+            filteredText.append(".");
         }
 
         return filteredText.toString();

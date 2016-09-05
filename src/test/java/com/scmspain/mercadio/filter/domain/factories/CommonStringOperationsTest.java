@@ -30,10 +30,4 @@ public class CommonStringOperationsTest {
 
         Assert.assertEquals("html text \n", result);
     }
-
-    @Test
-    public void initializeCommonStringOperations() throws Exception {
-        CommonStringOperations sut = new CommonStringOperations();
-        Assert.assertNotNull(sut);
-    }
 }

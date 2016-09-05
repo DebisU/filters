@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CommonStringOperations {
+public abstract class CommonStringOperations {
     public static List<String> splitParagraphs(String request) {
         return Arrays.asList(request.split("\n"));
     }

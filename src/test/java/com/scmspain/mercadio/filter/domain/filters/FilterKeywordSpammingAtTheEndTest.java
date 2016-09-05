@@ -35,7 +35,8 @@ public class FilterKeywordSpammingAtTheEndTest {
     }
 
     private String getTextWithSpamAtTheEnd() {
-        return "este anuncio tiene spam a partir de aquí. similar a mercedes, bmw, citroen, seat, peugeot, toyota, audi, volkswagen, samsung, tab, iphone, ipad, galaxy, apple, honda, yamaha.";
+        return "este anuncio tiene spam a partir de aquí. similar a mercedes, bmw, citroen, seat, "
+                + "peugeot, toyota, audi, volkswagen, samsung, tab, iphone, ipad, galaxy, apple, honda, yamaha.";
     }
 
     private String getTextWithoutSpamAtTheEnd() {
