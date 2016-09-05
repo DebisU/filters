@@ -10,7 +10,9 @@ import java.util.Optional;
 public class FilterUseCase {
     public FilterUseCaseResponse execute(FilterUseCaseRequest filterUseCaseRequest) throws FilterNotFoundException {
         final Filter filter = configureFilter(filterUseCaseRequest.getFilterRequest().getFiltersToApply());
-        final String textToFilter = CommonStringOperations.htmlToText(filterUseCaseRequest.getFilterRequest().getTextToFilter());
+        final String textToFilter = CommonStringOperations.htmlToText(
+                filterUseCaseRequest.getFilterRequest().getTextToFilter()
+        );
 
         final String result = filter.filter(textToFilter);
 
@@ -43,9 +45,6 @@ public class FilterUseCase {
                     break;
                 case "endspam":
                     filter.addFilter(new FilterKeywordSpammingAtTheEnd());
-                    break;
-                case "detectpattern":
-                    filter.addFilter(new FilterKeywordSpammingDetectPattern());
                     break;
                 default:
                     throw new FilterNotFoundException(filterToApply);

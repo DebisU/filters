@@ -19,7 +19,7 @@ public class FilterUrl implements Filter {
     public String filter(String text) {
         final String filteredText = takeDecision(text);
 
-        logger.info("\nRequest URL filter: \n "+ filteredText);
+        logger.info("\nRequest URL filter: \n " + filteredText);
 
         return filteredText;
     }
@@ -44,7 +44,7 @@ public class FilterUrl implements Filter {
         final String[] lineInParts = text.split(" ");
 
         for (String lineInPart1 : lineInParts) {
-            final String lineInPart = replaceURLPrefixes(lineInPart1);
+            final String lineInPart = replaceUrlPrefixes(lineInPart1);
 
             filteredText.append(lineInPart.replaceAll(URL_REGEX, "")).append(" ");
         }
@@ -63,7 +63,7 @@ public class FilterUrl implements Filter {
         return filteredText.toString();
     }
 
-    private String replaceURLPrefixes(String text) {
+    private String replaceUrlPrefixes(String text) {
         return text
                 .replace("www.","")
                 .replace("WWW.","")

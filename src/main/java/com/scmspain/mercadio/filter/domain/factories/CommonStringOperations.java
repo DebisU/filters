@@ -42,7 +42,8 @@ public class CommonStringOperations {
 
     public static boolean checkIfStringMatchesItemFromList(String inputString, List<String> items) {
         for (String item : items) {
-            final Pattern actualItemToMatch = Pattern.compile("((.*?" + item.toLowerCase() + "[,. ].*?).)*", Pattern.CASE_INSENSITIVE);
+            final Pattern actualItemToMatch = Pattern.compile(
+                    "((.*?" + item.toLowerCase() + "[,. ].*?).)*", Pattern.CASE_INSENSITIVE);
             final Matcher myMatcher = actualItemToMatch.matcher(inputString);
 
             if (myMatcher.matches()) {

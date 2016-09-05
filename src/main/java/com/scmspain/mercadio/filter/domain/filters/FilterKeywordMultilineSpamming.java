@@ -17,7 +17,7 @@ public class FilterKeywordMultilineSpamming implements Filter {
     public String filter(String text) {
         final String filteredText = checkIfKeywordSpamming(text);
 
-        logger.info("\nRequest multiline keyword spamming filter: \n"+ filteredText);
+        logger.info("\nRequest multiline keyword spamming filter: \n" + filteredText);
 
         return filteredText;
     }
