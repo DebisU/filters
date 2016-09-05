@@ -25,7 +25,7 @@ public class FilterKeywordSpammingBySeparators implements Filter {
     public String filter(String text) {
         final String filteredText = checkIfKeywordSpamming(text, extraArg);
 
-        logger.info("\nRequest Keyword spamming filter: \n"+ filteredText);
+        logger.info("\nRequest Keyword spamming filter: \n" + filteredText);
 
         return filteredText;
     }
@@ -38,10 +38,13 @@ public class FilterKeywordSpammingBySeparators implements Filter {
 
     private String getParagraphsWithoutRepeatedSeparator(List<String> separatedParagraphs, Optional<String> extraArg) {
         final StringBuilder filteredText = new StringBuilder();
-        final char separator = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty()) ? extraArg.get().charAt(0) : DEFAULT_SEPARATOR;
+        final char separator = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty())
+                ? extraArg.get().charAt(0) : DEFAULT_SEPARATOR;
 
         separatedParagraphs.stream().filter(separatedParagraph ->
-                knowIfExceedsAmountOfSeparators(separatedParagraph, separator) || separatedParagraph.split(" ").length == 1)
+                knowIfExceedsAmountOfSeparators(
+                        separatedParagraph, separator)
+                        || separatedParagraph.split(" ").length == 1)
                 .forEach(separatedParagraph -> filteredText.append(separatedParagraph).append("\n"));
 
         return CommonStringOperations.removeLastNewLine(filteredText.toString());
@@ -57,8 +60,7 @@ public class FilterKeywordSpammingBySeparators implements Filter {
                 }
             }
         }
-
-        final int maxSeparators = paragraph.length()/ MIN_SEPARATOR_DIVIDER;
+        final int maxSeparators = paragraph.length() / MIN_SEPARATOR_DIVIDER;
 
         return amountOfSeparatorsInParagraph <= maxSeparators;
     }

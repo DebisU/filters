@@ -17,16 +17,16 @@ public class FilterKeywordSpammingAtTheEnd implements Filter {
         final StringBuilder filteredText = new StringBuilder();
         final List<String> partsSeparatedByPoint = Arrays.asList(text.split("\\."));
         final String filteredLastParagraph =
-                filterLastParagraph(partsSeparatedByPoint.get(partsSeparatedByPoint.size()-1));
+                filterLastParagraph(partsSeparatedByPoint.get(partsSeparatedByPoint.size() - 1));
 
-        for (int i = 0; i < partsSeparatedByPoint.size()-1 ; i++) {
+        for (int i = 0; i < partsSeparatedByPoint.size() - 1 ; i++) {
             filteredText.append(partsSeparatedByPoint.get(i)).append(".");
         }
 
         filteredText.append(filteredLastParagraph);
 
         if (textEndWithDot(text)) {
-            if (filteredText.toString().charAt(filteredText.toString().length()-1)!='.'){
+            if (filteredText.toString().charAt(filteredText.toString().length() - 1) != '.') {
                 filteredText.append(".");
             }
         }
@@ -37,7 +37,7 @@ public class FilterKeywordSpammingAtTheEnd implements Filter {
     private String filterLastParagraph(String lastParagraph) {
         final StringBuilder filteredText = new StringBuilder();
 
-        if (! lastParagraph.matches(SPAM_END_PATTERN)){
+        if (! lastParagraph.matches(SPAM_END_PATTERN)) {
             filteredText.append(lastParagraph);
         }
 

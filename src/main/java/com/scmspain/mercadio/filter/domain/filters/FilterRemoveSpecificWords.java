@@ -20,14 +20,14 @@ public class FilterRemoveSpecificWords implements Filter {
     public String filter(String text) {
         final String filteredText = replaceWords(text,extraArg);
 
-        logger.info("\nRequest remove specific words filter: \n"+ filteredText);
+        logger.info("\nRequest remove specific words filter: \n" + filteredText);
 
         return filteredText;
     }
 
     private String replaceWords(String request, Optional<String> extraArg) {
-        final List<String> wordsToReplace = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty()) ?
-                Arrays.asList(extraArg.get().split(",")) : new ArrayList<>();
+        final List<String> wordsToReplace = (extraArg != null && extraArg.isPresent() && !extraArg.get().isEmpty())
+                ? Arrays.asList(extraArg.get().split(",")) : new ArrayList<>();
 
         return getReplacedString(request, wordsToReplace).trim();
     }

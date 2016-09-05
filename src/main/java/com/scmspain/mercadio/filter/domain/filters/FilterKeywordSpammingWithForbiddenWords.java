@@ -22,7 +22,7 @@ public class FilterKeywordSpammingWithForbiddenWords implements Filter {
     public String filter(String text) {
         final String filteredText = checkIfKeywordSpamming(text,extraArg);
 
-        logger.info("\nRequest Keyword spamming with forbidden words: \n"+ filteredText);
+        logger.info("\nRequest Keyword spamming with forbidden words: \n" + filteredText);
 
         return filteredText;
     }
@@ -31,10 +31,12 @@ public class FilterKeywordSpammingWithForbiddenWords implements Filter {
         final List<String> separatedParagraphs = CommonStringOperations.splitParagraphs(request);
         final StringBuilder filteredText = new StringBuilder();
 
-        final List<String> forbiddenWords = (extraArg != null && extraArg.isPresent()) ?  getForbiddenWords(extraArg) : new ArrayList<>();
+        final List<String> forbiddenWords = (extraArg != null && extraArg.isPresent())
+                ?  getForbiddenWords(extraArg) : new ArrayList<>();
 
         separatedParagraphs.stream().filter(separatedParagraph ->
-                !CommonStringOperations.checkIfStringContainsItemFromList(separatedParagraph.toLowerCase(), forbiddenWords))
+                !CommonStringOperations
+                        .checkIfStringContainsItemFromList(separatedParagraph.toLowerCase(), forbiddenWords))
                 .forEach(separatedParagraph -> filteredText.append(separatedParagraph).append("\n"));
 
         return CommonStringOperations.removeLastNewLine(filteredText.toString());

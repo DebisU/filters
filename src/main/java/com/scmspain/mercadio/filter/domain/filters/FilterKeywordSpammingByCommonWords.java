@@ -20,7 +20,7 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
     public String filter(String text) {
         final String filteredText = checkIfKeywordSpamming(text);
 
-        logger.info("\nRequest Keyword spamming filter by common words: \n"+ filteredText);
+        logger.info("\nRequest Keyword spamming filter by common words: \n" + filteredText);
 
         return filteredText;
     }
@@ -31,7 +31,10 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
     }
 
     private String getParagraphsWithCommonWords(List<String> separatedParagraphs) {
-        final List<String> paragraphsWithPrepositions = separatedParagraphs.stream().filter(this::checkConditions).collect(Collectors.toList());
+        final List<String> paragraphsWithPrepositions = separatedParagraphs
+                .stream()
+                .filter(this::checkConditions)
+                .collect(Collectors.toList());
 
         return getResultAsString(paragraphsWithPrepositions);
     }

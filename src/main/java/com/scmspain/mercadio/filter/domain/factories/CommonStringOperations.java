@@ -55,25 +55,29 @@ public class CommonStringOperations {
 
     public static String removeLastNewLine(String request) {
         if (request.endsWith("\n")) {
-            request = request.substring(0,request.length()-1);
+            request = request.substring(0,request.length() - 1);
         }
         return request;
     }
 
     public static List<String> getAllPrepositions() {
-        return Arrays.asList(" a "," ante "," bajo "," cabe "," con "," contra "," de "," desde "," en "," entre "," hacia "," hasta "," para "," por "," según "," segun "," sin "," so "," sobre "," tras ");
+        return Arrays.asList(" a "," ante "," bajo "," cabe "," con "," contra "," de "," desde "," en "," entre ",
+                " hacia "," hasta "," para "," por "," según "," segun "," sin "," so "," sobre "," tras ");
     }
 
     public static List<String> getMostCommonSpanishWords() {
-        return Arrays.asList(" la "," que "," el "," los ", " las "," se "," del "," un "," su "," se "," es "," no "," si ");
+        return Arrays.asList(" la "," que "," el "," los ", " las "," se "," del "," un ",
+                " su "," se "," es "," no "," si ");
     }
 
     public static List<String> getTimeUnits() {
-        return Arrays.asList("horas", "minutos", "segundos", "hours", "años");
+        return Arrays.asList("horas", "minutos",
+                "segundos", "hours", "años");
     }
 
     public static List<String> getSpecificationWords() {
-        return Arrays.asList("3D", "HD","lúmens","wi-fi","accesorios","universal","regulable","regulables","tarjeta sd","idiomas");
+        return Arrays.asList("3D", "HD","lúmens","wi-fi","accesorios","universal",
+                "regulable","regulables","tarjeta sd","idiomas");
     }
 
     public static List<String> getAbbreviatedUnitsOfMeasure() {

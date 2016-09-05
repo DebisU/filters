@@ -2,7 +2,14 @@ package com.scmspain.mercadio.filter.application.usecases;
 
 import com.scmspain.mercadio.filter.domain.ChainFilter;
 import com.scmspain.mercadio.filter.domain.factories.CommonStringOperations;
-import com.scmspain.mercadio.filter.domain.filters.*;
+import com.scmspain.mercadio.filter.domain.filters.Filter;
+import com.scmspain.mercadio.filter.domain.filters.FilterKeywordMultilineSpamming;
+import com.scmspain.mercadio.filter.domain.filters.FilterKeywordSpammingAtTheEnd;
+import com.scmspain.mercadio.filter.domain.filters.FilterKeywordSpammingByCommonWords;
+import com.scmspain.mercadio.filter.domain.filters.FilterKeywordSpammingBySeparators;
+import com.scmspain.mercadio.filter.domain.filters.FilterKeywordSpammingWithForbiddenWords;
+import com.scmspain.mercadio.filter.domain.filters.FilterRemoveSpecificWords;
+import com.scmspain.mercadio.filter.domain.filters.FilterUrl;
 
 import java.util.Map;
 import java.util.Optional;
