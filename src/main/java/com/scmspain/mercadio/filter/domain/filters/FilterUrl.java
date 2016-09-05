@@ -27,9 +27,9 @@ public class FilterUrl implements Filter {
     private String takeDecision(String text) {
         final StringBuilder filteredText = new StringBuilder();
 
-        if (extraArg.isPresent() && extraArg.get().equalsIgnoreCase("delete")) {
+        if (extraArg.isPresent() && "delete".equalsIgnoreCase(extraArg.get())) {
             filteredText.append(extractUrls(text));
-        } else if (extraArg.isPresent() && extraArg.get().equalsIgnoreCase("replace")) {
+        } else if (extraArg.isPresent() && "replace".equalsIgnoreCase(extraArg.get())) {
             filteredText.append(replacePrefix(text));
         } else {
             filteredText.append(extractUrls(text));

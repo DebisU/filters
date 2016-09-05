@@ -42,16 +42,21 @@ public class FilterKeywordMultilineSpamming implements Filter {
 
         for (String item : paragraphs) {
             final List<String> splittedAndTrimedItem = Arrays.asList(item.trim().split(" "));
-            if ( (splittedAndTrimedItem.size() > 1)
-                    || (containsIndexer(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1)
-                    || (containsSuffixes(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1)
-                    || (Objects.equals(splittedAndTrimedItem.get(0), "\n") && splittedAndTrimedItem.size() == 1)
-                    || (splittedAndTrimedItem.get(0).matches(NUMBERS) && splittedAndTrimedItem.size() == 1) ){
+            if (checkConditions(splittedAndTrimedItem)) {
                 paragraphsWithMoreThanOneWord.add(item);
             }
         }
         return paragraphsWithMoreThanOneWord;
     }
+
+    private boolean checkConditions(List<String> splittedAndTrimedItem) {
+        return ( (splittedAndTrimedItem.size() > 1)
+                || (containsIndexer(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1)
+                || (containsSuffixes(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1)
+                || (Objects.equals(splittedAndTrimedItem.get(0), "\n") && splittedAndTrimedItem.size() == 1)
+                || (splittedAndTrimedItem.get(0).matches(NUMBERS) && splittedAndTrimedItem.size() == 1) );
+    }
+
 
     private boolean containsIndexer(String word) {
         final String regex = "^(-|>|·|#|º|¬).*";
