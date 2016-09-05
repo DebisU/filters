@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.util.Optional;
 
 public class FilterUrlTest {
-    public Filter sut;
+    private Filter sut;
 
     @Before
     public void setUp() throws Exception {
@@ -15,7 +15,15 @@ public class FilterUrlTest {
     }
 
     @Test
-    public void shouldDeleteAllUrls() throws Exception {
+    public void shouldDeleteAllUrlsWithoutArg() throws Exception {
+        final String result = sut.filter(getTextWithUrls());
+
+        Assert.assertEquals("google.es",result.trim());
+    }
+
+    @Test
+    public void shouldDeleteAllUrlsPrefixes() throws Exception {
+        sut = new FilterUrl(Optional.of("delete"));
         final String result = sut.filter(getTextWithUrls());
 
         Assert.assertEquals("google.es",result.trim());

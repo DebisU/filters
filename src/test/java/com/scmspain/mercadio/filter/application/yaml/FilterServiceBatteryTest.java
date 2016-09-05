@@ -89,7 +89,13 @@ public class FilterServiceBatteryTest {
         final FilterRequest filterRequest = new FilterRequest();
         final Map<String,String> filters = new HashMap<>();
 
-        filters.put("forbiddenwords","tags,keywords,palabra de busqueda,palabras de busqueda,palabras busquedas,oferta ganga");
+        filters.put("forbiddenwords",
+                  "tags"
+                + ",keywords"
+                + ",palabra de busqueda"
+                + ",palabras de busqueda"
+                + ",palabras busquedas"
+                + ",oferta ganga");
         filters.put("removespecificwords","Palabras de búsqueda,search");
         filters.put("separators","");
         filters.put("url","");
@@ -101,22 +107,24 @@ public class FilterServiceBatteryTest {
         return filterRequest;
     }
 
-    private static int getLevenshteinDistance(String a, String b) {
-        a = a.toLowerCase();
-        b = b.toLowerCase();
+    private static int getLevenshteinDistance(String currentDistance, String expectedDistance) {
+        currentDistance = currentDistance.toLowerCase();
+        expectedDistance = expectedDistance.toLowerCase();
 
-        final int [] costs = new int [b.length() + 1];
-        for (int j = 0; j < costs.length; j++)
+        final int [] costs = new int [expectedDistance.length() + 1];
+        for (int j = 0; j < costs.length; j++) {
             costs[j] = j;
-        for (int i = 1; i <= a.length(); i++) {
+        }
+        for (int i = 1; i <= currentDistance.length(); i++) {
             costs[0] = i;
             int nw = i - 1;
-            for (int j = 1; j <= b.length(); j++) {
-                final int cj = Math.min(1 + Math.min(costs[j], costs[j - 1]), a.charAt(i - 1) == b.charAt(j - 1) ? nw : nw + 1);
+            for (int j = 1; j <= expectedDistance.length(); j++) {
+                final int cj = Math.min(1 + Math.min(costs[j], costs[j - 1]),
+                        currentDistance.charAt(i - 1) == expectedDistance.charAt(j - 1) ? nw : nw + 1);
                 nw = costs[j];
                 costs[j] = cj;
             }
         }
-        return costs[b.length()];
+        return costs[expectedDistance.length()];
     }
 }

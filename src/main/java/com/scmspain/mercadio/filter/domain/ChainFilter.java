@@ -8,7 +8,7 @@ import java.util.List;
 public class ChainFilter implements Filter {
     private final List<Filter> filters = new ArrayList<>();
 
-    public void addFilter(Filter filter){
+    public void addFilter(Filter filter) {
         filters.add(filter);
     }
 

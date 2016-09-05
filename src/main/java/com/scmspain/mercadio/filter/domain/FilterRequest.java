@@ -9,15 +9,11 @@ public class FilterRequest {
 
     public FilterRequest() {
         this.textToFilter = "";
-        this.filtersToApply = new HashMap<String,String>();
+        this.filtersToApply = new HashMap<>();
     }
 
+    @SuppressWarnings("SameParameterValue")
     public FilterRequest(String textToFilter, Map<String, String> filtersToApply) {
-        this.textToFilter = textToFilter;
-        this.filtersToApply = filtersToApply;
-    }
-
-    public FilterRequest(String textToFilter, Map<String, String> filtersToApply, String filteredText) {
         this.textToFilter = textToFilter;
         this.filtersToApply = filtersToApply;
     }

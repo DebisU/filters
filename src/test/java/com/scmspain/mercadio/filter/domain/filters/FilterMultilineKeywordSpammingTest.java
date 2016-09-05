@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class FilterMultilineKeywordSpammingTest {
-    public Filter sut;
+    private Filter sut;
 
     @Before
     public void setUp() throws Exception {
@@ -35,7 +35,8 @@ public class FilterMultilineKeywordSpammingTest {
     }
 
     private static String getMultilineSpam() {
-        return "Samsung \n Sony \n Acer \n iOS \n Toshiba \n Asus \n LG \n Sharp \n Panasonic \n Mitsubishi \n Dell \n Epson \n Itachi \n BenQ \n Cannon \n Casio";
+        return "Samsung \n Sony \n Acer \n iOS \n Toshiba \n Asus \n LG \n Sharp \n Panasonic "
+                + "\n Mitsubishi \n Dell \n Epson \n Itachi \n BenQ \n Cannon \n Casio";
     }
 
     private static String getValidMultilineText() {
