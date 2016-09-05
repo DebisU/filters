@@ -49,12 +49,12 @@ public class FilterKeywordMultilineSpamming implements Filter {
         return paragraphsWithMoreThanOneWord;
     }
 
-    private boolean checkConditions(List<String> splittedAndTrimedItem) {
-        return splittedAndTrimedItem.size() > 1
-                || containsIndexer(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1
-                || containsSuffixes(splittedAndTrimedItem.get(0)) && splittedAndTrimedItem.size() == 1
-                || Objects.equals(splittedAndTrimedItem.get(0), "\n") && splittedAndTrimedItem.size() == 1
-                || splittedAndTrimedItem.get(0).matches(NUMBERS) && splittedAndTrimedItem.size() == 1;
+    private boolean checkConditions(List<String> splittedAndTrimmedItem) {
+        return splittedAndTrimmedItem.size() > 1
+                || containsIndexer(splittedAndTrimmedItem.get(0)) && splittedAndTrimmedItem.size() == 1
+                || containsSuffixes(splittedAndTrimmedItem.get(0)) && splittedAndTrimmedItem.size() == 1
+                || Objects.equals(splittedAndTrimmedItem.get(0), "\n") && splittedAndTrimmedItem.size() == 1
+                || splittedAndTrimmedItem.get(0).matches(NUMBERS) && splittedAndTrimmedItem.size() == 1;
     }
 
 
