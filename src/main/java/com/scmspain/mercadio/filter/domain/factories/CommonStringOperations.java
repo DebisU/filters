@@ -54,10 +54,12 @@ public abstract class CommonStringOperations {
     }
 
     public static String removeLastNewLine(String request) {
-        if (request.endsWith("\n")) {
-            request = request.substring(0,request.length() - 1);
+        String lastLine = request;
+
+        if (lastLine.endsWith("\n")) {
+            lastLine = lastLine.substring(0,lastLine.length() - 1);
         }
-        return request;
+        return lastLine;
     }
 
     public static List<String> getAllPrepositions() {
