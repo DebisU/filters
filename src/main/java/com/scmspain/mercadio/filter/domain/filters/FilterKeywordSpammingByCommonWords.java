@@ -91,7 +91,7 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
             }
         }
         return isGreater(amountOfPoints, amountOfComas)
-                ? amountOfComas : (isGreater(amountOfLowBar, amountOfPoints))
+                ? amountOfComas : isGreater(amountOfLowBar, amountOfPoints)
                 ? amountOfPoints : amountOfLowBar;
     }
 
