@@ -10,6 +10,9 @@ public abstract class CommonStringOperations {
         return Arrays.asList(request.split("\n"));
     }
 
+    private CommonStringOperations() {
+    }
+
     public static String htmlToText(String request) {
         String result = request;
 
