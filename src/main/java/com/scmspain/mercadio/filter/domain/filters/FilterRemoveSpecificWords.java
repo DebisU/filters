@@ -35,7 +35,7 @@ public class FilterRemoveSpecificWords implements Filter {
     private String getReplacedString(String request, List<String> wordsToReplace) {
         String replacedString = request;
 
-        if (wordsToReplace.size() > 0) {
+        if (! wordsToReplace.isEmpty()) {
             for (String item : wordsToReplace) {
                 replacedString = replacedString.replaceAll(item,"");
             }
