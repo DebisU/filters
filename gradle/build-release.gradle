@@ -1,9 +1,5 @@
 apply plugin: 'pl.allegro.tech.build.axion-release'
 
-ext {
-    project_version = getVersion()
-}
-
 // For publishing see http://axion-release-plugin.readthedocs.org/en/latest/
 def getVersion() {
     if (project.hasProperty("pr.number")) {
@@ -26,8 +22,8 @@ scmVersion {
     ignoreUncommittedChanges = false
 }
 
-project.version = project_version
+project.version = getVersion()
 
 task currentVersion(overwrite: true) << {
-    println ("\nProject version: $project_version")
+    println ("\nProject version: $project.version")
 }
