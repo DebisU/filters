@@ -34,6 +34,41 @@ public class FilterMultilineKeywordSpammingTest {
 
     }
 
+    @Test
+    public void shouldBeEmpty() throws Exception {
+        final String result = sut.filter("");
+
+        Assert.assertEquals("",result);
+    }
+
+    @Test
+    public void filterTestWithTwoWords() throws Exception {
+        final String result = sut.filter("word1, word2");
+
+        Assert.assertEquals("word1, word2",result);
+    }
+
+    @Test
+    public void filterWithSuffixes() throws Exception {
+        final String result = sut.filter("-word");
+
+        Assert.assertEquals("-word", result);
+    }
+
+    @Test
+    public void filterNewLine() throws Exception {
+        final String result = sut.filter("\n");
+
+        Assert.assertEquals("", result);
+    }
+
+    @Test
+    public void filterWordAndNumbers() throws Exception {
+        final String result = sut.filter("nVidia 750");
+
+        Assert.assertEquals("nVidia 750",result);
+    }
+
     private static String getMultilineSpam() {
         return "Samsung \n Sony \n Acer \n iOS \n Toshiba \n Asus \n LG \n Sharp \n Panasonic "
                 + "\n Mitsubishi \n Dell \n Epson \n Itachi \n BenQ \n Cannon \n Casio";
