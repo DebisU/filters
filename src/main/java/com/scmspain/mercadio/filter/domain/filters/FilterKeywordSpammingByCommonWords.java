@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FilterKeywordSpammingByCommonWords implements Filter {
-    private static final int MIN_LINE_LENGTH_TO_ANALYZE_REGEX = 55;
+    private static final int MIN_LINE_LENGTH_TO_ANALYZE = 55;
     private static final String BANNER_TEXT_REGEX = "[<>·#._,-]{8,}[a-zA-Z0-9 ]+[<>·#._,-]{8,}";
     private static final String LINE_STARTS_WITH_NUMBERS_REGEX = "[0-9]+.*?";
     private static final String SEPARATOR_LINE_REGEX = "[*+_-]{15,}";
@@ -42,12 +42,8 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
     private boolean applyFilterRules(String text) {
         return checkIfStringContainsItems(text)
                 || checkIfStringMatchesItems(text)
-                || checkSpecificCharacters(text)
-                || checkIfContainsBanner(text)
-                || checkExclamationsAndInterrogations(text)
-                || checkTextSeparators(text)
-                || checkStartOfLine(text)
-                || checkMinTextLength(text);
+                || checkIfTextMatchesWithAnyRegex(text)
+                || checkDifferentTextLengths(text);
     }
 
     private boolean checkIfStringContainsItems(String text) {
@@ -58,8 +54,20 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
         return CommonStringOperations.checkIfStringMatchesItemFromList(text, getWordsToMatch());
     }
 
+    private boolean checkDifferentTextLengths(String text) {
+        return checkMinTextLength(text)
+                || checkSpecificCharacters(text);
+    }
+
     private boolean checkSpecificCharacters(String text) {
         return getAmountOfSpecificCharacters(text) >= 8;
+    }
+
+    private boolean checkIfTextMatchesWithAnyRegex(String text) {
+        return checkIfContainsBanner(text)
+                || checkExclamationsAndInterrogations(text)
+                || checkTextSeparators(text)
+                || checkStartOfLine(text);
     }
 
     private boolean checkIfContainsBanner(String text) {
@@ -79,7 +87,7 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
     }
 
     private boolean checkMinTextLength(String text) {
-        return text.length() < MIN_LINE_LENGTH_TO_ANALYZE_REGEX;
+        return text.length() < MIN_LINE_LENGTH_TO_ANALYZE;
     }
 
     private String getResultAsString(List<String> paragraphsWithPrepositions) {
