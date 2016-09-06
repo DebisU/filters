@@ -33,21 +33,53 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
     private String getParagraphsWithCommonWords(List<String> separatedParagraphs) {
         final List<String> paragraphsWithPrepositions = separatedParagraphs
                 .stream()
-                .filter(this::checkConditions)
+                .filter(this::applyFilterRules)
                 .collect(Collectors.toList());
 
         return getResultAsString(paragraphsWithPrepositions);
     }
 
-    private boolean checkConditions(String text) {
-        return CommonStringOperations.checkIfStringContainsItemFromList(text, getMostCommonWords())
-                || CommonStringOperations.checkIfStringMatchesItemFromList(text, getWordsToMatch())
-                || getAmountOfSpecificCharacters(text) >= 8
-                || text.trim().matches(BANNER_TEXT_REGEX)
-                || text.trim().matches(CONTAINS_A_LOT_OF_EXCLAMATION_AND_INTERROGATION_REGEX)
-                || text.trim().matches(SEPARATOR_LINE_REGEX)
-                || text.trim().matches(LINE_STARTS_WITH_NUMBERS_REGEX)
-                || text.length() < MIN_LINE_LENGTH_TO_ANALYZE_REGEX;
+    private boolean applyFilterRules(String text) {
+        return checkIfStringContainsItems(text)
+                || checkIfStringMatchesItems(text)
+                || checkSpecificCharacters(text)
+                || checkIfContainsBanner(text)
+                || checkExclamationsAndInterrogations(text)
+                || checkTextSeparators(text)
+                || checkStartOfLine(text)
+                || checkMinTextLength(text);
+    }
+
+    private boolean checkIfStringContainsItems(String text) {
+        return CommonStringOperations.checkIfStringContainsItemFromList(text, getMostCommonWords());
+    }
+
+    private boolean checkIfStringMatchesItems(String text) {
+        return CommonStringOperations.checkIfStringMatchesItemFromList(text, getWordsToMatch());
+    }
+
+    private boolean checkSpecificCharacters(String text) {
+        return getAmountOfSpecificCharacters(text) >= 8;
+    }
+
+    private boolean checkIfContainsBanner(String text) {
+        return text.trim().matches(BANNER_TEXT_REGEX);
+    }
+
+    private boolean checkExclamationsAndInterrogations(String text) {
+        return text.trim().matches(CONTAINS_A_LOT_OF_EXCLAMATION_AND_INTERROGATION_REGEX);
+    }
+
+    private boolean checkTextSeparators(String text) {
+        return text.trim().matches(SEPARATOR_LINE_REGEX);
+    }
+
+    private boolean checkStartOfLine(String text) {
+        return text.trim().matches(LINE_STARTS_WITH_NUMBERS_REGEX);
+    }
+
+    private boolean checkMinTextLength(String text) {
+        return text.length() < MIN_LINE_LENGTH_TO_ANALYZE_REGEX;
     }
 
     private String getResultAsString(List<String> paragraphsWithPrepositions) {
