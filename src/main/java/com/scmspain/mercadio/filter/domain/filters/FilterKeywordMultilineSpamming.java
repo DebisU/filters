@@ -4,10 +4,9 @@ import com.scmspain.mercadio.filter.domain.factories.CommonStringOperations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class FilterKeywordMultilineSpamming implements Filter {
     private static final String NUMBERS = ".*[0-9]+.*";
@@ -15,16 +14,16 @@ public class FilterKeywordMultilineSpamming implements Filter {
 
     @Override
     public String filter(String text) {
-        final String filteredText = checkIfKeywordSpamming(text);
+        final String filteredText = filterKeywordSpamming(text);
 
         logger.info("\nRequest multiline keyword spamming filter: \n" + filteredText);
 
         return filteredText;
     }
 
-    private String checkIfKeywordSpamming(String request) {
+    private String filterKeywordSpamming(String request) {
         final List<String> paragraphs = CommonStringOperations.splitParagraphs(request);
-        final List<String> paragraphsWithMoreThanOneWordList = getSeparatedParagraphs(paragraphs);
+        final List<String> paragraphsWithMoreThanOneWordList = applyFilterRules(paragraphs);
 
         return getResultString(paragraphsWithMoreThanOneWordList);
     }
@@ -37,28 +36,56 @@ public class FilterKeywordMultilineSpamming implements Filter {
         return CommonStringOperations.removeLastNewLine(filteredText.toString());
     }
 
-    private List<String> getSeparatedParagraphs(List<String> paragraphs) {
-        final List<String> paragraphsWithMoreThanOneWord = new ArrayList<>();
+    private List<String> applyFilterRules(List<String> paragraphs) {
+        return paragraphs.stream()
+                .filter(this::satisfiesFilterRules)
+                .collect(Collectors.toList())
+                ;
+    }
 
-        for (String item : paragraphs) {
-            final List<String> splittedAndTrimedItem = Arrays.asList(item.trim().split(" "));
-            if (checkConditions(splittedAndTrimedItem)) {
-                paragraphsWithMoreThanOneWord.add(item);
-            }
+    private boolean satisfiesFilterRules(String paragraph) {
+        final List<String> phrase = toPhrase(paragraph);
+        if (phrase.isEmpty()) {
+            return false;
         }
-        return paragraphsWithMoreThanOneWord;
+
+        if (phrase.size() == 1) {
+            return satisfiesRulesForSingleWordPhrase(phrase);
+        } else {
+            return satisfiesRulesForNonSingleWordPhrase(phrase);
+        }
     }
 
-    private boolean checkConditions(List<String> splittedAndTrimmedItem) {
-        return splittedAndTrimmedItem.size() > 1
-                || containsIndexer(splittedAndTrimmedItem.get(0)) && splittedAndTrimmedItem.size() == 1
-                || containsSuffixes(splittedAndTrimmedItem.get(0)) && splittedAndTrimmedItem.size() == 1
-                || Objects.equals(splittedAndTrimmedItem.get(0), "\n") && splittedAndTrimmedItem.size() == 1
-                || splittedAndTrimmedItem.get(0).matches(NUMBERS) && splittedAndTrimmedItem.size() == 1;
+    private List<String> toPhrase(String paragraph) {
+        return Arrays.asList(paragraph.trim().split(" "));
     }
 
+    private boolean satisfiesRulesForNonSingleWordPhrase(List<String> phrase) {
+        return phrase.size() > 1;
+    }
 
-    private boolean containsIndexer(String word) {
+    private boolean satisfiesRulesForSingleWordPhrase(List<String> phrase) {
+        if (phrase.size() != 1) {
+            return false;
+        }
+        final String word = phrase.get(0);
+
+        return containsPrefixes(word)
+                || containsSuffixes(word)
+                || isSeparator(word)
+                || isNumber(word);
+    }
+
+    private boolean isNumber(String word) {
+        return word.matches(NUMBERS);
+    }
+
+    private boolean isSeparator(String word) {
+        final String regex = "^\\n$";
+        return word.matches(regex);
+    }
+
+    private boolean containsPrefixes(String word) {
         final String regex = "^(-|>|·|#|º|¬).*";
         return word.matches(regex);
     }
