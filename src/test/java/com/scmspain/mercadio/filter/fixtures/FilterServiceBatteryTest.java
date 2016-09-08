@@ -75,17 +75,17 @@ public class FilterServiceBatteryTest {
         final LinkedHashMap<FilterType,String> filters = new LinkedHashMap<>();
 
         filters.put(FilterType.FORBIDDEN_WORDS,
-                  "tags"
-                + ",keywords"
-                + ",palabra de busqueda"
-                + ",palabras de busqueda"
-                + ",palabras busquedas"
-                + ",oferta ganga");
+                "tags"
+                        + ",keywords"
+                        + ",palabra de busqueda"
+                        + ",palabras de busqueda"
+                        + ",palabras busquedas"
+                        + ",oferta ganga");
         filters.put(FilterType.REMOVE_SPECIFIC_WORDS, "Palabras de búsqueda,search");
-        filters.put(FilterType.SEPARATORS, "");
-        filters.put(FilterType.URL, "");
         filters.put(FilterType.COMMON_WORDS, "");
         filters.put(FilterType.END_SPAM, "");
+        filters.put(FilterType.SEPARATORS, "");
+        filters.put(FilterType.URL, "");
         return filters;
     }
 
