@@ -62,11 +62,6 @@ public class FilterService {
         return filter;
     }
 
-    public FilterUseCaseResponse filter(FilterUseCaseRequest filterUseCaseRequest) {
-        final String text = filterUseCaseRequest.getFilterRequest().getTextToFilter();
-        return filter(text);
-    }
-
     public FilterUseCaseResponse filter(String text) {
         final String textToFilter = CommonStringOperations.htmlToText(text);
 

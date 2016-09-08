@@ -19,24 +19,20 @@ public class FilterServiceTest {
     public void harmlessFilterServiceDoesNothing() throws Exception {
         final FilterService sut = FilterService.harmless();
 
-        FilterRequest requestRequest = new FilterRequest("text remains unmodified");
-        FilterUseCaseRequest request = new FilterUseCaseRequest(requestRequest);
-        final FilterUseCaseResponse actual = sut.filter(request);
+        final FilterUseCaseResponse actual = sut.filter("text remains unmodified");
 
         Assert.assertEquals("text remains unmodified", actual.getResult());
     }
 
     @Test
     public void filterUseCaseExecuteTest() throws Exception {
-        final FilterRequest filterRequest = new FilterRequest("");
-        final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);
         final FilterUseCaseResponse filterUseCaseResponse;
 
         final Map<String, String> filters = prepareWithAllFilters();
         final FilterService sut = FilterService.withFilters(filters);
-        filterUseCaseResponse = sut.filter(filterUseCaseRequest);
+        filterUseCaseResponse = sut.filter("");
 
-        Assert.assertEquals(filterRequest.getTextToFilter().trim(),filterUseCaseResponse.getResult().trim());
+        Assert.assertEquals(new FilterRequest("").getTextToFilter().trim(),filterUseCaseResponse.getResult().trim());
     }
 
     private Map<String, String> prepareWithAllFilters() {
@@ -54,11 +50,9 @@ public class FilterServiceTest {
     @Test (expected = FilterNotFoundException.class)
     public void filterUseCaseExecuteWithThrowExceptionTest() throws Exception {
 
-        final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(new FilterRequest(""));
-
         final Map<String, String> filters = prepareWithNonExistingFilter();
         final FilterService sut = FilterService.withFilters(filters);
-        sut.filter(filterUseCaseRequest);
+        sut.filter("");
     }
 
     private Map<String, String> prepareWithNonExistingFilter() {
