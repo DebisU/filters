@@ -33,7 +33,7 @@ detectPatterns      | No arguments              |       NO         |        REGE
 ```java
         final FilterUseCase filterUseCase = new FilterUseCase();
         final FilterRequest filterRequest = new FilterRequest();
-        final Map<String,String> filters = new HashMap<>();
+        final LinkedHashMap<String,String> filters = new LinkedHashMap<>();
 
         filters.put("forbiddenwords","tags,keywords");
         filters.put("removespecificwords","Palabras de búsqueda,search");
