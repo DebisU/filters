@@ -11,25 +11,20 @@ public class FilterService {
 
     private final Filter filter;
 
+    public static FilterService harmless() throws FilterNotFoundException {
+        return new FilterService();
+    }
+
+    public static FilterService withFilters(Map<String, String> filtersToApply) throws FilterNotFoundException {
+        return new FilterService(filtersToApply);
+    }
+
     private FilterService() throws FilterNotFoundException {
         this(new HashMap<>());
     }
 
     private FilterService(Map<String, String> filters) throws FilterNotFoundException {
         filter = configureFilter(filters);
-    }
-
-    public FilterUseCaseResponse filter(FilterUseCaseRequest filterUseCaseRequest) {
-        final String text = filterUseCaseRequest.getFilterRequest().getTextToFilter();
-        return filter(text);
-    }
-
-    public FilterUseCaseResponse filter(String text) {
-        final String textToFilter = CommonStringOperations.htmlToText(text);
-
-        final String result = filter.filter(textToFilter);
-
-        return new FilterUseCaseResponse(result);
     }
 
     private Filter configureFilter(Map<String, String> filtersToApply) throws FilterNotFoundException {
@@ -67,12 +62,17 @@ public class FilterService {
         return filter;
     }
 
-    public static FilterService harmless() throws FilterNotFoundException {
-        return new FilterService();
+    public FilterUseCaseResponse filter(FilterUseCaseRequest filterUseCaseRequest) {
+        final String text = filterUseCaseRequest.getFilterRequest().getTextToFilter();
+        return filter(text);
     }
 
-    public static FilterService withFilters(Map<String, String> filtersToApply) throws FilterNotFoundException {
-        return new FilterService(filtersToApply);
+    public FilterUseCaseResponse filter(String text) {
+        final String textToFilter = CommonStringOperations.htmlToText(text);
+
+        final String result = filter.filter(textToFilter);
+
+        return new FilterUseCaseResponse(result);
     }
 }
 
