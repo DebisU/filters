@@ -5,7 +5,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class FilterServiceTest {
 
@@ -27,7 +26,7 @@ public class FilterServiceTest {
 
     @Test
     public void filterUseCaseExecuteTest() throws Exception {
-        final Map<FilterType, String> filters = prepareWithAllFilters();
+        final LinkedHashMap<FilterType, String> filters = prepareWithAllFilters();
         final FilterService sut = FilterService.withFilters(filters);
 
         final String actual = sut.filter("");
@@ -35,8 +34,8 @@ public class FilterServiceTest {
         Assert.assertEquals("", actual.trim());
     }
 
-    private Map<FilterType, String> prepareWithAllFilters() {
-        final Map<FilterType,String> filters = new LinkedHashMap<>();
+    private LinkedHashMap<FilterType, String> prepareWithAllFilters() {
+        final LinkedHashMap<FilterType,String> filters = new LinkedHashMap<>();
 
         filters.put(FilterType.COMMON_WORDS, "");
         filters.put(FilterType.URL, "");
@@ -50,13 +49,13 @@ public class FilterServiceTest {
     @Test (expected = FilterNotFoundException.class)
     @Ignore
     public void filterUseCaseExecuteWithThrowExceptionTest() throws Exception {
-        final Map<FilterType, String> filters = prepareWithNonExistingFilter();
+        final LinkedHashMap<FilterType, String> filters = prepareWithNonExistingFilter();
         final FilterService sut = FilterService.withFilters(filters);
         sut.filter("");
     }
 
-    private Map<FilterType, String> prepareWithNonExistingFilter() {
-        final Map<FilterType,String> filters = new LinkedHashMap<>();
+    private LinkedHashMap<FilterType, String> prepareWithNonExistingFilter() {
+        final LinkedHashMap<FilterType,String> filters = new LinkedHashMap<>();
         //filters.put("BAD","FILTER");
         return filters;
     }

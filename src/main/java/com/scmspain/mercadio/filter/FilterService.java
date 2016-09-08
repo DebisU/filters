@@ -15,7 +15,7 @@ public class FilterService {
         return new FilterService();
     }
 
-    public static FilterService withFilters(Map<FilterType, String> filtersToApply) throws FilterNotFoundException {
+    public static FilterService withFilters(LinkedHashMap<FilterType, String> filtersToApply) throws FilterNotFoundException {
         return new FilterService(filtersToApply);
     }
 
@@ -23,11 +23,11 @@ public class FilterService {
         this(new LinkedHashMap<>());
     }
 
-    private FilterService(Map<FilterType, String> filters) throws FilterNotFoundException {
+    private FilterService(LinkedHashMap<FilterType, String> filters) throws FilterNotFoundException {
         filter = configureFilter(filters);
     }
 
-    private Filter configureFilter(Map<FilterType, String> filtersToApply) throws FilterNotFoundException {
+    private Filter configureFilter(LinkedHashMap<FilterType, String> filtersToApply) throws FilterNotFoundException {
         final ChainFilter filter = new ChainFilter();
         for (Map.Entry<FilterType, String> entry : filtersToApply.entrySet()) {
             final Optional<String> extraArg = Optional.of(entry.getValue());

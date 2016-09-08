@@ -71,8 +71,8 @@ public class FilterServiceBatteryTest {
         return getLevenshteinDistance(current, expected) < LEVENSHTEIN_DISTANCE_THRESHOLD;
     }
 
-    private Map<FilterType, String> prepareFilters() {
-        final Map<FilterType,String> filters = new LinkedHashMap<>();
+    private LinkedHashMap<FilterType, String> prepareFilters() {
+        final LinkedHashMap<FilterType,String> filters = new LinkedHashMap<>();
 
         filters.put(FilterType.FORBIDDEN_WORDS,
                   "tags"
