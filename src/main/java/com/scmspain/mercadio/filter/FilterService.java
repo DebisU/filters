@@ -8,18 +8,18 @@ import java.util.Map;
 import java.util.Optional;
 
 public class FilterService {
-    private final Map<String, String> filters;
 
-    public FilterService() {
+    private final Filter filter;
+
+    public FilterService() throws FilterNotFoundException {
         this(new HashMap<>());
     }
 
-    public FilterService(Map<String, String> filtersToApply) {
-        filters = filtersToApply;
+    public FilterService(Map<String, String> filtersToApply) throws FilterNotFoundException {
+        filter = configureFilter(filtersToApply);
     }
 
     public FilterUseCaseResponse filter(FilterUseCaseRequest filterUseCaseRequest) throws FilterNotFoundException {
-        final Filter filter = configureFilter(filterUseCaseRequest.getFilterRequest().getFiltersToApply());
         final String textToFilter = CommonStringOperations.htmlToText(
                 filterUseCaseRequest.getFilterRequest().getTextToFilter()
         );

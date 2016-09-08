@@ -9,6 +9,24 @@ import java.util.Map;
 public class FilterServiceTest {
 
     @Test
+    public void filterServiceWithoutConfiguredFilters() throws Exception {
+        final FilterService sut = new FilterService();
+
+        Assert.assertNotNull(sut);
+    }
+
+    @Test
+    public void defaultFilterServiceDoesNothing() throws Exception {
+        final FilterService sut = new FilterService();
+
+        FilterRequest requestRequest = new FilterRequest("text remains unmodified", new HashMap<>());
+        FilterUseCaseRequest request = new FilterUseCaseRequest(requestRequest);
+        final FilterUseCaseResponse actual = sut.filter(request);
+
+        Assert.assertEquals("text remains unmodified", actual.getResult());
+    }
+
+    @Test
     public void filterUseCaseExecuteTest() throws Exception {
         final FilterRequest filterRequest = getFilterRequestWithAllFilters();
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);

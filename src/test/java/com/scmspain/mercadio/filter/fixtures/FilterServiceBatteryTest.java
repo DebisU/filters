@@ -52,11 +52,11 @@ public class FilterServiceBatteryTest {
         return result;
     }
 
-    public FilterServiceBatteryTest(final String text, final String expected, final String scenario) {
+    public FilterServiceBatteryTest(final String text, final String expected, final String scenario) throws FilterNotFoundException {
         this.text = text;
         this.expected = expected;
         this.scenario = scenario;
-        this.sut = new FilterService();
+        this.sut = new FilterService(prepareFilters());
     }
 
     @Test
@@ -77,6 +77,14 @@ public class FilterServiceBatteryTest {
 
     private FilterRequest getFilterRequest(String text) {
         final FilterRequest filterRequest = new FilterRequest();
+        final Map<String, String> filters = prepareFilters();
+
+        filterRequest.setFiltersToApply(filters);
+        filterRequest.setTextToFilter(text);
+        return filterRequest;
+    }
+
+    private Map<String, String> prepareFilters() {
         final Map<String,String> filters = new HashMap<>();
 
         filters.put("forbiddenwords",
@@ -91,10 +99,7 @@ public class FilterServiceBatteryTest {
         filters.put("url","");
         filters.put("commonwords","");
         filters.put("endspam","");
-
-        filterRequest.setFiltersToApply(filters);
-        filterRequest.setTextToFilter(text);
-        return filterRequest;
+        return filters;
     }
 
     private static int getLevenshteinDistance(String currentDistance, String expectedDistance) {
