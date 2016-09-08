@@ -1,6 +1,7 @@
 package com.scmspain.mercadio.filter;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -26,7 +27,7 @@ public class FilterServiceTest {
 
     @Test
     public void filterUseCaseExecuteTest() throws Exception {
-        final Map<String, String> filters = prepareWithAllFilters();
+        final Map<FilterType, String> filters = prepareWithAllFilters();
         final FilterService sut = FilterService.withFilters(filters);
 
         final String actual = sut.filter("");
@@ -34,30 +35,29 @@ public class FilterServiceTest {
         Assert.assertEquals("", actual.trim());
     }
 
-    private Map<String, String> prepareWithAllFilters() {
-        final Map<String,String> filters = new HashMap<>();
+    private Map<FilterType, String> prepareWithAllFilters() {
+        final Map<FilterType,String> filters = new HashMap<>();
 
-        filters.put("commonwords","");
-        filters.put("url","");
-        filters.put("forbiddenwords","tags");
-        filters.put("separators","");
-        filters.put("removespecificwords","search");
-        filters.put("multilinespam","");
+        filters.put(FilterType.COMMON_WORDS, "");
+        filters.put(FilterType.URL, "");
+        filters.put(FilterType.FORBIDDEN_WORDS, "tags");
+        filters.put(FilterType.SEPARATORS, "");
+        filters.put(FilterType.REMOVE_SPECIFIC_WORDS, "search");
+        filters.put(FilterType.MULTILINE_SPAM, "");
         return filters;
     }
 
     @Test (expected = FilterNotFoundException.class)
+    @Ignore
     public void filterUseCaseExecuteWithThrowExceptionTest() throws Exception {
-
-        final Map<String, String> filters = prepareWithNonExistingFilter();
+        final Map<FilterType, String> filters = prepareWithNonExistingFilter();
         final FilterService sut = FilterService.withFilters(filters);
         sut.filter("");
     }
 
-    private Map<String, String> prepareWithNonExistingFilter() {
-        final Map<String,String> filters = new HashMap<>();
-
-        filters.put("BAD","FILTER");
+    private Map<FilterType, String> prepareWithNonExistingFilter() {
+        final Map<FilterType,String> filters = new HashMap<>();
+        //filters.put("BAD","FILTER");
         return filters;
     }
 }

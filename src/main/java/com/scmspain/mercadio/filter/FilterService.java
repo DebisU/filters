@@ -15,7 +15,7 @@ public class FilterService {
         return new FilterService();
     }
 
-    public static FilterService withFilters(Map<String, String> filtersToApply) throws FilterNotFoundException {
+    public static FilterService withFilters(Map<FilterType, String> filtersToApply) throws FilterNotFoundException {
         return new FilterService(filtersToApply);
     }
 
@@ -23,39 +23,39 @@ public class FilterService {
         this(new HashMap<>());
     }
 
-    private FilterService(Map<String, String> filters) throws FilterNotFoundException {
+    private FilterService(Map<FilterType, String> filters) throws FilterNotFoundException {
         filter = configureFilter(filters);
     }
 
-    private Filter configureFilter(Map<String, String> filtersToApply) throws FilterNotFoundException {
+    private Filter configureFilter(Map<FilterType, String> filtersToApply) throws FilterNotFoundException {
         final ChainFilter filter = new ChainFilter();
-        for (Map.Entry<String, String> entry : filtersToApply.entrySet()) {
+        for (Map.Entry<FilterType, String> entry : filtersToApply.entrySet()) {
             final Optional<String> extraArg = Optional.of(entry.getValue());
-            final String filterToApply = entry.getKey().toLowerCase();
-            switch (filterToApply) {
-                case "separators":
+            final FilterType filterType = entry.getKey();
+            switch (filterType) {
+                case SEPARATORS:
                     filter.addFilter(new FilterKeywordSpammingBySeparators(extraArg));
                     break;
-                case "forbiddenwords":
+                case FORBIDDEN_WORDS:
                     filter.addFilter(new FilterKeywordSpammingWithForbiddenWords(extraArg));
                     break;
-                case "url":
+                case URL:
                     filter.addFilter(new FilterUrl(extraArg));
                     break;
-                case "commonwords":
+                case COMMON_WORDS:
                     filter.addFilter(new FilterKeywordSpammingByCommonWords());
                     break;
-                case "removespecificwords":
+                case REMOVE_SPECIFIC_WORDS:
                     filter.addFilter(new FilterRemoveSpecificWords(extraArg));
                     break;
-                case "multilinespam":
+                case MULTILINE_SPAM:
                     filter.addFilter(new FilterKeywordMultilineSpamming());
                     break;
-                case "endspam":
+                case END_SPAM:
                     filter.addFilter(new FilterKeywordSpammingAtTheEnd());
                     break;
                 default:
-                    throw new FilterNotFoundException(filterToApply);
+                    throw new FilterNotFoundException(filterType.toString());
             }
         }
 

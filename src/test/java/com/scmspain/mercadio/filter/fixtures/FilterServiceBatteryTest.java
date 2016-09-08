@@ -60,7 +60,7 @@ public class FilterServiceBatteryTest {
     }
 
     @Test
-    public void testSort() throws FilterNotFoundException {
+    public void testFixture() throws FilterNotFoundException {
         final String actual = sut.filter(text);
 
         Assert.assertTrue(scenario, hasValidDistance(actual.replace(" ", ""), this.expected.replace(" ", "")));
@@ -71,21 +71,21 @@ public class FilterServiceBatteryTest {
         return getLevenshteinDistance(current, expected) < LEVENSHTEIN_DISTANCE_THRESHOLD;
     }
 
-    private Map<String, String> prepareFilters() {
-        final Map<String,String> filters = new HashMap<>();
+    private Map<FilterType, String> prepareFilters() {
+        final Map<FilterType,String> filters = new HashMap<>();
 
-        filters.put("forbiddenwords",
+        filters.put(FilterType.FORBIDDEN_WORDS,
                   "tags"
                 + ",keywords"
                 + ",palabra de busqueda"
                 + ",palabras de busqueda"
                 + ",palabras busquedas"
                 + ",oferta ganga");
-        filters.put("removespecificwords","Palabras de búsqueda,search");
-        filters.put("separators","");
-        filters.put("url","");
-        filters.put("commonwords","");
-        filters.put("endspam","");
+        filters.put(FilterType.REMOVE_SPECIFIC_WORDS, "Palabras de búsqueda,search");
+        filters.put(FilterType.SEPARATORS, "");
+        filters.put(FilterType.URL, "");
+        filters.put(FilterType.COMMON_WORDS, "");
+        filters.put(FilterType.END_SPAM, "");
         return filters;
     }
 
