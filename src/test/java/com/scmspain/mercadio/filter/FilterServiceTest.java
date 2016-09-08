@@ -19,20 +19,19 @@ public class FilterServiceTest {
     public void harmlessFilterServiceDoesNothing() throws Exception {
         final FilterService sut = FilterService.harmless();
 
-        final FilterUseCaseResponse actual = sut.filter("text remains unmodified");
+        final String actual = sut.filter("text remains unmodified");
 
-        Assert.assertEquals("text remains unmodified", actual.getResult());
+        Assert.assertEquals("text remains unmodified", actual);
     }
 
     @Test
     public void filterUseCaseExecuteTest() throws Exception {
-        final FilterUseCaseResponse filterUseCaseResponse;
-
         final Map<String, String> filters = prepareWithAllFilters();
         final FilterService sut = FilterService.withFilters(filters);
-        filterUseCaseResponse = sut.filter("");
 
-        Assert.assertEquals(new FilterRequest("").getTextToFilter().trim(),filterUseCaseResponse.getResult().trim());
+        final String actual = sut.filter("");
+
+        Assert.assertEquals("", actual.trim());
     }
 
     private Map<String, String> prepareWithAllFilters() {

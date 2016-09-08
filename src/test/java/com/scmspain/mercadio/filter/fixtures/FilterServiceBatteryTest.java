@@ -61,9 +61,7 @@ public class FilterServiceBatteryTest {
 
     @Test
     public void testSort() throws FilterNotFoundException {
-        final FilterUseCaseResponse filterUseCaseResponse = sut.filter(text);
-
-        final String actual = filterUseCaseResponse.getResult();
+        final String actual = sut.filter(text);
 
         Assert.assertTrue(scenario, hasValidDistance(actual.replace(" ", ""), this.expected.replace(" ", "")));
 //        Assert.assertEquals(scenario, this.expected.replace(" ", ""),actual.replace(" ", ""));
