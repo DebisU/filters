@@ -38,38 +38,38 @@ public class FilterService {
     }
 
     private Filter configureFilter(Map<FilterType, String> filtersToApply) throws FilterNotFoundException {
-        final ChainFilter filter = new ChainFilter();
+        final ChainFilter chainFilter = new ChainFilter();
         for (Map.Entry<FilterType, String> entry : filtersToApply.entrySet()) {
             final Optional<String> extraArg = Optional.of(entry.getValue());
             final FilterType filterType = entry.getKey();
             switch (filterType) {
                 case SEPARATORS:
-                    filter.addFilter(new FilterKeywordSpammingBySeparators(extraArg));
+                    chainFilter.addFilter(new FilterKeywordSpammingBySeparators(extraArg));
                     break;
                 case FORBIDDEN_WORDS:
-                    filter.addFilter(new FilterKeywordSpammingWithForbiddenWords(extraArg));
+                    chainFilter.addFilter(new FilterKeywordSpammingWithForbiddenWords(extraArg));
                     break;
                 case URL:
-                    filter.addFilter(new FilterUrl(extraArg));
+                    chainFilter.addFilter(new FilterUrl(extraArg));
                     break;
                 case COMMON_WORDS:
-                    filter.addFilter(new FilterKeywordSpammingByCommonWords());
+                    chainFilter.addFilter(new FilterKeywordSpammingByCommonWords());
                     break;
                 case REMOVE_SPECIFIC_WORDS:
-                    filter.addFilter(new FilterRemoveSpecificWords(extraArg));
+                    chainFilter.addFilter(new FilterRemoveSpecificWords(extraArg));
                     break;
                 case MULTILINE_SPAM:
-                    filter.addFilter(new FilterKeywordMultilineSpamming());
+                    chainFilter.addFilter(new FilterKeywordMultilineSpamming());
                     break;
                 case END_SPAM:
-                    filter.addFilter(new FilterKeywordSpammingAtTheEnd());
+                    chainFilter.addFilter(new FilterKeywordSpammingAtTheEnd());
                     break;
                 default:
                     throw new FilterNotFoundException(filterType.toString());
             }
         }
 
-        return filter;
+        return chainFilter;
     }
 
     public String filter(String text) {
