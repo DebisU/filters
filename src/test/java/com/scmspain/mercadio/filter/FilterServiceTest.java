@@ -7,13 +7,13 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FilterUseCaseTest {
+public class FilterServiceTest {
 
-    private FilterUseCase sut;
+    private FilterService sut;
 
     @Before
     public void setUp() throws Exception {
-        sut = new FilterUseCase();
+        sut = new FilterService();
     }
 
     @Test
@@ -22,7 +22,7 @@ public class FilterUseCaseTest {
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);
         final FilterUseCaseResponse filterUseCaseResponse;
 
-        filterUseCaseResponse = sut.execute(filterUseCaseRequest);
+        filterUseCaseResponse = sut.filter(filterUseCaseRequest);
 
         Assert.assertEquals(filterRequest.getTextToFilter().trim(),filterUseCaseResponse.getResult().trim());
     }
@@ -47,7 +47,7 @@ public class FilterUseCaseTest {
     public void filterUseCaseExecuteWithThrowExceptionTest() throws Exception {
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(getFilterRequestWithInvalidFilter());
 
-        sut.execute(filterUseCaseRequest);
+        sut.filter(filterUseCaseRequest);
     }
 
     private FilterRequest getFilterRequestWithInvalidFilter() {

@@ -6,8 +6,8 @@ import com.scmspain.mercadio.filter.utils.CommonStringOperations;
 import java.util.Map;
 import java.util.Optional;
 
-public class FilterUseCase {
-    public FilterUseCaseResponse execute(FilterUseCaseRequest filterUseCaseRequest) throws FilterNotFoundException {
+public class FilterService {
+    public FilterUseCaseResponse filter(FilterUseCaseRequest filterUseCaseRequest) throws FilterNotFoundException {
         final Filter filter = configureFilter(filterUseCaseRequest.getFilterRequest().getFiltersToApply());
         final String textToFilter = CommonStringOperations.htmlToText(
                 filterUseCaseRequest.getFilterRequest().getTextToFilter()

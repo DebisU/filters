@@ -21,7 +21,7 @@ public class FilterServiceBatteryTest {
     private final String expected;
     private final String scenario;
 
-    private final FilterUseCase sut;
+    private final FilterService sut;
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
@@ -56,7 +56,7 @@ public class FilterServiceBatteryTest {
         this.text = text;
         this.expected = expected;
         this.scenario = scenario;
-        this.sut = new FilterUseCase();
+        this.sut = new FilterService();
     }
 
     @Test
@@ -64,7 +64,7 @@ public class FilterServiceBatteryTest {
         final FilterRequest filterRequest = getFilterRequest(text);
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);
 
-        final FilterUseCaseResponse filterUseCaseResponse = sut.execute(filterUseCaseRequest);
+        final FilterUseCaseResponse filterUseCaseResponse = sut.filter(filterUseCaseRequest);
         final String actual = filterUseCaseResponse.getResult();
 
         Assert.assertTrue(scenario, hasValidDistance(actual.replace(" ", ""), this.expected.replace(" ", "")));
