@@ -72,7 +72,7 @@ public class FilterServiceBatteryTest {
     }
 
     private Map<FilterType, String> prepareFilters() {
-        final Map<FilterType,String> filters = new HashMap<>();
+        final Map<FilterType,String> filters = new LinkedHashMap<>();
 
         filters.put(FilterType.FORBIDDEN_WORDS,
                   "tags"

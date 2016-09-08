@@ -3,7 +3,7 @@ package com.scmspain.mercadio.filter;
 import com.scmspain.mercadio.filter.filters.*;
 import com.scmspain.mercadio.filter.utils.CommonStringOperations;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
 
@@ -20,7 +20,7 @@ public class FilterService {
     }
 
     private FilterService() throws FilterNotFoundException {
-        this(new HashMap<>());
+        this(new LinkedHashMap<>());
     }
 
     private FilterService(Map<FilterType, String> filters) throws FilterNotFoundException {

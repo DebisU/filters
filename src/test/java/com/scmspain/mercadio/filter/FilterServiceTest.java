@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class FilterServiceTest {
@@ -36,7 +36,7 @@ public class FilterServiceTest {
     }
 
     private Map<FilterType, String> prepareWithAllFilters() {
-        final Map<FilterType,String> filters = new HashMap<>();
+        final Map<FilterType,String> filters = new LinkedHashMap<>();
 
         filters.put(FilterType.COMMON_WORDS, "");
         filters.put(FilterType.URL, "");
@@ -56,7 +56,7 @@ public class FilterServiceTest {
     }
 
     private Map<FilterType, String> prepareWithNonExistingFilter() {
-        final Map<FilterType,String> filters = new HashMap<>();
+        final Map<FilterType,String> filters = new LinkedHashMap<>();
         //filters.put("BAD","FILTER");
         return filters;
     }
