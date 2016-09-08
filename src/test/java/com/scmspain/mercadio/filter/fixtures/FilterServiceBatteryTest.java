@@ -61,7 +61,7 @@ public class FilterServiceBatteryTest {
 
     @Test
     public void testSort() throws FilterNotFoundException {
-        final FilterRequest filterRequest = getFilterRequest(text);
+        final FilterRequest filterRequest = new FilterRequest(text);
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);
 
         final FilterUseCaseResponse filterUseCaseResponse = sut.filter(filterUseCaseRequest);
@@ -73,15 +73,6 @@ public class FilterServiceBatteryTest {
 
     private boolean hasValidDistance(String current, String expected) {
         return getLevenshteinDistance(current, expected) < LEVENSHTEIN_DISTANCE_THRESHOLD;
-    }
-
-    private FilterRequest getFilterRequest(String text) {
-        final FilterRequest filterRequest = new FilterRequest();
-        final Map<String, String> filters = prepareFilters();
-
-        filterRequest.setFiltersToApply(filters);
-        filterRequest.setTextToFilter(text);
-        return filterRequest;
     }
 
     private Map<String, String> prepareFilters() {

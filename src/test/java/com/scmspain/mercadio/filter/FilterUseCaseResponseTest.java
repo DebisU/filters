@@ -19,7 +19,7 @@ public class FilterUseCaseResponseTest {
 
     @Test
     public void getFilterRequestTest() throws Exception {
-        final FilterRequest filterRequest = new FilterRequest();
+        final FilterRequest filterRequest = new FilterRequest("");
         final FilterUseCaseResponse sut = new FilterUseCaseResponse("");
 
         Assert.assertEquals(sut.getResult(),filterRequest.getTextToFilter());

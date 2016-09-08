@@ -9,7 +9,7 @@ import static org.mockito.Mockito.when;
 public class FilterUseCaseRequestTest {
     @Test
     public void getFilterRequestTest() throws Exception {
-        final FilterRequest filterRequest = new FilterRequest();
+        final FilterRequest filterRequest = new FilterRequest("");
         final FilterUseCaseRequest sut = Mockito.mock(FilterUseCaseRequest.class);
 
         when(sut.getFilterRequest()).thenReturn(filterRequest);
@@ -19,7 +19,7 @@ public class FilterUseCaseRequestTest {
 
     @Test
     public void setFilterRequestTest() throws Exception {
-        final FilterRequest filterRequest = new FilterRequest();
+        final FilterRequest filterRequest = new FilterRequest("");
         final FilterUseCaseRequest sut = new FilterUseCaseRequest(filterRequest);
 
         sut.setFilterRequest(filterRequest);

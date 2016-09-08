@@ -19,7 +19,7 @@ public class FilterServiceTest {
     public void harmlessFilterServiceDoesNothing() throws Exception {
         final FilterService sut = FilterService.harmless();
 
-        FilterRequest requestRequest = new FilterRequest("text remains unmodified", new HashMap<>());
+        FilterRequest requestRequest = new FilterRequest("text remains unmodified");
         FilterUseCaseRequest request = new FilterUseCaseRequest(requestRequest);
         final FilterUseCaseResponse actual = sut.filter(request);
 
@@ -28,7 +28,7 @@ public class FilterServiceTest {
 
     @Test
     public void filterUseCaseExecuteTest() throws Exception {
-        final FilterRequest filterRequest = new FilterRequest();
+        final FilterRequest filterRequest = new FilterRequest("");
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);
         final FilterUseCaseResponse filterUseCaseResponse;
 
@@ -54,7 +54,7 @@ public class FilterServiceTest {
     @Test (expected = FilterNotFoundException.class)
     public void filterUseCaseExecuteWithThrowExceptionTest() throws Exception {
 
-        final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(new FilterRequest());
+        final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(new FilterRequest(""));
 
         final Map<String, String> filters = prepareWithNonExistingFilter();
         final FilterService sut = FilterService.withFilters(filters);
