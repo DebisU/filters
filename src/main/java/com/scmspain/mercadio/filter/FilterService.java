@@ -1,6 +1,15 @@
 package com.scmspain.mercadio.filter;
 
-import com.scmspain.mercadio.filter.filters.*;
+
+import com.scmspain.mercadio.filter.filters.ChainFilter;
+import com.scmspain.mercadio.filter.filters.Filter;
+import com.scmspain.mercadio.filter.filters.FilterKeywordMultilineSpamming;
+import com.scmspain.mercadio.filter.filters.FilterKeywordSpammingAtTheEnd;
+import com.scmspain.mercadio.filter.filters.FilterKeywordSpammingByCommonWords;
+import com.scmspain.mercadio.filter.filters.FilterKeywordSpammingBySeparators;
+import com.scmspain.mercadio.filter.filters.FilterKeywordSpammingWithForbiddenWords;
+import com.scmspain.mercadio.filter.filters.FilterRemoveSpecificWords;
+import com.scmspain.mercadio.filter.filters.FilterUrl;
 import com.scmspain.mercadio.filter.utils.CommonStringOperations;
 
 import java.util.LinkedHashMap;
@@ -15,7 +24,8 @@ public class FilterService {
         return new FilterService();
     }
 
-    public static FilterService withFilters(LinkedHashMap<FilterType, String> filtersToApply) throws FilterNotFoundException {
+    public static FilterService withFilters(Map<FilterType, String> filtersToApply)
+            throws FilterNotFoundException {
         return new FilterService(filtersToApply);
     }
 
@@ -23,11 +33,11 @@ public class FilterService {
         this(new LinkedHashMap<>());
     }
 
-    private FilterService(LinkedHashMap<FilterType, String> filters) throws FilterNotFoundException {
+    private FilterService(Map<FilterType, String> filters) throws FilterNotFoundException {
         filter = configureFilter(filters);
     }
 
-    private Filter configureFilter(LinkedHashMap<FilterType, String> filtersToApply) throws FilterNotFoundException {
+    private Filter configureFilter(Map<FilterType, String> filtersToApply) throws FilterNotFoundException {
         final ChainFilter filter = new ChainFilter();
         for (Map.Entry<FilterType, String> entry : filtersToApply.entrySet()) {
             final Optional<String> extraArg = Optional.of(entry.getValue());

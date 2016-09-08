@@ -3,14 +3,21 @@ package com.scmspain.mercadio.filter.fixtures;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import com.scmspain.mercadio.filter.*;
+import com.scmspain.mercadio.filter.FilterNotFoundException;
+import com.scmspain.mercadio.filter.FilterService;
+import com.scmspain.mercadio.filter.FilterType;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 @RunWith(Parameterized.class)
 public class FilterServiceBatteryTest {
@@ -52,7 +59,8 @@ public class FilterServiceBatteryTest {
         return result;
     }
 
-    public FilterServiceBatteryTest(final String text, final String expected, final String scenario) throws FilterNotFoundException {
+    public FilterServiceBatteryTest(final String text, final String expected, final String scenario)
+            throws FilterNotFoundException {
         this.text = text;
         this.expected = expected;
         this.scenario = scenario;
@@ -71,8 +79,8 @@ public class FilterServiceBatteryTest {
         return getLevenshteinDistance(current, expected) < LEVENSHTEIN_DISTANCE_THRESHOLD;
     }
 
-    private LinkedHashMap<FilterType, String> prepareFilters() {
-        final LinkedHashMap<FilterType,String> filters = new LinkedHashMap<>();
+    private Map<FilterType, String> prepareFilters() {
+        final Map<FilterType,String> filters = new LinkedHashMap<>();
 
         filters.put(FilterType.FORBIDDEN_WORDS,
                 "tags"
