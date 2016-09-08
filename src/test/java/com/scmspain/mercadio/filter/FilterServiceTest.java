@@ -10,14 +10,14 @@ public class FilterServiceTest {
 
     @Test
     public void filterServiceWithoutConfiguredFilters() throws Exception {
-        final FilterService sut = new FilterService();
+        final FilterService sut = FilterService.harmless();
 
         Assert.assertNotNull(sut);
     }
 
     @Test
-    public void defaultFilterServiceDoesNothing() throws Exception {
-        final FilterService sut = new FilterService();
+    public void harmlessFilterServiceDoesNothing() throws Exception {
+        final FilterService sut = FilterService.harmless();
 
         FilterRequest requestRequest = new FilterRequest("text remains unmodified", new HashMap<>());
         FilterUseCaseRequest request = new FilterUseCaseRequest(requestRequest);
@@ -33,7 +33,7 @@ public class FilterServiceTest {
         final FilterUseCaseResponse filterUseCaseResponse;
 
         final Map<String, String> filters = prepareWithAllFilters();
-        final FilterService sut = new FilterService(filters);
+        final FilterService sut = FilterService.withFilters(filters);
         filterUseCaseResponse = sut.filter(filterUseCaseRequest);
 
         Assert.assertEquals(filterRequest.getTextToFilter().trim(),filterUseCaseResponse.getResult().trim());
@@ -65,7 +65,7 @@ public class FilterServiceTest {
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(getFilterRequestWithInvalidFilter());
 
         final Map<String, String> filters = prepareWithNonExistingFilter();
-        final FilterService sut = new FilterService(filters);
+        final FilterService sut = FilterService.withFilters(filters);
         sut.filter(filterUseCaseRequest);
     }
 

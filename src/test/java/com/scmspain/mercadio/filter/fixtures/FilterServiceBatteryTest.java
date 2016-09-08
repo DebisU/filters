@@ -56,7 +56,7 @@ public class FilterServiceBatteryTest {
         this.text = text;
         this.expected = expected;
         this.scenario = scenario;
-        this.sut = new FilterService(prepareFilters());
+        this.sut = FilterService.withFilters(prepareFilters());
     }
 
     @Test

@@ -11,12 +11,12 @@ public class FilterService {
 
     private final Filter filter;
 
-    public FilterService() throws FilterNotFoundException {
+    private FilterService() throws FilterNotFoundException {
         this(new HashMap<>());
     }
 
-    public FilterService(Map<String, String> filtersToApply) throws FilterNotFoundException {
-        filter = configureFilter(filtersToApply);
+    private FilterService(Map<String, String> filters) throws FilterNotFoundException {
+        filter = configureFilter(filters);
     }
 
     public FilterUseCaseResponse filter(FilterUseCaseRequest filterUseCaseRequest) throws FilterNotFoundException {
@@ -62,6 +62,14 @@ public class FilterService {
         }
 
         return filter;
+    }
+
+    public static FilterService harmless() throws FilterNotFoundException {
+        return new FilterService();
+    }
+
+    public static FilterService withFilters(Map<String, String> filtersToApply) throws FilterNotFoundException {
+        return new FilterService(filtersToApply);
     }
 }
 
