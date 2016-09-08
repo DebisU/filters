@@ -20,6 +20,14 @@ public class FilterService {
 
     private final Filter filter;
 
+    private FilterService() throws FilterNotFoundException {
+        this(new LinkedHashMap<>());
+    }
+
+    private FilterService(Map<FilterType, String> filters) throws FilterNotFoundException {
+        this.filter = configureFilter(filters);
+    }
+
     public static FilterService harmless() throws FilterNotFoundException {
         return new FilterService();
     }
@@ -27,14 +35,6 @@ public class FilterService {
     public static FilterService withFilters(Map<FilterType, String> filtersToApply)
             throws FilterNotFoundException {
         return new FilterService(filtersToApply);
-    }
-
-    private FilterService() throws FilterNotFoundException {
-        this(new LinkedHashMap<>());
-    }
-
-    private FilterService(Map<FilterType, String> filters) throws FilterNotFoundException {
-        filter = configureFilter(filters);
     }
 
     private Filter configureFilter(Map<FilterType, String> filtersToApply) throws FilterNotFoundException {
