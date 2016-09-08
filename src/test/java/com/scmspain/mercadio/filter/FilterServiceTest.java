@@ -1,7 +1,6 @@
 package com.scmspain.mercadio.filter;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -9,19 +8,14 @@ import java.util.Map;
 
 public class FilterServiceTest {
 
-    private FilterService sut;
-
-    @Before
-    public void setUp() throws Exception {
-        sut = new FilterService();
-    }
-
     @Test
     public void filterUseCaseExecuteTest() throws Exception {
         final FilterRequest filterRequest = getFilterRequestWithAllFilters();
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(filterRequest);
         final FilterUseCaseResponse filterUseCaseResponse;
 
+        final Map<String, String> filters = prepareWithAllFilters();
+        final FilterService sut = new FilterService(filters);
         filterUseCaseResponse = sut.filter(filterUseCaseRequest);
 
         Assert.assertEquals(filterRequest.getTextToFilter().trim(),filterUseCaseResponse.getResult().trim());
@@ -29,6 +23,14 @@ public class FilterServiceTest {
 
     private FilterRequest getFilterRequestWithAllFilters() {
         final FilterRequest filterRequest = new FilterRequest();
+        final Map<String, String> filters = prepareWithAllFilters();
+
+        filterRequest.setFiltersToApply(filters);
+
+        return filterRequest;
+    }
+
+    private Map<String, String> prepareWithAllFilters() {
         final Map<String,String> filters = new HashMap<>();
 
         filters.put("commonwords","");
@@ -37,27 +39,31 @@ public class FilterServiceTest {
         filters.put("separators","");
         filters.put("removespecificwords","search");
         filters.put("multilinespam","");
-
-        filterRequest.setFiltersToApply(filters);
-
-        return filterRequest;
+        return filters;
     }
 
     @Test (expected = FilterNotFoundException.class)
     public void filterUseCaseExecuteWithThrowExceptionTest() throws Exception {
         final FilterUseCaseRequest filterUseCaseRequest = new FilterUseCaseRequest(getFilterRequestWithInvalidFilter());
 
+        final Map<String, String> filters = prepareWithNonExistingFilter();
+        final FilterService sut = new FilterService(filters);
         sut.filter(filterUseCaseRequest);
     }
 
     private FilterRequest getFilterRequestWithInvalidFilter() {
         final FilterRequest filterRequest = new FilterRequest();
-        final Map<String,String> filters = new HashMap<>();
-
-        filters.put("BAD","FILTER");
+        final Map<String, String> filters = prepareWithNonExistingFilter();
 
         filterRequest.setFiltersToApply(filters);
 
         return filterRequest;
+    }
+
+    private Map<String, String> prepareWithNonExistingFilter() {
+        final Map<String,String> filters = new HashMap<>();
+
+        filters.put("BAD","FILTER");
+        return filters;
     }
 }
