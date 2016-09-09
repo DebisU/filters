@@ -6,6 +6,7 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.scmspain.mercadio.filter.FilterNotFoundException;
 import com.scmspain.mercadio.filter.FilterService;
 import com.scmspain.mercadio.filter.FilterType;
+import com.scmspain.mercadio.filter.FilterItem;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,9 +16,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 @RunWith(Parameterized.class)
 public class FilterServiceBatteryTest {
@@ -79,22 +78,26 @@ public class FilterServiceBatteryTest {
         return getLevenshteinDistance(current, expected) < LEVENSHTEIN_DISTANCE_THRESHOLD;
     }
 
-    private Map<FilterType, String> prepareFilters() {
-        final Map<FilterType,String> filters = new LinkedHashMap<>();
+    private List<FilterItem> prepareFilters() {
+        final List<FilterItem> myFilters = new ArrayList<>();
 
-        filters.put(FilterType.FORBIDDEN_WORDS,
-                "tags"
+        myFilters.add(
+                new FilterItem(FilterType.FORBIDDEN_WORDS,
+                        "tags"
                         + ",keywords"
                         + ",palabra de busqueda"
                         + ",palabras de busqueda"
                         + ",palabras busquedas"
-                        + ",oferta ganga");
-        filters.put(FilterType.REMOVE_SPECIFIC_WORDS, "Palabras de búsqueda,search");
-        filters.put(FilterType.COMMON_WORDS, "");
-        filters.put(FilterType.END_SPAM, "");
-        filters.put(FilterType.SEPARATORS, "");
-        filters.put(FilterType.URL, "");
-        return filters;
+                        + ",oferta ganga"));
+        myFilters.add(
+                new FilterItem(FilterType.REMOVE_SPECIFIC_WORDS,
+                        "Palabras de búsqueda,search"));
+        myFilters.add(new FilterItem(FilterType.COMMON_WORDS, ""));
+        myFilters.add(new FilterItem(FilterType.END_SPAM, ""));
+        myFilters.add(new FilterItem(FilterType.SEPARATORS, ""));
+        myFilters.add(new FilterItem(FilterType.URL, ""));
+
+        return myFilters;
     }
 
     private static int getLevenshteinDistance(String currentDistance, String expectedDistance) {

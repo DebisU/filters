@@ -12,8 +12,8 @@ import com.scmspain.mercadio.filter.filters.FilterRemoveSpecificWords;
 import com.scmspain.mercadio.filter.filters.FilterUrl;
 import com.scmspain.mercadio.filter.utils.CommonStringOperations;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public class FilterService {
@@ -21,10 +21,10 @@ public class FilterService {
     private final Filter filter;
 
     private FilterService() throws FilterNotFoundException {
-        this(new LinkedHashMap<>());
+        this(new ArrayList<>());
     }
 
-    private FilterService(Map<FilterType, String> filters) throws FilterNotFoundException {
+    private FilterService(List<FilterItem> filters) throws FilterNotFoundException {
         this.filter = configureFilter(filters);
     }
 
@@ -32,14 +32,14 @@ public class FilterService {
         return new FilterService();
     }
 
-    public static FilterService withFilters(Map<FilterType, String> filtersToApply)
+    public static FilterService withFilters(List<FilterItem> filtersToApply)
             throws FilterNotFoundException {
         return new FilterService(filtersToApply);
     }
 
-    private Filter configureFilter(Map<FilterType, String> filtersToApply) throws FilterNotFoundException {
+    private Filter configureFilter(List<FilterItem> filtersToApply) throws FilterNotFoundException {
         final ChainFilter chainFilter = new ChainFilter();
-        for (Map.Entry<FilterType, String> entry : filtersToApply.entrySet()) {
+        for (FilterItem entry : filtersToApply) {
             final Optional<String> extraArg = Optional.of(entry.getValue());
             final FilterType filterType = entry.getKey();
             switch (filterType) {
