@@ -1,13 +1,12 @@
 package com.scmspain.mercadio.filter.filters;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ChainFilter implements Filter {
-    private final List<Filter> filters = new ArrayList<>();
+    private final List<Filter> filters;
 
-    public void addFilter(Filter filter) {
-        filters.add(filter);
+    public ChainFilter(List<Filter> filters) {
+        this.filters = filters;
     }
 
     @Override

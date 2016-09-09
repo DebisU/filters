@@ -7,41 +7,25 @@ import com.scmspain.mercadio.filter.utils.CommonStringOperations;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class FilterService {
 
     private final Filter filter;
-    private final FilterFactory filterFactory = new FilterFactory();
 
     private FilterService() throws FilterNotFoundException {
         this(new ArrayList<>());
     }
 
-    private FilterService(List<FilterItem> filters) throws FilterNotFoundException {
-        this.filter = configureFilter(filters);
+    private FilterService(List<Filter> filters) throws FilterNotFoundException {
+        this.filter = new ChainFilter(filters);
     }
 
     public static FilterService harmless() throws FilterNotFoundException {
         return new FilterService();
     }
 
-    public static FilterService withFilters(List<FilterItem> filtersToApply)
-            throws FilterNotFoundException {
+    public static FilterService withFilters(List<Filter> filtersToApply) throws FilterNotFoundException {
         return new FilterService(filtersToApply);
-    }
-
-    private Filter configureFilter(List<FilterItem> filtersToApply) throws FilterNotFoundException {
-        final ChainFilter chainFilter = new ChainFilter();
-
-        for (FilterItem entry : filtersToApply) {
-            final Optional<String> extraArg = Optional.of(entry.getValue());
-            final FilterType filterType = entry.getKey();
-            final Filter filter = filterFactory.createFilter(filterType, extraArg);
-            chainFilter.addFilter(filter);
-        }
-
-        return chainFilter;
     }
 
     public String filter(String text) {

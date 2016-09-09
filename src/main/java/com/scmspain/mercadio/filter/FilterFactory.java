@@ -13,7 +13,7 @@ import java.util.Optional;
 
 public class FilterFactory {
 
-    Filter createFilter(FilterType filterType, Optional<String> extraArg) throws FilterNotFoundException {
+    public Filter createFilter(FilterType filterType, Optional<String> extraArg) throws FilterNotFoundException {
         Filter filter;
         switch (filterType) {
             case SEPARATORS:
@@ -41,5 +41,9 @@ public class FilterFactory {
                 throw new FilterNotFoundException(filterType.toString());
         }
         return filter;
+    }
+
+    public Filter createFilter(FilterType filterType) throws FilterNotFoundException {
+        return createFilter(filterType, Optional.of(""));
     }
 }
