@@ -3,10 +3,11 @@ package com.scmspain.mercadio.filter.fixtures;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.scmspain.mercadio.filter.FilterFactory;
 import com.scmspain.mercadio.filter.FilterNotFoundException;
 import com.scmspain.mercadio.filter.FilterService;
 import com.scmspain.mercadio.filter.FilterType;
-import com.scmspain.mercadio.filter.FilterItem;
+import com.scmspain.mercadio.filter.filters.Filter;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
 
 @RunWith(Parameterized.class)
 public class FilterServiceBatteryTest {
@@ -78,24 +80,41 @@ public class FilterServiceBatteryTest {
         return getLevenshteinDistance(current, expected) < LEVENSHTEIN_DISTANCE_THRESHOLD;
     }
 
-    private List<FilterItem> prepareFilters() {
-        final List<FilterItem> myFilters = new ArrayList<>();
+    private List<Filter> prepareFilters() throws FilterNotFoundException {
+        final List<Filter> myFilters = new ArrayList<>();
+        final FilterFactory factory = new FilterFactory();
 
         myFilters.add(
-                new FilterItem(FilterType.FORBIDDEN_WORDS,
-                        "tags"
-                        + ",keywords"
-                        + ",palabra de busqueda"
-                        + ",palabras de busqueda"
-                        + ",palabras busquedas"
-                        + ",oferta ganga"));
+                factory.createFilter(
+                        FilterType.FORBIDDEN_WORDS,
+                        Optional.of("tags"
+                                + ",keywords"
+                                + ",palabra de busqueda"
+                                + ",palabras de busqueda"
+                                + ",palabras busquedas"
+                                + ",oferta ganga")));
         myFilters.add(
-                new FilterItem(FilterType.REMOVE_SPECIFIC_WORDS,
-                        "Palabras de búsqueda,search"));
-        myFilters.add(new FilterItem(FilterType.COMMON_WORDS, ""));
-        myFilters.add(new FilterItem(FilterType.END_SPAM, ""));
-        myFilters.add(new FilterItem(FilterType.SEPARATORS, ""));
-        myFilters.add(new FilterItem(FilterType.URL, ""));
+                factory.createFilter(
+                        FilterType.REMOVE_SPECIFIC_WORDS,
+                        Optional.of("Palabras de búsqueda,search")
+                ));
+        myFilters.add(
+                factory.createFilter(
+                        FilterType.COMMON_WORDS
+                ));
+        myFilters.add(
+                factory.createFilter(
+                        FilterType.END_SPAM
+                ));
+        myFilters.add(
+                factory.createFilter(
+                        FilterType.SEPARATORS
+                ));
+        myFilters.add(
+                factory.createFilter(
+                        FilterType.URL
+                ));
+
 
         return myFilters;
     }
