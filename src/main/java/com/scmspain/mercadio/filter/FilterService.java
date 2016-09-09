@@ -3,13 +3,6 @@ package com.scmspain.mercadio.filter;
 
 import com.scmspain.mercadio.filter.filters.ChainFilter;
 import com.scmspain.mercadio.filter.filters.Filter;
-import com.scmspain.mercadio.filter.filters.FilterKeywordMultilineSpamming;
-import com.scmspain.mercadio.filter.filters.FilterKeywordSpammingAtTheEnd;
-import com.scmspain.mercadio.filter.filters.FilterKeywordSpammingByCommonWords;
-import com.scmspain.mercadio.filter.filters.FilterKeywordSpammingBySeparators;
-import com.scmspain.mercadio.filter.filters.FilterKeywordSpammingWithForbiddenWords;
-import com.scmspain.mercadio.filter.filters.FilterRemoveSpecificWords;
-import com.scmspain.mercadio.filter.filters.FilterUrl;
 import com.scmspain.mercadio.filter.utils.CommonStringOperations;
 
 import java.util.ArrayList;
@@ -19,6 +12,7 @@ import java.util.Optional;
 public class FilterService {
 
     private final Filter filter;
+    private final FilterFactory filterFactory = new FilterFactory();
 
     private FilterService() throws FilterNotFoundException {
         this(new ArrayList<>());
@@ -39,34 +33,12 @@ public class FilterService {
 
     private Filter configureFilter(List<FilterItem> filtersToApply) throws FilterNotFoundException {
         final ChainFilter chainFilter = new ChainFilter();
+
         for (FilterItem entry : filtersToApply) {
             final Optional<String> extraArg = Optional.of(entry.getValue());
             final FilterType filterType = entry.getKey();
-            switch (filterType) {
-                case SEPARATORS:
-                    chainFilter.addFilter(new FilterKeywordSpammingBySeparators(extraArg));
-                    break;
-                case FORBIDDEN_WORDS:
-                    chainFilter.addFilter(new FilterKeywordSpammingWithForbiddenWords(extraArg));
-                    break;
-                case URL:
-                    chainFilter.addFilter(new FilterUrl(extraArg));
-                    break;
-                case COMMON_WORDS:
-                    chainFilter.addFilter(new FilterKeywordSpammingByCommonWords());
-                    break;
-                case REMOVE_SPECIFIC_WORDS:
-                    chainFilter.addFilter(new FilterRemoveSpecificWords(extraArg));
-                    break;
-                case MULTILINE_SPAM:
-                    chainFilter.addFilter(new FilterKeywordMultilineSpamming());
-                    break;
-                case END_SPAM:
-                    chainFilter.addFilter(new FilterKeywordSpammingAtTheEnd());
-                    break;
-                default:
-                    throw new FilterNotFoundException(filterType.toString());
-            }
+            final Filter filter = filterFactory.createFilter(filterType, extraArg);
+            chainFilter.addFilter(filter);
         }
 
         return chainFilter;
