@@ -1748,3 +1748,40 @@
   in: "LA CAZA Y LA CETRERIA.<br />I. Facsímil.<br />Belisario Acquaviva<br />Editorial Joyas Bibliográficas 1971<br />Facsímil del incunable de 1500.<br />Encuadernación semi rígida<br />Medidas 29 x 20,5 cm.<br /> Hojas sin desbarbar<br />70€</p>"
   out: "LA CAZA Y LA CETRERIA.\nI. Facsímil.\nBelisario Acquaviva\nEditorial Joyas Bibliográficas 1971\nFacsímil del incunable de 1500.\nEncuadernación semi rígida\nMedidas 29 x 20,5 cm.\n Hojas sin desbarbar\n70€"
   scenario: "No ha de borrar nada."
+-
+  in: "¡Disfruta de todas las ventajas que te ofrece el ordenador portátil HP15-p005ns
+       con procesador Intel Core i7-4510U de 8 GB de memoria RAM y 1T de capacidad!<br />Una potente máquina que te permitirá llegar donde tú quieras, realizando tus
+       tareas a gran velocidad sin necesidad de preocuparte de nada. Podrás utilizar sin
+       ningún inconveniente los programas de diseño más complejos. Así, como navegar por
+       internet gracias a su conexión WiFi o conectarte a otros dispositivos vía
+       Bluetooth 4.0.<br />Por otro lado, gracias a la potente tarjeta gráfica Nvidia GeForce, vas a tener la
+       posibilidad de jugar a tus juegos favoritos directamente en tu PC.<br />Asimismo, disfrutarás de la calidad de imagen gracias a la sofisticada pantalla
+       LED con retroiluminación, resolución HD y tecnología Bright/View para una
+       visualización inmejorable. Para sacarle el máximo partido a la gran calidad de
+       imagen, este pc portátil de HP integra un reproductor/grabador de DVD SuperMulti. <br />Destacamos también que este ordenador portátil HP15-p005ns cuenta con conexión
+       HDMI, micrófono, lector de tarjetas SD multiformato HP y puertos USB 2.0 y 3.0.<br />¡No lo pienses más! ¡Hazte con el ordenador portátil HP15-p005ns ahora en
+       MediaMarkt.es!<br /><br /><br /> Palabras de búsqueda: apple iphone 4 4s 5 5c 5s 6 plus ipad ipod air macbook pro imac 2 3 samsung
+       galaxy s2 s3 s4 s5 s6 note edge lg g3 g2 sony xperia z1 z2 z3 tablet tab htc one
+       plus blackberry nokia lumia nexus motorola mini ps4 ps3 psp xbox hp toshiba lenovo
+       m9 m8 xiaomi mi mi4 mi3 libre libres chinos comprar barato baratos smarphone
+       smarfone Smartphone dualsim duales 0 4.7 4 4.0 celular moviles celulares bq tablet
+       pulgadas \" 5.7\" 5.5\" 4.7\" 4.5\" 5\" edge bq xperia sony htc lg note 4 xiaomi samsumg
+       galaxy s6 ,galaxy s5 galaxy s4 galaxy s3 galaxi galaxia note 5 galaxia samsum
+       Samsun san. </p>"
+  out: "¡Disfruta de todas las ventajas que te ofrece el ordenador portátil HP15-p005ns
+        con procesador Intel Core i7-4510U de 8 GB de memoria RAM y 1T de capacidad!\nUna potente máquina que te permitirá llegar donde tú quieras, realizando tus
+        tareas a gran velocidad sin necesidad de preocuparte de nada. Podrás utilizar sin
+        ningún inconveniente los programas de diseño más complejos. Así, como navegar por
+        internet gracias a su conexión WiFi o conectarte a otros dispositivos vía
+        Bluetooth 4.0.\nPor otro lado, gracias a la potente tarjeta gráfica Nvidia GeForce, vas a tener la
+        posibilidad de jugar a tus juegos favoritos directamente en tu PC.\nAsimismo, disfrutarás de la calidad de imagen gracias a la sofisticada pantalla
+        LED con retroiluminación, resolución HD y tecnología Bright/View para una
+        visualización inmejorable. Para sacarle el máximo partido a la gran calidad de
+        imagen, este pc portátil de HP integra un reproductor/grabador de DVD SuperMulti. \nDestacamos también que este ordenador portátil HP15-p005ns cuenta con conexión
+        HDMI, micrófono, lector de tarjetas SD multiformato HP y puertos USB 2.0 y 3.0.\n¡No lo pienses más! ¡Hazte con el ordenador portátil HP15-p005ns ahora en
+        MediaMarkt.es!\n\n\n "
+  scenario: "Ha de borrar el spam del final."
+-
+  in: "¡Disfruta de todas las ventajas que te ofrece el ordenador portátil HP15-p005ns con procesador Intel Core i7-4510U de 8 GB de memoria RAM y 1T de capacidad!&lt;div&gt;Una potente máquina que te permitirá llegar donde tú quieras, realizando tus tareas a gran velocidad sin necesidad de preocuparte de nada. Podrás utilizar sin ningún inconveniente los programas de diseño más complejos. Así, como navegar por internet gracias a su conexión WiFi o conectarte a otros dispositivos vía Bluetooth 4.0.&lt;/div&gt;&lt;div&gt;Por otro lado, gracias a la potente tarjeta gráfica Nvidia GeForce, vas a tener la posibilidad de jugar a tus juegos favoritos directamente en tu PC.&lt;/div&gt;&lt;div&gt;Asimismo, disfrutarás de la calidad de imagen gracias a la sofisticada pantalla LED con retroiluminación, resolución HD y tecnología Bright/View para una visualización inmejorable. Para sacarle el máximo partido a la gran calidad de imagen, este pc portátil de HP integra un reproductor/grabador de DVD SuperMulti.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Destacamos también que este ordenador portátil HP15-p005ns cuenta con conexión HDMI, micrófono, lector de tarjetas SD multiformato HP y puertos USB 2.0 y 3.0.&lt;/div&gt;&lt;div&gt;¡No lo pienses más! ¡Hazte con el ordenador portátil HP15-p005ns ahora en MediaMarkt.es!&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Palabras de búsqueda : apple iphone 4 4s 5 5c 5s 6 plus ipad ipod air macbook pro imac 2 3 samsung galaxy s2 s3 s4 s5 s6 note edge lg g3 g2 sony xperia z1 z2 z3 tablet tab htc one plus blackberry nokia lumia nexus motorola mini ps4 ps3 psp xbox hp toshiba lenovo m9 m8 xiaomi mi mi4 mi3 libre libres chinos comprar barato baratos smarphone smarfone Smartphone dualsim duales 0 4.7 4 4.0 celular moviles celulares bq tablet pulgadas &quot; 5.7&quot; 5.5&quot; 4.7&quot; 4.5&quot; 5&quot; edge bq xperia sony htc lg note 4 xiaomi samsumg galaxy s6 ,galaxy s5 galaxy s4 galaxy s3 galaxi galaxia note 5 galaxia samsum Samsun sansung jiayu replica clon iPhone lenovo huawei.&lt;/div&gt;"
+  out: "¡Disfruta de todas las ventajas que te ofrece el ordenador portátil HP15-p005ns con procesador Intel Core i7-4510U de 8 GB de memoria RAM y 1T de capacidad!\nUna potente máquina que te permitirá llegar donde tú quieras, realizando tus tareas a gran velocidad sin necesidad de preocuparte de nada. Podrás utilizar sin ningún inconveniente los programas de diseño más complejos. Así, como navegar por internet gracias a su conexión WiFi o conectarte a otros dispositivos vía Bluetooth 4.0.&lt;/div&gt;\nPor otro lado, gracias a la potente tarjeta gráfica Nvidia GeForce, vas a tener la posibilidad de jugar a tus juegos favoritos directamente en tu PC.&lt;/div&gt;\nAsimismo, disfrutarás de la calidad de imagen gracias a la sofisticada pantalla LED con retroiluminación, resolución HD y tecnología Bright/View para una visualización inmejorable. Para sacarle el máximo partido a la gran calidad de imagen, este pc portátil de HP integra un reproductor/grabador de DVD SuperMulti.&amp;nbsp;&lt;/div&gt;\nDestacamos también que este ordenador portátil HP15-p005ns cuenta con conexión HDMI, micrófono, lector de tarjetas SD multiformato HP y puertos USB 2.0 y 3.0.&lt;/div&gt;\n¡No lo pienses más! ¡Hazte con el ordenador portátil HP15-p005ns ahora en MediaMarkt.es!&lt;/div&gt;\n&lt;br&gt;&lt;/div&gt;\n"
+  scenario: "Ha de borrar el spam de final (texto con formato Mercadio)"
