@@ -17,6 +17,7 @@ public interface CommonStringOperations {
         result = result.replaceAll("</p>","");
         result = result.replaceAll("<br />","\n");
         result = result.replaceAll("<br/>","\n");
+        result = mercadioLineFeed(result);
 
         return result;
     }
@@ -60,6 +61,10 @@ public interface CommonStringOperations {
             lastLine = lastLine.substring(0,lastLine.length() - 1);
         }
         return lastLine;
+    }
+
+    static String mercadioLineFeed(String request) {
+        return request.replaceAll("&lt;div&gt;","\n");
     }
 
     static List<String> getAllPrepositions() {
