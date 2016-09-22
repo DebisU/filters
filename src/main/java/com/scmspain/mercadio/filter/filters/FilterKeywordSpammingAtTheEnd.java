@@ -6,6 +6,7 @@ import java.util.List;
 public class FilterKeywordSpammingAtTheEnd implements Filter {
 
     private static final String SPAM_END_PATTERN = ".*(\\w+[,._-]\\s?){8,}.*";
+    public static final int MIN_TEXT_LENGTH_TO_ANALYZE = 150;
 
     @Override
     public String filter(String text) {
@@ -14,6 +15,13 @@ public class FilterKeywordSpammingAtTheEnd implements Filter {
 
 
     private String deleteSpamAtTheEnd(String text) {
+        if (getIfItsShortText(text)) {
+            return filterText(text);
+        }
+        return text;
+    }
+
+    private String filterText(String text) {
         final StringBuilder filteredText = new StringBuilder();
         final List<String> partsSeparatedByPoint = Arrays.asList(text.split("\\."));
         final String filteredLastParagraph =
@@ -25,8 +33,11 @@ public class FilterKeywordSpammingAtTheEnd implements Filter {
 
         filteredText.append(filteredLastParagraph);
 
-        if (textEndWithDot(text) && filteredText.toString().charAt(filteredText.toString().length() - 1) != '.') {
-            filteredText.append(".");
+        if (text.toString().length() > 0) {
+            if (filteredText.toString().charAt(filteredText.toString().length() - 1) != '.'
+                    && textEndWithDot(text)) {
+                filteredText.append(".");
+            }
         }
 
         return filteredText.toString();
@@ -40,6 +51,13 @@ public class FilterKeywordSpammingAtTheEnd implements Filter {
         }
 
         return filteredText.toString();
+    }
+
+    private boolean getIfItsShortText(String text) {
+        if (text.length() > MIN_TEXT_LENGTH_TO_ANALYZE) {
+            return true;
+        }
+        return false;
     }
 
     private boolean textEndWithDot(String text) {

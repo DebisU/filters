@@ -102,6 +102,7 @@ public class FilterKeywordSpammingByCommonWords implements Filter {
         final List<String> commonWords = new ArrayList<>(CommonStringOperations.getAllPrepositions());
         commonWords.addAll(CommonStringOperations.getMostCommonSpanishWords());
         commonWords.addAll(CommonStringOperations.getTimeUnits());
+        commonWords.addAll(CommonStringOperations.getMeasureUnits());
 
         return commonWords;
     }

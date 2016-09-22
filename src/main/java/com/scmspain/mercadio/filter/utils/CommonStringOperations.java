@@ -77,6 +77,10 @@ public interface CommonStringOperations {
                 " su "," se "," es "," no "," si ");
     }
 
+    static List<String> getMeasureUnits() {
+        return Arrays.asList("litros");
+    }
+
     static List<String> getTimeUnits() {
         return Arrays.asList("horas", "minutos",
                 "segundos", "hours", "años");
@@ -88,6 +92,6 @@ public interface CommonStringOperations {
     }
 
     static List<String> getAbbreviatedUnitsOfMeasure() {
-        return Arrays.asList("mhz","ghz","hz","m²","m³","km","gb","mb","tb","mpx","cm","mm");
+        return Arrays.asList("mhz","ghz","hz","m²","m³","km","gb","mb","tb","mpx","cm","mm","KvA");
     }
 }
